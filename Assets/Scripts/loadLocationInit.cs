@@ -12,9 +12,9 @@ public class loadLocationInit : MonoBehaviour {
 	static public bool fromLR;
 
 
-	void OnTriggerEnter (Collider col) { 
+	void Start() { 
 
-		toHome = true;
+		toHome = false;
 		fromTC = false;
 		fromMB = false;
 		fromLR = false;

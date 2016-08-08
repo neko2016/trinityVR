@@ -205,8 +205,6 @@ struct IGvrGazeResponder_t4177935811;
 struct MonoBehaviour_t3012272455;
 // GvrHead/HeadUpdatedDelegate
 struct HeadUpdatedDelegate_t3342363968;
-// gvrHeadRot
-struct gvrHeadRot_t1979541748;
 // GvrPostRender
 struct GvrPostRender_t3571076089;
 // UnityEngine.Vector3[]
@@ -269,6 +267,8 @@ struct VideoReady_t363152904;
 struct VideoResize_t2668346607;
 // MediaPlayerFullScreenCtrl
 struct MediaPlayerFullScreenCtrl_t326609931;
+// MutablePose3D
+struct MutablePose3D_t1273683304;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -602,8 +602,6 @@ struct MediaPlayerFullScreenCtrl_t326609931;
 #include "AssemblyU2DCSharp_GvrHead2074018243MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GvrHead_HeadUpdatedDelegate3342363968.h"
 #include "AssemblyU2DCSharp_GvrHead_HeadUpdatedDelegate3342363968MethodDeclarations.h"
-#include "AssemblyU2DCSharp_gvrHeadRot1979541748.h"
-#include "AssemblyU2DCSharp_gvrHeadRot1979541748MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GvrPostRender3571076089.h"
 #include "AssemblyU2DCSharp_GvrPostRender3571076089MethodDeclarations.h"
 #include "mscorlib_System_Runtime_CompilerServices_RuntimeHe1695827251MethodDeclarations.h"
@@ -641,10 +639,10 @@ struct MediaPlayerFullScreenCtrl_t326609931;
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag1523288937MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_Scene2772977204MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_Scene2772977204.h"
-#include "AssemblyU2DCSharp_loadLocationDoor3861857545.h"
-#include "AssemblyU2DCSharp_loadLocationDoor3861857545MethodDeclarations.h"
 #include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
 #include "AssemblyU2DCSharp_loadLocationInit3862005355MethodDeclarations.h"
+#include "AssemblyU2DCSharp_loadLocationDoor3861857545.h"
+#include "AssemblyU2DCSharp_loadLocationDoor3861857545MethodDeclarations.h"
 #include "AssemblyU2DCSharp_loadScene1377993542.h"
 #include "AssemblyU2DCSharp_loadScene1377993542MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MedaiPlayerSampleGUI1334456284.h"
@@ -1060,7 +1058,7 @@ extern "C"  void audioImgMarker__ctor_m3492669908 (audioImgMarker_t3924586151 * 
 // System.Void audioImgMarker::Start()
 extern const MethodInfo* Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2837778793;
-extern Il2CppCodeGenString* _stringLiteral63613878;
+extern Il2CppCodeGenString* _stringLiteral77055;
 extern const uint32_t audioImgMarker_Start_m2439807700_MetadataUsageId;
 extern "C"  void audioImgMarker_Start_m2439807700 (audioImgMarker_t3924586151 * __this, const MethodInfo* method)
 {
@@ -1082,8 +1080,8 @@ extern "C"  void audioImgMarker_Start_m2439807700 (audioImgMarker_t3924586151 * 
 		GameObject_SetActive_m3538205401(L_3, (bool)0, /*hidden argument*/NULL);
 		AudioSource_t3628549054 * L_4 = Component_GetComponent_TisAudioSource_t3628549054_m3821406207(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var);
 		__this->set_audioSource_3(L_4);
-		GameObjectU5BU5D_t3499186955* L_5 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral63613878, /*hidden argument*/NULL);
-		__this->set_allOtherAudio_5(L_5);
+		GameObjectU5BU5D_t3499186955* L_5 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral77055, /*hidden argument*/NULL);
+		__this->set_allAudioNAR_5(L_5);
 		__this->set_isPlaying_4((bool)0);
 		return;
 	}
@@ -1124,7 +1122,7 @@ extern "C"  void audioImgMarker_markerPressed_m1379856026 (audioImgMarker_t39245
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_5 = __this->get_allOtherAudio_5();
+		GameObjectU5BU5D_t3499186955* L_5 = __this->get_allAudioNAR_5();
 		V_1 = L_5;
 		V_2 = 0;
 		goto IL_0059;
@@ -1141,7 +1139,7 @@ IL_003a:
 		GameObject_t4012695102 * L_9 = V_0;
 		NullCheck(L_9);
 		AudioSource_t3628549054 * L_10 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_9, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
-		Il2CppObject * L_11 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_10, (0.5f), /*hidden argument*/NULL);
+		Il2CppObject * L_11 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_10, (1.0f), /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_m2135303124(__this, L_11, /*hidden argument*/NULL);
 		int32_t L_12 = V_2;
 		V_2 = ((int32_t)((int32_t)L_12+(int32_t)1));
@@ -1197,7 +1195,7 @@ extern "C"  void audioMarker__ctor_m1406418363 (audioMarker_t252994480 * __this,
 }
 // System.Void audioMarker::Start()
 extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral63613878;
+extern Il2CppCodeGenString* _stringLiteral77055;
 extern const uint32_t audioMarker_Start_m353556155_MetadataUsageId;
 extern "C"  void audioMarker_Start_m353556155 (audioMarker_t252994480 * __this, const MethodInfo* method)
 {
@@ -1212,8 +1210,8 @@ extern "C"  void audioMarker_Start_m353556155 (audioMarker_t252994480 * __this, 
 		NullCheck(L_0);
 		AudioSource_t3628549054 * L_1 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_0, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
 		__this->set_myAudio_2(L_1);
-		GameObjectU5BU5D_t3499186955* L_2 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral63613878, /*hidden argument*/NULL);
-		__this->set_allOtherAudio_3(L_2);
+		GameObjectU5BU5D_t3499186955* L_2 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral77055, /*hidden argument*/NULL);
+		__this->set_allAudioNAR_3(L_2);
 		return;
 	}
 }
@@ -1241,7 +1239,7 @@ extern "C"  void audioMarker_markerTriggered_m920853238 (audioMarker_t252994480 
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_2 = __this->get_allOtherAudio_3();
+		GameObjectU5BU5D_t3499186955* L_2 = __this->get_allAudioNAR_3();
 		V_1 = L_2;
 		V_2 = 0;
 		goto IL_003d;
@@ -1258,7 +1256,7 @@ IL_001e:
 		GameObject_t4012695102 * L_6 = V_0;
 		NullCheck(L_6);
 		AudioSource_t3628549054 * L_7 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_6, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
-		Il2CppObject * L_8 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_7, (0.5f), /*hidden argument*/NULL);
+		Il2CppObject * L_8 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_7, (1.0f), /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_m2135303124(__this, L_8, /*hidden argument*/NULL);
 		int32_t L_9 = V_2;
 		V_2 = ((int32_t)((int32_t)L_9+(int32_t)1));
@@ -18289,44 +18287,6 @@ extern "C"  void HeadUpdatedDelegate_EndInvoke_m1173821019 (HeadUpdatedDelegate_
 {
 	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 }
-// System.Void gvrHeadRot::.ctor()
-extern "C"  void gvrHeadRot__ctor_m1046676007 (gvrHeadRot_t1979541748 * __this, const MethodInfo* method)
-{
-	{
-		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void gvrHeadRot::Start()
-extern "C"  void gvrHeadRot_Start_m4288781095 (gvrHeadRot_t1979541748 * __this, const MethodInfo* method)
-{
-	{
-		return;
-	}
-}
-// System.Void gvrHeadRot::Update()
-extern "C"  void gvrHeadRot_Update_m4109047238 (gvrHeadRot_t1979541748 * __this, const MethodInfo* method)
-{
-	Vector3_t3525329789  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	Vector3_t3525329789  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	{
-		Transform_t284553113 * L_0 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_0);
-		Vector3_t3525329789  L_1 = Transform_get_eulerAngles_m1058084741(L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		float L_2 = (&V_0)->get_x_1();
-		__this->set_camXRot_2(L_2);
-		Transform_t284553113 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Vector3_t3525329789  L_4 = Transform_get_eulerAngles_m1058084741(L_3, /*hidden argument*/NULL);
-		V_1 = L_4;
-		float L_5 = (&V_1)->get_y_2();
-		__this->set_camYRot_3(L_5);
-		return;
-	}
-}
 // System.Void GvrPostRender::.ctor()
 extern "C"  void GvrPostRender__ctor_m112426386 (GvrPostRender_t3571076089 * __this, const MethodInfo* method)
 {
@@ -23948,8 +23908,9 @@ extern "C"  void loadLocation__ctor_m3582677568 (loadLocation_t3184820923 * __th
 }
 // System.Void loadLocation::Start()
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* loadLocation_t3184820923_il2cpp_TypeInfo_var;
+extern TypeInfo* loadLocationInit_t3862005355_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral750325505;
+extern Il2CppCodeGenString* _stringLiteral2654973832;
 extern Il2CppCodeGenString* _stringLiteral1657901480;
 extern Il2CppCodeGenString* _stringLiteral660829128;
 extern const uint32_t loadLocation_Start_m2529815360_MetadataUsageId;
@@ -23975,7 +23936,7 @@ extern "C"  void loadLocation_Start_m2529815360 (loadLocation_t3184820923 * __th
 		}
 	}
 	{
-		bool L_3 = ((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->get_toHome_2();
+		bool L_3 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_toHome_2();
 		if (!L_3)
 		{
 			goto IL_0046;
@@ -23985,7 +23946,7 @@ extern "C"  void loadLocation_Start_m2529815360 (loadLocation_t3184820923 * __th
 		Vector3_t3525329789  L_4;
 		memset(&L_4, 0, sizeof(L_4));
 		Vector3__ctor_m2926210380(&L_4, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
-		__this->set_newPos_5(L_4);
+		__this->set_newPos_2(L_4);
 		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
 	}
 
@@ -23993,14 +23954,14 @@ IL_0046:
 	{
 		String_t* L_5 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_6 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_5, _stringLiteral1657901480, /*hidden argument*/NULL);
+		bool L_6 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_5, _stringLiteral2654973832, /*hidden argument*/NULL);
 		if (!L_6)
 		{
 			goto IL_008c;
 		}
 	}
 	{
-		bool L_7 = ((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->get_fromMB_3();
+		bool L_7 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_fromTC_3();
 		if (!L_7)
 		{
 			goto IL_008c;
@@ -24009,9 +23970,9 @@ IL_0046:
 	{
 		Vector3_t3525329789  L_8;
 		memset(&L_8, 0, sizeof(L_8));
-		Vector3__ctor_m2926210380(&L_8, (400.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
-		__this->set_newPos_5(L_8);
-		((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->set_fromMB_3((bool)0);
+		Vector3__ctor_m2926210380(&L_8, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		__this->set_newPos_2(L_8);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromTC_3((bool)0);
 		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
 	}
 
@@ -24019,14 +23980,14 @@ IL_008c:
 	{
 		String_t* L_9 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_10 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_9, _stringLiteral660829128, /*hidden argument*/NULL);
+		bool L_10 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_9, _stringLiteral1657901480, /*hidden argument*/NULL);
 		if (!L_10)
 		{
 			goto IL_00d2;
 		}
 	}
 	{
-		bool L_11 = ((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->get_fromLR_4();
+		bool L_11 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_fromMB_4();
 		if (!L_11)
 		{
 			goto IL_00d2;
@@ -24035,19 +23996,45 @@ IL_008c:
 	{
 		Vector3_t3525329789  L_12;
 		memset(&L_12, 0, sizeof(L_12));
-		Vector3__ctor_m2926210380(&L_12, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
-		__this->set_newPos_5(L_12);
-		((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->set_fromLR_4((bool)0);
+		Vector3__ctor_m2926210380(&L_12, (400.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		__this->set_newPos_2(L_12);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromMB_4((bool)0);
 		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
 	}
 
 IL_00d2:
 	{
+		String_t* L_13 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_14 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_13, _stringLiteral660829128, /*hidden argument*/NULL);
+		if (!L_14)
+		{
+			goto IL_0118;
+		}
+	}
+	{
+		bool L_15 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_fromLR_5();
+		if (!L_15)
+		{
+			goto IL_0118;
+		}
+	}
+	{
+		Vector3_t3525329789  L_16;
+		memset(&L_16, 0, sizeof(L_16));
+		Vector3__ctor_m2926210380(&L_16, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		__this->set_newPos_2(L_16);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)0);
+		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
+	}
+
+IL_0118:
+	{
 		return;
 	}
 }
 // System.Void loadLocation::moveCamera()
-extern Il2CppCodeGenString* _stringLiteral2074163612;
+extern Il2CppCodeGenString* _stringLiteral3759572844;
 extern Il2CppCodeGenString* _stringLiteral2133346437;
 extern const uint32_t loadLocation_moveCamera_m1878965626_MetadataUsageId;
 extern "C"  void loadLocation_moveCamera_m1878965626 (loadLocation_t3184820923 * __this, const MethodInfo* method)
@@ -24059,16 +24046,16 @@ extern "C"  void loadLocation_moveCamera_m1878965626 (loadLocation_t3184820923 *
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		GameObject_t4012695102 * L_0 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral2074163612, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_0 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral3759572844, /*hidden argument*/NULL);
 		NullCheck(L_0);
 		Transform_t284553113 * L_1 = GameObject_get_transform_m1278640159(L_0, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_2 = __this->get_newPos_5();
+		Vector3_t3525329789  L_2 = __this->get_newPos_2();
 		NullCheck(L_1);
 		Transform_set_position_m3111394108(L_1, L_2, /*hidden argument*/NULL);
 		GameObject_t4012695102 * L_3 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral2133346437, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		Transform_t284553113 * L_4 = GameObject_get_transform_m1278640159(L_3, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_5 = __this->get_newPos_5();
+		Vector3_t3525329789  L_5 = __this->get_newPos_2();
 		NullCheck(L_4);
 		Transform_set_position_m3111394108(L_4, L_5, /*hidden argument*/NULL);
 		return;
@@ -24084,9 +24071,10 @@ extern "C"  void loadLocationDoor__ctor_m3910695858 (loadLocationDoor_t386185754
 }
 // System.Void loadLocationDoor::exitDoor()
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* loadLocation_t3184820923_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1636580842;
-extern Il2CppCodeGenString* _stringLiteral71978620;
+extern TypeInfo* loadLocationInit_t3862005355_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3144132651;
+extern Il2CppCodeGenString* _stringLiteral2559491453;
+extern Il2CppCodeGenString* _stringLiteral540459173;
 extern const uint32_t loadLocationDoor_exitDoor_m2229554590_MetadataUsageId;
 extern "C"  void loadLocationDoor_exitDoor_m2229554590 (loadLocationDoor_t3861857545 * __this, const MethodInfo* method)
 {
@@ -24103,31 +24091,45 @@ extern "C"  void loadLocationDoor_exitDoor_m2229554590 (loadLocationDoor_t386185
 		V_0 = L_0;
 		String_t* L_1 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_2 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_1, _stringLiteral1636580842, /*hidden argument*/NULL);
+		bool L_2 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_1, _stringLiteral3144132651, /*hidden argument*/NULL);
 		if (!L_2)
 		{
 			goto IL_0022;
 		}
 	}
 	{
-		((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->set_fromMB_3((bool)1);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromMB_4((bool)1);
 	}
 
 IL_0022:
 	{
 		String_t* L_3 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_4 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_3, _stringLiteral71978620, /*hidden argument*/NULL);
+		bool L_4 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_3, _stringLiteral2559491453, /*hidden argument*/NULL);
 		if (!L_4)
 		{
 			goto IL_003e;
 		}
 	}
 	{
-		((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->set_fromLR_4((bool)1);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)1);
 	}
 
 IL_003e:
+	{
+		String_t* L_5 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_6 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_5, _stringLiteral540459173, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_005a;
+		}
+	}
+	{
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)1);
+	}
+
+IL_005a:
 	{
 		return;
 	}
@@ -24141,7 +24143,7 @@ extern "C"  void loadLocationInit__ctor_m4113344656 (loadLocationInit_t386200535
 	}
 }
 // System.Void loadLocationInit::OnTriggerEnter(UnityEngine.Collider)
-extern TypeInfo* loadLocation_t3184820923_il2cpp_TypeInfo_var;
+extern TypeInfo* loadLocationInit_t3862005355_il2cpp_TypeInfo_var;
 extern const uint32_t loadLocationInit_OnTriggerEnter_m2175847656_MetadataUsageId;
 extern "C"  void loadLocationInit_OnTriggerEnter_m2175847656 (loadLocationInit_t3862005355 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
 {
@@ -24152,9 +24154,10 @@ extern "C"  void loadLocationInit_OnTriggerEnter_m2175847656 (loadLocationInit_t
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->set_toHome_2((bool)1);
-		((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->set_fromMB_3((bool)0);
-		((loadLocation_t3184820923_StaticFields*)loadLocation_t3184820923_il2cpp_TypeInfo_var->static_fields)->set_fromLR_4((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_toHome_2((bool)1);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromTC_3((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromMB_4((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)0);
 		return;
 	}
 }
@@ -29335,6 +29338,64 @@ extern "C"  void MediaPlayerFullScreenCtrl_Resize_m3995773560 (MediaPlayerFullSc
 		MediaPlayerCtrl_t3572035536 * L_11 = Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(L_10, /*hidden argument*/Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var);
 		NullCheck(L_11);
 		MediaPlayerCtrl_Resize_m3319691773(L_11, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MutablePose3D::.ctor()
+extern TypeInfo* Pose3D_t2396367586_il2cpp_TypeInfo_var;
+extern const uint32_t MutablePose3D__ctor_m109975811_MetadataUsageId;
+extern "C"  void MutablePose3D__ctor_m109975811 (MutablePose3D_t1273683304 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MutablePose3D__ctor_m109975811_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Pose3D_t2396367586_il2cpp_TypeInfo_var);
+		Pose3D__ctor_m184997881(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MutablePose3D::Set(UnityEngine.Vector3,UnityEngine.Quaternion)
+extern "C"  void MutablePose3D_Set_m735260187 (MutablePose3D_t1273683304 * __this, Vector3_t3525329789  ___position, Quaternion_t1891715979  ___orientation, const MethodInfo* method)
+{
+	{
+		Vector3_t3525329789  L_0 = ___position;
+		Quaternion_t1891715979  L_1 = ___orientation;
+		Pose3D_Set_m1511997201(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MutablePose3D::Set(UnityEngine.Matrix4x4)
+extern "C"  void MutablePose3D_Set_m1451198039 (MutablePose3D_t1273683304 * __this, Matrix4x4_t277289660  ___matrix, const MethodInfo* method)
+{
+	{
+		Matrix4x4_t277289660  L_0 = ___matrix;
+		Pose3D_Set_m27658145(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MutablePose3D::SetRightHanded(UnityEngine.Matrix4x4)
+extern TypeInfo* Pose3D_t2396367586_il2cpp_TypeInfo_var;
+extern const uint32_t MutablePose3D_SetRightHanded_m1198386545_MetadataUsageId;
+extern "C"  void MutablePose3D_SetRightHanded_m1198386545 (MutablePose3D_t1273683304 * __this, Matrix4x4_t277289660  ___matrix, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MutablePose3D_SetRightHanded_m1198386545_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Pose3D_t2396367586_il2cpp_TypeInfo_var);
+		Matrix4x4_t277289660  L_0 = ((Pose3D_t2396367586_StaticFields*)Pose3D_t2396367586_il2cpp_TypeInfo_var->static_fields)->get_flipZ_0();
+		Matrix4x4_t277289660  L_1 = ___matrix;
+		Matrix4x4_t277289660  L_2 = Matrix4x4_op_Multiply_m4108203689(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		Matrix4x4_t277289660  L_3 = ((Pose3D_t2396367586_StaticFields*)Pose3D_t2396367586_il2cpp_TypeInfo_var->static_fields)->get_flipZ_0();
+		Matrix4x4_t277289660  L_4 = Matrix4x4_op_Multiply_m4108203689(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		MutablePose3D_Set_m1451198039(__this, L_4, /*hidden argument*/NULL);
 		return;
 	}
 }

@@ -1194,9 +1194,9 @@
 #include "AssemblyU2DCSharp_audioRandomPlayGvr3248665366.h"
 #include "AssemblyU2DCSharp_audioTrigger1648719106.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015.h"
-#include "AssemblyU2DCSharp_gvrHeadRot1979541748.h"
 #include "AssemblyU2DCSharp_homeIcon3808435704.h"
 #include "AssemblyU2DCSharp_loadLocation3184820923.h"
+#include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
 #include "AssemblyU2DCSharp_loadScene1377993542.h"
 #include "AssemblyU2DCSharp_navTrigger726877973.h"
 #include "AssemblyU2DCSharp_videoMarker853609621.h"
@@ -1669,7 +1669,7 @@
 #include "AssemblyU2DCSharp_MutablePose3D1273683304.h"
 #include "AssemblyU2DCSharp_audioFadeOut1617174140.h"
 #include "AssemblyU2DCSharp_loadLocationDoor3861857545.h"
-#include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
+#include "AssemblyU2DCSharp_splashScreen2428448179.h"
 #include "AssemblyU2DCSharp_vrChangeCamera981690321.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874515.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874523.h"
@@ -1682,7 +1682,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9479] = 
+extern const int32_t g_FieldOffsetTable[9478] = 
 {
 	0,
 	0,
@@ -11105,9 +11105,9 @@ extern const int32_t g_FieldOffsetTable[9479] =
 	audioImgMarker_t3924586151::get_offset_of_imagePanel_2(),
 	audioImgMarker_t3924586151::get_offset_of_audioSource_3(),
 	audioImgMarker_t3924586151::get_offset_of_isPlaying_4(),
-	audioImgMarker_t3924586151::get_offset_of_allOtherAudio_5(),
+	audioImgMarker_t3924586151::get_offset_of_allAudioNAR_5(),
 	audioMarker_t252994480::get_offset_of_myAudio_2(),
-	audioMarker_t252994480::get_offset_of_allOtherAudio_3(),
+	audioMarker_t252994480::get_offset_of_allAudioNAR_3(),
 	audioRandomPlay_t2791960333::get_offset_of_myAudio_2(),
 	audioRandomPlay_t2791960333::get_offset_of_startTime_3(),
 	audioRandomPlay_t2791960333::get_offset_of_repeatTime_4(),
@@ -11129,17 +11129,16 @@ extern const int32_t g_FieldOffsetTable[9479] =
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioAMB_2(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioSFX_3(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioNAR_4(),
-	gvrHeadRot_t1979541748::get_offset_of_camXRot_2(),
-	gvrHeadRot_t1979541748::get_offset_of_camYRot_3(),
 	homeIcon_t3808435704::get_offset_of_camXRot_2(),
 	homeIcon_t3808435704::get_offset_of_newYRot_3(),
 	homeIcon_t3808435704::get_offset_of_lastRot_4(),
 	homeIcon_t3808435704::get_offset_of_speed_5(),
-	loadLocation_t3184820923_StaticFields::get_offset_of_toHome_2(),
-	loadLocation_t3184820923_StaticFields::get_offset_of_fromMB_3(),
-	loadLocation_t3184820923_StaticFields::get_offset_of_fromLR_4(),
-	loadLocation_t3184820923::get_offset_of_newPos_5(),
-	loadLocation_t3184820923::get_offset_of_currScene_6(),
+	loadLocation_t3184820923::get_offset_of_newPos_2(),
+	loadLocation_t3184820923::get_offset_of_currScene_3(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_toHome_2(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromTC_3(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromMB_4(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromLR_5(),
 	loadScene_t1377993542::get_offset_of_newScene_2(),
 	navTrigger_t726877973::get_offset_of_moveXto_2(),
 	navTrigger_t726877973::get_offset_of_moveYto_3(),
@@ -13054,13 +13053,13 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1902] =
 	sizeof (audioRandomPlayGvr_t3248665366), -1, 0, 0,
 	sizeof (audioTrigger_t1648719106), -1, 0, 0,
 	sizeof (audioTriggerAlt_t4039923015), -1, 0, 0,
-	sizeof (gvrHeadRot_t1979541748), -1, 0, 0,
 	sizeof (homeIcon_t3808435704), -1, 0, 0,
-	sizeof (loadLocation_t3184820923), -1, sizeof(loadLocation_t3184820923_StaticFields), 0,
+	sizeof (loadLocation_t3184820923), -1, 0, 0,
 	sizeof (loadLocationDoor_t3861857545), -1, 0, 0,
-	sizeof (loadLocationInit_t3862005355), -1, 0, 0,
+	sizeof (loadLocationInit_t3862005355), -1, sizeof(loadLocationInit_t3862005355_StaticFields), 0,
 	sizeof (loadScene_t1377993542), -1, 0, 0,
 	sizeof (navTrigger_t726877973), -1, 0, 0,
+	sizeof (splashScreen_t2428448179), -1, 0, 0,
 	sizeof (videoMarker_t853609621), -1, 0, 0,
 	sizeof (videoTrigger_t3087919293), -1, 0, 0,
 	sizeof (videoTriggerStart_t1940838821), -1, 0, 0,

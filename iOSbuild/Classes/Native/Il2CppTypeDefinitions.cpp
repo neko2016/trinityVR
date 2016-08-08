@@ -15238,26 +15238,26 @@ extern const Il2CppType audioTrigger_t1648719106_1_0_0 = { (void*)1883, 0, IL2CP
 extern const Il2CppType audioTriggerAlt_t4039923015_0_0_0 = { (void*)1884, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType audioTriggerAlt_t4039923015_1_0_0 = { (void*)1884, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType gvrHeadRot_t1979541748_0_0_0 = { (void*)1885, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType gvrHeadRot_t1979541748_1_0_0 = { (void*)1885, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType homeIcon_t3808435704_0_0_0 = { (void*)1885, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType homeIcon_t3808435704_1_0_0 = { (void*)1885, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType homeIcon_t3808435704_0_0_0 = { (void*)1886, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType homeIcon_t3808435704_1_0_0 = { (void*)1886, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType loadLocation_t3184820923_0_0_0 = { (void*)1886, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType loadLocation_t3184820923_1_0_0 = { (void*)1886, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType loadLocation_t3184820923_0_0_0 = { (void*)1887, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType loadLocation_t3184820923_1_0_0 = { (void*)1887, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType loadLocationDoor_t3861857545_0_0_0 = { (void*)1887, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType loadLocationDoor_t3861857545_1_0_0 = { (void*)1887, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType loadLocationDoor_t3861857545_0_0_0 = { (void*)1888, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType loadLocationDoor_t3861857545_1_0_0 = { (void*)1888, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType loadLocationInit_t3862005355_0_0_0 = { (void*)1888, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType loadLocationInit_t3862005355_1_0_0 = { (void*)1888, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType loadLocationInit_t3862005355_0_0_0 = { (void*)1889, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType loadLocationInit_t3862005355_1_0_0 = { (void*)1889, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType loadScene_t1377993542_0_0_0 = { (void*)1889, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType loadScene_t1377993542_1_0_0 = { (void*)1889, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType loadScene_t1377993542_0_0_0 = { (void*)1890, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType loadScene_t1377993542_1_0_0 = { (void*)1890, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType navTrigger_t726877973_0_0_0 = { (void*)1890, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType navTrigger_t726877973_1_0_0 = { (void*)1890, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType navTrigger_t726877973_0_0_0 = { (void*)1891, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType navTrigger_t726877973_1_0_0 = { (void*)1891, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType splashScreen_t2428448179_0_0_0 = { (void*)1891, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType splashScreen_t2428448179_1_0_0 = { (void*)1891, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 extern const Il2CppType videoMarker_t853609621_0_0_0 = { (void*)1892, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType videoMarker_t853609621_1_0_0 = { (void*)1892, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
@@ -23460,9 +23460,9 @@ extern const Il2CppType* const  g_Il2CppTypeTable[8162] =
 	&GameObjectU5BU5D_t3499186955_0_0_1,
 	&audioMarker_t252994480_0_0_0,
 	&audioMarker_t252994480_1_0_0,
-	&AudioSource_t3628549054_0_0_6,
 	&audioRandomPlay_t2791960333_0_0_0,
 	&audioRandomPlay_t2791960333_1_0_0,
+	&AudioSource_t3628549054_0_0_6,
 	&audioRandomPlayGvr_t3248665366_0_0_0,
 	&audioRandomPlayGvr_t3248665366_1_0_0,
 	&GvrAudioSource_t2139450958_0_0_6,
@@ -23470,8 +23470,6 @@ extern const Il2CppType* const  g_Il2CppTypeTable[8162] =
 	&audioTrigger_t1648719106_1_0_0,
 	&audioTriggerAlt_t4039923015_0_0_0,
 	&audioTriggerAlt_t4039923015_1_0_0,
-	&gvrHeadRot_t1979541748_0_0_0,
-	&gvrHeadRot_t1979541748_1_0_0,
 	&homeIcon_t3808435704_0_0_0,
 	&homeIcon_t3808435704_1_0_0,
 	&loadLocation_t3184820923_0_0_0,
@@ -23485,6 +23483,8 @@ extern const Il2CppType* const  g_Il2CppTypeTable[8162] =
 	&loadScene_t1377993542_1_0_0,
 	&navTrigger_t726877973_0_0_0,
 	&navTrigger_t726877973_1_0_0,
+	&splashScreen_t2428448179_0_0_0,
+	&splashScreen_t2428448179_1_0_0,
 	&videoMarker_t853609621_0_0_0,
 	&videoMarker_t853609621_1_0_0,
 	&videoTrigger_t3087919293_0_0_0,

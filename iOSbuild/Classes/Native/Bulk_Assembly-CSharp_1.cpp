@@ -13,8 +13,6 @@
 #include <limits>
 #include <assert.h>
 
-// MutablePose3D
-struct MutablePose3D_t1273683304;
 // navTrigger
 struct navTrigger_t726877973;
 // Pose3D
@@ -107,6 +105,8 @@ struct PointerEventData_t3205101634;
 struct SphereMirror_t167396876;
 // UnityEngine.MeshFilter
 struct MeshFilter_t4177078322;
+// splashScreen
+struct splashScreen_t2428448179;
 // StereoController
 struct StereoController_t1637909972;
 // GvrEye[]
@@ -165,27 +165,25 @@ struct vrTrueFalse_t812900569;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
-#include "AssemblyU2DCSharp_MutablePose3D1273683304.h"
-#include "AssemblyU2DCSharp_MutablePose3D1273683304MethodDeclarations.h"
-#include "mscorlib_System_Void2779279689.h"
-#include "AssemblyU2DCSharp_Pose3D2396367586MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector33525329789.h"
-#include "UnityEngine_UnityEngine_Quaternion1891715979.h"
-#include "UnityEngine_UnityEngine_Matrix4x4277289660.h"
-#include "UnityEngine_UnityEngine_Matrix4x4277289660MethodDeclarations.h"
-#include "AssemblyU2DCSharp_Pose3D2396367586.h"
 #include "AssemblyU2DCSharp_navTrigger726877973.h"
 #include "AssemblyU2DCSharp_navTrigger726877973MethodDeclarations.h"
+#include "mscorlib_System_Void2779279689.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector33525329789MethodDeclarations.h"
 #include "mscorlib_System_Single958209021.h"
+#include "UnityEngine_UnityEngine_Vector33525329789.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform284553113MethodDeclarations.h"
 #include "mscorlib_System_String968488902.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102.h"
 #include "UnityEngine_UnityEngine_Transform284553113.h"
+#include "AssemblyU2DCSharp_Pose3D2396367586.h"
+#include "AssemblyU2DCSharp_Pose3D2396367586MethodDeclarations.h"
 #include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Quaternion1891715979MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Matrix4x4277289660MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Quaternion1891715979.h"
+#include "UnityEngine_UnityEngine_Matrix4x4277289660.h"
 #include "UnityEngine_UnityEngine_Vector43525329790MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector43525329790.h"
 #include "mscorlib_System_Int322847414787.h"
@@ -334,6 +332,8 @@ struct vrTrueFalse_t812900569;
 #include "UnityEngine_UnityEngine_MeshFilter4177078322.h"
 #include "UnityEngine_UnityEngine_Component2126946602.h"
 #include "UnityEngine_UnityEngine_Mesh1525280346.h"
+#include "AssemblyU2DCSharp_splashScreen2428448179.h"
+#include "AssemblyU2DCSharp_splashScreen2428448179MethodDeclarations.h"
 #include "AssemblyU2DCSharp_StereoController1637909972.h"
 #include "AssemblyU2DCSharp_StereoController1637909972MethodDeclarations.h"
 #include "Assembly-CSharp_ArrayTypes.h"
@@ -501,64 +501,6 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void MutablePose3D::.ctor()
-extern TypeInfo* Pose3D_t2396367586_il2cpp_TypeInfo_var;
-extern const uint32_t MutablePose3D__ctor_m109975811_MetadataUsageId;
-extern "C"  void MutablePose3D__ctor_m109975811 (MutablePose3D_t1273683304 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MutablePose3D__ctor_m109975811_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Pose3D_t2396367586_il2cpp_TypeInfo_var);
-		Pose3D__ctor_m184997881(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MutablePose3D::Set(UnityEngine.Vector3,UnityEngine.Quaternion)
-extern "C"  void MutablePose3D_Set_m735260187 (MutablePose3D_t1273683304 * __this, Vector3_t3525329789  ___position, Quaternion_t1891715979  ___orientation, const MethodInfo* method)
-{
-	{
-		Vector3_t3525329789  L_0 = ___position;
-		Quaternion_t1891715979  L_1 = ___orientation;
-		Pose3D_Set_m1511997201(__this, L_0, L_1, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MutablePose3D::Set(UnityEngine.Matrix4x4)
-extern "C"  void MutablePose3D_Set_m1451198039 (MutablePose3D_t1273683304 * __this, Matrix4x4_t277289660  ___matrix, const MethodInfo* method)
-{
-	{
-		Matrix4x4_t277289660  L_0 = ___matrix;
-		Pose3D_Set_m27658145(__this, L_0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MutablePose3D::SetRightHanded(UnityEngine.Matrix4x4)
-extern TypeInfo* Pose3D_t2396367586_il2cpp_TypeInfo_var;
-extern const uint32_t MutablePose3D_SetRightHanded_m1198386545_MetadataUsageId;
-extern "C"  void MutablePose3D_SetRightHanded_m1198386545 (MutablePose3D_t1273683304 * __this, Matrix4x4_t277289660  ___matrix, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MutablePose3D_SetRightHanded_m1198386545_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Pose3D_t2396367586_il2cpp_TypeInfo_var);
-		Matrix4x4_t277289660  L_0 = ((Pose3D_t2396367586_StaticFields*)Pose3D_t2396367586_il2cpp_TypeInfo_var->static_fields)->get_flipZ_0();
-		Matrix4x4_t277289660  L_1 = ___matrix;
-		Matrix4x4_t277289660  L_2 = Matrix4x4_op_Multiply_m4108203689(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		Matrix4x4_t277289660  L_3 = ((Pose3D_t2396367586_StaticFields*)Pose3D_t2396367586_il2cpp_TypeInfo_var->static_fields)->get_flipZ_0();
-		Matrix4x4_t277289660  L_4 = Matrix4x4_op_Multiply_m4108203689(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
-		MutablePose3D_Set_m1451198039(__this, L_4, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void navTrigger::.ctor()
 extern "C"  void navTrigger__ctor_m3862853926 (navTrigger_t726877973 * __this, const MethodInfo* method)
 {
@@ -16844,6 +16786,23 @@ IL_0050:
 extern "C"  void SphereMirror_Update_m3040303838 (SphereMirror_t167396876 * __this, const MethodInfo* method)
 {
 	{
+		return;
+	}
+}
+// System.Void splashScreen::.ctor()
+extern "C"  void splashScreen__ctor_m371555912 (splashScreen_t2428448179 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void splashScreen::Start()
+extern "C"  void splashScreen_Start_m3613661000 (splashScreen_t2428448179 * __this, const MethodInfo* method)
+{
+	{
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		Object_Destroy_m2260435093(NULL /*static, unused*/, L_0, (8.0f), /*hidden argument*/NULL);
 		return;
 	}
 }

@@ -35,8 +35,8 @@ public:
 	AudioSource_t3628549054 * ___audioSource_3;
 	// System.Boolean audioImgMarker::isPlaying
 	bool ___isPlaying_4;
-	// UnityEngine.GameObject[] audioImgMarker::allOtherAudio
-	GameObjectU5BU5D_t3499186955* ___allOtherAudio_5;
+	// UnityEngine.GameObject[] audioImgMarker::allAudioNAR
+	GameObjectU5BU5D_t3499186955* ___allAudioNAR_5;
 
 public:
 	inline static int32_t get_offset_of_imagePanel_2() { return static_cast<int32_t>(offsetof(audioImgMarker_t3924586151, ___imagePanel_2)); }
@@ -65,13 +65,13 @@ public:
 		___isPlaying_4 = value;
 	}
 
-	inline static int32_t get_offset_of_allOtherAudio_5() { return static_cast<int32_t>(offsetof(audioImgMarker_t3924586151, ___allOtherAudio_5)); }
-	inline GameObjectU5BU5D_t3499186955* get_allOtherAudio_5() const { return ___allOtherAudio_5; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_allOtherAudio_5() { return &___allOtherAudio_5; }
-	inline void set_allOtherAudio_5(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_allAudioNAR_5() { return static_cast<int32_t>(offsetof(audioImgMarker_t3924586151, ___allAudioNAR_5)); }
+	inline GameObjectU5BU5D_t3499186955* get_allAudioNAR_5() const { return ___allAudioNAR_5; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioNAR_5() { return &___allAudioNAR_5; }
+	inline void set_allAudioNAR_5(GameObjectU5BU5D_t3499186955* value)
 	{
-		___allOtherAudio_5 = value;
-		Il2CppCodeGenWriteBarrier(&___allOtherAudio_5, value);
+		___allAudioNAR_5 = value;
+		Il2CppCodeGenWriteBarrier(&___allAudioNAR_5, value);
 	}
 };
 

@@ -3,26 +3,31 @@ using System.Collections;
 
 public class audioMarker : MonoBehaviour {
 
-	public AudioSource myAudio;
-	private GameObject[] allOtherAudio;
+	private AudioSource myAudio;
+	private GameObject[] allAudioNAR;
 
 	// Use this for initialization
 	void Start () {
 		myAudio = gameObject.GetComponent<AudioSource> (); // retrieves an AudioSource from a GameObject
-		allOtherAudio = GameObject.FindGameObjectsWithTag("Audio");
+		allAudioNAR = GameObject.FindGameObjectsWithTag("NAR");
 	}
 
 	public void markerTriggered() {
 		
 		if (!myAudio.isPlaying) {
 			
-			foreach (GameObject item in allOtherAudio) {
-				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 0.5f));
-				//item.GetComponent<AudioSource> ().Stop();
+			foreach (GameObject item in allAudioNAR) {
+				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
 			}
+
 			myAudio.Play ();
-		} else {
+
+		} 
+
+		else {
+			
 			StartCoroutine(audioFadeOut.FadeOut(myAudio, 0.5f));
+
 		}
 	}
 }

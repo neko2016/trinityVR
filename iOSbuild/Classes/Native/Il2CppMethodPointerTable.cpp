@@ -11689,9 +11689,6 @@ extern "C" void HeadUpdatedDelegate__ctor_m3746727627 ();
 extern "C" void HeadUpdatedDelegate_Invoke_m2875826333 ();
 extern "C" void HeadUpdatedDelegate_BeginInvoke_m1741573024 ();
 extern "C" void HeadUpdatedDelegate_EndInvoke_m1173821019 ();
-extern "C" void gvrHeadRot__ctor_m1046676007 ();
-extern "C" void gvrHeadRot_Start_m4288781095 ();
-extern "C" void gvrHeadRot_Update_m4109047238 ();
 extern "C" void GvrPostRender__ctor_m112426386 ();
 extern "C" void GvrPostRender__cctor_m3003121755 ();
 extern "C" void GvrPostRender_get_cam_m2485717207 ();
@@ -12549,6 +12546,8 @@ extern "C" void SeekBarCtrl_OnDrag_m91731052 ();
 extern "C" void SphereMirror__ctor_m2674768399 ();
 extern "C" void SphereMirror_Start_m1621906191 ();
 extern "C" void SphereMirror_Update_m3040303838 ();
+extern "C" void splashScreen__ctor_m371555912 ();
+extern "C" void splashScreen_Start_m3613661000 ();
 extern "C" void StereoController__ctor_m3477860167 ();
 extern "C" void StereoController_get_Eyes_m3398665077 ();
 extern "C" void StereoController_get_Head_m1091666358 ();
@@ -12612,7 +12611,7 @@ extern "C" void vrTrueFalse__ctor_m1230274226 ();
 extern "C" void vrTrueFalse_Start_m177412018 ();
 extern "C" void vrTrueFalse_makeVRtrue_m3469953834 ();
 extern "C" void vrTrueFalse_makeVRfalse_m159705257 ();
-extern const methodPointerType g_MethodPointers[12601] = 
+extern const methodPointerType g_MethodPointers[12600] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -24292,9 +24291,6 @@ extern const methodPointerType g_MethodPointers[12601] =
 	HeadUpdatedDelegate_Invoke_m2875826333,
 	HeadUpdatedDelegate_BeginInvoke_m1741573024,
 	HeadUpdatedDelegate_EndInvoke_m1173821019,
-	gvrHeadRot__ctor_m1046676007,
-	gvrHeadRot_Start_m4288781095,
-	gvrHeadRot_Update_m4109047238,
 	GvrPostRender__ctor_m112426386,
 	GvrPostRender__cctor_m3003121755,
 	GvrPostRender_get_cam_m2485717207,
@@ -25152,6 +25148,8 @@ extern const methodPointerType g_MethodPointers[12601] =
 	SphereMirror__ctor_m2674768399,
 	SphereMirror_Start_m1621906191,
 	SphereMirror_Update_m3040303838,
+	splashScreen__ctor_m371555912,
+	splashScreen_Start_m3613661000,
 	StereoController__ctor_m3477860167,
 	StereoController_get_Eyes_m3398665077,
 	StereoController_get_Head_m1091666358,

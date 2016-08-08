@@ -6,7 +6,7 @@ public class audioImgMarker : MonoBehaviour {
 	private Transform imagePanel;
 	private AudioSource audioSource;
 	private bool isPlaying; 
-	private GameObject[] allOtherAudio;
+	private GameObject[] allAudioNAR;
 
 
 	// Use this for initialization
@@ -14,7 +14,7 @@ public class audioImgMarker : MonoBehaviour {
 		imagePanel = transform.Find ("imagePanel");
 		imagePanel.gameObject.SetActive (false);
 		audioSource = GetComponent<AudioSource> ();
-		allOtherAudio = GameObject.FindGameObjectsWithTag("Audio");
+		allAudioNAR = GameObject.FindGameObjectsWithTag("NAR");
 		isPlaying = false;
 	}
 
@@ -24,9 +24,10 @@ public class audioImgMarker : MonoBehaviour {
 			imagePanel.gameObject.SetActive (true);
 
 			if (!audioSource.isPlaying) {
-				foreach (GameObject item in allOtherAudio) {
-					StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 0.5f));
+				foreach (GameObject item in allAudioNAR) {
+					StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
 				}
+
 				audioSource.Play ();
 			}
 

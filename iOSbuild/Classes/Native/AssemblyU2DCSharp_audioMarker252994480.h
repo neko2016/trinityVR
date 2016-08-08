@@ -29,8 +29,8 @@ struct  audioMarker_t252994480  : public MonoBehaviour_t3012272455
 public:
 	// UnityEngine.AudioSource audioMarker::myAudio
 	AudioSource_t3628549054 * ___myAudio_2;
-	// UnityEngine.GameObject[] audioMarker::allOtherAudio
-	GameObjectU5BU5D_t3499186955* ___allOtherAudio_3;
+	// UnityEngine.GameObject[] audioMarker::allAudioNAR
+	GameObjectU5BU5D_t3499186955* ___allAudioNAR_3;
 
 public:
 	inline static int32_t get_offset_of_myAudio_2() { return static_cast<int32_t>(offsetof(audioMarker_t252994480, ___myAudio_2)); }
@@ -42,13 +42,13 @@ public:
 		Il2CppCodeGenWriteBarrier(&___myAudio_2, value);
 	}
 
-	inline static int32_t get_offset_of_allOtherAudio_3() { return static_cast<int32_t>(offsetof(audioMarker_t252994480, ___allOtherAudio_3)); }
-	inline GameObjectU5BU5D_t3499186955* get_allOtherAudio_3() const { return ___allOtherAudio_3; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_allOtherAudio_3() { return &___allOtherAudio_3; }
-	inline void set_allOtherAudio_3(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_allAudioNAR_3() { return static_cast<int32_t>(offsetof(audioMarker_t252994480, ___allAudioNAR_3)); }
+	inline GameObjectU5BU5D_t3499186955* get_allAudioNAR_3() const { return ___allAudioNAR_3; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioNAR_3() { return &___allAudioNAR_3; }
+	inline void set_allAudioNAR_3(GameObjectU5BU5D_t3499186955* value)
 	{
-		___allOtherAudio_3 = value;
-		Il2CppCodeGenWriteBarrier(&___allOtherAudio_3, value);
+		___allAudioNAR_3 = value;
+		Il2CppCodeGenWriteBarrier(&___allAudioNAR_3, value);
 	}
 };
 
