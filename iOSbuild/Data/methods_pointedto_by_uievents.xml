@@ -1,0 +1,26 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="loadScene">
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+		</type>
+		<type fullname="navTrigger">
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+		</type>
+	</assembly>
+</linker>

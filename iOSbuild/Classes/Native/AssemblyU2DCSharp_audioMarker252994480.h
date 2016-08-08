@@ -1,0 +1,57 @@
+﻿#pragma once
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <stdint.h>
+
+// UnityEngine.AudioSource
+struct AudioSource_t3628549054;
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3499186955;
+
+#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// audioMarker
+struct  audioMarker_t252994480  : public MonoBehaviour_t3012272455
+{
+public:
+	// UnityEngine.AudioSource audioMarker::myAudio
+	AudioSource_t3628549054 * ___myAudio_2;
+	// UnityEngine.GameObject[] audioMarker::allOtherAudio
+	GameObjectU5BU5D_t3499186955* ___allOtherAudio_3;
+
+public:
+	inline static int32_t get_offset_of_myAudio_2() { return static_cast<int32_t>(offsetof(audioMarker_t252994480, ___myAudio_2)); }
+	inline AudioSource_t3628549054 * get_myAudio_2() const { return ___myAudio_2; }
+	inline AudioSource_t3628549054 ** get_address_of_myAudio_2() { return &___myAudio_2; }
+	inline void set_myAudio_2(AudioSource_t3628549054 * value)
+	{
+		___myAudio_2 = value;
+		Il2CppCodeGenWriteBarrier(&___myAudio_2, value);
+	}
+
+	inline static int32_t get_offset_of_allOtherAudio_3() { return static_cast<int32_t>(offsetof(audioMarker_t252994480, ___allOtherAudio_3)); }
+	inline GameObjectU5BU5D_t3499186955* get_allOtherAudio_3() const { return ___allOtherAudio_3; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allOtherAudio_3() { return &___allOtherAudio_3; }
+	inline void set_allOtherAudio_3(GameObjectU5BU5D_t3499186955* value)
+	{
+		___allOtherAudio_3 = value;
+		Il2CppCodeGenWriteBarrier(&___allOtherAudio_3, value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
