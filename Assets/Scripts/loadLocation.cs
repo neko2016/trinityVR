@@ -4,7 +4,6 @@ using System.Collections;
 
 public class loadLocation : MonoBehaviour {
 
-
 	private Vector3 newPos;
 
 	private Scene currScene;
