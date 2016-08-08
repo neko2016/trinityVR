@@ -13,6 +13,14 @@
 #include <limits>
 #include <assert.h>
 
+// MediaPlayerFullScreenCtrl
+struct MediaPlayerFullScreenCtrl_t326609931;
+// MediaPlayerCtrl
+struct MediaPlayerCtrl_t3572035536;
+// System.Object
+struct Il2CppObject;
+// MutablePose3D
+struct MutablePose3D_t1273683304;
 // navTrigger
 struct navTrigger_t726877973;
 // Pose3D
@@ -33,8 +41,6 @@ struct OrientationEvent_t756413130;
 struct KeyEvent_t541813659;
 // Google.ProtocolBuffers.ICodedOutputStream
 struct ICodedOutputStream_t9554353;
-// System.Object
-struct Il2CppObject;
 // System.IO.TextWriter
 struct TextWriter_t1689927879;
 // Google.ProtocolBuffers.ByteString
@@ -147,8 +153,6 @@ struct VideoCopyTexture_t908209291;
 struct MeshRenderer_t1217738301;
 // videoMarker
 struct videoMarker_t853609621;
-// MediaPlayerCtrl
-struct MediaPlayerCtrl_t3572035536;
 // videoTrigger
 struct videoTrigger_t3087919293;
 // videoTriggerStart
@@ -165,28 +169,37 @@ struct vrTrueFalse_t812900569;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
-#include "AssemblyU2DCSharp_navTrigger726877973.h"
-#include "AssemblyU2DCSharp_navTrigger726877973MethodDeclarations.h"
+#include "AssemblyU2DCSharp_MediaPlayerFullScreenCtrl326609931.h"
+#include "AssemblyU2DCSharp_MediaPlayerFullScreenCtrl326609931MethodDeclarations.h"
 #include "mscorlib_System_Void2779279689.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector33525329789MethodDeclarations.h"
-#include "mscorlib_System_Single958209021.h"
-#include "UnityEngine_UnityEngine_Vector33525329789.h"
+#include "UnityEngine_UnityEngine_Screen3994030297MethodDeclarations.h"
+#include "mscorlib_System_Int322847414787.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector33525329789MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform284553113MethodDeclarations.h"
-#include "mscorlib_System_String968488902.h"
+#include "UnityEngine_UnityEngine_Component2126946602MethodDeclarations.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl3572035536MethodDeclarations.h"
+#include "mscorlib_System_Single958209021.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102.h"
 #include "UnityEngine_UnityEngine_Transform284553113.h"
-#include "AssemblyU2DCSharp_Pose3D2396367586.h"
+#include "UnityEngine_UnityEngine_Vector33525329789.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl3572035536.h"
+#include "UnityEngine_UnityEngine_Component2126946602.h"
+#include "AssemblyU2DCSharp_MutablePose3D1273683304.h"
+#include "AssemblyU2DCSharp_MutablePose3D1273683304MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Pose3D2396367586MethodDeclarations.h"
-#include "mscorlib_System_Object837106420MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Quaternion1891715979MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Matrix4x4277289660MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Quaternion1891715979.h"
 #include "UnityEngine_UnityEngine_Matrix4x4277289660.h"
+#include "UnityEngine_UnityEngine_Matrix4x4277289660MethodDeclarations.h"
+#include "AssemblyU2DCSharp_Pose3D2396367586.h"
+#include "AssemblyU2DCSharp_navTrigger726877973.h"
+#include "AssemblyU2DCSharp_navTrigger726877973MethodDeclarations.h"
+#include "mscorlib_System_String968488902.h"
+#include "mscorlib_System_Object837106420MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Quaternion1891715979MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector43525329790MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector43525329790.h"
-#include "mscorlib_System_Int322847414787.h"
 #include "AssemblyU2DCSharp_proto_PhoneEvent2801000292.h"
 #include "AssemblyU2DCSharp_proto_PhoneEvent2801000292MethodDeclarations.h"
 #include "Google_ProtocolBuffers_Google_ProtocolBuffers_Gene1737966428MethodDeclarations.h"
@@ -313,8 +326,6 @@ struct vrTrueFalse_t812900569;
 #include "AssemblyU2DCSharp_SeekBarCtrl3766823782MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Time1525492538MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
-#include "AssemblyU2DCSharp_MediaPlayerCtrl3572035536MethodDeclarations.h"
-#include "AssemblyU2DCSharp_MediaPlayerCtrl3572035536.h"
 #include "UnityEngine_UnityEngine_Object3878351788.h"
 #include "UnityEngine_UI_UnityEngine_UI_Slider1468074762.h"
 #include "UnityEngine_UI_UnityEngine_UI_Slider1468074762MethodDeclarations.h"
@@ -323,14 +334,12 @@ struct vrTrueFalse_t812900569;
 #include "mscorlib_System_String968488902MethodDeclarations.h"
 #include "AssemblyU2DCSharp_SphereMirror167396876.h"
 #include "AssemblyU2DCSharp_SphereMirror167396876MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Component2126946602MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_MeshFilter4177078322MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Mesh1525280346MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector23525329788MethodDeclarations.h"
 #include "UnityEngine_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_Vector23525329788.h"
 #include "UnityEngine_UnityEngine_MeshFilter4177078322.h"
-#include "UnityEngine_UnityEngine_Component2126946602.h"
 #include "UnityEngine_UnityEngine_Mesh1525280346.h"
 #include "AssemblyU2DCSharp_splashScreen2428448179.h"
 #include "AssemblyU2DCSharp_splashScreen2428448179MethodDeclarations.h"
@@ -372,7 +381,6 @@ struct vrTrueFalse_t812900569;
 #include "UnityEngine_UnityEngine_RenderTexture12905170.h"
 #include "UnityEngine_UnityEngine_GL1522887986MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RenderTexture12905170MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Screen3994030297MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color1588175760MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Graphics1688236792MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color1588175760.h"
@@ -404,6 +412,11 @@ struct vrTrueFalse_t812900569;
 #include "AssemblyU2DCSharp_vrTrueFalse812900569.h"
 #include "AssemblyU2DCSharp_vrTrueFalse812900569MethodDeclarations.h"
 
+// !!0 UnityEngine.Component::GetComponent<System.Object>()
+extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
+#define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<MediaPlayerCtrl>()
+#define Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(__this, method) ((  MediaPlayerCtrl_t3572035536 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // System.Int32 System.Array::BinarySearch<System.Object>(!!0[],!!0,System.Collections.Generic.IComparer`1<!!0>)
 extern "C"  int32_t Array_BinarySearch_TisIl2CppObject_m2215844722_gshared (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t11523773* p0, Il2CppObject * p1, Il2CppObject* p2, const MethodInfo* method);
 #define Array_BinarySearch_TisIl2CppObject_m2215844722(__this /* static, unused */, p0, p1, p2, method) ((  int32_t (*) (Il2CppObject * /* static, unused */, ObjectU5BU5D_t11523773*, Il2CppObject *, Il2CppObject*, const MethodInfo*))Array_BinarySearch_TisIl2CppObject_m2215844722_gshared)(__this /* static, unused */, p0, p1, p2, method)
@@ -435,9 +448,6 @@ extern "C"  void ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358_gs
 #define ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358(__this, p0, p1, p2, p3, p4, method) ((  void (*) (Il2CppObject *, uint32_t, String_t*, Il2CppObject*, Il2CppObject *, ExtensionRegistry_t1909229278 *, const MethodInfo*))ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358_gshared)(__this, p0, p1, p2, p3, p4, method)
 // System.Void Google.ProtocolBuffers.ICodedInputStream::ReadMessageArray<proto.PhoneEvent/Types/MotionEvent/Types/Pointer>(System.UInt32,System.String,System.Collections.Generic.ICollection`1<!!0>,!!0,Google.ProtocolBuffers.ExtensionRegistry)
 #define ICodedInputStream_ReadMessageArray_TisPointer_t1264047646_m1771033171(__this, p0, p1, p2, p3, p4, method) ((  void (*) (Il2CppObject *, uint32_t, String_t*, Il2CppObject*, Pointer_t1264047646 *, ExtensionRegistry_t1909229278 *, const MethodInfo*))ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358_gshared)(__this, p0, p1, p2, p3, p4, method)
-// !!0 UnityEngine.Component::GetComponent<System.Object>()
-extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
-#define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.MeshFilter>()
 #define Component_GetComponent_TisMeshFilter_t4177078322_m3816897097(__this, method) ((  MeshFilter_t4177078322 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0[] UnityEngine.Component::GetComponentsInChildren<System.Object>(System.Boolean)
@@ -485,8 +495,6 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gs
 #define Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, method) ((  Renderer_t1092684080 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.MeshRenderer>()
 #define Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022(__this, method) ((  MeshRenderer_t1217738301 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<MediaPlayerCtrl>()
-#define Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(__this, method) ((  MediaPlayerCtrl_t3572035536 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
 #define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
@@ -501,6 +509,153 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void MediaPlayerFullScreenCtrl::.ctor()
+extern "C"  void MediaPlayerFullScreenCtrl__ctor_m3590714816 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MediaPlayerFullScreenCtrl::Start()
+extern "C"  void MediaPlayerFullScreenCtrl_Start_m2537852608 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
+{
+	{
+		MediaPlayerFullScreenCtrl_Resize_m3995773560(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MediaPlayerFullScreenCtrl::Update()
+extern "C"  void MediaPlayerFullScreenCtrl_Update_m1369871693 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_m_iOrgWidth_3();
+		int32_t L_1 = Screen_get_width_m3080333084(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) == ((int32_t)L_1)))
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		MediaPlayerFullScreenCtrl_Resize_m3995773560(__this, /*hidden argument*/NULL);
+	}
+
+IL_0016:
+	{
+		int32_t L_2 = __this->get_m_iOrgHeight_4();
+		int32_t L_3 = Screen_get_height_m1504859443(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_2) == ((int32_t)L_3)))
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		MediaPlayerFullScreenCtrl_Resize_m3995773560(__this, /*hidden argument*/NULL);
+	}
+
+IL_002c:
+	{
+		return;
+	}
+}
+// System.Void MediaPlayerFullScreenCtrl::Resize()
+extern const MethodInfo* Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var;
+extern const uint32_t MediaPlayerFullScreenCtrl_Resize_m3995773560_MetadataUsageId;
+extern "C"  void MediaPlayerFullScreenCtrl_Resize_m3995773560 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MediaPlayerFullScreenCtrl_Resize_m3995773560_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		int32_t L_0 = Screen_get_width_m3080333084(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_iOrgWidth_3(L_0);
+		int32_t L_1 = Screen_get_height_m1504859443(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_iOrgHeight_4(L_1);
+		int32_t L_2 = __this->get_m_iOrgHeight_4();
+		int32_t L_3 = __this->get_m_iOrgWidth_3();
+		V_0 = ((float)((float)(((float)((float)L_2)))/(float)(((float)((float)L_3)))));
+		GameObject_t4012695102 * L_4 = __this->get_m_objVideo_2();
+		NullCheck(L_4);
+		Transform_t284553113 * L_5 = GameObject_get_transform_m1278640159(L_4, /*hidden argument*/NULL);
+		float L_6 = V_0;
+		float L_7 = V_0;
+		Vector3_t3525329789  L_8;
+		memset(&L_8, 0, sizeof(L_8));
+		Vector3__ctor_m2926210380(&L_8, ((float)((float)(20.0f)/(float)L_6)), ((float)((float)(20.0f)/(float)L_7)), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Transform_set_localScale_m310756934(L_5, L_8, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_9 = __this->get_m_objVideo_2();
+		NullCheck(L_9);
+		Transform_t284553113 * L_10 = GameObject_get_transform_m1278640159(L_9, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		MediaPlayerCtrl_t3572035536 * L_11 = Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(L_10, /*hidden argument*/Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var);
+		NullCheck(L_11);
+		MediaPlayerCtrl_Resize_m3319691773(L_11, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MutablePose3D::.ctor()
+extern TypeInfo* Pose3D_t2396367586_il2cpp_TypeInfo_var;
+extern const uint32_t MutablePose3D__ctor_m109975811_MetadataUsageId;
+extern "C"  void MutablePose3D__ctor_m109975811 (MutablePose3D_t1273683304 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MutablePose3D__ctor_m109975811_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Pose3D_t2396367586_il2cpp_TypeInfo_var);
+		Pose3D__ctor_m184997881(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MutablePose3D::Set(UnityEngine.Vector3,UnityEngine.Quaternion)
+extern "C"  void MutablePose3D_Set_m735260187 (MutablePose3D_t1273683304 * __this, Vector3_t3525329789  ___position, Quaternion_t1891715979  ___orientation, const MethodInfo* method)
+{
+	{
+		Vector3_t3525329789  L_0 = ___position;
+		Quaternion_t1891715979  L_1 = ___orientation;
+		Pose3D_Set_m1511997201(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MutablePose3D::Set(UnityEngine.Matrix4x4)
+extern "C"  void MutablePose3D_Set_m1451198039 (MutablePose3D_t1273683304 * __this, Matrix4x4_t277289660  ___matrix, const MethodInfo* method)
+{
+	{
+		Matrix4x4_t277289660  L_0 = ___matrix;
+		Pose3D_Set_m27658145(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void MutablePose3D::SetRightHanded(UnityEngine.Matrix4x4)
+extern TypeInfo* Pose3D_t2396367586_il2cpp_TypeInfo_var;
+extern const uint32_t MutablePose3D_SetRightHanded_m1198386545_MetadataUsageId;
+extern "C"  void MutablePose3D_SetRightHanded_m1198386545 (MutablePose3D_t1273683304 * __this, Matrix4x4_t277289660  ___matrix, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MutablePose3D_SetRightHanded_m1198386545_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Pose3D_t2396367586_il2cpp_TypeInfo_var);
+		Matrix4x4_t277289660  L_0 = ((Pose3D_t2396367586_StaticFields*)Pose3D_t2396367586_il2cpp_TypeInfo_var->static_fields)->get_flipZ_0();
+		Matrix4x4_t277289660  L_1 = ___matrix;
+		Matrix4x4_t277289660  L_2 = Matrix4x4_op_Multiply_m4108203689(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		Matrix4x4_t277289660  L_3 = ((Pose3D_t2396367586_StaticFields*)Pose3D_t2396367586_il2cpp_TypeInfo_var->static_fields)->get_flipZ_0();
+		Matrix4x4_t277289660  L_4 = Matrix4x4_op_Multiply_m4108203689(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		MutablePose3D_Set_m1451198039(__this, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void navTrigger::.ctor()
 extern "C"  void navTrigger__ctor_m3862853926 (navTrigger_t726877973 * __this, const MethodInfo* method)
 {

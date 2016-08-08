@@ -233,6 +233,10 @@ struct homeIcon_t3808435704;
 struct loadLocation_t3184820923;
 // loadLocationDoor
 struct loadLocationDoor_t3861857545;
+// loadLocationHome
+struct loadLocationHome_t3861976634;
+// loadLocationHome/<Example>c__Iterator7
+struct U3CExampleU3Ec__Iterator7_t4174890422;
 // loadLocationInit
 struct loadLocationInit_t3862005355;
 // loadScene
@@ -265,10 +269,6 @@ struct VideoFirstFrameReady_t1412571435;
 struct VideoReady_t363152904;
 // MediaPlayerCtrl/VideoResize
 struct VideoResize_t2668346607;
-// MediaPlayerFullScreenCtrl
-struct MediaPlayerFullScreenCtrl_t326609931;
-// MutablePose3D
-struct MutablePose3D_t1273683304;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -643,6 +643,12 @@ struct MutablePose3D_t1273683304;
 #include "AssemblyU2DCSharp_loadLocationInit3862005355MethodDeclarations.h"
 #include "AssemblyU2DCSharp_loadLocationDoor3861857545.h"
 #include "AssemblyU2DCSharp_loadLocationDoor3861857545MethodDeclarations.h"
+#include "AssemblyU2DCSharp_loadLocationHome3861976634.h"
+#include "AssemblyU2DCSharp_loadLocationHome3861976634MethodDeclarations.h"
+#include "AssemblyU2DCSharp_loadLocationHome_U3CExampleU3Ec_4174890422MethodDeclarations.h"
+#include "AssemblyU2DCSharp_loadLocationHome_U3CExampleU3Ec_4174890422.h"
+#include "UnityEngine_UnityEngine_WaitForSeconds1291133240MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_WaitForSeconds1291133240.h"
 #include "AssemblyU2DCSharp_loadScene1377993542.h"
 #include "AssemblyU2DCSharp_loadScene1377993542MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MedaiPlayerSampleGUI1334456284.h"
@@ -692,8 +698,6 @@ struct MutablePose3D_t1273683304;
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_MEDIA_SCALE3074099439MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_MEDIAPLAYER_ERRO2861322446MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_MEDIAPLAYER_STAT2874295127MethodDeclarations.h"
-#include "AssemblyU2DCSharp_MediaPlayerFullScreenCtrl326609931.h"
-#include "AssemblyU2DCSharp_MediaPlayerFullScreenCtrl326609931MethodDeclarations.h"
 
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
@@ -823,8 +827,6 @@ extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m2892359027_g
 #define GameObject_GetComponent_TisRawImage_t3831555132_m970532939(__this, method) ((  RawImage_t3831555132 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.MeshRenderer>()
 #define GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<MediaPlayerCtrl>()
-#define Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(__this, method) ((  MediaPlayerCtrl_t3572035536 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -24134,6 +24136,150 @@ IL_005a:
 		return;
 	}
 }
+// System.Void loadLocationHome::.ctor()
+extern "C"  void loadLocationHome__ctor_m295727521 (loadLocationHome_t3861976634 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void loadLocationHome::Start()
+extern "C"  void loadLocationHome_Start_m3537832609 (loadLocationHome_t3861976634 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = loadLocationHome_Example_m4182479585(__this, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Collections.IEnumerator loadLocationHome::Example()
+extern TypeInfo* U3CExampleU3Ec__Iterator7_t4174890422_il2cpp_TypeInfo_var;
+extern const uint32_t loadLocationHome_Example_m4182479585_MetadataUsageId;
+extern "C"  Il2CppObject * loadLocationHome_Example_m4182479585 (loadLocationHome_t3861976634 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (loadLocationHome_Example_m4182479585_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	U3CExampleU3Ec__Iterator7_t4174890422 * V_0 = NULL;
+	{
+		U3CExampleU3Ec__Iterator7_t4174890422 * L_0 = (U3CExampleU3Ec__Iterator7_t4174890422 *)il2cpp_codegen_object_new(U3CExampleU3Ec__Iterator7_t4174890422_il2cpp_TypeInfo_var);
+		U3CExampleU3Ec__Iterator7__ctor_m2989797914(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CExampleU3Ec__Iterator7_t4174890422 * L_1 = V_0;
+		return L_1;
+	}
+}
+// System.Void loadLocationHome/<Example>c__Iterator7::.ctor()
+extern "C"  void U3CExampleU3Ec__Iterator7__ctor_m2989797914 (U3CExampleU3Ec__Iterator7_t4174890422 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object loadLocationHome/<Example>c__Iterator7::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CExampleU3Ec__Iterator7_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3514267714 (U3CExampleU3Ec__Iterator7_t4174890422 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_1();
+		return L_0;
+	}
+}
+// System.Object loadLocationHome/<Example>c__Iterator7::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CExampleU3Ec__Iterator7_System_Collections_IEnumerator_get_Current_m1523990486 (U3CExampleU3Ec__Iterator7_t4174890422 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_1();
+		return L_0;
+	}
+}
+// System.Boolean loadLocationHome/<Example>c__Iterator7::MoveNext()
+extern TypeInfo* WaitForSeconds_t1291133240_il2cpp_TypeInfo_var;
+extern TypeInfo* loadLocationInit_t3862005355_il2cpp_TypeInfo_var;
+extern const uint32_t U3CExampleU3Ec__Iterator7_MoveNext_m1075703426_MetadataUsageId;
+extern "C"  bool U3CExampleU3Ec__Iterator7_MoveNext_m1075703426 (U3CExampleU3Ec__Iterator7_t4174890422 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CExampleU3Ec__Iterator7_MoveNext_m1075703426_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		int32_t L_0 = __this->get_U24PC_0();
+		V_0 = L_0;
+		__this->set_U24PC_0((-1));
+		uint32_t L_1 = V_0;
+		if (L_1 == 0)
+		{
+			goto IL_0021;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		goto IL_004a;
+	}
+
+IL_0021:
+	{
+		WaitForSeconds_t1291133240 * L_2 = (WaitForSeconds_t1291133240 *)il2cpp_codegen_object_new(WaitForSeconds_t1291133240_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m3184996201(L_2, (1.0f), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_2);
+		__this->set_U24PC_0(1);
+		goto IL_004c;
+	}
+
+IL_003d:
+	{
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_toHome_2((bool)1);
+		__this->set_U24PC_0((-1));
+	}
+
+IL_004a:
+	{
+		return (bool)0;
+	}
+
+IL_004c:
+	{
+		return (bool)1;
+	}
+	// Dead block : IL_004e: ldloc.1
+}
+// System.Void loadLocationHome/<Example>c__Iterator7::Dispose()
+extern "C"  void U3CExampleU3Ec__Iterator7_Dispose_m4055924695 (U3CExampleU3Ec__Iterator7_t4174890422 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24PC_0((-1));
+		return;
+	}
+}
+// System.Void loadLocationHome/<Example>c__Iterator7::Reset()
+extern TypeInfo* NotSupportedException_t1374155497_il2cpp_TypeInfo_var;
+extern const uint32_t U3CExampleU3Ec__Iterator7_Reset_m636230855_MetadataUsageId;
+extern "C"  void U3CExampleU3Ec__Iterator7_Reset_m636230855 (U3CExampleU3Ec__Iterator7_t4174890422 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CExampleU3Ec__Iterator7_Reset_m636230855_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		NotSupportedException_t1374155497 * L_0 = (NotSupportedException_t1374155497 *)il2cpp_codegen_object_new(NotSupportedException_t1374155497_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m149930845(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
 // System.Void loadLocationInit::.ctor()
 extern "C"  void loadLocationInit__ctor_m4113344656 (loadLocationInit_t3862005355 * __this, const MethodInfo* method)
 {
@@ -24142,19 +24288,19 @@ extern "C"  void loadLocationInit__ctor_m4113344656 (loadLocationInit_t386200535
 		return;
 	}
 }
-// System.Void loadLocationInit::OnTriggerEnter(UnityEngine.Collider)
+// System.Void loadLocationInit::Start()
 extern TypeInfo* loadLocationInit_t3862005355_il2cpp_TypeInfo_var;
-extern const uint32_t loadLocationInit_OnTriggerEnter_m2175847656_MetadataUsageId;
-extern "C"  void loadLocationInit_OnTriggerEnter_m2175847656 (loadLocationInit_t3862005355 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
+extern const uint32_t loadLocationInit_Start_m3060482448_MetadataUsageId;
+extern "C"  void loadLocationInit_Start_m3060482448 (loadLocationInit_t3862005355 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (loadLocationInit_OnTriggerEnter_m2175847656_MetadataUsageId);
+		il2cpp_codegen_initialize_method (loadLocationInit_Start_m3060482448_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_toHome_2((bool)1);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_toHome_2((bool)0);
 		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromTC_3((bool)0);
 		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromMB_4((bool)0);
 		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)0);
@@ -29251,153 +29397,6 @@ extern "C"  Il2CppObject * VideoResize_BeginInvoke_m2977844298 (VideoResize_t266
 extern "C"  void VideoResize_EndInvoke_m3531713687 (VideoResize_t2668346607 * __this, Il2CppObject * ___result, const MethodInfo* method)
 {
 	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
-}
-// System.Void MediaPlayerFullScreenCtrl::.ctor()
-extern "C"  void MediaPlayerFullScreenCtrl__ctor_m3590714816 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
-{
-	{
-		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MediaPlayerFullScreenCtrl::Start()
-extern "C"  void MediaPlayerFullScreenCtrl_Start_m2537852608 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
-{
-	{
-		MediaPlayerFullScreenCtrl_Resize_m3995773560(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MediaPlayerFullScreenCtrl::Update()
-extern "C"  void MediaPlayerFullScreenCtrl_Update_m1369871693 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
-{
-	{
-		int32_t L_0 = __this->get_m_iOrgWidth_3();
-		int32_t L_1 = Screen_get_width_m3080333084(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if ((((int32_t)L_0) == ((int32_t)L_1)))
-		{
-			goto IL_0016;
-		}
-	}
-	{
-		MediaPlayerFullScreenCtrl_Resize_m3995773560(__this, /*hidden argument*/NULL);
-	}
-
-IL_0016:
-	{
-		int32_t L_2 = __this->get_m_iOrgHeight_4();
-		int32_t L_3 = Screen_get_height_m1504859443(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if ((((int32_t)L_2) == ((int32_t)L_3)))
-		{
-			goto IL_002c;
-		}
-	}
-	{
-		MediaPlayerFullScreenCtrl_Resize_m3995773560(__this, /*hidden argument*/NULL);
-	}
-
-IL_002c:
-	{
-		return;
-	}
-}
-// System.Void MediaPlayerFullScreenCtrl::Resize()
-extern const MethodInfo* Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var;
-extern const uint32_t MediaPlayerFullScreenCtrl_Resize_m3995773560_MetadataUsageId;
-extern "C"  void MediaPlayerFullScreenCtrl_Resize_m3995773560 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MediaPlayerFullScreenCtrl_Resize_m3995773560_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	float V_0 = 0.0f;
-	{
-		int32_t L_0 = Screen_get_width_m3080333084(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_m_iOrgWidth_3(L_0);
-		int32_t L_1 = Screen_get_height_m1504859443(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_m_iOrgHeight_4(L_1);
-		int32_t L_2 = __this->get_m_iOrgHeight_4();
-		int32_t L_3 = __this->get_m_iOrgWidth_3();
-		V_0 = ((float)((float)(((float)((float)L_2)))/(float)(((float)((float)L_3)))));
-		GameObject_t4012695102 * L_4 = __this->get_m_objVideo_2();
-		NullCheck(L_4);
-		Transform_t284553113 * L_5 = GameObject_get_transform_m1278640159(L_4, /*hidden argument*/NULL);
-		float L_6 = V_0;
-		float L_7 = V_0;
-		Vector3_t3525329789  L_8;
-		memset(&L_8, 0, sizeof(L_8));
-		Vector3__ctor_m2926210380(&L_8, ((float)((float)(20.0f)/(float)L_6)), ((float)((float)(20.0f)/(float)L_7)), (1.0f), /*hidden argument*/NULL);
-		NullCheck(L_5);
-		Transform_set_localScale_m310756934(L_5, L_8, /*hidden argument*/NULL);
-		GameObject_t4012695102 * L_9 = __this->get_m_objVideo_2();
-		NullCheck(L_9);
-		Transform_t284553113 * L_10 = GameObject_get_transform_m1278640159(L_9, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		MediaPlayerCtrl_t3572035536 * L_11 = Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(L_10, /*hidden argument*/Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var);
-		NullCheck(L_11);
-		MediaPlayerCtrl_Resize_m3319691773(L_11, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MutablePose3D::.ctor()
-extern TypeInfo* Pose3D_t2396367586_il2cpp_TypeInfo_var;
-extern const uint32_t MutablePose3D__ctor_m109975811_MetadataUsageId;
-extern "C"  void MutablePose3D__ctor_m109975811 (MutablePose3D_t1273683304 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MutablePose3D__ctor_m109975811_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Pose3D_t2396367586_il2cpp_TypeInfo_var);
-		Pose3D__ctor_m184997881(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MutablePose3D::Set(UnityEngine.Vector3,UnityEngine.Quaternion)
-extern "C"  void MutablePose3D_Set_m735260187 (MutablePose3D_t1273683304 * __this, Vector3_t3525329789  ___position, Quaternion_t1891715979  ___orientation, const MethodInfo* method)
-{
-	{
-		Vector3_t3525329789  L_0 = ___position;
-		Quaternion_t1891715979  L_1 = ___orientation;
-		Pose3D_Set_m1511997201(__this, L_0, L_1, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MutablePose3D::Set(UnityEngine.Matrix4x4)
-extern "C"  void MutablePose3D_Set_m1451198039 (MutablePose3D_t1273683304 * __this, Matrix4x4_t277289660  ___matrix, const MethodInfo* method)
-{
-	{
-		Matrix4x4_t277289660  L_0 = ___matrix;
-		Pose3D_Set_m27658145(__this, L_0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void MutablePose3D::SetRightHanded(UnityEngine.Matrix4x4)
-extern TypeInfo* Pose3D_t2396367586_il2cpp_TypeInfo_var;
-extern const uint32_t MutablePose3D_SetRightHanded_m1198386545_MetadataUsageId;
-extern "C"  void MutablePose3D_SetRightHanded_m1198386545 (MutablePose3D_t1273683304 * __this, Matrix4x4_t277289660  ___matrix, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MutablePose3D_SetRightHanded_m1198386545_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Pose3D_t2396367586_il2cpp_TypeInfo_var);
-		Matrix4x4_t277289660  L_0 = ((Pose3D_t2396367586_StaticFields*)Pose3D_t2396367586_il2cpp_TypeInfo_var->static_fields)->get_flipZ_0();
-		Matrix4x4_t277289660  L_1 = ___matrix;
-		Matrix4x4_t277289660  L_2 = Matrix4x4_op_Multiply_m4108203689(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		Matrix4x4_t277289660  L_3 = ((Pose3D_t2396367586_StaticFields*)Pose3D_t2396367586_il2cpp_TypeInfo_var->static_fields)->get_flipZ_0();
-		Matrix4x4_t277289660  L_4 = Matrix4x4_op_Multiply_m4108203689(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
-		MutablePose3D_Set_m1451198039(__this, L_4, /*hidden argument*/NULL);
-		return;
-	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

@@ -17,6 +17,11 @@
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
 		</type>
 		<type fullname="navTrigger">
 			<method name="MoveCamera"/>
@@ -29,15 +34,21 @@
 			<method name="MoveCamera"/>
 			<method name="MoveCamera"/>
 		</type>
+		<type fullname="audioImgMarker">
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+		</type>
 		<type fullname="audioMarker">
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
-		</type>
-		<type fullname="audioImgMarker">
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
 		</type>
 	</assembly>
 </linker>

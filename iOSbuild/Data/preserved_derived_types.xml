@@ -38,6 +38,7 @@
 <type fullname="homeIcon" preserve="all"/>
 <type fullname="loadLocation" preserve="all"/>
 <type fullname="loadLocationDoor" preserve="all"/>
+<type fullname="loadLocationHome" preserve="all"/>
 <type fullname="loadLocationInit" preserve="all"/>
 <type fullname="loadScene" preserve="all"/>
 <type fullname="navTrigger" preserve="all"/>

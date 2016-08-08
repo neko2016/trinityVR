@@ -11810,8 +11810,17 @@ extern "C" void loadLocation_Start_m2529815360 ();
 extern "C" void loadLocation_moveCamera_m1878965626 ();
 extern "C" void loadLocationDoor__ctor_m3910695858 ();
 extern "C" void loadLocationDoor_exitDoor_m2229554590 ();
+extern "C" void loadLocationHome__ctor_m295727521 ();
+extern "C" void loadLocationHome_Start_m3537832609 ();
+extern "C" void loadLocationHome_Example_m4182479585 ();
+extern "C" void U3CExampleU3Ec__Iterator7__ctor_m2989797914 ();
+extern "C" void U3CExampleU3Ec__Iterator7_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3514267714 ();
+extern "C" void U3CExampleU3Ec__Iterator7_System_Collections_IEnumerator_get_Current_m1523990486 ();
+extern "C" void U3CExampleU3Ec__Iterator7_MoveNext_m1075703426 ();
+extern "C" void U3CExampleU3Ec__Iterator7_Dispose_m4055924695 ();
+extern "C" void U3CExampleU3Ec__Iterator7_Reset_m636230855 ();
 extern "C" void loadLocationInit__ctor_m4113344656 ();
-extern "C" void loadLocationInit_OnTriggerEnter_m2175847656 ();
+extern "C" void loadLocationInit_Start_m3060482448 ();
 extern "C" void loadScene__ctor_m3526418661 ();
 extern "C" void loadScene_loadNewScene_m2873518833 ();
 extern "C" void MedaiPlayerSampleGUI__ctor_m230703679 ();
@@ -12611,7 +12620,7 @@ extern "C" void vrTrueFalse__ctor_m1230274226 ();
 extern "C" void vrTrueFalse_Start_m177412018 ();
 extern "C" void vrTrueFalse_makeVRtrue_m3469953834 ();
 extern "C" void vrTrueFalse_makeVRfalse_m159705257 ();
-extern const methodPointerType g_MethodPointers[12600] = 
+extern const methodPointerType g_MethodPointers[12609] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -24412,8 +24421,17 @@ extern const methodPointerType g_MethodPointers[12600] =
 	loadLocation_moveCamera_m1878965626,
 	loadLocationDoor__ctor_m3910695858,
 	loadLocationDoor_exitDoor_m2229554590,
+	loadLocationHome__ctor_m295727521,
+	loadLocationHome_Start_m3537832609,
+	loadLocationHome_Example_m4182479585,
+	U3CExampleU3Ec__Iterator7__ctor_m2989797914,
+	U3CExampleU3Ec__Iterator7_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3514267714,
+	U3CExampleU3Ec__Iterator7_System_Collections_IEnumerator_get_Current_m1523990486,
+	U3CExampleU3Ec__Iterator7_MoveNext_m1075703426,
+	U3CExampleU3Ec__Iterator7_Dispose_m4055924695,
+	U3CExampleU3Ec__Iterator7_Reset_m636230855,
 	loadLocationInit__ctor_m4113344656,
-	loadLocationInit_OnTriggerEnter_m2175847656,
+	loadLocationInit_Start_m3060482448,
 	loadScene__ctor_m3526418661,
 	loadScene_loadNewScene_m2873518833,
 	MedaiPlayerSampleGUI__ctor_m230703679,

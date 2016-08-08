@@ -1196,6 +1196,7 @@
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015.h"
 #include "AssemblyU2DCSharp_homeIcon3808435704.h"
 #include "AssemblyU2DCSharp_loadLocation3184820923.h"
+#include "AssemblyU2DCSharp_loadLocationHome_U3CExampleU3Ec_4174890422.h"
 #include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
 #include "AssemblyU2DCSharp_loadScene1377993542.h"
 #include "AssemblyU2DCSharp_navTrigger726877973.h"
@@ -1669,6 +1670,7 @@
 #include "AssemblyU2DCSharp_MutablePose3D1273683304.h"
 #include "AssemblyU2DCSharp_audioFadeOut1617174140.h"
 #include "AssemblyU2DCSharp_loadLocationDoor3861857545.h"
+#include "AssemblyU2DCSharp_loadLocationHome3861976634.h"
 #include "AssemblyU2DCSharp_splashScreen2428448179.h"
 #include "AssemblyU2DCSharp_vrChangeCamera981690321.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874515.h"
@@ -1682,7 +1684,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9478] = 
+extern const int32_t g_FieldOffsetTable[9480] = 
 {
 	0,
 	0,
@@ -11135,6 +11137,8 @@ extern const int32_t g_FieldOffsetTable[9478] =
 	homeIcon_t3808435704::get_offset_of_speed_5(),
 	loadLocation_t3184820923::get_offset_of_newPos_2(),
 	loadLocation_t3184820923::get_offset_of_currScene_3(),
+	U3CExampleU3Ec__Iterator7_t4174890422::get_offset_of_U24PC_0(),
+	U3CExampleU3Ec__Iterator7_t4174890422::get_offset_of_U24current_1(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_toHome_2(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromTC_3(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromMB_4(),
@@ -11166,7 +11170,7 @@ extern const int32_t g_FieldOffsetTable[9478] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1902] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1904] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13056,6 +13060,8 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1902] =
 	sizeof (homeIcon_t3808435704), -1, 0, 0,
 	sizeof (loadLocation_t3184820923), -1, 0, 0,
 	sizeof (loadLocationDoor_t3861857545), -1, 0, 0,
+	sizeof (loadLocationHome_t3861976634), -1, 0, 0,
+	sizeof (U3CExampleU3Ec__Iterator7_t4174890422), -1, 0, 0,
 	sizeof (loadLocationInit_t3862005355), -1, sizeof(loadLocationInit_t3862005355_StaticFields), 0,
 	sizeof (loadScene_t1377993542), -1, 0, 0,
 	sizeof (navTrigger_t726877973), -1, 0, 0,
