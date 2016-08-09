@@ -37,6 +37,13 @@
 			<method name="MoveCamera"/>
 			<method name="MoveCamera"/>
 		</type>
+		<type fullname="audioImgMarker">
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+		</type>
 		<type fullname="audioMarker">
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
@@ -61,13 +68,6 @@
 			<method name="markerTriggered"/>
 		</type>
 		<type fullname="videoMarker">
-			<method name="markerPressed"/>
-		</type>
-		<type fullname="audioImgMarker">
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 		</type>
 		<type fullname="loadLocationDoor">
