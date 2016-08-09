@@ -23,6 +23,28 @@ struct IEnumerator_t287207039;
 struct IEnumerator_1_t2320212868;
 // System.Linq.Enumerable/<CreateWhereIterator>c__Iterator1D`1<System.Object>
 struct U3CCreateWhereIteratorU3Ec__Iterator1D_1_t3778725165;
+// System.Linq.OrderedEnumerable`1<System.Object>
+struct OrderedEnumerable_1_t1902017548;
+// System.Collections.Generic.IEnumerable`1<System.Object>
+struct IEnumerable_1_t3709260776;
+// System.Linq.OrderedSequence`2<System.Object,System.Object>
+struct OrderedSequence_2_t4038725990;
+// System.Func`2<System.Object,System.Object>
+struct Func_2_t2135783352;
+// System.Collections.Generic.IComparer`1<System.Object>
+struct IComparer_1_t3536813829;
+// System.Linq.SortContext`1<System.Object>
+struct SortContext_1_t70478024;
+// System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>
+struct U3CSortU3Ec__Iterator21_t1279425957;
+// System.Linq.QuickSort`1<System.Object>
+struct QuickSort_1_t2202595634;
+// System.Object[]
+struct ObjectU5BU5D_t11523773;
+// System.Int32[]
+struct Int32U5BU5D_t1809983122;
+// System.Linq.SortSequenceContext`2<System.Object,System.Object>
+struct SortSequenceContext_2_t2202698700;
 // System.String
 struct String_t;
 // System.Predicate`1<Gvr.Internal.EmulatorTouchEvent/Pointer>
@@ -70,8 +92,6 @@ struct Object_t3878351788;
 struct Object_t3878351788_marshaled;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
-// System.Object[]
-struct ObjectU5BU5D_t11523773;
 // UnityEngine.Events.CachedInvokableCall`1<System.Int32>
 struct CachedInvokableCall_1_t3999733996;
 // UnityEngine.Events.CachedInvokableCall`1<System.Object>
@@ -192,6 +212,24 @@ struct ObjectPool_1_t2954595302;
 #include "System_Core_System_Linq_Enumerable_PredicateOf_1_ge606765376.h"
 #include "System_Core_System_Linq_Enumerable_PredicateOf_1_ge606765376MethodDeclarations.h"
 #include "mscorlib_System_IntPtr676692020.h"
+#include "System_Core_System_Linq_OrderedEnumerable_1_gen1902017548.h"
+#include "System_Core_System_Linq_OrderedEnumerable_1_gen1902017548MethodDeclarations.h"
+#include "System_Core_System_Linq_OrderedSequence_2_gen4038725990.h"
+#include "System_Core_System_Linq_OrderedSequence_2_gen4038725990MethodDeclarations.h"
+#include "System_Core_System_Linq_SortDirection2805156518.h"
+#include "mscorlib_System_Collections_Generic_Comparer_1_gen1291766756MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Comparer_1_gen1291766756.h"
+#include "System_Core_System_Linq_SortContext_1_gen70478024.h"
+#include "System_Core_System_Linq_SortSequenceContext_2_gen2202698700.h"
+#include "System_Core_System_Linq_SortSequenceContext_2_gen2202698700MethodDeclarations.h"
+#include "System_Core_System_Linq_QuickSort_1_gen2202595634MethodDeclarations.h"
+#include "System_Core_System_Linq_QuickSort_1_U3CSortU3Ec__I1279425957.h"
+#include "System_Core_System_Linq_QuickSort_1_U3CSortU3Ec__I1279425957MethodDeclarations.h"
+#include "System_Core_System_Linq_QuickSort_1_gen2202595634.h"
+#include "mscorlib_ArrayTypes.h"
+#include "System_Core_System_Linq_Enumerable4285654829MethodDeclarations.h"
+#include "System_Core_System_Linq_Enumerable4285654829.h"
+#include "System_Core_System_Linq_SortContext_1_gen70478024MethodDeclarations.h"
 #include "mscorlib_System_Nullable_1_gen3649900800.h"
 #include "mscorlib_System_Nullable_1_gen3649900800MethodDeclarations.h"
 #include "mscorlib_System_TimeSpan763862892.h"
@@ -256,7 +294,6 @@ struct ObjectPool_1_t2954595302;
 #include "UnityEngine_UnityEngine_Events_CachedInvokableCall1363324550MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3878351788.h"
 #include "mscorlib_System_Reflection_MethodInfo3461221277.h"
-#include "mscorlib_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_Events_InvokableCall_1_gen3673447096MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Events_InvokableCall_1_gen3673447096.h"
 #include "UnityEngine_UnityEngine_Events_CachedInvokableCall3999733996.h"
@@ -424,6 +461,9 @@ struct ObjectPool_1_t2954595302;
 #include "mscorlib_System_Activator690001546MethodDeclarations.h"
 #include "mscorlib_System_Activator690001546.h"
 
+// !!0[] System.Linq.Enumerable::ToArray<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
+extern "C"  ObjectU5BU5D_t11523773* Enumerable_ToArray_TisIl2CppObject_m1195909660_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject* p0, const MethodInfo* method);
+#define Enumerable_ToArray_TisIl2CppObject_m1195909660(__this /* static, unused */, p0, method) ((  ObjectU5BU5D_t11523773* (*) (Il2CppObject * /* static, unused */, Il2CppObject*, const MethodInfo*))Enumerable_ToArray_TisIl2CppObject_m1195909660_gshared)(__this /* static, unused */, p0, method)
 // System.Void UnityEngine.Events.BaseInvokableCall::ThrowOnInvalidArg<System.Boolean>(System.Object)
 extern "C"  void BaseInvokableCall_ThrowOnInvalidArg_TisBoolean_t211005341_m2294441611_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method);
 #define BaseInvokableCall_ThrowOnInvalidArg_TisBoolean_t211005341_m2294441611(__this /* static, unused */, p0, method) ((  void (*) (Il2CppObject * /* static, unused */, Il2CppObject *, const MethodInfo*))BaseInvokableCall_ThrowOnInvalidArg_TisBoolean_t211005341_m2294441611_gshared)(__this /* static, unused */, p0, method)
@@ -1145,6 +1185,964 @@ extern "C"  bool PredicateOf_1_U3CAlwaysU3Em__76_m2075728909_gshared (Il2CppObje
 {
 	{
 		return (bool)1;
+	}
+}
+// System.Void System.Linq.OrderedEnumerable`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<TElement>)
+extern "C"  void OrderedEnumerable_1__ctor_m1764331993_gshared (OrderedEnumerable_1_t1902017548 * __this, Il2CppObject* ___source, const MethodInfo* method)
+{
+	{
+		NullCheck((Il2CppObject *)__this);
+		Object__ctor_m1772956182((Il2CppObject *)__this, /*hidden argument*/NULL);
+		Il2CppObject* L_0 = ___source;
+		__this->set_source_0(L_0);
+		return;
+	}
+}
+// System.Collections.IEnumerator System.Linq.OrderedEnumerable`1<System.Object>::System.Collections.IEnumerable.GetEnumerator()
+extern "C"  Il2CppObject * OrderedEnumerable_1_System_Collections_IEnumerable_GetEnumerator_m37555435_gshared (OrderedEnumerable_1_t1902017548 * __this, const MethodInfo* method)
+{
+	{
+		NullCheck((OrderedEnumerable_1_t1902017548 *)__this);
+		Il2CppObject* L_0 = VirtFuncInvoker0< Il2CppObject* >::Invoke(5 /* System.Collections.Generic.IEnumerator`1<TElement> System.Linq.OrderedEnumerable`1<System.Object>::GetEnumerator() */, (OrderedEnumerable_1_t1902017548 *)__this);
+		return L_0;
+	}
+}
+// System.Collections.Generic.IEnumerator`1<TElement> System.Linq.OrderedEnumerable`1<System.Object>::GetEnumerator()
+extern "C"  Il2CppObject* OrderedEnumerable_1_GetEnumerator_m1657609258_gshared (OrderedEnumerable_1_t1902017548 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject* L_0 = (Il2CppObject*)__this->get_source_0();
+		NullCheck((OrderedEnumerable_1_t1902017548 *)__this);
+		Il2CppObject* L_1 = VirtFuncInvoker1< Il2CppObject*, Il2CppObject* >::Invoke(7 /* System.Collections.Generic.IEnumerable`1<TElement> System.Linq.OrderedEnumerable`1<System.Object>::Sort(System.Collections.Generic.IEnumerable`1<TElement>) */, (OrderedEnumerable_1_t1902017548 *)__this, (Il2CppObject*)L_0);
+		NullCheck((Il2CppObject*)L_1);
+		Il2CppObject* L_2 = InterfaceFuncInvoker0< Il2CppObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<System.Object>::GetEnumerator() */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2), (Il2CppObject*)L_1);
+		return L_2;
+	}
+}
+// System.Void System.Linq.OrderedSequence`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<TElement>,System.Func`2<TElement,TKey>,System.Collections.Generic.IComparer`1<TKey>,System.Linq.SortDirection)
+extern "C"  void OrderedSequence_2__ctor_m4118986726_gshared (OrderedSequence_2_t4038725990 * __this, Il2CppObject* ___source, Func_2_t2135783352 * ___key_selector, Il2CppObject* ___comparer, int32_t ___direction, const MethodInfo* method)
+{
+	Il2CppObject* G_B2_0 = NULL;
+	OrderedSequence_2_t4038725990 * G_B2_1 = NULL;
+	Il2CppObject* G_B1_0 = NULL;
+	OrderedSequence_2_t4038725990 * G_B1_1 = NULL;
+	{
+		Il2CppObject* L_0 = ___source;
+		NullCheck((OrderedEnumerable_1_t1902017548 *)__this);
+		((  void (*) (OrderedEnumerable_1_t1902017548 *, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->method)((OrderedEnumerable_1_t1902017548 *)__this, (Il2CppObject*)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
+		Func_2_t2135783352 * L_1 = ___key_selector;
+		__this->set_selector_2(L_1);
+		Il2CppObject* L_2 = ___comparer;
+		Il2CppObject* L_3 = (Il2CppObject*)L_2;
+		G_B1_0 = L_3;
+		G_B1_1 = ((OrderedSequence_2_t4038725990 *)(__this));
+		if (L_3)
+		{
+			G_B2_0 = L_3;
+			G_B2_1 = ((OrderedSequence_2_t4038725990 *)(__this));
+			goto IL_001c;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 3));
+		Comparer_1_t1291766756 * L_4 = ((  Comparer_1_t1291766756 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2)->method)(NULL /*static, unused*/, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2));
+		G_B2_0 = ((Il2CppObject*)(L_4));
+		G_B2_1 = ((OrderedSequence_2_t4038725990 *)(G_B1_1));
+	}
+
+IL_001c:
+	{
+		NullCheck(G_B2_1);
+		G_B2_1->set_comparer_3(G_B2_0);
+		int32_t L_5 = ___direction;
+		__this->set_direction_4(L_5);
+		return;
+	}
+}
+// System.Linq.SortContext`1<TElement> System.Linq.OrderedSequence`2<System.Object,System.Object>::CreateContext(System.Linq.SortContext`1<TElement>)
+extern "C"  SortContext_1_t70478024 * OrderedSequence_2_CreateContext_m2181301000_gshared (OrderedSequence_2_t4038725990 * __this, SortContext_1_t70478024 * ___current, const MethodInfo* method)
+{
+	SortContext_1_t70478024 * V_0 = NULL;
+	{
+		Func_2_t2135783352 * L_0 = (Func_2_t2135783352 *)__this->get_selector_2();
+		Il2CppObject* L_1 = (Il2CppObject*)__this->get_comparer_3();
+		int32_t L_2 = (int32_t)__this->get_direction_4();
+		SortContext_1_t70478024 * L_3 = ___current;
+		SortSequenceContext_2_t2202698700 * L_4 = (SortSequenceContext_2_t2202698700 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4));
+		((  void (*) (SortSequenceContext_2_t2202698700 *, Func_2_t2135783352 *, Il2CppObject*, int32_t, SortContext_1_t70478024 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5)->method)(L_4, (Func_2_t2135783352 *)L_0, (Il2CppObject*)L_1, (int32_t)L_2, (SortContext_1_t70478024 *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5));
+		V_0 = (SortContext_1_t70478024 *)L_4;
+		OrderedEnumerable_1_t1902017548 * L_5 = (OrderedEnumerable_1_t1902017548 *)__this->get_parent_1();
+		if (!L_5)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		OrderedEnumerable_1_t1902017548 * L_6 = (OrderedEnumerable_1_t1902017548 *)__this->get_parent_1();
+		SortContext_1_t70478024 * L_7 = V_0;
+		NullCheck((OrderedEnumerable_1_t1902017548 *)L_6);
+		SortContext_1_t70478024 * L_8 = VirtFuncInvoker1< SortContext_1_t70478024 *, SortContext_1_t70478024 * >::Invoke(6 /* System.Linq.SortContext`1<TElement> System.Linq.OrderedEnumerable`1<System.Object>::CreateContext(System.Linq.SortContext`1<TElement>) */, (OrderedEnumerable_1_t1902017548 *)L_6, (SortContext_1_t70478024 *)L_7);
+		return L_8;
+	}
+
+IL_0031:
+	{
+		SortContext_1_t70478024 * L_9 = V_0;
+		return L_9;
+	}
+}
+// System.Collections.Generic.IEnumerable`1<TElement> System.Linq.OrderedSequence`2<System.Object,System.Object>::Sort(System.Collections.Generic.IEnumerable`1<TElement>)
+extern "C"  Il2CppObject* OrderedSequence_2_Sort_m2978680275_gshared (OrderedSequence_2_t4038725990 * __this, Il2CppObject* ___source, const MethodInfo* method)
+{
+	{
+		Il2CppObject* L_0 = ___source;
+		NullCheck((OrderedSequence_2_t4038725990 *)__this);
+		SortContext_1_t70478024 * L_1 = VirtFuncInvoker1< SortContext_1_t70478024 *, SortContext_1_t70478024 * >::Invoke(6 /* System.Linq.SortContext`1<TElement> System.Linq.OrderedSequence`2<System.Object,System.Object>::CreateContext(System.Linq.SortContext`1<TElement>) */, (OrderedSequence_2_t4038725990 *)__this, (SortContext_1_t70478024 *)NULL);
+		Il2CppObject* L_2 = ((  Il2CppObject* (*) (Il2CppObject * /* static, unused */, Il2CppObject*, SortContext_1_t70478024 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 8)->method)(NULL /*static, unused*/, (Il2CppObject*)L_0, (SortContext_1_t70478024 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 8));
+		return L_2;
+	}
+}
+// System.Void System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>::.ctor()
+extern "C"  void U3CSortU3Ec__Iterator21__ctor_m2478484409_gshared (U3CSortU3Ec__Iterator21_t1279425957 * __this, const MethodInfo* method)
+{
+	{
+		NullCheck((Il2CppObject *)__this);
+		Object__ctor_m1772956182((Il2CppObject *)__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// TElement System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>::System.Collections.Generic.IEnumerator<TElement>.get_Current()
+extern "C"  Il2CppObject * U3CSortU3Ec__Iterator21_System_Collections_Generic_IEnumeratorU3CTElementU3E_get_Current_m345773114_gshared (U3CSortU3Ec__Iterator21_t1279425957 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = (Il2CppObject *)__this->get_U24current_5();
+		return L_0;
+	}
+}
+// System.Object System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CSortU3Ec__Iterator21_System_Collections_IEnumerator_get_Current_m3593665815_gshared (U3CSortU3Ec__Iterator21_t1279425957 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = (Il2CppObject *)__this->get_U24current_5();
+		return L_0;
+	}
+}
+// System.Collections.IEnumerator System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>::System.Collections.IEnumerable.GetEnumerator()
+extern "C"  Il2CppObject * U3CSortU3Ec__Iterator21_System_Collections_IEnumerable_GetEnumerator_m1080975608_gshared (U3CSortU3Ec__Iterator21_t1279425957 * __this, const MethodInfo* method)
+{
+	{
+		NullCheck((U3CSortU3Ec__Iterator21_t1279425957 *)__this);
+		Il2CppObject* L_0 = ((  Il2CppObject* (*) (U3CSortU3Ec__Iterator21_t1279425957 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1)->method)((U3CSortU3Ec__Iterator21_t1279425957 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1));
+		return L_0;
+	}
+}
+// System.Collections.Generic.IEnumerator`1<TElement> System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>::System.Collections.Generic.IEnumerable<TElement>.GetEnumerator()
+extern "C"  Il2CppObject* U3CSortU3Ec__Iterator21_System_Collections_Generic_IEnumerableU3CTElementU3E_GetEnumerator_m1867380327_gshared (U3CSortU3Ec__Iterator21_t1279425957 * __this, const MethodInfo* method)
+{
+	U3CSortU3Ec__Iterator21_t1279425957 * V_0 = NULL;
+	{
+		int32_t* L_0 = (int32_t*)__this->get_address_of_U24PC_4();
+		int32_t L_1 = Interlocked_CompareExchange_m1859820752(NULL /*static, unused*/, (int32_t*)L_0, (int32_t)0, (int32_t)((int32_t)-2), /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)-2)))))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		return __this;
+	}
+
+IL_0014:
+	{
+		U3CSortU3Ec__Iterator21_t1279425957 * L_2 = (U3CSortU3Ec__Iterator21_t1279425957 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2));
+		((  void (*) (U3CSortU3Ec__Iterator21_t1279425957 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 3)->method)(L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 3));
+		V_0 = (U3CSortU3Ec__Iterator21_t1279425957 *)L_2;
+		U3CSortU3Ec__Iterator21_t1279425957 * L_3 = V_0;
+		Il2CppObject* L_4 = (Il2CppObject*)__this->get_U3CU24U3Esource_6();
+		NullCheck(L_3);
+		L_3->set_source_0(L_4);
+		U3CSortU3Ec__Iterator21_t1279425957 * L_5 = V_0;
+		SortContext_1_t70478024 * L_6 = (SortContext_1_t70478024 *)__this->get_U3CU24U3Econtext_7();
+		NullCheck(L_5);
+		L_5->set_context_1(L_6);
+		U3CSortU3Ec__Iterator21_t1279425957 * L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>::MoveNext()
+extern "C"  bool U3CSortU3Ec__Iterator21_MoveNext_m974020195_gshared (U3CSortU3Ec__Iterator21_t1279425957 * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		int32_t L_0 = (int32_t)__this->get_U24PC_4();
+		V_0 = (uint32_t)L_0;
+		__this->set_U24PC_4((-1));
+		uint32_t L_1 = V_0;
+		if (L_1 == 0)
+		{
+			goto IL_0021;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_0083;
+		}
+	}
+	{
+		goto IL_00b0;
+	}
+
+IL_0021:
+	{
+		Il2CppObject* L_2 = (Il2CppObject*)__this->get_source_0();
+		SortContext_1_t70478024 * L_3 = (SortContext_1_t70478024 *)__this->get_context_1();
+		QuickSort_1_t2202595634 * L_4 = (QuickSort_1_t2202595634 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4));
+		((  void (*) (QuickSort_1_t2202595634 *, Il2CppObject*, SortContext_1_t70478024 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5)->method)(L_4, (Il2CppObject*)L_2, (SortContext_1_t70478024 *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5));
+		__this->set_U3CsorterU3E__0_2(L_4);
+		QuickSort_1_t2202595634 * L_5 = (QuickSort_1_t2202595634 *)__this->get_U3CsorterU3E__0_2();
+		NullCheck((QuickSort_1_t2202595634 *)L_5);
+		((  void (*) (QuickSort_1_t2202595634 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6)->method)((QuickSort_1_t2202595634 *)L_5, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		__this->set_U3CiU3E__1_3(0);
+		goto IL_0091;
+	}
+
+IL_004f:
+	{
+		QuickSort_1_t2202595634 * L_6 = (QuickSort_1_t2202595634 *)__this->get_U3CsorterU3E__0_2();
+		NullCheck(L_6);
+		ObjectU5BU5D_t11523773* L_7 = (ObjectU5BU5D_t11523773*)L_6->get_elements_0();
+		QuickSort_1_t2202595634 * L_8 = (QuickSort_1_t2202595634 *)__this->get_U3CsorterU3E__0_2();
+		NullCheck(L_8);
+		Int32U5BU5D_t1809983122* L_9 = (Int32U5BU5D_t1809983122*)L_8->get_indexes_1();
+		int32_t L_10 = (int32_t)__this->get_U3CiU3E__1_3();
+		NullCheck(L_9);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_9, L_10);
+		int32_t L_11 = L_10;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, ((L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11))));
+		int32_t L_12 = ((L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11)));
+		__this->set_U24current_5(((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_12))));
+		__this->set_U24PC_4(1);
+		goto IL_00b2;
+	}
+
+IL_0083:
+	{
+		int32_t L_13 = (int32_t)__this->get_U3CiU3E__1_3();
+		__this->set_U3CiU3E__1_3(((int32_t)((int32_t)L_13+(int32_t)1)));
+	}
+
+IL_0091:
+	{
+		int32_t L_14 = (int32_t)__this->get_U3CiU3E__1_3();
+		QuickSort_1_t2202595634 * L_15 = (QuickSort_1_t2202595634 *)__this->get_U3CsorterU3E__0_2();
+		NullCheck(L_15);
+		Int32U5BU5D_t1809983122* L_16 = (Int32U5BU5D_t1809983122*)L_15->get_indexes_1();
+		NullCheck(L_16);
+		if ((((int32_t)L_14) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_16)->max_length)))))))
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		__this->set_U24PC_4((-1));
+	}
+
+IL_00b0:
+	{
+		return (bool)0;
+	}
+
+IL_00b2:
+	{
+		return (bool)1;
+	}
+	// Dead block : IL_00b4: ldloc.1
+}
+// System.Void System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>::Dispose()
+extern "C"  void U3CSortU3Ec__Iterator21_Dispose_m2309918134_gshared (U3CSortU3Ec__Iterator21_t1279425957 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24PC_4((-1));
+		return;
+	}
+}
+// System.Void System.Linq.QuickSort`1/<Sort>c__Iterator21<System.Object>::Reset()
+extern TypeInfo* NotSupportedException_t1374155497_il2cpp_TypeInfo_var;
+extern const uint32_t U3CSortU3Ec__Iterator21_Reset_m124917350_MetadataUsageId;
+extern "C"  void U3CSortU3Ec__Iterator21_Reset_m124917350_gshared (U3CSortU3Ec__Iterator21_t1279425957 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CSortU3Ec__Iterator21_Reset_m124917350_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		NotSupportedException_t1374155497 * L_0 = (NotSupportedException_t1374155497 *)il2cpp_codegen_object_new(NotSupportedException_t1374155497_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m149930845(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Void System.Linq.QuickSort`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<TElement>,System.Linq.SortContext`1<TElement>)
+extern "C"  void QuickSort_1__ctor_m2169278638_gshared (QuickSort_1_t2202595634 * __this, Il2CppObject* ___source, SortContext_1_t70478024 * ___context, const MethodInfo* method)
+{
+	{
+		NullCheck((Il2CppObject *)__this);
+		Object__ctor_m1772956182((Il2CppObject *)__this, /*hidden argument*/NULL);
+		Il2CppObject* L_0 = ___source;
+		ObjectU5BU5D_t11523773* L_1 = ((  ObjectU5BU5D_t11523773* (*) (Il2CppObject * /* static, unused */, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->method)(NULL /*static, unused*/, (Il2CppObject*)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
+		__this->set_elements_0(L_1);
+		ObjectU5BU5D_t11523773* L_2 = (ObjectU5BU5D_t11523773*)__this->get_elements_0();
+		NullCheck(L_2);
+		Int32U5BU5D_t1809983122* L_3 = ((  Int32U5BU5D_t1809983122* (*) (Il2CppObject * /* static, unused */, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1)->method)(NULL /*static, unused*/, (int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_2)->max_length)))), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1));
+		__this->set_indexes_1(L_3);
+		SortContext_1_t70478024 * L_4 = ___context;
+		__this->set_context_2(L_4);
+		return;
+	}
+}
+// System.Int32[] System.Linq.QuickSort`1<System.Object>::CreateIndexes(System.Int32)
+extern TypeInfo* Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var;
+extern const uint32_t QuickSort_1_CreateIndexes_m1344525507_MetadataUsageId;
+extern "C"  Int32U5BU5D_t1809983122* QuickSort_1_CreateIndexes_m1344525507_gshared (Il2CppObject * __this /* static, unused */, int32_t ___length, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (QuickSort_1_CreateIndexes_m1344525507_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Int32U5BU5D_t1809983122* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = ___length;
+		V_0 = (Int32U5BU5D_t1809983122*)((Int32U5BU5D_t1809983122*)SZArrayNew(Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var, (uint32_t)L_0));
+		V_1 = (int32_t)0;
+		goto IL_0016;
+	}
+
+IL_000e:
+	{
+		Int32U5BU5D_t1809983122* L_1 = V_0;
+		int32_t L_2 = V_1;
+		int32_t L_3 = V_1;
+		NullCheck(L_1);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_2);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(L_2), (int32_t)L_3);
+		int32_t L_4 = V_1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_4+(int32_t)1));
+	}
+
+IL_0016:
+	{
+		int32_t L_5 = V_1;
+		int32_t L_6 = ___length;
+		if ((((int32_t)L_5) < ((int32_t)L_6)))
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		Int32U5BU5D_t1809983122* L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void System.Linq.QuickSort`1<System.Object>::PerformSort()
+extern "C"  void QuickSort_1_PerformSort_m665582841_gshared (QuickSort_1_t2202595634 * __this, const MethodInfo* method)
+{
+	{
+		ObjectU5BU5D_t11523773* L_0 = (ObjectU5BU5D_t11523773*)__this->get_elements_0();
+		NullCheck(L_0);
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))) > ((int32_t)1)))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000f:
+	{
+		SortContext_1_t70478024 * L_1 = (SortContext_1_t70478024 *)__this->get_context_2();
+		ObjectU5BU5D_t11523773* L_2 = (ObjectU5BU5D_t11523773*)__this->get_elements_0();
+		NullCheck((SortContext_1_t70478024 *)L_1);
+		VirtActionInvoker1< ObjectU5BU5D_t11523773* >::Invoke(4 /* System.Void System.Linq.SortContext`1<System.Object>::Initialize(TElement[]) */, (SortContext_1_t70478024 *)L_1, (ObjectU5BU5D_t11523773*)L_2);
+		Int32U5BU5D_t1809983122* L_3 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		NullCheck(L_3);
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)0, (int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length))))-(int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4));
+		return;
+	}
+}
+// System.Int32 System.Linq.QuickSort`1<System.Object>::CompareItems(System.Int32,System.Int32)
+extern "C"  int32_t QuickSort_1_CompareItems_m1696049333_gshared (QuickSort_1_t2202595634 * __this, int32_t ___first_index, int32_t ___second_index, const MethodInfo* method)
+{
+	{
+		SortContext_1_t70478024 * L_0 = (SortContext_1_t70478024 *)__this->get_context_2();
+		int32_t L_1 = ___first_index;
+		int32_t L_2 = ___second_index;
+		NullCheck((SortContext_1_t70478024 *)L_0);
+		int32_t L_3 = VirtFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5 /* System.Int32 System.Linq.SortContext`1<System.Object>::Compare(System.Int32,System.Int32) */, (SortContext_1_t70478024 *)L_0, (int32_t)L_1, (int32_t)L_2);
+		return L_3;
+	}
+}
+// System.Int32 System.Linq.QuickSort`1<System.Object>::MedianOfThree(System.Int32,System.Int32)
+extern "C"  int32_t QuickSort_1_MedianOfThree_m4087926973_gshared (QuickSort_1_t2202595634 * __this, int32_t ___left, int32_t ___right, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___left;
+		int32_t L_1 = ___right;
+		V_0 = (int32_t)((int32_t)((int32_t)((int32_t)((int32_t)L_0+(int32_t)L_1))/(int32_t)2));
+		Int32U5BU5D_t1809983122* L_2 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_3 = V_0;
+		NullCheck(L_2);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, L_3);
+		int32_t L_4 = L_3;
+		Int32U5BU5D_t1809983122* L_5 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_6 = ___left;
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
+		int32_t L_7 = L_6;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		int32_t L_8 = ((  int32_t (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)((L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4))), (int32_t)((L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7))), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		if ((((int32_t)L_8) >= ((int32_t)0)))
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		int32_t L_9 = ___left;
+		int32_t L_10 = V_0;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_9, (int32_t)L_10, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7));
+	}
+
+IL_002a:
+	{
+		Int32U5BU5D_t1809983122* L_11 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_12 = ___right;
+		NullCheck(L_11);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
+		int32_t L_13 = L_12;
+		Int32U5BU5D_t1809983122* L_14 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_15 = ___left;
+		NullCheck(L_14);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, L_15);
+		int32_t L_16 = L_15;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		int32_t L_17 = ((  int32_t (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)((L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13))), (int32_t)((L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16))), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		if ((((int32_t)L_17) >= ((int32_t)0)))
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		int32_t L_18 = ___left;
+		int32_t L_19 = ___right;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_18, (int32_t)L_19, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7));
+	}
+
+IL_004e:
+	{
+		Int32U5BU5D_t1809983122* L_20 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_21 = ___right;
+		NullCheck(L_20);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, L_21);
+		int32_t L_22 = L_21;
+		Int32U5BU5D_t1809983122* L_23 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_24 = V_0;
+		NullCheck(L_23);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, L_24);
+		int32_t L_25 = L_24;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		int32_t L_26 = ((  int32_t (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)((L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22))), (int32_t)((L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25))), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		if ((((int32_t)L_26) >= ((int32_t)0)))
+		{
+			goto IL_0072;
+		}
+	}
+	{
+		int32_t L_27 = V_0;
+		int32_t L_28 = ___right;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_27, (int32_t)L_28, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7));
+	}
+
+IL_0072:
+	{
+		int32_t L_29 = V_0;
+		int32_t L_30 = ___right;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_29, (int32_t)((int32_t)((int32_t)L_30-(int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7));
+		Int32U5BU5D_t1809983122* L_31 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_32 = ___right;
+		NullCheck(L_31);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_31, ((int32_t)((int32_t)L_32-(int32_t)1)));
+		int32_t L_33 = ((int32_t)((int32_t)L_32-(int32_t)1));
+		return ((L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33)));
+	}
+}
+// System.Void System.Linq.QuickSort`1<System.Object>::Sort(System.Int32,System.Int32)
+extern "C"  void QuickSort_1_Sort_m2143186880_gshared (QuickSort_1_t2202595634 * __this, int32_t ___left, int32_t ___right, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		int32_t L_0 = ___left;
+		int32_t L_1 = ___right;
+		if ((((int32_t)((int32_t)((int32_t)L_0+(int32_t)3))) > ((int32_t)L_1)))
+		{
+			goto IL_0095;
+		}
+	}
+	{
+		int32_t L_2 = ___left;
+		V_0 = (int32_t)L_2;
+		int32_t L_3 = ___right;
+		V_1 = (int32_t)((int32_t)((int32_t)L_3-(int32_t)1));
+		int32_t L_4 = ___left;
+		int32_t L_5 = ___right;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		int32_t L_6 = ((  int32_t (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 8)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_4, (int32_t)L_5, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 8));
+		V_2 = (int32_t)L_6;
+	}
+
+IL_0018:
+	{
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		Int32U5BU5D_t1809983122* L_7 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_8 = V_0;
+		int32_t L_9 = (int32_t)((int32_t)((int32_t)L_8+(int32_t)1));
+		V_0 = (int32_t)L_9;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_9);
+		int32_t L_10 = L_9;
+		int32_t L_11 = V_2;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		int32_t L_12 = ((  int32_t (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_10))), (int32_t)L_11, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		if ((((int32_t)L_12) < ((int32_t)0)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		goto IL_003b;
+	}
+
+IL_003b:
+	{
+		Int32U5BU5D_t1809983122* L_13 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_14 = V_1;
+		int32_t L_15 = (int32_t)((int32_t)((int32_t)L_14-(int32_t)1));
+		V_1 = (int32_t)L_15;
+		NullCheck(L_13);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_15);
+		int32_t L_16 = L_15;
+		int32_t L_17 = V_2;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		int32_t L_18 = ((  int32_t (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_16))), (int32_t)L_17, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		if ((((int32_t)L_18) > ((int32_t)0)))
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		int32_t L_19 = V_0;
+		int32_t L_20 = V_1;
+		if ((((int32_t)L_19) >= ((int32_t)L_20)))
+		{
+			goto IL_0068;
+		}
+	}
+	{
+		int32_t L_21 = V_0;
+		int32_t L_22 = V_1;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_21, (int32_t)L_22, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7));
+		goto IL_006d;
+	}
+
+IL_0068:
+	{
+		goto IL_0072;
+	}
+
+IL_006d:
+	{
+		goto IL_0018;
+	}
+
+IL_0072:
+	{
+		int32_t L_23 = V_0;
+		int32_t L_24 = ___right;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_23, (int32_t)((int32_t)((int32_t)L_24-(int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 7));
+		int32_t L_25 = ___left;
+		int32_t L_26 = V_0;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_25, (int32_t)((int32_t)((int32_t)L_26-(int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4));
+		int32_t L_27 = V_0;
+		int32_t L_28 = ___right;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)((int32_t)((int32_t)L_27+(int32_t)1)), (int32_t)L_28, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4));
+		goto IL_009d;
+	}
+
+IL_0095:
+	{
+		int32_t L_29 = ___left;
+		int32_t L_30 = ___right;
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		((  void (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 9)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_29, (int32_t)L_30, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 9));
+	}
+
+IL_009d:
+	{
+		return;
+	}
+}
+// System.Void System.Linq.QuickSort`1<System.Object>::InsertionSort(System.Int32,System.Int32)
+extern "C"  void QuickSort_1_InsertionSort_m4059027839_gshared (QuickSort_1_t2202595634 * __this, int32_t ___left, int32_t ___right, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		int32_t L_0 = ___left;
+		V_0 = (int32_t)((int32_t)((int32_t)L_0+(int32_t)1));
+		goto IL_005a;
+	}
+
+IL_0009:
+	{
+		Int32U5BU5D_t1809983122* L_1 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_2 = V_0;
+		NullCheck(L_1);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_2);
+		int32_t L_3 = L_2;
+		V_2 = (int32_t)((L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3)));
+		int32_t L_4 = V_0;
+		V_1 = (int32_t)L_4;
+		goto IL_002f;
+	}
+
+IL_0019:
+	{
+		Int32U5BU5D_t1809983122* L_5 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_6 = V_1;
+		Int32U5BU5D_t1809983122* L_7 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_8 = V_1;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, ((int32_t)((int32_t)L_8-(int32_t)1)));
+		int32_t L_9 = ((int32_t)((int32_t)L_8-(int32_t)1));
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (int32_t)((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9))));
+		int32_t L_10 = V_1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_10-(int32_t)1));
+	}
+
+IL_002f:
+	{
+		int32_t L_11 = V_1;
+		int32_t L_12 = ___left;
+		if ((((int32_t)L_11) <= ((int32_t)L_12)))
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		int32_t L_13 = V_2;
+		Int32U5BU5D_t1809983122* L_14 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_15 = V_1;
+		NullCheck(L_14);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, ((int32_t)((int32_t)L_15-(int32_t)1)));
+		int32_t L_16 = ((int32_t)((int32_t)L_15-(int32_t)1));
+		NullCheck((QuickSort_1_t2202595634 *)__this);
+		int32_t L_17 = ((  int32_t (*) (QuickSort_1_t2202595634 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6)->method)((QuickSort_1_t2202595634 *)__this, (int32_t)L_13, (int32_t)((L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16))), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 6));
+		if ((((int32_t)L_17) < ((int32_t)0)))
+		{
+			goto IL_0019;
+		}
+	}
+
+IL_004d:
+	{
+		Int32U5BU5D_t1809983122* L_18 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_19 = V_1;
+		int32_t L_20 = V_2;
+		NullCheck(L_18);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, L_19);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(L_19), (int32_t)L_20);
+		int32_t L_21 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_21+(int32_t)1));
+	}
+
+IL_005a:
+	{
+		int32_t L_22 = V_0;
+		int32_t L_23 = ___right;
+		if ((((int32_t)L_22) <= ((int32_t)L_23)))
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void System.Linq.QuickSort`1<System.Object>::Swap(System.Int32,System.Int32)
+extern "C"  void QuickSort_1_Swap_m59867819_gshared (QuickSort_1_t2202595634 * __this, int32_t ___left, int32_t ___right, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		Int32U5BU5D_t1809983122* L_0 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_1 = ___right;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = L_1;
+		V_0 = (int32_t)((L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2)));
+		Int32U5BU5D_t1809983122* L_3 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_4 = ___right;
+		Int32U5BU5D_t1809983122* L_5 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_6 = ___left;
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
+		int32_t L_7 = L_6;
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (int32_t)((L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7))));
+		Int32U5BU5D_t1809983122* L_8 = (Int32U5BU5D_t1809983122*)__this->get_indexes_1();
+		int32_t L_9 = ___left;
+		int32_t L_10 = V_0;
+		NullCheck(L_8);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_8, L_9);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(L_9), (int32_t)L_10);
+		return;
+	}
+}
+// System.Collections.Generic.IEnumerable`1<TElement> System.Linq.QuickSort`1<System.Object>::Sort(System.Collections.Generic.IEnumerable`1<TElement>,System.Linq.SortContext`1<TElement>)
+extern "C"  Il2CppObject* QuickSort_1_Sort_m1924284392_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject* ___source, SortContext_1_t70478024 * ___context, const MethodInfo* method)
+{
+	U3CSortU3Ec__Iterator21_t1279425957 * V_0 = NULL;
+	{
+		U3CSortU3Ec__Iterator21_t1279425957 * L_0 = (U3CSortU3Ec__Iterator21_t1279425957 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 10));
+		((  void (*) (U3CSortU3Ec__Iterator21_t1279425957 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 11)->method)(L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 11));
+		V_0 = (U3CSortU3Ec__Iterator21_t1279425957 *)L_0;
+		U3CSortU3Ec__Iterator21_t1279425957 * L_1 = V_0;
+		Il2CppObject* L_2 = ___source;
+		NullCheck(L_1);
+		L_1->set_source_0(L_2);
+		U3CSortU3Ec__Iterator21_t1279425957 * L_3 = V_0;
+		SortContext_1_t70478024 * L_4 = ___context;
+		NullCheck(L_3);
+		L_3->set_context_1(L_4);
+		U3CSortU3Ec__Iterator21_t1279425957 * L_5 = V_0;
+		Il2CppObject* L_6 = ___source;
+		NullCheck(L_5);
+		L_5->set_U3CU24U3Esource_6(L_6);
+		U3CSortU3Ec__Iterator21_t1279425957 * L_7 = V_0;
+		SortContext_1_t70478024 * L_8 = ___context;
+		NullCheck(L_7);
+		L_7->set_U3CU24U3Econtext_7(L_8);
+		U3CSortU3Ec__Iterator21_t1279425957 * L_9 = V_0;
+		U3CSortU3Ec__Iterator21_t1279425957 * L_10 = (U3CSortU3Ec__Iterator21_t1279425957 *)L_9;
+		NullCheck(L_10);
+		L_10->set_U24PC_4(((int32_t)-2));
+		return L_10;
+	}
+}
+// System.Void System.Linq.SortContext`1<System.Object>::.ctor(System.Linq.SortDirection,System.Linq.SortContext`1<TElement>)
+extern "C"  void SortContext_1__ctor_m3304039901_gshared (SortContext_1_t70478024 * __this, int32_t ___direction, SortContext_1_t70478024 * ___child_context, const MethodInfo* method)
+{
+	{
+		NullCheck((Il2CppObject *)__this);
+		Object__ctor_m1772956182((Il2CppObject *)__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___direction;
+		__this->set_direction_0(L_0);
+		SortContext_1_t70478024 * L_1 = ___child_context;
+		__this->set_child_context_1(L_1);
+		return;
+	}
+}
+// System.Void System.Linq.SortSequenceContext`2<System.Object,System.Object>::.ctor(System.Func`2<TElement,TKey>,System.Collections.Generic.IComparer`1<TKey>,System.Linq.SortDirection,System.Linq.SortContext`1<TElement>)
+extern "C"  void SortSequenceContext_2__ctor_m858446130_gshared (SortSequenceContext_2_t2202698700 * __this, Func_2_t2135783352 * ___selector, Il2CppObject* ___comparer, int32_t ___direction, SortContext_1_t70478024 * ___child_context, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___direction;
+		SortContext_1_t70478024 * L_1 = ___child_context;
+		NullCheck((SortContext_1_t70478024 *)__this);
+		((  void (*) (SortContext_1_t70478024 *, int32_t, SortContext_1_t70478024 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->method)((SortContext_1_t70478024 *)__this, (int32_t)L_0, (SortContext_1_t70478024 *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
+		Func_2_t2135783352 * L_2 = ___selector;
+		__this->set_selector_2(L_2);
+		Il2CppObject* L_3 = ___comparer;
+		__this->set_comparer_3(L_3);
+		return;
+	}
+}
+// System.Void System.Linq.SortSequenceContext`2<System.Object,System.Object>::Initialize(TElement[])
+extern "C"  void SortSequenceContext_2_Initialize_m2547711222_gshared (SortSequenceContext_2_t2202698700 * __this, ObjectU5BU5D_t11523773* ___elements, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		SortContext_1_t70478024 * L_0 = (SortContext_1_t70478024 *)((SortContext_1_t70478024 *)__this)->get_child_context_1();
+		if (!L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		SortContext_1_t70478024 * L_1 = (SortContext_1_t70478024 *)((SortContext_1_t70478024 *)__this)->get_child_context_1();
+		ObjectU5BU5D_t11523773* L_2 = ___elements;
+		NullCheck((SortContext_1_t70478024 *)L_1);
+		VirtActionInvoker1< ObjectU5BU5D_t11523773* >::Invoke(4 /* System.Void System.Linq.SortContext`1<System.Object>::Initialize(TElement[]) */, (SortContext_1_t70478024 *)L_1, (ObjectU5BU5D_t11523773*)L_2);
+	}
+
+IL_0017:
+	{
+		ObjectU5BU5D_t11523773* L_3 = ___elements;
+		NullCheck(L_3);
+		__this->set_keys_4(((ObjectU5BU5D_t11523773*)SZArrayNew(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 3), (uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length)))))));
+		V_0 = (int32_t)0;
+		goto IL_004e;
+	}
+
+IL_002c:
+	{
+		ObjectU5BU5D_t11523773* L_4 = (ObjectU5BU5D_t11523773*)__this->get_keys_4();
+		int32_t L_5 = V_0;
+		Func_2_t2135783352 * L_6 = (Func_2_t2135783352 *)__this->get_selector_2();
+		ObjectU5BU5D_t11523773* L_7 = ___elements;
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		NullCheck((Func_2_t2135783352 *)L_6);
+		Il2CppObject * L_10 = ((  Il2CppObject * (*) (Func_2_t2135783352 *, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4)->method)((Func_2_t2135783352 *)L_6, (Il2CppObject *)((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9))), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 4));
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_10);
+		int32_t L_11 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_11+(int32_t)1));
+	}
+
+IL_004e:
+	{
+		int32_t L_12 = V_0;
+		ObjectU5BU5D_t11523773* L_13 = (ObjectU5BU5D_t11523773*)__this->get_keys_4();
+		NullCheck(L_13);
+		if ((((int32_t)L_12) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_13)->max_length)))))))
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Int32 System.Linq.SortSequenceContext`2<System.Object,System.Object>::Compare(System.Int32,System.Int32)
+extern "C"  int32_t SortSequenceContext_2_Compare_m594910141_gshared (SortSequenceContext_2_t2202698700 * __this, int32_t ___first_index, int32_t ___second_index, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t G_B6_0 = 0;
+	int32_t G_B10_0 = 0;
+	{
+		Il2CppObject* L_0 = (Il2CppObject*)__this->get_comparer_3();
+		ObjectU5BU5D_t11523773* L_1 = (ObjectU5BU5D_t11523773*)__this->get_keys_4();
+		int32_t L_2 = ___first_index;
+		NullCheck(L_1);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_2);
+		int32_t L_3 = L_2;
+		ObjectU5BU5D_t11523773* L_4 = (ObjectU5BU5D_t11523773*)__this->get_keys_4();
+		int32_t L_5 = ___second_index;
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		int32_t L_6 = L_5;
+		NullCheck((Il2CppObject*)L_0);
+		int32_t L_7 = InterfaceFuncInvoker2< int32_t, Il2CppObject *, Il2CppObject * >::Invoke(0 /* System.Int32 System.Collections.Generic.IComparer`1<System.Object>::Compare(!0,!0) */, IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 5), (Il2CppObject*)L_0, (Il2CppObject *)((L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3))), (Il2CppObject *)((L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6))));
+		V_0 = (int32_t)L_7;
+		int32_t L_8 = V_0;
+		if (L_8)
+		{
+			goto IL_005b;
+		}
+	}
+	{
+		SortContext_1_t70478024 * L_9 = (SortContext_1_t70478024 *)((SortContext_1_t70478024 *)__this)->get_child_context_1();
+		if (!L_9)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		SortContext_1_t70478024 * L_10 = (SortContext_1_t70478024 *)((SortContext_1_t70478024 *)__this)->get_child_context_1();
+		int32_t L_11 = ___first_index;
+		int32_t L_12 = ___second_index;
+		NullCheck((SortContext_1_t70478024 *)L_10);
+		int32_t L_13 = VirtFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5 /* System.Int32 System.Linq.SortContext`1<System.Object>::Compare(System.Int32,System.Int32) */, (SortContext_1_t70478024 *)L_10, (int32_t)L_11, (int32_t)L_12);
+		return L_13;
+	}
+
+IL_0043:
+	{
+		int32_t L_14 = (int32_t)((SortContext_1_t70478024 *)__this)->get_direction_0();
+		if ((!(((uint32_t)L_14) == ((uint32_t)1))))
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		int32_t L_15 = ___second_index;
+		int32_t L_16 = ___first_index;
+		G_B6_0 = ((int32_t)((int32_t)L_15-(int32_t)L_16));
+		goto IL_005a;
+	}
+
+IL_0057:
+	{
+		int32_t L_17 = ___first_index;
+		int32_t L_18 = ___second_index;
+		G_B6_0 = ((int32_t)((int32_t)L_17-(int32_t)L_18));
+	}
+
+IL_005a:
+	{
+		V_0 = (int32_t)G_B6_0;
+	}
+
+IL_005b:
+	{
+		int32_t L_19 = (int32_t)((SortContext_1_t70478024 *)__this)->get_direction_0();
+		if ((!(((uint32_t)L_19) == ((uint32_t)1))))
+		{
+			goto IL_006e;
+		}
+	}
+	{
+		int32_t L_20 = V_0;
+		G_B10_0 = ((-L_20));
+		goto IL_006f;
+	}
+
+IL_006e:
+	{
+		int32_t L_21 = V_0;
+		G_B10_0 = L_21;
+	}
+
+IL_006f:
+	{
+		return G_B10_0;
 	}
 }
 // System.Void System.Nullable`1<System.TimeSpan>::.ctor(T)

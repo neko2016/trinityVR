@@ -31,7 +31,7 @@ void RegisterStaticallyLinkedModulesGranular()
 
 void RegisterAllClasses()
 {
-	//Total: 76 classes
+	//Total: 78 classes
 	//0. AssetBundle
 	void RegisterClass_AssetBundle();
 	RegisterClass_AssetBundle();
@@ -248,91 +248,99 @@ void RegisterAllClasses()
 	void RegisterClass_PhysicsManager();
 	RegisterClass_PhysicsManager();
 
-	//54. AnimationClip
+	//54. MeshCollider
+	void RegisterClass_MeshCollider();
+	RegisterClass_MeshCollider();
+
+	//55. AnimationClip
 	void RegisterClass_AnimationClip();
 	RegisterClass_AnimationClip();
 
-	//55. Motion
+	//56. Motion
 	void RegisterClass_Motion();
 	RegisterClass_Motion();
 
-	//56. TagManager
+	//57. TagManager
 	void RegisterClass_TagManager();
 	RegisterClass_TagManager();
 
-	//57. AudioListener
+	//58. AudioListener
 	void RegisterClass_AudioListener();
 	RegisterClass_AudioListener();
 
-	//58. AnimatorController
+	//59. AnimatorController
 	void RegisterClass_AnimatorController();
 	RegisterClass_AnimatorController();
 
-	//59. ScriptMapper
+	//60. ScriptMapper
 	void RegisterClass_ScriptMapper();
 	RegisterClass_ScriptMapper();
 
-	//60. DelayedCallManager
+	//61. DelayedCallManager
 	void RegisterClass_DelayedCallManager();
 	RegisterClass_DelayedCallManager();
 
-	//61. RenderSettings
+	//62. RenderSettings
 	void RegisterClass_RenderSettings();
 	RegisterClass_RenderSettings();
 
-	//62. MonoScript
+	//63. Animation
+	void RegisterClass_Animation();
+	RegisterClass_Animation();
+
+	//64. MonoScript
 	void RegisterClass_MonoScript();
 	RegisterClass_MonoScript();
 
-	//63. MonoManager
+	//65. MonoManager
 	void RegisterClass_MonoManager();
 	RegisterClass_MonoManager();
 
-	//64. FlareLayer
+	//66. FlareLayer
 	void RegisterClass_FlareLayer();
 	RegisterClass_FlareLayer();
 
-	//65. PlayerSettings
+	//67. PlayerSettings
 	void RegisterClass_PlayerSettings();
 	RegisterClass_PlayerSettings();
 
-	//66. SphereCollider
+	//68. SphereCollider
 	void RegisterClass_SphereCollider();
 	RegisterClass_SphereCollider();
 
-	//67. CapsuleCollider
+	//69. CapsuleCollider
 	void RegisterClass_CapsuleCollider();
 	RegisterClass_CapsuleCollider();
 
-	//68. BuildSettings
+	//70. BuildSettings
 	void RegisterClass_BuildSettings();
 	RegisterClass_BuildSettings();
 
-	//69. ResourceManager
+	//71. ResourceManager
 	void RegisterClass_ResourceManager();
 	RegisterClass_ResourceManager();
 
-	//70. NetworkManager
+	//72. NetworkManager
 	void RegisterClass_NetworkManager();
 	RegisterClass_NetworkManager();
 
-	//71. MasterServerInterface
+	//73. MasterServerInterface
 	void RegisterClass_MasterServerInterface();
 	RegisterClass_MasterServerInterface();
 
-	//72. LightmapSettings
+	//74. LightmapSettings
 	void RegisterClass_LightmapSettings();
 	RegisterClass_LightmapSettings();
 
-	//73. LightProbes
+	//75. LightProbes
 	void RegisterClass_LightProbes();
 	RegisterClass_LightProbes();
 
-	//74. AudioMixerSnapshot
+	//76. AudioMixerSnapshot
 	void RegisterClass_AudioMixerSnapshot();
 	RegisterClass_AudioMixerSnapshot();
 
-	//75. RuntimeInitializeOnLoadManager
+	//77. RuntimeInitializeOnLoadManager
 	void RegisterClass_RuntimeInitializeOnLoadManager();
 	RegisterClass_RuntimeInitializeOnLoadManager();
 

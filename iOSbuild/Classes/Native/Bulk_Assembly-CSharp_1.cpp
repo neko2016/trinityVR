@@ -13,12 +13,18 @@
 #include <limits>
 #include <assert.h>
 
+// MediaPlayerCtrl/VideoResize
+struct VideoResize_t2668346607;
+// System.Object
+struct Il2CppObject;
+// System.IAsyncResult
+struct IAsyncResult_t537683269;
+// System.AsyncCallback
+struct AsyncCallback_t1363551830;
 // MediaPlayerFullScreenCtrl
 struct MediaPlayerFullScreenCtrl_t326609931;
 // MediaPlayerCtrl
 struct MediaPlayerCtrl_t3572035536;
-// System.Object
-struct Il2CppObject;
 // MutablePose3D
 struct MutablePose3D_t1273683304;
 // navTrigger
@@ -169,9 +175,14 @@ struct vrTrueFalse_t812900569;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoResize2668346607.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoResize2668346607MethodDeclarations.h"
+#include "mscorlib_System_Object837106420.h"
+#include "mscorlib_System_IntPtr676692020.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "mscorlib_System_AsyncCallback1363551830.h"
 #include "AssemblyU2DCSharp_MediaPlayerFullScreenCtrl326609931.h"
 #include "AssemblyU2DCSharp_MediaPlayerFullScreenCtrl326609931MethodDeclarations.h"
-#include "mscorlib_System_Void2779279689.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Screen3994030297MethodDeclarations.h"
 #include "mscorlib_System_Int322847414787.h"
@@ -213,7 +224,6 @@ struct vrTrueFalse_t812900569;
 #include "mscorlib_System_RuntimeFieldHandle3184214143.h"
 #include "AssemblyU2DCSharp_proto_Proto_PhoneEvent2487257186.h"
 #include "AssemblyU2DCSharp_proto_Proto_PhoneEvent2487257186MethodDeclarations.h"
-#include "mscorlib_System_Object837106420.h"
 #include "mscorlib_System_Boolean211005341.h"
 #include "AssemblyU2DCSharp_proto_PhoneEvent_Types_MotionEven780913764.h"
 #include "AssemblyU2DCSharp_proto_PhoneEvent_Types_MotionEven780913764MethodDeclarations.h"
@@ -350,7 +360,6 @@ struct vrTrueFalse_t812900569;
 #include "System_Core_System_Func_2_gen4111588415MethodDeclarations.h"
 #include "System_Core_System_Linq_Enumerable4285654829MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4111588415.h"
-#include "mscorlib_System_IntPtr676692020.h"
 #include "System_Core_System_Linq_Enumerable4285654829.h"
 #include "AssemblyU2DCSharp_GvrHead2074018243.h"
 #include "System_Core_System_Func_2_gen1679634021MethodDeclarations.h"
@@ -509,6 +518,52 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void MediaPlayerCtrl/VideoResize::.ctor(System.Object,System.IntPtr)
+extern "C"  void VideoResize__ctor_m1542430471 (VideoResize_t2668346607 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((methodPointerType)((MethodInfo*)___method.get_m_value_0())->method);
+	__this->set_method_3(___method);
+	__this->set_m_target_2(___object);
+}
+// System.Void MediaPlayerCtrl/VideoResize::Invoke()
+extern "C"  void VideoResize_Invoke_m1578206753 (VideoResize_t2668346607 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		VideoResize_Invoke_m1578206753((VideoResize_t2668346607 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+extern "C" void pinvoke_delegate_wrapper_VideoResize_t2668346607(Il2CppObject* delegate)
+{
+	typedef void (STDCALL *native_function_ptr_type)();
+	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
+	// Native function invocation
+	_il2cpp_pinvoke_func();
+
+}
+// System.IAsyncResult MediaPlayerCtrl/VideoResize::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * VideoResize_BeginInvoke_m2977844298 (VideoResize_t2668346607 * __this, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
+}
+// System.Void MediaPlayerCtrl/VideoResize::EndInvoke(System.IAsyncResult)
+extern "C"  void VideoResize_EndInvoke_m3531713687 (VideoResize_t2668346607 * __this, Il2CppObject * ___result, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
+}
 // System.Void MediaPlayerFullScreenCtrl::.ctor()
 extern "C"  void MediaPlayerFullScreenCtrl__ctor_m3590714816 (MediaPlayerFullScreenCtrl_t326609931 * __this, const MethodInfo* method)
 {

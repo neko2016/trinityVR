@@ -39,14 +39,34 @@ struct audioTrigger_t1648719106;
 struct Collider_t955670625;
 // audioTriggerAlt
 struct audioTriggerAlt_t4039923015;
+// chapelMusic
+struct chapelMusic_t239962090;
+// System.Linq.IOrderedEnumerable`1<UnityEngine.GameObject>
+struct IOrderedEnumerable_1_t174481749;
+// System.Collections.Generic.IEnumerable`1<UnityEngine.GameObject>
+struct IEnumerable_1_t2589882162;
+// System.Func`2<UnityEngine.GameObject,System.String>
+struct Func_2_t1459861720;
+// System.Linq.IOrderedEnumerable`1<System.Object>
+struct IOrderedEnumerable_1_t1293860363;
+// System.Collections.Generic.IEnumerable`1<System.Object>
+struct IEnumerable_1_t3709260776;
+// System.Func`2<System.Object,System.Object>
+struct Func_2_t2135783352;
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3499186955;
+// System.Object[]
+struct ObjectU5BU5D_t11523773;
+// System.String
+struct String_t;
+// UnityEngine.GameObject
+struct GameObject_t4012695102;
 // ControllerDebugInfo
 struct ControllerDebugInfo_t2979127621;
 // UnityEngine.UI.Text
 struct Text_t3286458198;
 // ControllerDemoManager
 struct ControllerDemoManager_t1306021614;
-// UnityEngine.GameObject
-struct GameObject_t4012695102;
 // UnityEngine.Renderer
 struct Renderer_t1092684080;
 // FPS
@@ -139,8 +159,6 @@ struct OrientationEvent_t756413130;
 struct MotionEvent_t780913764;
 // System.Collections.Generic.List`1<Gvr.Internal.EmulatorTouchEvent/Pointer>
 struct List_1_t2061006614;
-// System.String
-struct String_t;
 // Gvr.Internal.GvrDevice
 struct GvrDevice_t1224326321;
 // System.Single[]
@@ -181,18 +199,12 @@ struct Skybox_t4001624439;
 struct GvrGaze_t2073985384;
 // UnityEngine.MonoBehaviour[]
 struct MonoBehaviourU5BU5D_t936895934;
-// System.Object[]
-struct ObjectU5BU5D_t11523773;
 // System.Collections.Generic.IEnumerable`1<IGvrGazePointer>
 struct IEnumerable_1_t399725874;
 // System.Collections.Generic.IEnumerable`1<UnityEngine.MonoBehaviour>
 struct IEnumerable_1_t1589459515;
 // System.Func`2<UnityEngine.MonoBehaviour,IGvrGazePointer>
 struct Func_2_t4046587907;
-// System.Collections.Generic.IEnumerable`1<System.Object>
-struct IEnumerable_1_t3709260776;
-// System.Func`2<System.Object,System.Object>
-struct Func_2_t2135783352;
 // System.Func`2<IGvrGazePointer,System.Boolean>
 struct Func_2_t1028872879;
 // System.Func`2<System.Object,System.Boolean>
@@ -267,8 +279,6 @@ struct VideoError_t351551085;
 struct VideoFirstFrameReady_t1412571435;
 // MediaPlayerCtrl/VideoReady
 struct VideoReady_t363152904;
-// MediaPlayerCtrl/VideoResize
-struct VideoResize_t2668346607;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -325,9 +335,16 @@ struct VideoResize_t2668346607;
 #include "UnityEngine_UnityEngine_Collider955670625.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015MethodDeclarations.h"
+#include "AssemblyU2DCSharp_chapelMusic239962090.h"
+#include "AssemblyU2DCSharp_chapelMusic239962090MethodDeclarations.h"
+#include "System_Core_System_Func_2_gen1459861720MethodDeclarations.h"
+#include "System_Core_System_Linq_Enumerable4285654829MethodDeclarations.h"
+#include "System_Core_System_Func_2_gen1459861720.h"
+#include "mscorlib_System_IntPtr676692020.h"
+#include "System_Core_System_Linq_Enumerable4285654829.h"
+#include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
 #include "AssemblyU2DCSharp_ControllerDebugInfo2979127621.h"
 #include "AssemblyU2DCSharp_ControllerDebugInfo2979127621MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Text3286458198.h"
 #include "UnityEngine_UnityEngine_Object3878351788.h"
@@ -452,7 +469,6 @@ struct VideoResize_t2668346607;
 #include "AssemblyU2DCSharp_Gvr_Internal_EmulatorConfig3552469519.h"
 #include "AssemblyU2DCSharp_Gvr_Internal_EmulatorConfig_Mode2403779.h"
 #include "mscorlib_System_Threading_ThreadStart2758142267.h"
-#include "mscorlib_System_IntPtr676692020.h"
 #include "mscorlib_System_Threading_Thread1674723085.h"
 #include "System_System_Diagnostics_Process209016206MethodDeclarations.h"
 #include "System_System_Diagnostics_Process209016206.h"
@@ -590,11 +606,9 @@ struct VideoResize_t2668346607;
 #include "AssemblyU2DCSharp_GvrGaze2073985384.h"
 #include "AssemblyU2DCSharp_GvrGaze2073985384MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4046587907MethodDeclarations.h"
-#include "System_Core_System_Linq_Enumerable4285654829MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen1028872879MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 #include "System_Core_System_Func_2_gen4046587907.h"
-#include "System_Core_System_Linq_Enumerable4285654829.h"
 #include "System_Core_System_Func_2_gen1028872879.h"
 #include "UnityEngine_UnityEngine_Ray1522967639MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Ray1522967639.h"
@@ -711,6 +725,16 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #define GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(__this, method) ((  AudioSource_t3628549054 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<GvrAudioSource>()
 #define Component_GetComponent_TisGvrAudioSource_t2139450958_m2769811703(__this, method) ((  GvrAudioSource_t2139450958 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// System.Linq.IOrderedEnumerable`1<!!0> System.Linq.Enumerable::OrderBy<System.Object,System.Object>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+extern "C"  Il2CppObject* Enumerable_OrderBy_TisIl2CppObject_TisIl2CppObject_m4283291253_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject* p0, Func_2_t2135783352 * p1, const MethodInfo* method);
+#define Enumerable_OrderBy_TisIl2CppObject_TisIl2CppObject_m4283291253(__this /* static, unused */, p0, p1, method) ((  Il2CppObject* (*) (Il2CppObject * /* static, unused */, Il2CppObject*, Func_2_t2135783352 *, const MethodInfo*))Enumerable_OrderBy_TisIl2CppObject_TisIl2CppObject_m4283291253_gshared)(__this /* static, unused */, p0, p1, method)
+// System.Linq.IOrderedEnumerable`1<!!0> System.Linq.Enumerable::OrderBy<UnityEngine.GameObject,System.String>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+#define Enumerable_OrderBy_TisGameObject_t4012695102_TisString_t_m2271977027(__this /* static, unused */, p0, p1, method) ((  Il2CppObject* (*) (Il2CppObject * /* static, unused */, Il2CppObject*, Func_2_t1459861720 *, const MethodInfo*))Enumerable_OrderBy_TisIl2CppObject_TisIl2CppObject_m4283291253_gshared)(__this /* static, unused */, p0, p1, method)
+// !!0[] System.Linq.Enumerable::ToArray<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
+extern "C"  ObjectU5BU5D_t11523773* Enumerable_ToArray_TisIl2CppObject_m1195909660_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject* p0, const MethodInfo* method);
+#define Enumerable_ToArray_TisIl2CppObject_m1195909660(__this /* static, unused */, p0, method) ((  ObjectU5BU5D_t11523773* (*) (Il2CppObject * /* static, unused */, Il2CppObject*, const MethodInfo*))Enumerable_ToArray_TisIl2CppObject_m1195909660_gshared)(__this /* static, unused */, p0, method)
+// !!0[] System.Linq.Enumerable::ToArray<UnityEngine.GameObject>(System.Collections.Generic.IEnumerable`1<!!0>)
+#define Enumerable_ToArray_TisGameObject_t4012695102_m744299010(__this /* static, unused */, p0, method) ((  GameObjectU5BU5D_t3499186955* (*) (Il2CppObject * /* static, unused */, Il2CppObject*, const MethodInfo*))Enumerable_ToArray_TisIl2CppObject_m1195909660_gshared)(__this /* static, unused */, p0, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.Text>()
 #define Component_GetComponent_TisText_t3286458198_m1610753993(__this, method) ((  Text_t3286458198 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Renderer>()
@@ -1747,6 +1771,140 @@ IL_00a9:
 	}
 	{
 		return;
+	}
+}
+// System.Void chapelMusic::.ctor()
+extern "C"  void chapelMusic__ctor_m289880769 (chapelMusic_t239962090 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void chapelMusic::Start()
+extern TypeInfo* chapelMusic_t239962090_il2cpp_TypeInfo_var;
+extern TypeInfo* Func_2_t1459861720_il2cpp_TypeInfo_var;
+extern const MethodInfo* chapelMusic_U3CStartU3Em__5_m592324634_MethodInfo_var;
+extern const MethodInfo* Func_2__ctor_m3736938882_MethodInfo_var;
+extern const MethodInfo* Enumerable_OrderBy_TisGameObject_t4012695102_TisString_t_m2271977027_MethodInfo_var;
+extern const MethodInfo* Enumerable_ToArray_TisGameObject_t4012695102_m744299010_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral76715;
+extern const uint32_t chapelMusic_Start_m3531985857_MetadataUsageId;
+extern "C"  void chapelMusic_Start_m3531985857 (chapelMusic_t239962090 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (chapelMusic_Start_m3531985857_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObjectU5BU5D_t3499186955* G_B2_0 = NULL;
+	chapelMusic_t239962090 * G_B2_1 = NULL;
+	GameObjectU5BU5D_t3499186955* G_B1_0 = NULL;
+	chapelMusic_t239962090 * G_B1_1 = NULL;
+	{
+		__this->set_songNumber_4(0);
+		GameObjectU5BU5D_t3499186955* L_0 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral76715, /*hidden argument*/NULL);
+		Func_2_t1459861720 * L_1 = ((chapelMusic_t239962090_StaticFields*)chapelMusic_t239962090_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__amU24cache3_5();
+		G_B1_0 = L_0;
+		G_B1_1 = __this;
+		if (L_1)
+		{
+			G_B2_0 = L_0;
+			G_B2_1 = __this;
+			goto IL_002a;
+		}
+	}
+	{
+		IntPtr_t L_2;
+		L_2.set_m_value_0((void*)chapelMusic_U3CStartU3Em__5_m592324634_MethodInfo_var);
+		Func_2_t1459861720 * L_3 = (Func_2_t1459861720 *)il2cpp_codegen_object_new(Func_2_t1459861720_il2cpp_TypeInfo_var);
+		Func_2__ctor_m3736938882(L_3, NULL, L_2, /*hidden argument*/Func_2__ctor_m3736938882_MethodInfo_var);
+		((chapelMusic_t239962090_StaticFields*)chapelMusic_t239962090_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__amU24cache3_5(L_3);
+		G_B2_0 = G_B1_0;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_002a:
+	{
+		Func_2_t1459861720 * L_4 = ((chapelMusic_t239962090_StaticFields*)chapelMusic_t239962090_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__amU24cache3_5();
+		Il2CppObject* L_5 = Enumerable_OrderBy_TisGameObject_t4012695102_TisString_t_m2271977027(NULL /*static, unused*/, (Il2CppObject*)(Il2CppObject*)G_B2_0, L_4, /*hidden argument*/Enumerable_OrderBy_TisGameObject_t4012695102_TisString_t_m2271977027_MethodInfo_var);
+		GameObjectU5BU5D_t3499186955* L_6 = Enumerable_ToArray_TisGameObject_t4012695102_m744299010(NULL /*static, unused*/, L_5, /*hidden argument*/Enumerable_ToArray_TisGameObject_t4012695102_m744299010_MethodInfo_var);
+		NullCheck(G_B2_1);
+		G_B2_1->set_allMus_2(L_6);
+		GameObjectU5BU5D_t3499186955* L_7 = __this->get_allMus_2();
+		int32_t L_8 = __this->get_songNumber_4();
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		NullCheck(((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9))));
+		AudioSource_t3628549054 * L_10 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9))), /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		__this->set_currMus_3(L_10);
+		AudioSource_t3628549054 * L_11 = __this->get_currMus_3();
+		NullCheck(L_11);
+		AudioSource_Play_m1360558992(L_11, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void chapelMusic::ChangeSong()
+extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var;
+extern const uint32_t chapelMusic_ChangeSong_m738264200_MetadataUsageId;
+extern "C"  void chapelMusic_ChangeSong_m738264200 (chapelMusic_t239962090 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (chapelMusic_ChangeSong_m738264200_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		AudioSource_t3628549054 * L_0 = __this->get_currMus_3();
+		Il2CppObject * L_1 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_0, (0.5f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_1, /*hidden argument*/NULL);
+		int32_t L_2 = __this->get_songNumber_4();
+		GameObjectU5BU5D_t3499186955* L_3 = __this->get_allMus_2();
+		NullCheck(L_3);
+		if ((!(((uint32_t)L_2) == ((uint32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length))))-(int32_t)1))))))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		__this->set_songNumber_4(0);
+		goto IL_0046;
+	}
+
+IL_0038:
+	{
+		int32_t L_4 = __this->get_songNumber_4();
+		__this->set_songNumber_4(((int32_t)((int32_t)L_4+(int32_t)1)));
+	}
+
+IL_0046:
+	{
+		GameObjectU5BU5D_t3499186955* L_5 = __this->get_allMus_2();
+		int32_t L_6 = __this->get_songNumber_4();
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
+		int32_t L_7 = L_6;
+		NullCheck(((L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7))));
+		AudioSource_t3628549054 * L_8 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(((L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7))), /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		__this->set_currMus_3(L_8);
+		AudioSource_t3628549054 * L_9 = __this->get_currMus_3();
+		NullCheck(L_9);
+		AudioSource_Play_m1360558992(L_9, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String chapelMusic::<Start>m__5(UnityEngine.GameObject)
+extern "C"  String_t* chapelMusic_U3CStartU3Em__5_m592324634 (Il2CppObject * __this /* static, unused */, GameObject_t4012695102 * ___go, const MethodInfo* method)
+{
+	{
+		GameObject_t4012695102 * L_0 = ___go;
+		NullCheck(L_0);
+		String_t* L_1 = Object_get_name_m3709440845(L_0, /*hidden argument*/NULL);
+		return L_1;
 	}
 }
 // System.Void ControllerDebugInfo::.ctor()
@@ -29349,52 +29507,6 @@ extern "C"  Il2CppObject * VideoReady_BeginInvoke_m1017391707 (VideoReady_t36315
 }
 // System.Void MediaPlayerCtrl/VideoReady::EndInvoke(System.IAsyncResult)
 extern "C"  void VideoReady_EndInvoke_m488362462 (VideoReady_t363152904 * __this, Il2CppObject * ___result, const MethodInfo* method)
-{
-	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
-}
-// System.Void MediaPlayerCtrl/VideoResize::.ctor(System.Object,System.IntPtr)
-extern "C"  void VideoResize__ctor_m1542430471 (VideoResize_t2668346607 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
-{
-	__this->set_method_ptr_0((methodPointerType)((MethodInfo*)___method.get_m_value_0())->method);
-	__this->set_method_3(___method);
-	__this->set_m_target_2(___object);
-}
-// System.Void MediaPlayerCtrl/VideoResize::Invoke()
-extern "C"  void VideoResize_Invoke_m1578206753 (VideoResize_t2668346607 * __this, const MethodInfo* method)
-{
-	if(__this->get_prev_9() != NULL)
-	{
-		VideoResize_Invoke_m1578206753((VideoResize_t2668346607 *)__this->get_prev_9(), method);
-	}
-	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
-	{
-		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-	else
-	{
-		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-}
-extern "C" void pinvoke_delegate_wrapper_VideoResize_t2668346607(Il2CppObject* delegate)
-{
-	typedef void (STDCALL *native_function_ptr_type)();
-	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
-	// Native function invocation
-	_il2cpp_pinvoke_func();
-
-}
-// System.IAsyncResult MediaPlayerCtrl/VideoResize::BeginInvoke(System.AsyncCallback,System.Object)
-extern "C"  Il2CppObject * VideoResize_BeginInvoke_m2977844298 (VideoResize_t2668346607 * __this, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
-{
-	void *__d_args[1] = {0};
-	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
-}
-// System.Void MediaPlayerCtrl/VideoResize::EndInvoke(System.IAsyncResult)
-extern "C"  void VideoResize_EndInvoke_m3531713687 (VideoResize_t2668346607 * __this, Il2CppObject * ___result, const MethodInfo* method)
 {
 	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 }

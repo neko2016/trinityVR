@@ -98,6 +98,8 @@ struct UInt32U5BU5D_t2133601851;
 #include "System_Core_System_Linq_Enumerable4285654829MethodDeclarations.h"
 #include "System_Core_System_Linq_Enumerable_Fallback825887490.h"
 #include "System_Core_System_Linq_Enumerable_Fallback825887490MethodDeclarations.h"
+#include "System_Core_System_Linq_SortDirection2805156518.h"
+#include "System_Core_System_Linq_SortDirection2805156518MethodDeclarations.h"
 #include "System_Core_System_Runtime_CompilerServices_Extensi795512515.h"
 #include "System_Core_System_Runtime_CompilerServices_Extensi795512515MethodDeclarations.h"
 #include "mscorlib_System_Attribute498693649MethodDeclarations.h"
@@ -2325,6 +2327,51 @@ IL_0011:
 	{
 		ArgumentNullException_t3214793280 * L_3 = (ArgumentNullException_t3214793280 *)il2cpp_codegen_object_new(ArgumentNullException_t3214793280_il2cpp_TypeInfo_var);
 		ArgumentNullException__ctor_m135444188(L_3, _stringLiteral2946935223, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		return;
+	}
+}
+// System.Void System.Linq.Check::SourceAndKeySelector(System.Object,System.Object)
+extern TypeInfo* ArgumentNullException_t3214793280_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3398461467;
+extern Il2CppCodeGenString* _stringLiteral4224264030;
+extern const uint32_t Check_SourceAndKeySelector_m1357342302_MetadataUsageId;
+extern "C"  void Check_SourceAndKeySelector_m1357342302 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___source, Il2CppObject * ___keySelector, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Check_SourceAndKeySelector_m1357342302_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Il2CppObject * L_0 = ___source;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t3214793280 * L_1 = (ArgumentNullException_t3214793280 *)il2cpp_codegen_object_new(ArgumentNullException_t3214793280_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_1, _stringLiteral3398461467, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		Il2CppObject * L_2 = ___keySelector;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t3214793280 * L_3 = (ArgumentNullException_t3214793280 *)il2cpp_codegen_object_new(ArgumentNullException_t3214793280_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_3, _stringLiteral4224264030, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
 	}
 

@@ -714,6 +714,7 @@
 #include "System_Core_Mono_Security_Cryptography_KeyBuilder2049706641.h"
 #include "System_Core_Mono_Security_Cryptography_SymmetricTr3854241866.h"
 #include "System_Core_System_Linq_Enumerable_Fallback825887490.h"
+#include "System_Core_System_Linq_SortDirection2805156518.h"
 #include "System_Core_System_Security_Cryptography_AesTransf2186883254.h"
 #include "System_Core_U3CPrivateImplementationDetailsU3E3053238933.h"
 #include "Mono_Security_Mono_Math_BigInteger1694088927.h"
@@ -1194,6 +1195,7 @@
 #include "AssemblyU2DCSharp_audioRandomPlayGvr3248665366.h"
 #include "AssemblyU2DCSharp_audioTrigger1648719106.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015.h"
+#include "AssemblyU2DCSharp_chapelMusic239962090.h"
 #include "AssemblyU2DCSharp_homeIcon3808435704.h"
 #include "AssemblyU2DCSharp_loadLocation3184820923.h"
 #include "AssemblyU2DCSharp_loadLocationHome_U3CExampleU3Ec_4174890422.h"
@@ -1684,7 +1686,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9480] = 
+extern const int32_t g_FieldOffsetTable[9508] = 
 {
 	0,
 	0,
@@ -7829,6 +7831,30 @@ extern const int32_t g_FieldOffsetTable[9480] =
 	0,
 	0,
 	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	SortDirection_t2805156518::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
 	AesTransform_t2186883254::get_offset_of_expandedKey_12(),
 	AesTransform_t2186883254::get_offset_of_Nk_13(),
 	AesTransform_t2186883254::get_offset_of_Nr_14(),
@@ -11131,6 +11157,10 @@ extern const int32_t g_FieldOffsetTable[9480] =
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioAMB_2(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioSFX_3(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioNAR_4(),
+	chapelMusic_t239962090::get_offset_of_allMus_2(),
+	chapelMusic_t239962090::get_offset_of_currMus_3(),
+	chapelMusic_t239962090::get_offset_of_songNumber_4(),
+	chapelMusic_t239962090_StaticFields::get_offset_of_U3CU3Ef__amU24cache3_5(),
 	homeIcon_t3808435704::get_offset_of_camXRot_2(),
 	homeIcon_t3808435704::get_offset_of_newYRot_3(),
 	homeIcon_t3808435704::get_offset_of_lastRot_4(),
@@ -11170,7 +11200,7 @@ extern const int32_t g_FieldOffsetTable[9480] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1904] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1913] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -12290,6 +12320,14 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1904] =
 	0, 0, 0, 0,
 	0, 0, 0, 0,
 	0, 0, 0, 0,
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+	sizeof (SortDirection_t2805156518)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	0, 0, 0, 0,
 	sizeof (Aes_t1557549544), -1, 0, 0,
 	sizeof (AesManaged_t564372777), -1, 0, 0,
 	sizeof (AesTransform_t2186883254), -1, sizeof(AesTransform_t2186883254_StaticFields), 0,
@@ -13057,6 +13095,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1904] =
 	sizeof (audioRandomPlayGvr_t3248665366), -1, 0, 0,
 	sizeof (audioTrigger_t1648719106), -1, 0, 0,
 	sizeof (audioTriggerAlt_t4039923015), -1, 0, 0,
+	sizeof (chapelMusic_t239962090), -1, sizeof(chapelMusic_t239962090_StaticFields), 0,
 	sizeof (homeIcon_t3808435704), -1, 0, 0,
 	sizeof (loadLocation_t3184820923), -1, 0, 0,
 	sizeof (loadLocationDoor_t3861857545), -1, 0, 0,

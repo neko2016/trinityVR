@@ -6901,6 +6901,7 @@ extern "C" void SymmetricTransform_TransformFinalBlock_m2524388439 ();
 extern "C" void Check_Source_m228347543 ();
 extern "C" void Check_SourceAndSelector_m3164339431 ();
 extern "C" void Check_SourceAndPredicate_m2252398949 ();
+extern "C" void Check_SourceAndKeySelector_m1357342302 ();
 extern "C" void ExtensionAttribute__ctor_m1242622322 ();
 extern "C" void Aes__ctor_m380511311 ();
 extern "C" void AesManaged__ctor_m1572578968 ();
@@ -11282,6 +11283,10 @@ extern "C" void audioTrigger_OnTriggerExit_m838138755 ();
 extern "C" void audioTriggerAlt__ctor_m701067780 ();
 extern "C" void audioTriggerAlt_Start_m3943172868 ();
 extern "C" void audioTriggerAlt_OnTriggerExit_m3011628846 ();
+extern "C" void chapelMusic__ctor_m289880769 ();
+extern "C" void chapelMusic_Start_m3531985857 ();
+extern "C" void chapelMusic_ChangeSong_m738264200 ();
+extern "C" void chapelMusic_U3CStartU3Em__5_m592324634 ();
 extern "C" void ControllerDebugInfo__ctor_m2279919558 ();
 extern "C" void ControllerDebugInfo_Awake_m2517524777 ();
 extern "C" void ControllerDebugInfo_Update_m3684891655 ();
@@ -12620,7 +12625,7 @@ extern "C" void vrTrueFalse__ctor_m1230274226 ();
 extern "C" void vrTrueFalse_Start_m177412018 ();
 extern "C" void vrTrueFalse_makeVRtrue_m3469953834 ();
 extern "C" void vrTrueFalse_makeVRfalse_m159705257 ();
-extern const methodPointerType g_MethodPointers[12609] = 
+extern const methodPointerType g_MethodPointers[12614] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -19512,6 +19517,7 @@ extern const methodPointerType g_MethodPointers[12609] =
 	Check_Source_m228347543,
 	Check_SourceAndSelector_m3164339431,
 	Check_SourceAndPredicate_m2252398949,
+	Check_SourceAndKeySelector_m1357342302,
 	ExtensionAttribute__ctor_m1242622322,
 	Aes__ctor_m380511311,
 	AesManaged__ctor_m1572578968,
@@ -23893,6 +23899,10 @@ extern const methodPointerType g_MethodPointers[12609] =
 	audioTriggerAlt__ctor_m701067780,
 	audioTriggerAlt_Start_m3943172868,
 	audioTriggerAlt_OnTriggerExit_m3011628846,
+	chapelMusic__ctor_m289880769,
+	chapelMusic_Start_m3531985857,
+	chapelMusic_ChangeSong_m738264200,
+	chapelMusic_U3CStartU3Em__5_m592324634,
 	ControllerDebugInfo__ctor_m2279919558,
 	ControllerDebugInfo_Awake_m2517524777,
 	ControllerDebugInfo_Update_m3684891655,

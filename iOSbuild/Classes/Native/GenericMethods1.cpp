@@ -44,13 +44,15 @@ struct EventFunction_1_t3885370180;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
-#include "mscorlib_System_Collections_DictionaryEntry130027246.h"
+#include "mscorlib_System_Byte2778693821.h"
 #include "mscorlib_System_Int322847414787.h"
 #include "mscorlib_System_Array2840145358MethodDeclarations.h"
 #include "mscorlib_System_ArgumentOutOfRangeException3479058991MethodDeclarations.h"
 #include "mscorlib_System_String968488902.h"
 #include "mscorlib_System_ArgumentOutOfRangeException3479058991.h"
 #include "mscorlib_System_Void2779279689.h"
+#include "mscorlib_System_Char2778706699.h"
+#include "mscorlib_System_Collections_DictionaryEntry130027246.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21776082610.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_24276931675.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22826756868.h"
@@ -156,6 +158,18 @@ struct EventFunction_1_t3885370180;
 #include "mscorlib_System_Collections_Generic_List_1_gen1081512082MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform284553113MethodDeclarations.h"
 
+// T System.Array::InternalArray__get_Item<System.Byte>(System.Int32)
+extern "C"  uint8_t Array_InternalArray__get_Item_TisByte_t2778693821_m3484475127_gshared (Il2CppArray * __this, int32_t ___index, const MethodInfo* method);
+#define Array_InternalArray__get_Item_TisByte_t2778693821_m3484475127(__this, ___index, method) ((  uint8_t (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisByte_t2778693821_m3484475127_gshared)(__this, ___index, method)
+// System.Void System.Array::GetGenericValueImpl<System.Byte>(System.Int32,!!0&)
+extern "C"  void Array_GetGenericValueImpl_TisByte_t2778693821_m4168978832_gshared (Il2CppArray * __this, int32_t p0, uint8_t* p1, const MethodInfo* method);
+#define Array_GetGenericValueImpl_TisByte_t2778693821_m4168978832(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, uint8_t*, const MethodInfo*))Array_GetGenericValueImpl_TisByte_t2778693821_m4168978832_gshared)(__this, p0, p1, method)
+// T System.Array::InternalArray__get_Item<System.Char>(System.Int32)
+extern "C"  uint16_t Array_InternalArray__get_Item_TisChar_t2778706699_m125306601_gshared (Il2CppArray * __this, int32_t ___index, const MethodInfo* method);
+#define Array_InternalArray__get_Item_TisChar_t2778706699_m125306601(__this, ___index, method) ((  uint16_t (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisChar_t2778706699_m125306601_gshared)(__this, ___index, method)
+// System.Void System.Array::GetGenericValueImpl<System.Char>(System.Int32,!!0&)
+extern "C"  void Array_GetGenericValueImpl_TisChar_t2778706699_m2936770782_gshared (Il2CppArray * __this, int32_t p0, uint16_t* p1, const MethodInfo* method);
+#define Array_GetGenericValueImpl_TisChar_t2778706699_m2936770782(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, uint16_t*, const MethodInfo*))Array_GetGenericValueImpl_TisChar_t2778706699_m2936770782_gshared)(__this, p0, p1, method)
 // T System.Array::InternalArray__get_Item<System.Collections.DictionaryEntry>(System.Int32)
 extern "C"  DictionaryEntry_t130027246  Array_InternalArray__get_Item_TisDictionaryEntry_t130027246_m297283038_gshared (Il2CppArray * __this, int32_t ___index, const MethodInfo* method);
 #define Array_InternalArray__get_Item_TisDictionaryEntry_t130027246_m297283038(__this, ___index, method) ((  DictionaryEntry_t130027246  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisDictionaryEntry_t130027246_m297283038_gshared)(__this, ___index, method)
@@ -600,6 +614,82 @@ extern "C"  GameObject_t4012695102 * ExecuteEvents_GetEventHandler_TisIl2CppObje
 // System.Boolean UnityEngine.EventSystems.ExecuteEvents::CanHandleEvent<System.Object>(UnityEngine.GameObject)
 extern "C"  bool ExecuteEvents_CanHandleEvent_TisIl2CppObject_m2627025177_gshared (Il2CppObject * __this /* static, unused */, GameObject_t4012695102 * p0, const MethodInfo* method);
 #define ExecuteEvents_CanHandleEvent_TisIl2CppObject_m2627025177(__this /* static, unused */, p0, method) ((  bool (*) (Il2CppObject * /* static, unused */, GameObject_t4012695102 *, const MethodInfo*))ExecuteEvents_CanHandleEvent_TisIl2CppObject_m2627025177_gshared)(__this /* static, unused */, p0, method)
+// T System.Array::InternalArray__get_Item<System.Byte>(System.Int32)
+// T System.Array::InternalArray__get_Item<System.Byte>(System.Int32)
+extern TypeInfo* ArgumentOutOfRangeException_t3479058991_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral100346066;
+extern const uint32_t Array_InternalArray__get_Item_TisByte_t2778693821_m3484475127_MetadataUsageId;
+extern "C"  uint8_t Array_InternalArray__get_Item_TisByte_t2778693821_m3484475127_gshared (Il2CppArray * __this, int32_t ___index, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__get_Item_TisByte_t2778693821_m3484475127_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	uint8_t V_0 = 0x0;
+	{
+		int32_t L_0 = ___index;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1203127607((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t3479058991 * L_2 = (ArgumentOutOfRangeException_t3479058991 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t3479058991_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m2026296331(L_2, (String_t*)_stringLiteral100346066, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		int32_t L_3 = ___index;
+		NullCheck((Il2CppArray *)__this);
+		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_3, (uint8_t*)(&V_0));
+		uint8_t L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__get_Item<System.Char>(System.Int32)
+// T System.Array::InternalArray__get_Item<System.Char>(System.Int32)
+extern TypeInfo* ArgumentOutOfRangeException_t3479058991_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral100346066;
+extern const uint32_t Array_InternalArray__get_Item_TisChar_t2778706699_m125306601_MetadataUsageId;
+extern "C"  uint16_t Array_InternalArray__get_Item_TisChar_t2778706699_m125306601_gshared (Il2CppArray * __this, int32_t ___index, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__get_Item_TisChar_t2778706699_m125306601_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	uint16_t V_0 = 0x0;
+	{
+		int32_t L_0 = ___index;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1203127607((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t3479058991 * L_2 = (ArgumentOutOfRangeException_t3479058991 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t3479058991_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m2026296331(L_2, (String_t*)_stringLiteral100346066, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		int32_t L_3 = ___index;
+		NullCheck((Il2CppArray *)__this);
+		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_3, (uint16_t*)(&V_0));
+		uint16_t L_4 = V_0;
+		return L_4;
+	}
+}
 // T System.Array::InternalArray__get_Item<System.Collections.DictionaryEntry>(System.Int32)
 // T System.Array::InternalArray__get_Item<System.Collections.DictionaryEntry>(System.Int32)
 extern TypeInfo* ArgumentOutOfRangeException_t3479058991_il2cpp_TypeInfo_var;
