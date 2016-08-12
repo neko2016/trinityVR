@@ -20,6 +20,8 @@ struct Texture2D_t2509538522;
 struct String_t;
 // System.Collections.IEnumerator
 struct IEnumerator_t287207039;
+// System.Action
+struct Action_t437523947;
 
 #include "codegen/il2cpp-codegen.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_MEDIAPLAYER_ERRO2861322446.h"
@@ -27,9 +29,12 @@ struct IEnumerator_t287207039;
 #include "mscorlib_System_String968488902.h"
 #include "mscorlib_System_IntPtr676692020.h"
 #include "UnityEngine_UnityEngine_Vector23525329788.h"
+#include "System_Core_System_Action437523947.h"
 
 // System.Void MediaPlayerCtrl::.ctor()
 extern "C"  void MediaPlayerCtrl__ctor_m243769755 (MediaPlayerCtrl_t3572035536 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MediaPlayerCtrl::.cctor()
+extern "C"  void MediaPlayerCtrl__cctor_m2779798898 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void MediaPlayerCtrl::Awake()
 extern "C"  void MediaPlayerCtrl_Awake_m481374974 (MediaPlayerCtrl_t3572035536 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void MediaPlayerCtrl::Start()
@@ -196,3 +201,7 @@ extern "C"  Il2CppObject * MediaPlayerCtrl_DownloadStreamingVideoAndLoad_m375300
 extern "C"  Il2CppObject * MediaPlayerCtrl_DownloadStreamingVideoAndLoad2_m2575442283 (MediaPlayerCtrl_t3572035536 * __this, String_t* ___strURL, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator MediaPlayerCtrl::CopyStreamingAssetVideoAndLoad(System.String)
 extern "C"  Il2CppObject * MediaPlayerCtrl_CopyStreamingAssetVideoAndLoad_m2139597948 (MediaPlayerCtrl_t3572035536 * __this, String_t* ___strURL, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MediaPlayerCtrl::CheckThreading()
+extern "C"  void MediaPlayerCtrl_CheckThreading_m2277806009 (MediaPlayerCtrl_t3572035536 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MediaPlayerCtrl::AddActionForUnityMainThread(System.Action)
+extern "C"  void MediaPlayerCtrl_AddActionForUnityMainThread_m3296503710 (MediaPlayerCtrl_t3572035536 * __this, Action_t437523947 * ___a, const MethodInfo* method) IL2CPP_METHOD_ATTR;

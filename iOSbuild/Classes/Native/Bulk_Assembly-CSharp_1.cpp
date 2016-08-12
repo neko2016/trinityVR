@@ -161,10 +161,10 @@ struct MeshRenderer_t1217738301;
 struct videoMarker_t853609621;
 // videoTrigger
 struct videoTrigger_t3087919293;
-// videoTriggerStart
-struct videoTriggerStart_t1940838821;
 // UnityEngine.Collider
 struct Collider_t955670625;
+// videoTriggerStart
+struct videoTriggerStart_t1940838821;
 // videoTriggerToScene
 struct videoTriggerToScene_t1861271380;
 // vrChangeCamera
@@ -410,9 +410,9 @@ struct vrTrueFalse_t812900569;
 #include "AssemblyU2DCSharp_videoMarker853609621MethodDeclarations.h"
 #include "AssemblyU2DCSharp_videoTrigger3087919293.h"
 #include "AssemblyU2DCSharp_videoTrigger3087919293MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Collider955670625.h"
 #include "AssemblyU2DCSharp_videoTriggerStart1940838821.h"
 #include "AssemblyU2DCSharp_videoTriggerStart1940838821MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Collider955670625.h"
 #include "AssemblyU2DCSharp_videoTriggerToScene1861271380.h"
 #include "AssemblyU2DCSharp_videoTriggerToScene1861271380MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag1523288937MethodDeclarations.h"
@@ -18507,6 +18507,50 @@ extern "C"  void videoTrigger_Start_m945170302 (videoTrigger_t3087919293 * __thi
 		return;
 	}
 }
+// System.Void videoTrigger::OnTriggerEnter(UnityEngine.Collider)
+extern const MethodInfo* GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var;
+extern const uint32_t videoTrigger_OnTriggerEnter_m2517865914_MetadataUsageId;
+extern "C"  void videoTrigger_OnTriggerEnter_m2517865914 (videoTrigger_t3087919293 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (videoTrigger_OnTriggerEnter_m2517865914_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		MediaPlayerCtrl_t3572035536 * L_1 = GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225(L_0, /*hidden argument*/GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var);
+		__this->set_mediaScript_2(L_1);
+		MediaPlayerCtrl_t3572035536 * L_2 = __this->get_mediaScript_2();
+		NullCheck(L_2);
+		MediaPlayerCtrl_Play_m4037048957(L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void videoTrigger::OnTriggerExit(UnityEngine.Collider)
+extern const MethodInfo* GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var;
+extern const uint32_t videoTrigger_OnTriggerExit_m2363543720_MetadataUsageId;
+extern "C"  void videoTrigger_OnTriggerExit_m2363543720 (videoTrigger_t3087919293 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (videoTrigger_OnTriggerExit_m2363543720_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		MediaPlayerCtrl_t3572035536 * L_1 = GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225(L_0, /*hidden argument*/GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var);
+		__this->set_mediaScript_2(L_1);
+		MediaPlayerCtrl_t3572035536 * L_2 = __this->get_mediaScript_2();
+		NullCheck(L_2);
+		MediaPlayerCtrl_Stop_m4130733003(L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void videoTrigger::Update()
 extern "C"  void videoTrigger_Update_m3536327759 (videoTrigger_t3087919293 * __this, const MethodInfo* method)
 {
@@ -18516,15 +18560,14 @@ extern "C"  void videoTrigger_Update_m3536327759 (videoTrigger_t3087919293 * __t
 		int32_t L_1 = MediaPlayerCtrl_GetCurrentState_m372257026(L_0, /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_1) == ((uint32_t)2))))
 		{
-			goto IL_001d;
+			goto IL_0017;
 		}
 	}
 	{
 		videoTrigger_MoveCamera_m3159346204(__this, /*hidden argument*/NULL);
-		Object_Destroy_m176400816(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
 	}
 
-IL_001d:
+IL_0017:
 	{
 		return;
 	}

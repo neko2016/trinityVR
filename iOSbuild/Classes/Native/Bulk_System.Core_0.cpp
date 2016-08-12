@@ -25,8 +25,14 @@ struct ByteU5BU5D_t58506160;
 struct SymmetricTransform_t3854241867;
 // System.Security.Cryptography.SymmetricAlgorithm
 struct SymmetricAlgorithm_t839208017;
+// System.Action
+struct Action_t437523947;
 // System.Object
 struct Il2CppObject;
+// System.IAsyncResult
+struct IAsyncResult_t537683269;
+// System.AsyncCallback
+struct AsyncCallback_t1363551830;
 // System.Runtime.CompilerServices.ExtensionAttribute
 struct ExtensionAttribute_t795512515;
 // System.Security.Cryptography.Aes
@@ -92,6 +98,10 @@ struct UInt32U5BU5D_t2133601851;
 #include "mscorlib_System_ObjectDisposedException973246880MethodDeclarations.h"
 #include "mscorlib_System_ObjectDisposedException973246880.h"
 #include "mscorlib_System_Security_Cryptography_PaddingMode1724215917.h"
+#include "System_Core_System_Action437523947.h"
+#include "System_Core_System_Action437523947MethodDeclarations.h"
+#include "mscorlib_System_IntPtr676692020.h"
+#include "mscorlib_System_AsyncCallback1363551830.h"
 #include "System_Core_System_Linq_Check3277941805.h"
 #include "System_Core_System_Linq_Check3277941805MethodDeclarations.h"
 #include "System_Core_System_Linq_Enumerable4285654829.h"
@@ -2214,6 +2224,52 @@ IL_0034:
 		ByteU5BU5D_t58506160* L_13 = SymmetricTransform_FinalDecrypt_m3742401599(__this, L_10, L_11, L_12, /*hidden argument*/NULL);
 		return L_13;
 	}
+}
+// System.Void System.Action::.ctor(System.Object,System.IntPtr)
+extern "C"  void Action__ctor_m2957240604 (Action_t437523947 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((methodPointerType)((MethodInfo*)___method.get_m_value_0())->method);
+	__this->set_method_3(___method);
+	__this->set_m_target_2(___object);
+}
+// System.Void System.Action::Invoke()
+extern "C"  void Action_Invoke_m1445970038 (Action_t437523947 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		Action_Invoke_m1445970038((Action_t437523947 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+extern "C" void pinvoke_delegate_wrapper_Action_t437523947(Il2CppObject* delegate)
+{
+	typedef void (STDCALL *native_function_ptr_type)();
+	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
+	// Native function invocation
+	_il2cpp_pinvoke_func();
+
+}
+// System.IAsyncResult System.Action::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * Action_BeginInvoke_m1056371541 (Action_t437523947 * __this, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
+}
+// System.Void System.Action::EndInvoke(System.IAsyncResult)
+extern "C"  void Action_EndInvoke_m2672838956 (Action_t437523947 * __this, Il2CppObject * ___result, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 }
 // System.Void System.Linq.Check::Source(System.Object)
 extern TypeInfo* ArgumentNullException_t3214793280_il2cpp_TypeInfo_var;

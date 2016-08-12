@@ -27,25 +27,11 @@ struct StringU5BU5D_t2956870243;
 extern "C"  DirectoryInfo_t3421965634 * Directory_CreateDirectory_m677877474 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.DirectoryInfo System.IO.Directory::CreateDirectoriesInternal(System.String)
 extern "C"  DirectoryInfo_t3421965634 * Directory_CreateDirectoriesInternal_m1545778887 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void System.IO.Directory::Delete(System.String)
-extern "C"  void Directory_Delete_m1796764451 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void System.IO.Directory::RecursiveDelete(System.String)
-extern "C"  void Directory_RecursiveDelete_m184278935 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void System.IO.Directory::Delete(System.String,System.Boolean)
-extern "C"  void Directory_Delete_m1791284730 (Il2CppObject * __this /* static, unused */, String_t* ___path, bool ___recursive, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.Directory::Exists(System.String)
 extern "C"  bool Directory_Exists_m4117375188 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Directory::GetCurrentDirectory()
 extern "C"  String_t* Directory_GetCurrentDirectory_m3403080603 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String[] System.IO.Directory::GetDirectories(System.String)
-extern "C"  StringU5BU5D_t2956870243* Directory_GetDirectories_m888334714 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String[] System.IO.Directory::GetDirectories(System.String,System.String)
-extern "C"  StringU5BU5D_t2956870243* Directory_GetDirectories_m1009841206 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___searchPattern, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String[] System.IO.Directory::GetFiles(System.String)
-extern "C"  StringU5BU5D_t2956870243* Directory_GetFiles_m3665304654 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String[] System.IO.Directory::GetFiles(System.String,System.String)
 extern "C"  StringU5BU5D_t2956870243* Directory_GetFiles_m2573902858 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___searchPattern, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void System.IO.Directory::CheckPathExceptions(System.String)
-extern "C"  void Directory_CheckPathExceptions_m3281597667 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String[] System.IO.Directory::GetFileSystemEntries(System.String,System.String,System.IO.FileAttributes,System.IO.FileAttributes)
 extern "C"  StringU5BU5D_t2956870243* Directory_GetFileSystemEntries_m3873165372 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___searchPattern, int32_t ___mask, int32_t ___attrs, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -42,6 +42,7 @@ extern "C" void pinvoke_delegate_wrapper_SocketAsyncCall_t106740903 ();
 extern "C" void pinvoke_delegate_wrapper_MatchAppendEvaluator_t2378778064 ();
 extern "C" void pinvoke_delegate_wrapper_CostDelegate_t3008899218 ();
 extern "C" void pinvoke_delegate_wrapper_MatchEvaluator_t510977541 ();
+extern "C" void pinvoke_delegate_wrapper_Action_t437523947 ();
 extern "C" void pinvoke_delegate_wrapper_PrimalityTest_t397689820 ();
 extern "C" void pinvoke_delegate_wrapper_KeyGeneratedEventHandler_t1233396098 ();
 extern "C" void pinvoke_delegate_wrapper_CertificateSelectionCallback_t3257378130 ();
@@ -79,7 +80,7 @@ extern "C" void pinvoke_delegate_wrapper_VideoError_t351551085 ();
 extern "C" void pinvoke_delegate_wrapper_VideoFirstFrameReady_t1412571435 ();
 extern "C" void pinvoke_delegate_wrapper_VideoReady_t363152904 ();
 extern "C" void pinvoke_delegate_wrapper_VideoResize_t2668346607 ();
-extern const methodPointerType g_DelegateWrappersManagedToNative[68] = 
+extern const methodPointerType g_DelegateWrappersManagedToNative[69] = 
 {
 	pinvoke_delegate_wrapper_PrimalityTest_t397689819,
 	pinvoke_delegate_wrapper_KeyGeneratedEventHandler_t1233396096,
@@ -112,6 +113,7 @@ extern const methodPointerType g_DelegateWrappersManagedToNative[68] =
 	pinvoke_delegate_wrapper_MatchAppendEvaluator_t2378778064,
 	pinvoke_delegate_wrapper_CostDelegate_t3008899218,
 	pinvoke_delegate_wrapper_MatchEvaluator_t510977541,
+	pinvoke_delegate_wrapper_Action_t437523947,
 	pinvoke_delegate_wrapper_PrimalityTest_t397689820,
 	pinvoke_delegate_wrapper_KeyGeneratedEventHandler_t1233396098,
 	pinvoke_delegate_wrapper_CertificateSelectionCallback_t3257378130,

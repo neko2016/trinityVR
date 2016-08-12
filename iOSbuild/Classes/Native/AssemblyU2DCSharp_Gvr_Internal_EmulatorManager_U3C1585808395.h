@@ -31,8 +31,8 @@ struct  U3CEndOfFrameU3Ec__Iterator5_t1585808395  : public Il2CppObject
 public:
 	// proto.PhoneEvent Gvr.Internal.EmulatorManager/<EndOfFrame>c__Iterator5::<phoneEvent>__0
 	PhoneEvent_t2801000292 * ___U3CphoneEventU3E__0_0;
-	// System.Object Gvr.Internal.EmulatorManager/<EndOfFrame>c__Iterator5::<$s_14>__1
-	Il2CppObject * ___U3CU24s_14U3E__1_1;
+	// System.Object Gvr.Internal.EmulatorManager/<EndOfFrame>c__Iterator5::<$s_17>__1
+	Il2CppObject * ___U3CU24s_17U3E__1_1;
 	// System.Int32 Gvr.Internal.EmulatorManager/<EndOfFrame>c__Iterator5::$PC
 	int32_t ___U24PC_2;
 	// System.Object Gvr.Internal.EmulatorManager/<EndOfFrame>c__Iterator5::$current
@@ -50,13 +50,13 @@ public:
 		Il2CppCodeGenWriteBarrier(&___U3CphoneEventU3E__0_0, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU24s_14U3E__1_1() { return static_cast<int32_t>(offsetof(U3CEndOfFrameU3Ec__Iterator5_t1585808395, ___U3CU24s_14U3E__1_1)); }
-	inline Il2CppObject * get_U3CU24s_14U3E__1_1() const { return ___U3CU24s_14U3E__1_1; }
-	inline Il2CppObject ** get_address_of_U3CU24s_14U3E__1_1() { return &___U3CU24s_14U3E__1_1; }
-	inline void set_U3CU24s_14U3E__1_1(Il2CppObject * value)
+	inline static int32_t get_offset_of_U3CU24s_17U3E__1_1() { return static_cast<int32_t>(offsetof(U3CEndOfFrameU3Ec__Iterator5_t1585808395, ___U3CU24s_17U3E__1_1)); }
+	inline Il2CppObject * get_U3CU24s_17U3E__1_1() const { return ___U3CU24s_17U3E__1_1; }
+	inline Il2CppObject ** get_address_of_U3CU24s_17U3E__1_1() { return &___U3CU24s_17U3E__1_1; }
+	inline void set_U3CU24s_17U3E__1_1(Il2CppObject * value)
 	{
-		___U3CU24s_14U3E__1_1 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU24s_14U3E__1_1, value);
+		___U3CU24s_17U3E__1_1 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU24s_17U3E__1_1, value);
 	}
 
 	inline static int32_t get_offset_of_U24PC_2() { return static_cast<int32_t>(offsetof(U3CEndOfFrameU3Ec__Iterator5_t1585808395, ___U24PC_2)); }

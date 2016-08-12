@@ -1476,6 +1476,7 @@
 #include "System_Core_System_Linq_Enumerable4285654829.h"
 #include "System_Core_System_Security_Cryptography_Aes1557549544.h"
 #include "System_Core_System_Security_Cryptography_AesManaged564372777.h"
+#include "System_Core_System_Action437523947.h"
 #include "System_Core_U3CPrivateImplementationDetailsU3E_U242366141818.h"
 #include "System_Core_U3CPrivateImplementationDetailsU3E_U242366142878.h"
 #include "System_Core_U3CPrivateImplementationDetailsU3E_U24A335950518.h"
@@ -1686,7 +1687,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9508] = 
+extern const int32_t g_FieldOffsetTable[9511] = 
 {
 	0,
 	0,
@@ -10482,6 +10483,9 @@ extern const int32_t g_FieldOffsetTable[9508] =
 	MediaPlayerCtrl_t3572035536::get_offset_of_m_bPause_30(),
 	MediaPlayerCtrl_t3572035536::get_offset_of_m_iID_31(),
 	MediaPlayerCtrl_t3572035536::get_offset_of__videoTexture_32(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_unityMainThreadActionList_33(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_checkNewActions_34(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_thisLock_35(),
 	MEDIAPLAYER_ERROR_t2861322446::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -10903,7 +10907,7 @@ extern const int32_t g_FieldOffsetTable[9508] =
 	EmulatorManager_t556192240::get_offset_of_orientationEventListenersInternal_14(),
 	EmulatorManager_t556192240::get_offset_of_buttonEventListenersInternal_15(),
 	U3CEndOfFrameU3Ec__Iterator5_t1585808395::get_offset_of_U3CphoneEventU3E__0_0(),
-	U3CEndOfFrameU3Ec__Iterator5_t1585808395::get_offset_of_U3CU24s_14U3E__1_1(),
+	U3CEndOfFrameU3Ec__Iterator5_t1585808395::get_offset_of_U3CU24s_17U3E__1_1(),
 	U3CEndOfFrameU3Ec__Iterator5_t1585808395::get_offset_of_U24PC_2(),
 	U3CEndOfFrameU3Ec__Iterator5_t1585808395::get_offset_of_U24current_3(),
 	U3CEndOfFrameU3Ec__Iterator5_t1585808395::get_offset_of_U3CU3Ef__this_4(),
@@ -11200,7 +11204,7 @@ extern const int32_t g_FieldOffsetTable[9508] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1913] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1914] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -12331,6 +12335,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1913] =
 	sizeof (Aes_t1557549544), -1, 0, 0,
 	sizeof (AesManaged_t564372777), -1, 0, 0,
 	sizeof (AesTransform_t2186883254), -1, sizeof(AesTransform_t2186883254_StaticFields), 0,
+	sizeof (Action_t437523947), sizeof(methodPointerType), 0, 0,
 	0, 0, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238935), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields), 0,
 	sizeof (U24ArrayTypeU24120_t2366141819)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24120_t2366141819_marshaled), 0, 0,

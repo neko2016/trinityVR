@@ -26,6 +26,10 @@ struct VideoEnd_t1216006784;
 struct VideoError_t351551085;
 // MediaPlayerCtrl/VideoFirstFrameReady
 struct VideoFirstFrameReady_t1412571435;
+// System.Collections.Generic.List`1<System.Action>
+struct List_1_t1234482916;
+// System.Object
+struct Il2CppObject;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_MEDIAPLAYER_STAT2874295127.h"
@@ -103,6 +107,12 @@ public:
 	int32_t ___m_iID_31;
 	// UnityEngine.Texture2D MediaPlayerCtrl::_videoTexture
 	Texture2D_t2509538522 * ____videoTexture_32;
+	// System.Collections.Generic.List`1<System.Action> MediaPlayerCtrl::unityMainThreadActionList
+	List_1_t1234482916 * ___unityMainThreadActionList_33;
+	// System.Boolean MediaPlayerCtrl::checkNewActions
+	bool ___checkNewActions_34;
+	// System.Object MediaPlayerCtrl::thisLock
+	Il2CppObject * ___thisLock_35;
 
 public:
 	inline static int32_t get_offset_of_m_strFileName_2() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_strFileName_2)); }
@@ -362,6 +372,32 @@ public:
 	{
 		____videoTexture_32 = value;
 		Il2CppCodeGenWriteBarrier(&____videoTexture_32, value);
+	}
+
+	inline static int32_t get_offset_of_unityMainThreadActionList_33() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___unityMainThreadActionList_33)); }
+	inline List_1_t1234482916 * get_unityMainThreadActionList_33() const { return ___unityMainThreadActionList_33; }
+	inline List_1_t1234482916 ** get_address_of_unityMainThreadActionList_33() { return &___unityMainThreadActionList_33; }
+	inline void set_unityMainThreadActionList_33(List_1_t1234482916 * value)
+	{
+		___unityMainThreadActionList_33 = value;
+		Il2CppCodeGenWriteBarrier(&___unityMainThreadActionList_33, value);
+	}
+
+	inline static int32_t get_offset_of_checkNewActions_34() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___checkNewActions_34)); }
+	inline bool get_checkNewActions_34() const { return ___checkNewActions_34; }
+	inline bool* get_address_of_checkNewActions_34() { return &___checkNewActions_34; }
+	inline void set_checkNewActions_34(bool value)
+	{
+		___checkNewActions_34 = value;
+	}
+
+	inline static int32_t get_offset_of_thisLock_35() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___thisLock_35)); }
+	inline Il2CppObject * get_thisLock_35() const { return ___thisLock_35; }
+	inline Il2CppObject ** get_address_of_thisLock_35() { return &___thisLock_35; }
+	inline void set_thisLock_35(Il2CppObject * value)
+	{
+		___thisLock_35 = value;
+		Il2CppCodeGenWriteBarrier(&___thisLock_35, value);
 	}
 };
 

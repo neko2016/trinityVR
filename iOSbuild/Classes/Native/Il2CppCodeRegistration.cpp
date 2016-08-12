@@ -30,7 +30,7 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	g_MethodPointers,
 	0,
 	NULL,
-	68,
+	69,
 	g_DelegateWrappersManagedToNative,
 	137,
 	g_MarshalingFunctions,

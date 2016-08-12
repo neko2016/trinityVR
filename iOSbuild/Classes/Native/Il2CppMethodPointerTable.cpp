@@ -2256,16 +2256,9 @@ extern "C" void BinaryReader_ReadUInt64_m4114149001 ();
 extern "C" void BinaryReader_CheckBuffer_m244572668 ();
 extern "C" void Directory_CreateDirectory_m677877474 ();
 extern "C" void Directory_CreateDirectoriesInternal_m1545778887 ();
-extern "C" void Directory_Delete_m1796764451 ();
-extern "C" void Directory_RecursiveDelete_m184278935 ();
-extern "C" void Directory_Delete_m1791284730 ();
 extern "C" void Directory_Exists_m4117375188 ();
 extern "C" void Directory_GetCurrentDirectory_m3403080603 ();
-extern "C" void Directory_GetDirectories_m888334714 ();
-extern "C" void Directory_GetDirectories_m1009841206 ();
-extern "C" void Directory_GetFiles_m3665304654 ();
 extern "C" void Directory_GetFiles_m2573902858 ();
-extern "C" void Directory_CheckPathExceptions_m3281597667 ();
 extern "C" void Directory_GetFileSystemEntries_m3873165372 ();
 extern "C" void DirectoryInfo__ctor_m4029233824 ();
 extern "C" void DirectoryInfo__ctor_m2875622621 ();
@@ -2387,7 +2380,6 @@ extern "C" void MonoIO__cctor_m3474878605 ();
 extern "C" void MonoIO_GetException_m1380825636 ();
 extern "C" void MonoIO_GetException_m973090016 ();
 extern "C" void MonoIO_CreateDirectory_m510494529 ();
-extern "C" void MonoIO_RemoveDirectory_m1670467257 ();
 extern "C" void MonoIO_GetFileSystemEntries_m809643788 ();
 extern "C" void MonoIO_GetCurrentDirectory_m2958295317 ();
 extern "C" void MonoIO_DeleteFile_m991567969 ();
@@ -2395,7 +2387,6 @@ extern "C" void MonoIO_GetFileAttributes_m3774473836 ();
 extern "C" void MonoIO_GetFileType_m2747902883 ();
 extern "C" void MonoIO_ExistsFile_m4276986322 ();
 extern "C" void MonoIO_ExistsDirectory_m2166720481 ();
-extern "C" void MonoIO_ExistsSymlink_m3498549621 ();
 extern "C" void MonoIO_GetFileStat_m3422900554 ();
 extern "C" void MonoIO_Open_m1906428851 ();
 extern "C" void MonoIO_Close_m3125785430 ();
@@ -6898,6 +6889,10 @@ extern "C" void SymmetricTransform_ThrowBadPaddingException_m2083216889 ();
 extern "C" void SymmetricTransform_FinalEncrypt_m975601255 ();
 extern "C" void SymmetricTransform_FinalDecrypt_m3742401599 ();
 extern "C" void SymmetricTransform_TransformFinalBlock_m2524388439 ();
+extern "C" void Action__ctor_m2957240604 ();
+extern "C" void Action_Invoke_m1445970038 ();
+extern "C" void Action_BeginInvoke_m1056371541 ();
+extern "C" void Action_EndInvoke_m2672838956 ();
 extern "C" void Check_Source_m228347543 ();
 extern "C" void Check_SourceAndSelector_m3164339431 ();
 extern "C" void Check_SourceAndPredicate_m2252398949 ();
@@ -11838,6 +11833,7 @@ extern "C" void MedaiPlayerSampleSphereGUI_Start_m465190508 ();
 extern "C" void MedaiPlayerSampleSphereGUI_Update_m1541856033 ();
 extern "C" void MedaiPlayerSampleSphereGUI_OnGUI_m1013451366 ();
 extern "C" void MediaPlayerCtrl__ctor_m243769755 ();
+extern "C" void MediaPlayerCtrl__cctor_m2779798898 ();
 extern "C" void MediaPlayerCtrl_Awake_m481374974 ();
 extern "C" void MediaPlayerCtrl_Start_m3485874843 ();
 extern "C" void MediaPlayerCtrl_OnApplicationQuit_m964394649 ();
@@ -11921,6 +11917,8 @@ extern "C" void MediaPlayerCtrl_Call_GetStatus_m1093213333 ();
 extern "C" void MediaPlayerCtrl_DownloadStreamingVideoAndLoad_m3753001957 ();
 extern "C" void MediaPlayerCtrl_DownloadStreamingVideoAndLoad2_m2575442283 ();
 extern "C" void MediaPlayerCtrl_CopyStreamingAssetVideoAndLoad_m2139597948 ();
+extern "C" void MediaPlayerCtrl_CheckThreading_m2277806009 ();
+extern "C" void MediaPlayerCtrl_AddActionForUnityMainThread_m3296503710 ();
 extern "C" void U3CCopyStreamingAssetVideoAndLoadU3Ec__Iterator2__ctor_m103147806 ();
 extern "C" void U3CCopyStreamingAssetVideoAndLoadU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1198183934 ();
 extern "C" void U3CCopyStreamingAssetVideoAndLoadU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m3914634642 ();
@@ -12611,6 +12609,8 @@ extern "C" void videoMarker_Start_m783638390 ();
 extern "C" void videoMarker_markerPressed_m3392801084 ();
 extern "C" void videoTrigger__ctor_m1998032510 ();
 extern "C" void videoTrigger_Start_m945170302 ();
+extern "C" void videoTrigger_OnTriggerEnter_m2517865914 ();
+extern "C" void videoTrigger_OnTriggerExit_m2363543720 ();
 extern "C" void videoTrigger_Update_m3536327759 ();
 extern "C" void videoTrigger_MoveCamera_m3159346204 ();
 extern "C" void videoTriggerStart__ctor_m471784806 ();
@@ -14872,16 +14872,9 @@ extern const methodPointerType g_MethodPointers[12614] =
 	BinaryReader_CheckBuffer_m244572668,
 	Directory_CreateDirectory_m677877474,
 	Directory_CreateDirectoriesInternal_m1545778887,
-	Directory_Delete_m1796764451,
-	Directory_RecursiveDelete_m184278935,
-	Directory_Delete_m1791284730,
 	Directory_Exists_m4117375188,
 	Directory_GetCurrentDirectory_m3403080603,
-	Directory_GetDirectories_m888334714,
-	Directory_GetDirectories_m1009841206,
-	Directory_GetFiles_m3665304654,
 	Directory_GetFiles_m2573902858,
-	Directory_CheckPathExceptions_m3281597667,
 	Directory_GetFileSystemEntries_m3873165372,
 	DirectoryInfo__ctor_m4029233824,
 	DirectoryInfo__ctor_m2875622621,
@@ -15003,7 +14996,6 @@ extern const methodPointerType g_MethodPointers[12614] =
 	MonoIO_GetException_m1380825636,
 	MonoIO_GetException_m973090016,
 	MonoIO_CreateDirectory_m510494529,
-	MonoIO_RemoveDirectory_m1670467257,
 	MonoIO_GetFileSystemEntries_m809643788,
 	MonoIO_GetCurrentDirectory_m2958295317,
 	MonoIO_DeleteFile_m991567969,
@@ -15011,7 +15003,6 @@ extern const methodPointerType g_MethodPointers[12614] =
 	MonoIO_GetFileType_m2747902883,
 	MonoIO_ExistsFile_m4276986322,
 	MonoIO_ExistsDirectory_m2166720481,
-	MonoIO_ExistsSymlink_m3498549621,
 	MonoIO_GetFileStat_m3422900554,
 	MonoIO_Open_m1906428851,
 	MonoIO_Close_m3125785430,
@@ -19514,6 +19505,10 @@ extern const methodPointerType g_MethodPointers[12614] =
 	SymmetricTransform_FinalEncrypt_m975601255,
 	SymmetricTransform_FinalDecrypt_m3742401599,
 	SymmetricTransform_TransformFinalBlock_m2524388439,
+	Action__ctor_m2957240604,
+	Action_Invoke_m1445970038,
+	Action_BeginInvoke_m1056371541,
+	Action_EndInvoke_m2672838956,
 	Check_Source_m228347543,
 	Check_SourceAndSelector_m3164339431,
 	Check_SourceAndPredicate_m2252398949,
@@ -24454,6 +24449,7 @@ extern const methodPointerType g_MethodPointers[12614] =
 	MedaiPlayerSampleSphereGUI_Update_m1541856033,
 	MedaiPlayerSampleSphereGUI_OnGUI_m1013451366,
 	MediaPlayerCtrl__ctor_m243769755,
+	MediaPlayerCtrl__cctor_m2779798898,
 	MediaPlayerCtrl_Awake_m481374974,
 	MediaPlayerCtrl_Start_m3485874843,
 	MediaPlayerCtrl_OnApplicationQuit_m964394649,
@@ -24537,6 +24533,8 @@ extern const methodPointerType g_MethodPointers[12614] =
 	MediaPlayerCtrl_DownloadStreamingVideoAndLoad_m3753001957,
 	MediaPlayerCtrl_DownloadStreamingVideoAndLoad2_m2575442283,
 	MediaPlayerCtrl_CopyStreamingAssetVideoAndLoad_m2139597948,
+	MediaPlayerCtrl_CheckThreading_m2277806009,
+	MediaPlayerCtrl_AddActionForUnityMainThread_m3296503710,
 	U3CCopyStreamingAssetVideoAndLoadU3Ec__Iterator2__ctor_m103147806,
 	U3CCopyStreamingAssetVideoAndLoadU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1198183934,
 	U3CCopyStreamingAssetVideoAndLoadU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m3914634642,
@@ -25227,6 +25225,8 @@ extern const methodPointerType g_MethodPointers[12614] =
 	videoMarker_markerPressed_m3392801084,
 	videoTrigger__ctor_m1998032510,
 	videoTrigger_Start_m945170302,
+	videoTrigger_OnTriggerEnter_m2517865914,
+	videoTrigger_OnTriggerExit_m2363543720,
 	videoTrigger_Update_m3536327759,
 	videoTrigger_MoveCamera_m3159346204,
 	videoTriggerStart__ctor_m471784806,

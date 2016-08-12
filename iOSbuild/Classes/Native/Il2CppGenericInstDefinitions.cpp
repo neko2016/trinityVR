@@ -926,6 +926,9 @@ extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2291280135_0_0_0 = { 1, G
 extern const Il2CppType ByteString_t960030907_0_0_0;
 static const Il2CppType* GenInst_ByteString_t960030907_0_0_0_Types[] = { &ByteString_t960030907_0_0_0 };
 extern const Il2CppGenericInst GenInst_ByteString_t960030907_0_0_0 = { 1, GenInst_ByteString_t960030907_0_0_0_Types };
+extern const Il2CppType Action_t437523947_0_0_0;
+static const Il2CppType* GenInst_Action_t437523947_0_0_0_Types[] = { &Action_t437523947_0_0_0 };
+extern const Il2CppGenericInst GenInst_Action_t437523947_0_0_0 = { 1, GenInst_Action_t437523947_0_0_0_Types };
 extern const Il2CppType GvrEye_t2145111534_0_0_0;
 static const Il2CppType* GenInst_GvrEye_t2145111534_0_0_0_Types[] = { &GvrEye_t2145111534_0_0_0 };
 extern const Il2CppGenericInst GenInst_GvrEye_t2145111534_0_0_0 = { 1, GenInst_GvrEye_t2145111534_0_0_0_Types };
@@ -1837,7 +1840,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2_t3312956448_0_0_0 = { 2, GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2_t3312956448_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t3312956448_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[640] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[641] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2847414787_0_0_0,
@@ -2160,6 +2163,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[640] =
 	&GenInst_ExtensionIntPair_t2229152330_0_0_0_IGeneratedExtensionLite_t1352303945_0_0_0_DictionaryEntry_t130027246_0_0_0,
 	&GenInst_KeyValuePair_2_t2291280135_0_0_0,
 	&GenInst_ByteString_t960030907_0_0_0,
+	&GenInst_Action_t437523947_0_0_0,
 	&GenInst_GvrEye_t2145111534_0_0_0,
 	&GenInst_MonoBehaviour_t3012272455_0_0_0,
 	&GenInst_GvrEye_t2145111534_0_0_0_Boolean_t211005341_0_0_0,

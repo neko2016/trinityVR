@@ -25,10 +25,19 @@ public class videoTrigger : MonoBehaviour {
 		mediaScript.Play();
 	}
 
+	void OnTriggerEnter (Collider col) {
+		mediaScript = gameObject.GetComponent<MediaPlayerCtrl> ();
+		mediaScript.Play();
+	}
+
+	void OnTriggerExit (Collider col) {
+		mediaScript = gameObject.GetComponent<MediaPlayerCtrl> ();
+		mediaScript.Stop();
+	}
+
 	void Update () {
 		if (mediaScript.GetCurrentState () == MediaPlayerCtrl.MEDIAPLAYER_STATE.END) {
 			MoveCamera ();
-			Destroy(this);
 		}
 	}
 
