@@ -19,37 +19,22 @@ public class videoTrigger : MonoBehaviour {
 	// vectors for the camera and the home panel
 	private Vector3 newPos;
 
-	void Start () {
+	void OnEnable () {
 		mediaScript = gameObject.GetComponent<MediaPlayerCtrl> ();
 		newPos = new Vector3(moveXto, moveYto, moveZto);
 		mediaScript.Play();
 	}
 
-	void OnTriggerEnter (Collider col) {
-		mediaScript = gameObject.GetComponent<MediaPlayerCtrl> ();
-		mediaScript.Play();
-	}
-
-	void OnTriggerExit (Collider col) {
-		mediaScript = gameObject.GetComponent<MediaPlayerCtrl> ();
-		mediaScript.Stop();
-	}
-
 	void Update () {
+		
 		if (mediaScript.GetCurrentState () == MediaPlayerCtrl.MEDIAPLAYER_STATE.END) {
+			
+			mediaScript.Stop ();
 			MoveCamera ();
+			this.enabled = false;
+
 		}
 	}
-
-	/* void OnTriggerEnter (Collider col) { // when the collider is triggered set the current vectors of the camera and home panel, and play the video
-		mediaScript.Play();
-	} */
-
-	/* void OnTriggerExit (Collider col) { // when the collider is exited stop the video and reset the trigger
-		mediaScript.Stop();
-		gameObject.GetComponent<videoTrigger>().enabled = false;
-		Destroy(this);
-	} */
 
 	// for moving the camera after the video has taken place
 	public void MoveCamera() {

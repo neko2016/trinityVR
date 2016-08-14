@@ -5,6 +5,12 @@ public class videoTriggerStart : MonoBehaviour {
 
 	private Collider col;
 
+	private MediaPlayerCtrl mediaScript;
+
+	void Start() {
+		mediaScript = gameObject.GetComponent<MediaPlayerCtrl> ();
+	}
+
 	void OnTriggerEnter (Collider col) { 
 
 		if (gameObject.GetComponent<videoTrigger> () != null) {
@@ -15,4 +21,16 @@ public class videoTriggerStart : MonoBehaviour {
 			gameObject.GetComponent<videoTriggerToScene> ().enabled = true;
 		}
 	}
+
+	void OnTriggerExit (Collider col) {
+		
+		if (gameObject.GetComponent<videoTrigger> () != null) {
+			gameObject.GetComponent<videoTrigger> ().enabled = false;
+		}
+
+		if (gameObject.GetComponent<videoTriggerToScene> () != null) {
+			gameObject.GetComponent<videoTriggerToScene> ().enabled = false;
+		}
+	}
+
 }

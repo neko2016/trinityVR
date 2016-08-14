@@ -8,7 +8,6 @@ public class videoMarker : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
 		videoPanel = transform.Find ("videoPanel");
 		videoPanel.GetComponent<MeshRenderer> ().enabled = false;
 		isPlaying = false;
