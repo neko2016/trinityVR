@@ -28,5 +28,5 @@ extern "C"  void chapelMusic__ctor_m289880769 (chapelMusic_t239962090 * __this, 
 extern "C"  void chapelMusic_Start_m3531985857 (chapelMusic_t239962090 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void chapelMusic::ChangeSong()
 extern "C"  void chapelMusic_ChangeSong_m738264200 (chapelMusic_t239962090 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String chapelMusic::<Start>m__5(UnityEngine.GameObject)
-extern "C"  String_t* chapelMusic_U3CStartU3Em__5_m592324634 (Il2CppObject * __this /* static, unused */, GameObject_t4012695102 * ___go, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String chapelMusic::<Start>m__6(UnityEngine.GameObject)
+extern "C"  String_t* chapelMusic_U3CStartU3Em__6_m2810082587 (Il2CppObject * __this /* static, unused */, GameObject_t4012695102 * ___go, const MethodInfo* method) IL2CPP_METHOD_ATTR;

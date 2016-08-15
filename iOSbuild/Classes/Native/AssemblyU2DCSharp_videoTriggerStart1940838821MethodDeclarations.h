@@ -22,5 +22,9 @@ struct Collider_t955670625;
 
 // System.Void videoTriggerStart::.ctor()
 extern "C"  void videoTriggerStart__ctor_m471784806 (videoTriggerStart_t1940838821 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void videoTriggerStart::Start()
+extern "C"  void videoTriggerStart_Start_m3713889894 (videoTriggerStart_t1940838821 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void videoTriggerStart::OnTriggerEnter(UnityEngine.Collider)
 extern "C"  void videoTriggerStart_OnTriggerEnter_m4214394834 (videoTriggerStart_t1940838821 * __this, Collider_t955670625 * ___col, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void videoTriggerStart::OnTriggerExit(UnityEngine.Collider)
+extern "C"  void videoTriggerStart_OnTriggerExit_m3111007120 (videoTriggerStart_t1940838821 * __this, Collider_t955670625 * ___col, const MethodInfo* method) IL2CPP_METHOD_ATTR;

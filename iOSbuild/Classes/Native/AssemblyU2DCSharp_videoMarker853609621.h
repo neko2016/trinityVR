@@ -12,6 +12,8 @@
 
 // UnityEngine.Transform
 struct Transform_t284553113;
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3499186955;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 
@@ -29,6 +31,8 @@ public:
 	Transform_t284553113 * ___videoPanel_2;
 	// System.Boolean videoMarker::isPlaying
 	bool ___isPlaying_3;
+	// UnityEngine.GameObject[] videoMarker::allAudioNAR
+	GameObjectU5BU5D_t3499186955* ___allAudioNAR_4;
 
 public:
 	inline static int32_t get_offset_of_videoPanel_2() { return static_cast<int32_t>(offsetof(videoMarker_t853609621, ___videoPanel_2)); }
@@ -46,6 +50,15 @@ public:
 	inline void set_isPlaying_3(bool value)
 	{
 		___isPlaying_3 = value;
+	}
+
+	inline static int32_t get_offset_of_allAudioNAR_4() { return static_cast<int32_t>(offsetof(videoMarker_t853609621, ___allAudioNAR_4)); }
+	inline GameObjectU5BU5D_t3499186955* get_allAudioNAR_4() const { return ___allAudioNAR_4; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioNAR_4() { return &___allAudioNAR_4; }
+	inline void set_allAudioNAR_4(GameObjectU5BU5D_t3499186955* value)
+	{
+		___allAudioNAR_4 = value;
+		Il2CppCodeGenWriteBarrier(&___allAudioNAR_4, value);
 	}
 };
 

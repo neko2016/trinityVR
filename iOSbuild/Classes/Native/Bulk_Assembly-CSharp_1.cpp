@@ -13,14 +13,16 @@
 #include <limits>
 #include <assert.h>
 
-// MediaPlayerCtrl/VideoResize
-struct VideoResize_t2668346607;
+// MediaPlayerCtrl/VideoReady
+struct VideoReady_t363152904;
 // System.Object
 struct Il2CppObject;
 // System.IAsyncResult
 struct IAsyncResult_t537683269;
 // System.AsyncCallback
 struct AsyncCallback_t1363551830;
+// MediaPlayerCtrl/VideoResize
+struct VideoResize_t2668346607;
 // MediaPlayerFullScreenCtrl
 struct MediaPlayerFullScreenCtrl_t326609931;
 // MediaPlayerCtrl
@@ -159,12 +161,14 @@ struct VideoCopyTexture_t908209291;
 struct MeshRenderer_t1217738301;
 // videoMarker
 struct videoMarker_t853609621;
+// UnityEngine.AudioSource
+struct AudioSource_t3628549054;
 // videoTrigger
 struct videoTrigger_t3087919293;
-// UnityEngine.Collider
-struct Collider_t955670625;
 // videoTriggerStart
 struct videoTriggerStart_t1940838821;
+// UnityEngine.Collider
+struct Collider_t955670625;
 // videoTriggerToScene
 struct videoTriggerToScene_t1861271380;
 // vrChangeCamera
@@ -175,12 +179,14 @@ struct vrTrueFalse_t812900569;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
-#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoResize2668346607.h"
-#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoResize2668346607MethodDeclarations.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoReady363152904.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoReady363152904MethodDeclarations.h"
 #include "mscorlib_System_Object837106420.h"
 #include "mscorlib_System_IntPtr676692020.h"
 #include "mscorlib_System_Void2779279689.h"
 #include "mscorlib_System_AsyncCallback1363551830.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoResize2668346607.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoResize2668346607MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MediaPlayerFullScreenCtrl326609931.h"
 #include "AssemblyU2DCSharp_MediaPlayerFullScreenCtrl326609931MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455MethodDeclarations.h"
@@ -408,11 +414,13 @@ struct vrTrueFalse_t812900569;
 #include "UnityEngine_UnityEngine_MeshRenderer1217738301.h"
 #include "AssemblyU2DCSharp_videoMarker853609621.h"
 #include "AssemblyU2DCSharp_videoMarker853609621MethodDeclarations.h"
+#include "AssemblyU2DCSharp_audioFadeOut1617174140MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AudioSource3628549054.h"
 #include "AssemblyU2DCSharp_videoTrigger3087919293.h"
 #include "AssemblyU2DCSharp_videoTrigger3087919293MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Collider955670625.h"
 #include "AssemblyU2DCSharp_videoTriggerStart1940838821.h"
 #include "AssemblyU2DCSharp_videoTriggerStart1940838821MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Collider955670625.h"
 #include "AssemblyU2DCSharp_videoTriggerToScene1861271380.h"
 #include "AssemblyU2DCSharp_videoTriggerToScene1861271380MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag1523288937MethodDeclarations.h"
@@ -507,6 +515,8 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gs
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
 #define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.AudioSource>()
+#define GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(__this, method) ((  AudioSource_t3628549054 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<MediaPlayerCtrl>()
 #define GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225(__this, method) ((  MediaPlayerCtrl_t3572035536 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<videoTrigger>()
@@ -518,6 +528,52 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void MediaPlayerCtrl/VideoReady::.ctor(System.Object,System.IntPtr)
+extern "C"  void VideoReady__ctor_m3604465870 (VideoReady_t363152904 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((methodPointerType)((MethodInfo*)___method.get_m_value_0())->method);
+	__this->set_method_3(___method);
+	__this->set_m_target_2(___object);
+}
+// System.Void MediaPlayerCtrl/VideoReady::Invoke()
+extern "C"  void VideoReady_Invoke_m3338328744 (VideoReady_t363152904 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		VideoReady_Invoke_m3338328744((VideoReady_t363152904 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+extern "C" void pinvoke_delegate_wrapper_VideoReady_t363152904(Il2CppObject* delegate)
+{
+	typedef void (STDCALL *native_function_ptr_type)();
+	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
+	// Native function invocation
+	_il2cpp_pinvoke_func();
+
+}
+// System.IAsyncResult MediaPlayerCtrl/VideoReady::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * VideoReady_BeginInvoke_m1017391707 (VideoReady_t363152904 * __this, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
+}
+// System.Void MediaPlayerCtrl/VideoReady::EndInvoke(System.IAsyncResult)
+extern "C"  void VideoReady_EndInvoke_m488362462 (VideoReady_t363152904 * __this, Il2CppObject * ___result, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
+}
 // System.Void MediaPlayerCtrl/VideoResize::.ctor(System.Object,System.IntPtr)
 extern "C"  void VideoResize__ctor_m1542430471 (VideoResize_t2668346607 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
 {
@@ -18393,6 +18449,7 @@ extern "C"  void videoMarker__ctor_m1836500598 (videoMarker_t853609621 * __this,
 // System.Void videoMarker::Start()
 extern const MethodInfo* Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2662701641;
+extern Il2CppCodeGenString* _stringLiteral77055;
 extern const uint32_t videoMarker_Start_m783638390_MetadataUsageId;
 extern "C"  void videoMarker_Start_m783638390 (videoMarker_t853609621 * __this, const MethodInfo* method)
 {
@@ -18412,6 +18469,8 @@ extern "C"  void videoMarker_Start_m783638390 (videoMarker_t853609621 * __this, 
 		MeshRenderer_t1217738301 * L_3 = Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022(L_2, /*hidden argument*/Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var);
 		NullCheck(L_3);
 		Renderer_set_enabled_m2514140131(L_3, (bool)0, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3499186955* L_4 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral77055, /*hidden argument*/NULL);
+		__this->set_allAudioNAR_4(L_4);
 		__this->set_isPlaying_3((bool)0);
 		return;
 	}
@@ -18419,6 +18478,7 @@ extern "C"  void videoMarker_Start_m783638390 (videoMarker_t853609621 * __this, 
 // System.Void videoMarker::markerPressed()
 extern const MethodInfo* Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var;
 extern const MethodInfo* Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var;
 extern const uint32_t videoMarker_markerPressed_m3392801084_MetadataUsageId;
 extern "C"  void videoMarker_markerPressed_m3392801084 (videoMarker_t853609621 * __this, const MethodInfo* method)
 {
@@ -18428,11 +18488,14 @@ extern "C"  void videoMarker_markerPressed_m3392801084 (videoMarker_t853609621 *
 		il2cpp_codegen_initialize_method (videoMarker_markerPressed_m3392801084_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObjectU5BU5D_t3499186955* V_1 = NULL;
+	int32_t V_2 = 0;
 	{
 		bool L_0 = __this->get_isPlaying_3();
 		if (L_0)
 		{
-			goto IL_0038;
+			goto IL_006e;
 		}
 	}
 	{
@@ -18447,25 +18510,59 @@ extern "C"  void videoMarker_markerPressed_m3392801084 (videoMarker_t853609621 *
 		NullCheck(L_4);
 		MediaPlayerCtrl_Play_m4037048957(L_4, /*hidden argument*/NULL);
 		__this->set_isPlaying_3((bool)1);
+		GameObjectU5BU5D_t3499186955* L_5 = __this->get_allAudioNAR_4();
+		V_1 = L_5;
+		V_2 = 0;
 		goto IL_0060;
 	}
 
-IL_0038:
+IL_0041:
 	{
-		Transform_t284553113 * L_5 = __this->get_videoPanel_2();
-		NullCheck(L_5);
-		MeshRenderer_t1217738301 * L_6 = Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022(L_5, /*hidden argument*/Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var);
+		GameObjectU5BU5D_t3499186955* L_6 = V_1;
+		int32_t L_7 = V_2;
 		NullCheck(L_6);
-		Renderer_set_enabled_m2514140131(L_6, (bool)0, /*hidden argument*/NULL);
-		Transform_t284553113 * L_7 = __this->get_videoPanel_2();
-		NullCheck(L_7);
-		MediaPlayerCtrl_t3572035536 * L_8 = Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(L_7, /*hidden argument*/Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var);
-		NullCheck(L_8);
-		MediaPlayerCtrl_Stop_m4130733003(L_8, /*hidden argument*/NULL);
-		__this->set_isPlaying_3((bool)0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		V_0 = ((L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8)));
+		GameObject_t4012695102 * L_9 = V_0;
+		NullCheck(L_9);
+		AudioSource_t3628549054 * L_10 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_9, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_11 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_10, (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_11, /*hidden argument*/NULL);
+		int32_t L_12 = V_2;
+		V_2 = ((int32_t)((int32_t)L_12+(int32_t)1));
 	}
 
 IL_0060:
+	{
+		int32_t L_13 = V_2;
+		GameObjectU5BU5D_t3499186955* L_14 = V_1;
+		NullCheck(L_14);
+		if ((((int32_t)L_13) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_14)->max_length)))))))
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		goto IL_0096;
+	}
+
+IL_006e:
+	{
+		Transform_t284553113 * L_15 = __this->get_videoPanel_2();
+		NullCheck(L_15);
+		MeshRenderer_t1217738301 * L_16 = Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022(L_15, /*hidden argument*/Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var);
+		NullCheck(L_16);
+		Renderer_set_enabled_m2514140131(L_16, (bool)0, /*hidden argument*/NULL);
+		Transform_t284553113 * L_17 = __this->get_videoPanel_2();
+		NullCheck(L_17);
+		MediaPlayerCtrl_t3572035536 * L_18 = Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(L_17, /*hidden argument*/Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var);
+		NullCheck(L_18);
+		MediaPlayerCtrl_Stop_m4130733003(L_18, /*hidden argument*/NULL);
+		__this->set_isPlaying_3((bool)0);
+	}
+
+IL_0096:
 	{
 		return;
 	}
@@ -18478,15 +18575,15 @@ extern "C"  void videoTrigger__ctor_m1998032510 (videoTrigger_t3087919293 * __th
 		return;
 	}
 }
-// System.Void videoTrigger::Start()
+// System.Void videoTrigger::OnEnable()
 extern const MethodInfo* GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var;
-extern const uint32_t videoTrigger_Start_m945170302_MetadataUsageId;
-extern "C"  void videoTrigger_Start_m945170302 (videoTrigger_t3087919293 * __this, const MethodInfo* method)
+extern const uint32_t videoTrigger_OnEnable_m1506328648_MetadataUsageId;
+extern "C"  void videoTrigger_OnEnable_m1506328648 (videoTrigger_t3087919293 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (videoTrigger_Start_m945170302_MetadataUsageId);
+		il2cpp_codegen_initialize_method (videoTrigger_OnEnable_m1506328648_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -18507,50 +18604,6 @@ extern "C"  void videoTrigger_Start_m945170302 (videoTrigger_t3087919293 * __thi
 		return;
 	}
 }
-// System.Void videoTrigger::OnTriggerEnter(UnityEngine.Collider)
-extern const MethodInfo* GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var;
-extern const uint32_t videoTrigger_OnTriggerEnter_m2517865914_MetadataUsageId;
-extern "C"  void videoTrigger_OnTriggerEnter_m2517865914 (videoTrigger_t3087919293 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (videoTrigger_OnTriggerEnter_m2517865914_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
-		NullCheck(L_0);
-		MediaPlayerCtrl_t3572035536 * L_1 = GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225(L_0, /*hidden argument*/GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var);
-		__this->set_mediaScript_2(L_1);
-		MediaPlayerCtrl_t3572035536 * L_2 = __this->get_mediaScript_2();
-		NullCheck(L_2);
-		MediaPlayerCtrl_Play_m4037048957(L_2, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void videoTrigger::OnTriggerExit(UnityEngine.Collider)
-extern const MethodInfo* GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var;
-extern const uint32_t videoTrigger_OnTriggerExit_m2363543720_MetadataUsageId;
-extern "C"  void videoTrigger_OnTriggerExit_m2363543720 (videoTrigger_t3087919293 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (videoTrigger_OnTriggerExit_m2363543720_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
-		NullCheck(L_0);
-		MediaPlayerCtrl_t3572035536 * L_1 = GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225(L_0, /*hidden argument*/GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var);
-		__this->set_mediaScript_2(L_1);
-		MediaPlayerCtrl_t3572035536 * L_2 = __this->get_mediaScript_2();
-		NullCheck(L_2);
-		MediaPlayerCtrl_Stop_m4130733003(L_2, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void videoTrigger::Update()
 extern "C"  void videoTrigger_Update_m3536327759 (videoTrigger_t3087919293 * __this, const MethodInfo* method)
 {
@@ -18560,14 +18613,18 @@ extern "C"  void videoTrigger_Update_m3536327759 (videoTrigger_t3087919293 * __t
 		int32_t L_1 = MediaPlayerCtrl_GetCurrentState_m372257026(L_0, /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_1) == ((uint32_t)2))))
 		{
-			goto IL_0017;
+			goto IL_0029;
 		}
 	}
 	{
+		MediaPlayerCtrl_t3572035536 * L_2 = __this->get_mediaScript_2();
+		NullCheck(L_2);
+		MediaPlayerCtrl_Stop_m4130733003(L_2, /*hidden argument*/NULL);
 		videoTrigger_MoveCamera_m3159346204(__this, /*hidden argument*/NULL);
+		Behaviour_set_enabled_m2046806933(__this, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0017:
+IL_0029:
 	{
 		return;
 	}
@@ -18605,6 +18662,25 @@ extern "C"  void videoTriggerStart__ctor_m471784806 (videoTriggerStart_t19408388
 {
 	{
 		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void videoTriggerStart::Start()
+extern const MethodInfo* GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var;
+extern const uint32_t videoTriggerStart_Start_m3713889894_MetadataUsageId;
+extern "C"  void videoTriggerStart_Start_m3713889894 (videoTriggerStart_t1940838821 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (videoTriggerStart_Start_m3713889894_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		MediaPlayerCtrl_t3572035536 * L_1 = GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225(L_0, /*hidden argument*/GameObject_GetComponent_TisMediaPlayerCtrl_t3572035536_m863806225_MethodInfo_var);
+		__this->set_mediaScript_3(L_1);
 		return;
 	}
 }
@@ -18655,6 +18731,60 @@ IL_0027:
 		videoTriggerToScene_t1861271380 * L_9 = GameObject_GetComponent_TisvideoTriggerToScene_t1861271380_m1161171981(L_8, /*hidden argument*/GameObject_GetComponent_TisvideoTriggerToScene_t1861271380_m1161171981_MethodInfo_var);
 		NullCheck(L_9);
 		Behaviour_set_enabled_m2046806933(L_9, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_004e:
+	{
+		return;
+	}
+}
+// System.Void videoTriggerStart::OnTriggerExit(UnityEngine.Collider)
+extern const MethodInfo* GameObject_GetComponent_TisvideoTrigger_t3087919293_m2942147584_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisvideoTriggerToScene_t1861271380_m1161171981_MethodInfo_var;
+extern const uint32_t videoTriggerStart_OnTriggerExit_m3111007120_MetadataUsageId;
+extern "C"  void videoTriggerStart_OnTriggerExit_m3111007120 (videoTriggerStart_t1940838821 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (videoTriggerStart_OnTriggerExit_m3111007120_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		videoTrigger_t3087919293 * L_1 = GameObject_GetComponent_TisvideoTrigger_t3087919293_m2942147584(L_0, /*hidden argument*/GameObject_GetComponent_TisvideoTrigger_t3087919293_m2942147584_MethodInfo_var);
+		bool L_2 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_1, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		GameObject_t4012695102 * L_3 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		videoTrigger_t3087919293 * L_4 = GameObject_GetComponent_TisvideoTrigger_t3087919293_m2942147584(L_3, /*hidden argument*/GameObject_GetComponent_TisvideoTrigger_t3087919293_m2942147584_MethodInfo_var);
+		NullCheck(L_4);
+		Behaviour_set_enabled_m2046806933(L_4, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_0027:
+	{
+		GameObject_t4012695102 * L_5 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		videoTriggerToScene_t1861271380 * L_6 = GameObject_GetComponent_TisvideoTriggerToScene_t1861271380_m1161171981(L_5, /*hidden argument*/GameObject_GetComponent_TisvideoTriggerToScene_t1861271380_m1161171981_MethodInfo_var);
+		bool L_7 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_6, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		GameObject_t4012695102 * L_8 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		videoTriggerToScene_t1861271380 * L_9 = GameObject_GetComponent_TisvideoTriggerToScene_t1861271380_m1161171981(L_8, /*hidden argument*/GameObject_GetComponent_TisvideoTriggerToScene_t1861271380_m1161171981_MethodInfo_var);
+		NullCheck(L_9);
+		Behaviour_set_enabled_m2046806933(L_9, (bool)0, /*hidden argument*/NULL);
 	}
 
 IL_004e:

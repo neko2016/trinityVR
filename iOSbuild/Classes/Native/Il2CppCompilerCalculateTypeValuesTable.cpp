@@ -1195,6 +1195,7 @@
 #include "AssemblyU2DCSharp_audioRandomPlayGvr3248665366.h"
 #include "AssemblyU2DCSharp_audioTrigger1648719106.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015.h"
+#include "AssemblyU2DCSharp_audioUI3633711338.h"
 #include "AssemblyU2DCSharp_chapelMusic239962090.h"
 #include "AssemblyU2DCSharp_homeIcon3808435704.h"
 #include "AssemblyU2DCSharp_loadLocation3184820923.h"
@@ -1687,7 +1688,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9511] = 
+extern const int32_t g_FieldOffsetTable[9518] = 
 {
 	0,
 	0,
@@ -11161,6 +11162,11 @@ extern const int32_t g_FieldOffsetTable[9511] =
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioAMB_2(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioSFX_3(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioNAR_4(),
+	audioUI_t3633711338::get_offset_of_allUI_2(),
+	audioUI_t3633711338::get_offset_of_click_3(),
+	audioUI_t3633711338::get_offset_of_highlight_4(),
+	audioUI_t3633711338::get_offset_of_tone_5(),
+	audioUI_t3633711338_StaticFields::get_offset_of_U3CU3Ef__amU24cache4_6(),
 	chapelMusic_t239962090::get_offset_of_allMus_2(),
 	chapelMusic_t239962090::get_offset_of_currMus_3(),
 	chapelMusic_t239962090::get_offset_of_songNumber_4(),
@@ -11184,6 +11190,7 @@ extern const int32_t g_FieldOffsetTable[9511] =
 	navTrigger_t726877973::get_offset_of_newPos_5(),
 	videoMarker_t853609621::get_offset_of_videoPanel_2(),
 	videoMarker_t853609621::get_offset_of_isPlaying_3(),
+	videoMarker_t853609621::get_offset_of_allAudioNAR_4(),
 	videoTrigger_t3087919293::get_offset_of_mediaScript_2(),
 	videoTrigger_t3087919293::get_offset_of_col_3(),
 	videoTrigger_t3087919293::get_offset_of_moveXto_4(),
@@ -11191,6 +11198,7 @@ extern const int32_t g_FieldOffsetTable[9511] =
 	videoTrigger_t3087919293::get_offset_of_moveZto_6(),
 	videoTrigger_t3087919293::get_offset_of_newPos_7(),
 	videoTriggerStart_t1940838821::get_offset_of_col_2(),
+	videoTriggerStart_t1940838821::get_offset_of_mediaScript_3(),
 	videoTriggerToScene_t1861271380::get_offset_of_mediaScript_2(),
 	videoTriggerToScene_t1861271380::get_offset_of_newScene_3(),
 	vrTrueFalse_t812900569_StaticFields::get_offset_of_VRstate_2(),
@@ -11204,7 +11212,7 @@ extern const int32_t g_FieldOffsetTable[9511] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1914] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1915] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13100,6 +13108,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1914] =
 	sizeof (audioRandomPlayGvr_t3248665366), -1, 0, 0,
 	sizeof (audioTrigger_t1648719106), -1, 0, 0,
 	sizeof (audioTriggerAlt_t4039923015), -1, 0, 0,
+	sizeof (audioUI_t3633711338), -1, sizeof(audioUI_t3633711338_StaticFields), 0,
 	sizeof (chapelMusic_t239962090), -1, sizeof(chapelMusic_t239962090_StaticFields), 0,
 	sizeof (homeIcon_t3808435704), -1, 0, 0,
 	sizeof (loadLocation_t3184820923), -1, 0, 0,

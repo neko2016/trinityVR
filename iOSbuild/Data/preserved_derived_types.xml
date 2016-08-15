@@ -35,6 +35,7 @@
 <type fullname="audioRandomPlayGvr" preserve="all"/>
 <type fullname="audioTrigger" preserve="all"/>
 <type fullname="audioTriggerAlt" preserve="all"/>
+<type fullname="audioUI" preserve="all"/>
 <type fullname="chapelMusic" preserve="all"/>
 <type fullname="homeIcon" preserve="all"/>
 <type fullname="loadLocation" preserve="all"/>

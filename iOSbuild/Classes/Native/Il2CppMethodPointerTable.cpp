@@ -11278,10 +11278,16 @@ extern "C" void audioTrigger_OnTriggerExit_m838138755 ();
 extern "C" void audioTriggerAlt__ctor_m701067780 ();
 extern "C" void audioTriggerAlt_Start_m3943172868 ();
 extern "C" void audioTriggerAlt_OnTriggerExit_m3011628846 ();
+extern "C" void audioUI__ctor_m3103624641 ();
+extern "C" void audioUI_Start_m2050762433 ();
+extern "C" void audioUI_Enter_m2355995575 ();
+extern "C" void audioUI_Exit_m2301676801 ();
+extern "C" void audioUI_Click_m513504871 ();
+extern "C" void audioUI_U3CStartU3Em__5_m3744564378 ();
 extern "C" void chapelMusic__ctor_m289880769 ();
 extern "C" void chapelMusic_Start_m3531985857 ();
 extern "C" void chapelMusic_ChangeSong_m738264200 ();
-extern "C" void chapelMusic_U3CStartU3Em__5_m592324634 ();
+extern "C" void chapelMusic_U3CStartU3Em__6_m2810082587 ();
 extern "C" void ControllerDebugInfo__ctor_m2279919558 ();
 extern "C" void ControllerDebugInfo_Awake_m2517524777 ();
 extern "C" void ControllerDebugInfo_Update_m3684891655 ();
@@ -12608,13 +12614,13 @@ extern "C" void videoMarker__ctor_m1836500598 ();
 extern "C" void videoMarker_Start_m783638390 ();
 extern "C" void videoMarker_markerPressed_m3392801084 ();
 extern "C" void videoTrigger__ctor_m1998032510 ();
-extern "C" void videoTrigger_Start_m945170302 ();
-extern "C" void videoTrigger_OnTriggerEnter_m2517865914 ();
-extern "C" void videoTrigger_OnTriggerExit_m2363543720 ();
+extern "C" void videoTrigger_OnEnable_m1506328648 ();
 extern "C" void videoTrigger_Update_m3536327759 ();
 extern "C" void videoTrigger_MoveCamera_m3159346204 ();
 extern "C" void videoTriggerStart__ctor_m471784806 ();
+extern "C" void videoTriggerStart_Start_m3713889894 ();
 extern "C" void videoTriggerStart_OnTriggerEnter_m4214394834 ();
+extern "C" void videoTriggerStart_OnTriggerExit_m3111007120 ();
 extern "C" void videoTriggerToScene__ctor_m4104999575 ();
 extern "C" void videoTriggerToScene_Start_m3052137367 ();
 extern "C" void videoTriggerToScene_Update_m132830038 ();
@@ -12625,7 +12631,7 @@ extern "C" void vrTrueFalse__ctor_m1230274226 ();
 extern "C" void vrTrueFalse_Start_m177412018 ();
 extern "C" void vrTrueFalse_makeVRtrue_m3469953834 ();
 extern "C" void vrTrueFalse_makeVRfalse_m159705257 ();
-extern const methodPointerType g_MethodPointers[12614] = 
+extern const methodPointerType g_MethodPointers[12620] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -23894,10 +23900,16 @@ extern const methodPointerType g_MethodPointers[12614] =
 	audioTriggerAlt__ctor_m701067780,
 	audioTriggerAlt_Start_m3943172868,
 	audioTriggerAlt_OnTriggerExit_m3011628846,
+	audioUI__ctor_m3103624641,
+	audioUI_Start_m2050762433,
+	audioUI_Enter_m2355995575,
+	audioUI_Exit_m2301676801,
+	audioUI_Click_m513504871,
+	audioUI_U3CStartU3Em__5_m3744564378,
 	chapelMusic__ctor_m289880769,
 	chapelMusic_Start_m3531985857,
 	chapelMusic_ChangeSong_m738264200,
-	chapelMusic_U3CStartU3Em__5_m592324634,
+	chapelMusic_U3CStartU3Em__6_m2810082587,
 	ControllerDebugInfo__ctor_m2279919558,
 	ControllerDebugInfo_Awake_m2517524777,
 	ControllerDebugInfo_Update_m3684891655,
@@ -25224,13 +25236,13 @@ extern const methodPointerType g_MethodPointers[12614] =
 	videoMarker_Start_m783638390,
 	videoMarker_markerPressed_m3392801084,
 	videoTrigger__ctor_m1998032510,
-	videoTrigger_Start_m945170302,
-	videoTrigger_OnTriggerEnter_m2517865914,
-	videoTrigger_OnTriggerExit_m2363543720,
+	videoTrigger_OnEnable_m1506328648,
 	videoTrigger_Update_m3536327759,
 	videoTrigger_MoveCamera_m3159346204,
 	videoTriggerStart__ctor_m471784806,
+	videoTriggerStart_Start_m3713889894,
 	videoTriggerStart_OnTriggerEnter_m4214394834,
+	videoTriggerStart_OnTriggerExit_m3111007120,
 	videoTriggerToScene__ctor_m4104999575,
 	videoTriggerToScene_Start_m3052137367,
 	videoTriggerToScene_Update_m132830038,
