@@ -23,14 +23,7 @@
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
-		</type>
-		<type fullname="audioUI">
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Click"/>
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Click"/>
+			<method name="loadNewScene"/>
 		</type>
 		<type fullname="navTrigger">
 			<method name="MoveCamera"/>
@@ -47,6 +40,17 @@
 			<method name="MoveCamera"/>
 			<method name="MoveCamera"/>
 			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+			<method name="MoveCamera"/>
+		</type>
+		<type fullname="audioUI">
+			<method name="Enter"/>
+			<method name="Exit"/>
+			<method name="Click"/>
+			<method name="Enter"/>
+			<method name="Exit"/>
+			<method name="Click"/>
 		</type>
 		<type fullname="audioImgMarker">
 			<method name="markerPressed"/>
@@ -54,8 +58,14 @@
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
 		</type>
 		<type fullname="audioMarker">
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
@@ -85,8 +95,11 @@
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
+			<method name="markerPressed"/>
 		</type>
 		<type fullname="loadLocationDoor">
+			<method name="exitDoor"/>
+			<method name="exitDoor"/>
 			<method name="exitDoor"/>
 		</type>
 		<type fullname="chapelMusic">

@@ -294,6 +294,8 @@ UnityEngine.GUIStyleState::INTERNAL_set_textColor
 UnityEngine.GUIStyleState::Init
 UnityEngine.GUIStyleState::GetBackgroundInternal
 UnityEngine.GUIStyleState::GetBackgroundInternalFromDeserialization
+UnityEngine.GUITexture::INTERNAL_set_color
+UnityEngine.GUITexture::INTERNAL_set_pixelInset
 UnityEngine.GUIUtility::Internal_GetGUIDepth
 UnityEngine.GUIUtility::Internal_GetHotControl
 UnityEngine.GUIUtility::get_keyboardControl

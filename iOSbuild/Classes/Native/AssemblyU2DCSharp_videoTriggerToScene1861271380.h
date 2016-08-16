@@ -14,6 +14,8 @@
 struct MediaPlayerCtrl_t3572035536;
 // System.String
 struct String_t;
+// UnityEngine.UI.Image
+struct Image_t3354615620;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 
@@ -31,6 +33,10 @@ public:
 	MediaPlayerCtrl_t3572035536 * ___mediaScript_2;
 	// System.String videoTriggerToScene::newScene
 	String_t* ___newScene_3;
+	// UnityEngine.UI.Image videoTriggerToScene::overlay
+	Image_t3354615620 * ___overlay_4;
+	// System.Single videoTriggerToScene::fadeTime
+	float ___fadeTime_5;
 
 public:
 	inline static int32_t get_offset_of_mediaScript_2() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___mediaScript_2)); }
@@ -49,6 +55,23 @@ public:
 	{
 		___newScene_3 = value;
 		Il2CppCodeGenWriteBarrier(&___newScene_3, value);
+	}
+
+	inline static int32_t get_offset_of_overlay_4() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___overlay_4)); }
+	inline Image_t3354615620 * get_overlay_4() const { return ___overlay_4; }
+	inline Image_t3354615620 ** get_address_of_overlay_4() { return &___overlay_4; }
+	inline void set_overlay_4(Image_t3354615620 * value)
+	{
+		___overlay_4 = value;
+		Il2CppCodeGenWriteBarrier(&___overlay_4, value);
+	}
+
+	inline static int32_t get_offset_of_fadeTime_5() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___fadeTime_5)); }
+	inline float get_fadeTime_5() const { return ___fadeTime_5; }
+	inline float* get_address_of_fadeTime_5() { return &___fadeTime_5; }
+	inline void set_fadeTime_5(float value)
+	{
+		___fadeTime_5 = value;
 	}
 };
 

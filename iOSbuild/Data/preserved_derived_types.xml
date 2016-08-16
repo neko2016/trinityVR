@@ -44,6 +44,8 @@
 <type fullname="loadLocationInit" preserve="all"/>
 <type fullname="loadScene" preserve="all"/>
 <type fullname="navTrigger" preserve="all"/>
+<type fullname="overlayFade" preserve="all"/>
+<type fullname="overlayFadeIn" preserve="all"/>
 <type fullname="splashScreen" preserve="all"/>
 <type fullname="videoMarker" preserve="all"/>
 <type fullname="videoTrigger" preserve="all"/>

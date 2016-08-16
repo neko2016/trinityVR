@@ -15,16 +15,16 @@ public class videoMarker : MonoBehaviour {
 		isPlaying = false;
 	}
 
-	/* void Update() {
+	void Update() {
 
 		if (videoPanel.GetComponent<MediaPlayerCtrl> ().GetCurrentState() == MediaPlayerCtrl.MEDIAPLAYER_STATE.END) {
-			
+
+			isPlaying = false;
 			videoPanel.GetComponent<MeshRenderer> ().enabled = false;
 			videoPanel.GetComponent<MediaPlayerCtrl> ().Stop ();
-			isPlaying = false;
 
 		}
-	} */
+	}
 
 	public void markerPressed() {
 

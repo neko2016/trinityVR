@@ -59,6 +59,8 @@ struct Texture_t1769722184;
 struct Texture2D_t2509538522;
 // System.Type
 struct Type_t;
+// UnityEngine.GUITexture
+struct GUITexture_t63494093;
 // System.Exception
 struct Exception_t1967233988;
 // UnityEngine.HideInInspector
@@ -292,6 +294,8 @@ struct SelectionBaseAttribute_t178688268;
 #include "mscorlib_System_Reflection_MemberInfo2843033814MethodDeclarations.h"
 #include "mscorlib_System_Reflection_MemberInfo2843033814.h"
 #include "mscorlib_System_RuntimeTypeHandle1864875887.h"
+#include "UnityEngine_UnityEngine_GUITexture63494093.h"
+#include "UnityEngine_UnityEngine_GUITexture63494093MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GUIUtility1366332446.h"
 #include "mscorlib_System_Exception1967233988.h"
 #include "UnityEngine_UnityEngine_ExitGUIException137235967.h"
@@ -505,8 +509,6 @@ struct SelectionBaseAttribute_t178688268;
 #include "UnityEngine_UnityEngine_Scripting_UsedByNativeCode1800197956MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SelectionBaseAttribute178688268.h"
 #include "UnityEngine_UnityEngine_SelectionBaseAttribute178688268MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SendMessageOptions2623293100.h"
-#include "UnityEngine_UnityEngine_SendMessageOptions2623293100MethodDeclarations.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -9332,6 +9334,40 @@ IL_005e:
 	{
 		return (-1);
 	}
+}
+// System.Void UnityEngine.GUITexture::set_color(UnityEngine.Color)
+extern "C"  void GUITexture_set_color_m3589887669 (GUITexture_t63494093 * __this, Color_t1588175760  ___value, const MethodInfo* method)
+{
+	{
+		GUITexture_INTERNAL_set_color_m2258825313(__this, (&___value), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.GUITexture::INTERNAL_set_color(UnityEngine.Color&)
+extern "C"  void GUITexture_INTERNAL_set_color_m2258825313 (GUITexture_t63494093 * __this, Color_t1588175760 * ___value, const MethodInfo* method)
+{
+	typedef void (*GUITexture_INTERNAL_set_color_m2258825313_ftn) (GUITexture_t63494093 *, Color_t1588175760 *);
+	static GUITexture_INTERNAL_set_color_m2258825313_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GUITexture_INTERNAL_set_color_m2258825313_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUITexture::INTERNAL_set_color(UnityEngine.Color&)");
+	_il2cpp_icall_func(__this, ___value);
+}
+// System.Void UnityEngine.GUITexture::set_pixelInset(UnityEngine.Rect)
+extern "C"  void GUITexture_set_pixelInset_m594215280 (GUITexture_t63494093 * __this, Rect_t1525428817  ___value, const MethodInfo* method)
+{
+	{
+		GUITexture_INTERNAL_set_pixelInset_m4203362310(__this, (&___value), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.GUITexture::INTERNAL_set_pixelInset(UnityEngine.Rect&)
+extern "C"  void GUITexture_INTERNAL_set_pixelInset_m4203362310 (GUITexture_t63494093 * __this, Rect_t1525428817 * ___value, const MethodInfo* method)
+{
+	typedef void (*GUITexture_INTERNAL_set_pixelInset_m4203362310_ftn) (GUITexture_t63494093 *, Rect_t1525428817 *);
+	static GUITexture_INTERNAL_set_pixelInset_m4203362310_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GUITexture_INTERNAL_set_pixelInset_m4203362310_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUITexture::INTERNAL_set_pixelInset(UnityEngine.Rect&)");
+	_il2cpp_icall_func(__this, ___value);
 }
 // System.Void UnityEngine.GUIUtility::.cctor()
 extern TypeInfo* GUIUtility_t1366332446_il2cpp_TypeInfo_var;

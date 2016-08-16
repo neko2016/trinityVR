@@ -255,6 +255,10 @@ struct U3CExampleU3Ec__Iterator7_t4174890422;
 struct loadLocationInit_t3862005355;
 // loadScene
 struct loadScene_t1377993542;
+// UnityEngine.UI.Image
+struct Image_t3354615620;
+// loadScene/<FadeToBlack>c__Iterator8
+struct U3CFadeToBlackU3Ec__Iterator8_t2922908089;
 // MedaiPlayerSampleGUI
 struct MedaiPlayerSampleGUI_t1334456284;
 // MedaiPlayerSampleSphereGUI
@@ -279,8 +283,6 @@ struct U3CDownloadStreamingVideoAndLoad2U3Ec__Iterator1_t2388932332;
 struct VideoEnd_t1216006784;
 // MediaPlayerCtrl/VideoError
 struct VideoError_t351551085;
-// MediaPlayerCtrl/VideoFirstFrameReady
-struct VideoFirstFrameReady_t1412571435;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -669,6 +671,9 @@ struct VideoFirstFrameReady_t1412571435;
 #include "UnityEngine_UnityEngine_WaitForSeconds1291133240.h"
 #include "AssemblyU2DCSharp_loadScene1377993542.h"
 #include "AssemblyU2DCSharp_loadScene1377993542MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image3354615620.h"
+#include "AssemblyU2DCSharp_loadScene_U3CFadeToBlackU3Ec__It2922908089MethodDeclarations.h"
+#include "AssemblyU2DCSharp_loadScene_U3CFadeToBlackU3Ec__It2922908089.h"
 #include "AssemblyU2DCSharp_MedaiPlayerSampleGUI1334456284.h"
 #include "AssemblyU2DCSharp_MedaiPlayerSampleGUI1334456284MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoEnd1216006784MethodDeclarations.h"
@@ -855,6 +860,8 @@ extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m2892359027_g
 #define Component_GetComponent_TisGvrPostRender_t3571076089_m3863711264(__this, method) ((  GvrPostRender_t3571076089 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<StereoController>()
 #define GameObject_AddComponent_TisStereoController_t1637909972_m2383418142(__this, method) ((  StereoController_t1637909972 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Image>()
+#define GameObject_GetComponent_TisImage_t3354615620_m2140199269(__this, method) ((  Image_t3354615620 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.MeshFilter>()
 #define GameObject_GetComponent_TisMeshFilter_t4177078322_m3315251873(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.RawImage>()
@@ -24618,13 +24625,210 @@ extern "C"  void loadScene__ctor_m3526418661 (loadScene_t1377993542 * __this, co
 		return;
 	}
 }
+// System.Void loadScene::Start()
+extern const MethodInfo* GameObject_GetComponent_TisImage_t3354615620_m2140199269_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral290327108;
+extern const uint32_t loadScene_Start_m2473556453_MetadataUsageId;
+extern "C"  void loadScene_Start_m2473556453 (loadScene_t1377993542 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (loadScene_Start_m2473556453_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral290327108, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Image_t3354615620 * L_1 = GameObject_GetComponent_TisImage_t3354615620_m2140199269(L_0, /*hidden argument*/GameObject_GetComponent_TisImage_t3354615620_m2140199269_MethodInfo_var);
+		__this->set_overlay_2(L_1);
+		__this->set_fadeTime_3((1.5f));
+		return;
+	}
+}
 // System.Void loadScene::loadNewScene()
 extern "C"  void loadScene_loadNewScene_m2873518833 (loadScene_t1377993542 * __this, const MethodInfo* method)
 {
 	{
-		String_t* L_0 = __this->get_newScene_2();
-		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		Il2CppObject * L_0 = loadScene_FadeToBlack_m3707428083(__this, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_0, /*hidden argument*/NULL);
 		return;
+	}
+}
+// System.Collections.IEnumerator loadScene::FadeToBlack()
+extern TypeInfo* U3CFadeToBlackU3Ec__Iterator8_t2922908089_il2cpp_TypeInfo_var;
+extern const uint32_t loadScene_FadeToBlack_m3707428083_MetadataUsageId;
+extern "C"  Il2CppObject * loadScene_FadeToBlack_m3707428083 (loadScene_t1377993542 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (loadScene_FadeToBlack_m3707428083_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	U3CFadeToBlackU3Ec__Iterator8_t2922908089 * V_0 = NULL;
+	{
+		U3CFadeToBlackU3Ec__Iterator8_t2922908089 * L_0 = (U3CFadeToBlackU3Ec__Iterator8_t2922908089 *)il2cpp_codegen_object_new(U3CFadeToBlackU3Ec__Iterator8_t2922908089_il2cpp_TypeInfo_var);
+		U3CFadeToBlackU3Ec__Iterator8__ctor_m1713067323(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CFadeToBlackU3Ec__Iterator8_t2922908089 * L_1 = V_0;
+		NullCheck(L_1);
+		L_1->set_U3CU3Ef__this_4(__this);
+		U3CFadeToBlackU3Ec__Iterator8_t2922908089 * L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Void loadScene/<FadeToBlack>c__Iterator8::.ctor()
+extern "C"  void U3CFadeToBlackU3Ec__Iterator8__ctor_m1713067323 (U3CFadeToBlackU3Ec__Iterator8_t2922908089 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object loadScene/<FadeToBlack>c__Iterator8::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CFadeToBlackU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1569996663 (U3CFadeToBlackU3Ec__Iterator8_t2922908089 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_3();
+		return L_0;
+	}
+}
+// System.Object loadScene/<FadeToBlack>c__Iterator8::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CFadeToBlackU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m1267339531 (U3CFadeToBlackU3Ec__Iterator8_t2922908089 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_3();
+		return L_0;
+	}
+}
+// System.Boolean loadScene/<FadeToBlack>c__Iterator8::MoveNext()
+extern "C"  bool U3CFadeToBlackU3Ec__Iterator8_MoveNext_m1490695385 (U3CFadeToBlackU3Ec__Iterator8_t2922908089 * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		int32_t L_0 = __this->get_U24PC_2();
+		V_0 = L_0;
+		__this->set_U24PC_2((-1));
+		uint32_t L_1 = V_0;
+		if (L_1 == 0)
+		{
+			goto IL_0021;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_00d5;
+		}
+	}
+	{
+		goto IL_0111;
+	}
+
+IL_0021:
+	{
+		loadScene_t1377993542 * L_2 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_2);
+		Image_t3354615620 * L_3 = L_2->get_overlay_2();
+		Color_t1588175760  L_4 = Color_get_clear_m2578346879(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Graphic_set_color_m1311501487(L_3, L_4, /*hidden argument*/NULL);
+		loadScene_t1377993542 * L_5 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_5);
+		Image_t3354615620 * L_6 = L_5->get_overlay_2();
+		NullCheck(L_6);
+		GameObject_t4012695102 * L_7 = Component_get_gameObject_m1170635899(L_6, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		GameObject_SetActive_m3538205401(L_7, (bool)1, /*hidden argument*/NULL);
+		loadScene_t1377993542 * L_8 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_8);
+		Image_t3354615620 * L_9 = L_8->get_overlay_2();
+		NullCheck(L_9);
+		Behaviour_set_enabled_m2046806933(L_9, (bool)1, /*hidden argument*/NULL);
+		loadScene_t1377993542 * L_10 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_10);
+		float L_11 = L_10->get_fadeTime_3();
+		__this->set_U3CrateU3E__0_0(((float)((float)(1.0f)/(float)L_11)));
+		__this->set_U3CprogressU3E__1_1((0.0f));
+		goto IL_00d5;
+	}
+
+IL_0084:
+	{
+		loadScene_t1377993542 * L_12 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_12);
+		Image_t3354615620 * L_13 = L_12->get_overlay_2();
+		Color_t1588175760  L_14 = Color_get_clear_m2578346879(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Color_t1588175760  L_15 = Color_get_black_m1687201969(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_16 = __this->get_U3CprogressU3E__1_1();
+		Color_t1588175760  L_17 = Color_Lerp_m3494628845(NULL /*static, unused*/, L_14, L_15, L_16, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Graphic_set_color_m1311501487(L_13, L_17, /*hidden argument*/NULL);
+		float L_18 = __this->get_U3CprogressU3E__1_1();
+		float L_19 = __this->get_U3CrateU3E__0_0();
+		float L_20 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_U3CprogressU3E__1_1(((float)((float)L_18+(float)((float)((float)L_19*(float)L_20)))));
+		__this->set_U24current_3(NULL);
+		__this->set_U24PC_2(1);
+		goto IL_0113;
+	}
+
+IL_00d5:
+	{
+		float L_21 = __this->get_U3CprogressU3E__1_1();
+		if ((((float)L_21) < ((float)(1.0f))))
+		{
+			goto IL_0084;
+		}
+	}
+	{
+		loadScene_t1377993542 * L_22 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_22);
+		Image_t3354615620 * L_23 = L_22->get_overlay_2();
+		Color_t1588175760  L_24 = Color_get_black_m1687201969(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		Graphic_set_color_m1311501487(L_23, L_24, /*hidden argument*/NULL);
+		loadScene_t1377993542 * L_25 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_25);
+		String_t* L_26 = L_25->get_newScene_4();
+		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
+		__this->set_U24PC_2((-1));
+	}
+
+IL_0111:
+	{
+		return (bool)0;
+	}
+
+IL_0113:
+	{
+		return (bool)1;
+	}
+	// Dead block : IL_0115: ldloc.1
+}
+// System.Void loadScene/<FadeToBlack>c__Iterator8::Dispose()
+extern "C"  void U3CFadeToBlackU3Ec__Iterator8_Dispose_m1183506104 (U3CFadeToBlackU3Ec__Iterator8_t2922908089 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24PC_2((-1));
+		return;
+	}
+}
+// System.Void loadScene/<FadeToBlack>c__Iterator8::Reset()
+extern TypeInfo* NotSupportedException_t1374155497_il2cpp_TypeInfo_var;
+extern const uint32_t U3CFadeToBlackU3Ec__Iterator8_Reset_m3654467560_MetadataUsageId;
+extern "C"  void U3CFadeToBlackU3Ec__Iterator8_Reset_m3654467560 (U3CFadeToBlackU3Ec__Iterator8_t2922908089 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CFadeToBlackU3Ec__Iterator8_Reset_m3654467560_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		NotSupportedException_t1374155497 * L_0 = (NotSupportedException_t1374155497 *)il2cpp_codegen_object_new(NotSupportedException_t1374155497_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m149930845(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
 // System.Void MedaiPlayerSampleGUI::.ctor()
@@ -29952,52 +30156,6 @@ extern "C"  Il2CppObject * VideoError_BeginInvoke_m3506343324 (VideoError_t35155
 }
 // System.Void MediaPlayerCtrl/VideoError::EndInvoke(System.IAsyncResult)
 extern "C"  void VideoError_EndInvoke_m145225283 (VideoError_t351551085 * __this, Il2CppObject * ___result, const MethodInfo* method)
-{
-	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
-}
-// System.Void MediaPlayerCtrl/VideoFirstFrameReady::.ctor(System.Object,System.IntPtr)
-extern "C"  void VideoFirstFrameReady__ctor_m4202279345 (VideoFirstFrameReady_t1412571435 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
-{
-	__this->set_method_ptr_0((methodPointerType)((MethodInfo*)___method.get_m_value_0())->method);
-	__this->set_method_3(___method);
-	__this->set_m_target_2(___object);
-}
-// System.Void MediaPlayerCtrl/VideoFirstFrameReady::Invoke()
-extern "C"  void VideoFirstFrameReady_Invoke_m3520108875 (VideoFirstFrameReady_t1412571435 * __this, const MethodInfo* method)
-{
-	if(__this->get_prev_9() != NULL)
-	{
-		VideoFirstFrameReady_Invoke_m3520108875((VideoFirstFrameReady_t1412571435 *)__this->get_prev_9(), method);
-	}
-	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
-	{
-		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-	else
-	{
-		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-}
-extern "C" void pinvoke_delegate_wrapper_VideoFirstFrameReady_t1412571435(Il2CppObject* delegate)
-{
-	typedef void (STDCALL *native_function_ptr_type)();
-	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
-	// Native function invocation
-	_il2cpp_pinvoke_func();
-
-}
-// System.IAsyncResult MediaPlayerCtrl/VideoFirstFrameReady::BeginInvoke(System.AsyncCallback,System.Object)
-extern "C"  Il2CppObject * VideoFirstFrameReady_BeginInvoke_m3655778136 (VideoFirstFrameReady_t1412571435 * __this, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
-{
-	void *__d_args[1] = {0};
-	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
-}
-// System.Void MediaPlayerCtrl/VideoFirstFrameReady::EndInvoke(System.IAsyncResult)
-extern "C"  void VideoFirstFrameReady_EndInvoke_m931374145 (VideoFirstFrameReady_t1412571435 * __this, Il2CppObject * ___result, const MethodInfo* method)
 {
 	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 }

@@ -27,7 +27,9 @@ public class videoTrigger : MonoBehaviour {
 
 	void Update () {
 		
-		if (mediaScript.GetCurrentState () == MediaPlayerCtrl.MEDIAPLAYER_STATE.END) {
+		if (mediaScript.GetCurrentState () == MediaPlayerCtrl.MEDIAPLAYER_STATE.END || Input.GetMouseButtonDown(0))
+		
+		{
 			
 			mediaScript.Stop ();
 			MoveCamera ();

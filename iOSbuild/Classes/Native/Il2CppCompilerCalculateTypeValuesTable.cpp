@@ -1202,11 +1202,19 @@
 #include "AssemblyU2DCSharp_loadLocationHome_U3CExampleU3Ec_4174890422.h"
 #include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
 #include "AssemblyU2DCSharp_loadScene1377993542.h"
+#include "AssemblyU2DCSharp_loadScene_U3CFadeToBlackU3Ec__It2922908089.h"
 #include "AssemblyU2DCSharp_navTrigger726877973.h"
+#include "AssemblyU2DCSharp_overlayFade3887785708.h"
+#include "AssemblyU2DCSharp_overlayFade_U3CFadeToClearU3Ec__1919619628.h"
+#include "AssemblyU2DCSharp_overlayFadeIn3835487537.h"
+#include "AssemblyU2DCSharp_overlayFadeIn_U3CFadeToClearU3Ec1919619636.h"
+#include "AssemblyU2DCSharp_splashScreen2428448179.h"
+#include "AssemblyU2DCSharp_splashScreen_U3CFadeOutU3Ec__Ite2138668281.h"
 #include "AssemblyU2DCSharp_videoMarker853609621.h"
 #include "AssemblyU2DCSharp_videoTrigger3087919293.h"
 #include "AssemblyU2DCSharp_videoTriggerStart1940838821.h"
 #include "AssemblyU2DCSharp_videoTriggerToScene1861271380.h"
+#include "AssemblyU2DCSharp_videoTriggerToScene_U3CFadeToBla2922908100.h"
 #include "AssemblyU2DCSharp_vrTrueFalse812900569.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
@@ -1533,6 +1541,7 @@
 #include "UnityEngine_UnityEngine_GL1522887986.h"
 #include "UnityEngine_UnityEngine_MeshRenderer1217738301.h"
 #include "UnityEngine_UnityEngine_GUIElement4113441198.h"
+#include "UnityEngine_UnityEngine_GUITexture63494093.h"
 #include "UnityEngine_UnityEngine_GUILayer999894339.h"
 #include "UnityEngine_UnityEngine_Texture1769722184.h"
 #include "UnityEngine_UnityEngine_Texture2D2509538522.h"
@@ -1675,7 +1684,6 @@
 #include "AssemblyU2DCSharp_audioFadeOut1617174140.h"
 #include "AssemblyU2DCSharp_loadLocationDoor3861857545.h"
 #include "AssemblyU2DCSharp_loadLocationHome3861976634.h"
-#include "AssemblyU2DCSharp_splashScreen2428448179.h"
 #include "AssemblyU2DCSharp_vrChangeCamera981690321.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874515.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874523.h"
@@ -1688,7 +1696,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9518] = 
+extern const int32_t g_FieldOffsetTable[9553] = 
 {
 	0,
 	0,
@@ -11183,11 +11191,39 @@ extern const int32_t g_FieldOffsetTable[9518] =
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromTC_3(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromMB_4(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromLR_5(),
-	loadScene_t1377993542::get_offset_of_newScene_2(),
+	loadScene_t1377993542::get_offset_of_overlay_2(),
+	loadScene_t1377993542::get_offset_of_fadeTime_3(),
+	loadScene_t1377993542::get_offset_of_newScene_4(),
+	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U24PC_2(),
+	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U24current_3(),
+	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U3CU3Ef__this_4(),
 	navTrigger_t726877973::get_offset_of_moveXto_2(),
 	navTrigger_t726877973::get_offset_of_moveYto_3(),
 	navTrigger_t726877973::get_offset_of_moveZto_4(),
 	navTrigger_t726877973::get_offset_of_newPos_5(),
+	overlayFade_t3887785708::get_offset_of_overlay_2(),
+	overlayFade_t3887785708::get_offset_of_fadeTime_3(),
+	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U24PC_2(),
+	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U24current_3(),
+	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U3CU3Ef__this_4(),
+	overlayFadeIn_t3835487537::get_offset_of_overlay_2(),
+	overlayFadeIn_t3835487537::get_offset_of_fadeTime_3(),
+	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U24PC_2(),
+	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U24current_3(),
+	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U3CU3Ef__this_4(),
+	splashScreen_t2428448179::get_offset_of_splash_2(),
+	splashScreen_t2428448179::get_offset_of_fadeTime_3(),
+	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U24PC_2(),
+	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U24current_3(),
+	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U3CU3Ef__this_4(),
 	videoMarker_t853609621::get_offset_of_videoPanel_2(),
 	videoMarker_t853609621::get_offset_of_isPlaying_3(),
 	videoMarker_t853609621::get_offset_of_allAudioNAR_4(),
@@ -11201,6 +11237,13 @@ extern const int32_t g_FieldOffsetTable[9518] =
 	videoTriggerStart_t1940838821::get_offset_of_mediaScript_3(),
 	videoTriggerToScene_t1861271380::get_offset_of_mediaScript_2(),
 	videoTriggerToScene_t1861271380::get_offset_of_newScene_3(),
+	videoTriggerToScene_t1861271380::get_offset_of_overlay_4(),
+	videoTriggerToScene_t1861271380::get_offset_of_fadeTime_5(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U24PC_2(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U24current_3(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CU3Ef__this_4(),
 	vrTrueFalse_t812900569_StaticFields::get_offset_of_VRstate_2(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_U24U24fieldU2D1_1(),
@@ -11212,7 +11255,7 @@ extern const int32_t g_FieldOffsetTable[9518] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1915] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1923] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -12498,6 +12541,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1915] =
 	sizeof (MeshRenderer_t1217738301), -1, 0, 0,
 	sizeof (RectOffset_t3394170884), -1, 0, 0,
 	sizeof (GUIElement_t4113441198), -1, 0, 0,
+	sizeof (GUITexture_t63494093), -1, 0, 0,
 	sizeof (GUILayer_t999894339), -1, 0, 0,
 	sizeof (Texture_t1769722184), -1, 0, 0,
 	sizeof (Texture2D_t2509538522), -1, 0, 0,
@@ -13117,12 +13161,19 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1915] =
 	sizeof (U3CExampleU3Ec__Iterator7_t4174890422), -1, 0, 0,
 	sizeof (loadLocationInit_t3862005355), -1, sizeof(loadLocationInit_t3862005355_StaticFields), 0,
 	sizeof (loadScene_t1377993542), -1, 0, 0,
+	sizeof (U3CFadeToBlackU3Ec__Iterator8_t2922908089), -1, 0, 0,
 	sizeof (navTrigger_t726877973), -1, 0, 0,
+	sizeof (overlayFade_t3887785708), -1, 0, 0,
+	sizeof (U3CFadeToClearU3Ec__Iterator9_t1919619628), -1, 0, 0,
+	sizeof (overlayFadeIn_t3835487537), -1, 0, 0,
+	sizeof (U3CFadeToClearU3Ec__IteratorA_t1919619636), -1, 0, 0,
 	sizeof (splashScreen_t2428448179), -1, 0, 0,
+	sizeof (U3CFadeOutU3Ec__IteratorB_t2138668281), -1, 0, 0,
 	sizeof (videoMarker_t853609621), -1, 0, 0,
 	sizeof (videoTrigger_t3087919293), -1, 0, 0,
 	sizeof (videoTriggerStart_t1940838821), -1, 0, 0,
 	sizeof (videoTriggerToScene_t1861271380), -1, 0, 0,
+	sizeof (U3CFadeToBlackU3Ec__IteratorC_t2922908100), -1, 0, 0,
 	sizeof (vrChangeCamera_t981690321), -1, 0, 0,
 	sizeof (vrTrueFalse_t812900569), -1, sizeof(vrTrueFalse_t812900569_StaticFields), 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238937), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields), 0,

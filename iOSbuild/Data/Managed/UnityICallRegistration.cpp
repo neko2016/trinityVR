@@ -1,4 +1,4 @@
-//Generated on : 15/08/2016 16:46:29
+//Generated on : 16/08/2016 17:18:56
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AnimationCurve
@@ -1324,6 +1324,18 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_GUIStyleState_GetBackgroundInternalFromDeserialization();
 
 	//End Registrations for type : UnityEngine.GUIStyleState
+
+	//Start Registrations for type : UnityEngine.GUITexture
+
+		//System.Void UnityEngine.GUITexture::INTERNAL_set_color(UnityEngine.Color&)
+		void Register_UnityEngine_GUITexture_INTERNAL_set_color();
+		Register_UnityEngine_GUITexture_INTERNAL_set_color();
+
+		//System.Void UnityEngine.GUITexture::INTERNAL_set_pixelInset(UnityEngine.Rect&)
+		void Register_UnityEngine_GUITexture_INTERNAL_set_pixelInset();
+		Register_UnityEngine_GUITexture_INTERNAL_set_pixelInset();
+
+	//End Registrations for type : UnityEngine.GUITexture
 
 	//Start Registrations for type : UnityEngine.GUIUtility
 

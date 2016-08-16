@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class videoTriggerToScene : MonoBehaviour {
 
@@ -9,31 +12,60 @@ public class videoTriggerToScene : MonoBehaviour {
 
 	// access video player of Easy Movie Texture
 	private MediaPlayerCtrl mediaScript; 
+
 	public string newScene;
 
+	private Image overlay;
+
+	private float fadeTime;
+
+	void Awake() {
+
+		overlay = GameObject.Find ("screenOverlay").GetComponent<Image> ();
+		fadeTime = 1.5f;
+
+	}
+
+
 	void Start () {
+
 		mediaScript = gameObject.GetComponent<MediaPlayerCtrl> ();
 		mediaScript.Play();
+
 	}
 
 	void Update () {
-		if (mediaScript.GetCurrentState () == MediaPlayerCtrl.MEDIAPLAYER_STATE.END) {
-			ChangeScene ();
+		if (mediaScript.GetCurrentState () == MediaPlayerCtrl.MEDIAPLAYER_STATE.END || Input.GetMouseButtonDown(0)) {
+			StartCoroutine (FadeToBlack ());
 		}
 	}
 
-	/* void OnTriggerEnter (Collider col) { // when the collider is triggered set the current vectors of the camera and home panel, and play the video
-		mediaScript.Play();
-	} */
+	public void loadNewScene()
+	{
+		StartCoroutine (FadeToBlack ());
+	}
 
-	/* void OnTriggerExit (Collider col) { // when the collider is exited stop the video and reset the trigger
-		mediaScript.UnLoad();
-	} */
+	private IEnumerator FadeToBlack() {
 
-	// for moving the camera after the video has taken place
-	public void ChangeScene() {
+		overlay.gameObject.SetActive (true);
+		overlay.enabled = true;
+		overlay.color = Color.clear;
 
-		UnityEngine.SceneManagement.SceneManager.LoadScene (newScene);
 
+		float rate = 1.0f / fadeTime;
+
+		float progress = 0.0f;
+
+		while (progress < 1.0f) {
+
+			overlay.color = Color.Lerp (Color.clear, Color.black, progress);
+
+			progress += rate * Time.deltaTime;
+
+			yield return null;
+		}
+
+		overlay.color = Color.black;
+		SceneManager.LoadScene (newScene);
 	}
 }
