@@ -52,7 +52,9 @@
 			<method name="Exit"/>
 			<method name="Click"/>
 		</type>
-		<type fullname="audioImgMarker">
+		<type fullname="imgMarker">
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
@@ -83,14 +85,8 @@
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
 		</type>
 		<type fullname="videoMarker">
-			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
@@ -109,6 +105,27 @@
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+		</type>
+		<type fullname="vidMarker">
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+		</type>
+		<type fullname="imgMarkerAB">
+			<method name="markerPressed"/>
 		</type>
 		<type fullname="loadLocationDoor">
 			<method name="exitDoor"/>

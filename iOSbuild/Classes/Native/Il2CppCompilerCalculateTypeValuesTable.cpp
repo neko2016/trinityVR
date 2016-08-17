@@ -1199,23 +1199,32 @@
 #include "AssemblyU2DCSharp_audioUI3633711338.h"
 #include "AssemblyU2DCSharp_chapelMusic239962090.h"
 #include "AssemblyU2DCSharp_homeIcon3808435704.h"
+#include "AssemblyU2DCSharp_imgMarker3699702237.h"
+#include "AssemblyU2DCSharp_imgMarker_U3CFadeInU3Ec__Iterato3583366023.h"
+#include "AssemblyU2DCSharp_imgMarker_U3CFadeOutU3Ec__Iterat2138668271.h"
+#include "AssemblyU2DCSharp_imgMarkerAB3475898046.h"
+#include "AssemblyU2DCSharp_imgMarkerAB_U3CFadeInU3Ec__Itera3583366025.h"
+#include "AssemblyU2DCSharp_imgMarkerAB_U3CFadeOutU3Ec__Iter2138668280.h"
 #include "AssemblyU2DCSharp_loadLocation3184820923.h"
-#include "AssemblyU2DCSharp_loadLocationHome_U3CExampleU3Ec_4174890422.h"
+#include "AssemblyU2DCSharp_loadLocationHome_U3CExampleU3Ec_4174890433.h"
 #include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
 #include "AssemblyU2DCSharp_loadScene1377993542.h"
-#include "AssemblyU2DCSharp_loadScene_U3CFadeToBlackU3Ec__It2922908089.h"
+#include "AssemblyU2DCSharp_loadScene_U3CFadeToBlackU3Ec__It2922908100.h"
 #include "AssemblyU2DCSharp_navTrigger726877973.h"
 #include "AssemblyU2DCSharp_overlayFade3887785708.h"
-#include "AssemblyU2DCSharp_overlayFade_U3CFadeToClearU3Ec__1919619628.h"
+#include "AssemblyU2DCSharp_overlayFade_U3CFadeToClearU3Ec__1919619639.h"
 #include "AssemblyU2DCSharp_overlayFadeIn3835487537.h"
-#include "AssemblyU2DCSharp_overlayFadeIn_U3CFadeToClearU3Ec1919619636.h"
+#include "AssemblyU2DCSharp_overlayFadeIn_U3CFadeToClearU3Ec1919619640.h"
 #include "AssemblyU2DCSharp_splashScreen2428448179.h"
-#include "AssemblyU2DCSharp_splashScreen_U3CFadeOutU3Ec__Ite2138668281.h"
+#include "AssemblyU2DCSharp_splashScreen_U3CFadeOutU3Ec__Ite2138668285.h"
+#include "AssemblyU2DCSharp_vidMarker633812907.h"
+#include "AssemblyU2DCSharp_vidMarker_U3CvideoOnU3Ec__Iterat2279812848.h"
+#include "AssemblyU2DCSharp_vidMarker_U3CvideoOffU3Ec__Iterat390254243.h"
 #include "AssemblyU2DCSharp_videoMarker853609621.h"
 #include "AssemblyU2DCSharp_videoTrigger3087919293.h"
 #include "AssemblyU2DCSharp_videoTriggerStart1940838821.h"
 #include "AssemblyU2DCSharp_videoTriggerToScene1861271380.h"
-#include "AssemblyU2DCSharp_videoTriggerToScene_U3CFadeToBla2922908100.h"
+#include "AssemblyU2DCSharp_videoTriggerToScene_U3CFadeToBlac415837376.h"
 #include "AssemblyU2DCSharp_vrTrueFalse812900569.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
@@ -1697,7 +1706,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9558] = 
+extern const int32_t g_FieldOffsetTable[9609] = 
 {
 	0,
 	0,
@@ -11189,10 +11198,48 @@ extern const int32_t g_FieldOffsetTable[9558] =
 	homeIcon_t3808435704::get_offset_of_newYRot_3(),
 	homeIcon_t3808435704::get_offset_of_lastRot_4(),
 	homeIcon_t3808435704::get_offset_of_speed_5(),
+	imgMarker_t3699702237::get_offset_of_myAudio_2(),
+	imgMarker_t3699702237::get_offset_of_allAudioNAR_3(),
+	imgMarker_t3699702237::get_offset_of_imagePanel_4(),
+	imgMarker_t3699702237::get_offset_of_image_5(),
+	imgMarker_t3699702237::get_offset_of_delayImage_6(),
+	imgMarker_t3699702237::get_offset_of_fadeTime_7(),
+	imgMarker_t3699702237::get_offset_of_imageState_8(),
+	U3CFadeInU3Ec__Iterator7_t3583366023::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeInU3Ec__Iterator7_t3583366023::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeInU3Ec__Iterator7_t3583366023::get_offset_of_U24PC_2(),
+	U3CFadeInU3Ec__Iterator7_t3583366023::get_offset_of_U24current_3(),
+	U3CFadeInU3Ec__Iterator7_t3583366023::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeOutU3Ec__Iterator8_t2138668271::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeOutU3Ec__Iterator8_t2138668271::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeOutU3Ec__Iterator8_t2138668271::get_offset_of_U24PC_2(),
+	U3CFadeOutU3Ec__Iterator8_t2138668271::get_offset_of_U24current_3(),
+	U3CFadeOutU3Ec__Iterator8_t2138668271::get_offset_of_U3CU3Ef__this_4(),
+	imgMarkerAB_t3475898046::get_offset_of_myAudio_2(),
+	imgMarkerAB_t3475898046::get_offset_of_allAudioNAR_3(),
+	imgMarkerAB_t3475898046::get_offset_of_imagePanel1_4(),
+	imgMarkerAB_t3475898046::get_offset_of_imagePanel2_5(),
+	imgMarkerAB_t3475898046::get_offset_of_imagePanel3_6(),
+	imgMarkerAB_t3475898046::get_offset_of_image1_7(),
+	imgMarkerAB_t3475898046::get_offset_of_image2_8(),
+	imgMarkerAB_t3475898046::get_offset_of_image3_9(),
+	imgMarkerAB_t3475898046::get_offset_of_delayImage_10(),
+	imgMarkerAB_t3475898046::get_offset_of_fadeTime_11(),
+	imgMarkerAB_t3475898046::get_offset_of_imageState_12(),
+	U3CFadeInU3Ec__Iterator9_t3583366025::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeInU3Ec__Iterator9_t3583366025::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeInU3Ec__Iterator9_t3583366025::get_offset_of_U24PC_2(),
+	U3CFadeInU3Ec__Iterator9_t3583366025::get_offset_of_U24current_3(),
+	U3CFadeInU3Ec__Iterator9_t3583366025::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeOutU3Ec__IteratorA_t2138668280::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeOutU3Ec__IteratorA_t2138668280::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeOutU3Ec__IteratorA_t2138668280::get_offset_of_U24PC_2(),
+	U3CFadeOutU3Ec__IteratorA_t2138668280::get_offset_of_U24current_3(),
+	U3CFadeOutU3Ec__IteratorA_t2138668280::get_offset_of_U3CU3Ef__this_4(),
 	loadLocation_t3184820923::get_offset_of_newPos_2(),
 	loadLocation_t3184820923::get_offset_of_currScene_3(),
-	U3CExampleU3Ec__Iterator7_t4174890422::get_offset_of_U24PC_0(),
-	U3CExampleU3Ec__Iterator7_t4174890422::get_offset_of_U24current_1(),
+	U3CExampleU3Ec__IteratorB_t4174890433::get_offset_of_U24PC_0(),
+	U3CExampleU3Ec__IteratorB_t4174890433::get_offset_of_U24current_1(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_toHome_2(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromTC_3(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromMB_4(),
@@ -11200,36 +11247,49 @@ extern const int32_t g_FieldOffsetTable[9558] =
 	loadScene_t1377993542::get_offset_of_overlay_2(),
 	loadScene_t1377993542::get_offset_of_fadeTime_3(),
 	loadScene_t1377993542::get_offset_of_newScene_4(),
-	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U24PC_2(),
-	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U24current_3(),
-	U3CFadeToBlackU3Ec__Iterator8_t2922908089::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U24PC_2(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U24current_3(),
+	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CU3Ef__this_4(),
 	navTrigger_t726877973::get_offset_of_moveXto_2(),
 	navTrigger_t726877973::get_offset_of_moveYto_3(),
 	navTrigger_t726877973::get_offset_of_moveZto_4(),
 	navTrigger_t726877973::get_offset_of_newPos_5(),
 	overlayFade_t3887785708::get_offset_of_overlay_2(),
 	overlayFade_t3887785708::get_offset_of_fadeTime_3(),
-	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U24PC_2(),
-	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U24current_3(),
-	U3CFadeToClearU3Ec__Iterator9_t1919619628::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U24PC_2(),
+	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U24current_3(),
+	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U3CU3Ef__this_4(),
 	overlayFadeIn_t3835487537::get_offset_of_overlay_2(),
 	overlayFadeIn_t3835487537::get_offset_of_fadeTime_3(),
-	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U24PC_2(),
-	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U24current_3(),
-	U3CFadeToClearU3Ec__IteratorA_t1919619636::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U24PC_2(),
+	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U24current_3(),
+	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U3CU3Ef__this_4(),
 	splashScreen_t2428448179::get_offset_of_splash_2(),
 	splashScreen_t2428448179::get_offset_of_fadeTime_3(),
-	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U24PC_2(),
-	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U24current_3(),
-	U3CFadeOutU3Ec__IteratorB_t2138668281::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U24PC_2(),
+	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U24current_3(),
+	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U3CU3Ef__this_4(),
+	vidMarker_t633812907::get_offset_of_myAudio_2(),
+	vidMarker_t633812907::get_offset_of_allAudioNAR_3(),
+	vidMarker_t633812907::get_offset_of_vidPanel_4(),
+	vidMarker_t633812907::get_offset_of_vidPlayer_5(),
+	vidMarker_t633812907::get_offset_of_vidMesh_6(),
+	vidMarker_t633812907::get_offset_of_delayVid_7(),
+	vidMarker_t633812907::get_offset_of_vidState_8(),
+	U3CvideoOnU3Ec__Iterator10_t2279812848::get_offset_of_U24PC_0(),
+	U3CvideoOnU3Ec__Iterator10_t2279812848::get_offset_of_U24current_1(),
+	U3CvideoOnU3Ec__Iterator10_t2279812848::get_offset_of_U3CU3Ef__this_2(),
+	U3CvideoOffU3Ec__Iterator11_t390254243::get_offset_of_U24PC_0(),
+	U3CvideoOffU3Ec__Iterator11_t390254243::get_offset_of_U24current_1(),
+	U3CvideoOffU3Ec__Iterator11_t390254243::get_offset_of_U3CU3Ef__this_2(),
 	videoMarker_t853609621::get_offset_of_videoPanel_2(),
 	videoMarker_t853609621::get_offset_of_isPlaying_3(),
 	videoMarker_t853609621::get_offset_of_allAudioNAR_4(),
@@ -11245,11 +11305,11 @@ extern const int32_t g_FieldOffsetTable[9558] =
 	videoTriggerToScene_t1861271380::get_offset_of_newScene_3(),
 	videoTriggerToScene_t1861271380::get_offset_of_overlay_4(),
 	videoTriggerToScene_t1861271380::get_offset_of_fadeTime_5(),
-	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U24PC_2(),
-	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U24current_3(),
-	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U24PC_2(),
+	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U24current_3(),
+	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U3CU3Ef__this_4(),
 	vrTrueFalse_t812900569_StaticFields::get_offset_of_VRstate_2(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_U24U24fieldU2D1_1(),
@@ -11261,7 +11321,7 @@ extern const int32_t g_FieldOffsetTable[9558] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1924] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1933] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13162,25 +13222,34 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1924] =
 	sizeof (audioUI_t3633711338), -1, sizeof(audioUI_t3633711338_StaticFields), 0,
 	sizeof (chapelMusic_t239962090), -1, sizeof(chapelMusic_t239962090_StaticFields), 0,
 	sizeof (homeIcon_t3808435704), -1, 0, 0,
+	sizeof (imgMarker_t3699702237), -1, 0, 0,
+	sizeof (U3CFadeInU3Ec__Iterator7_t3583366023), -1, 0, 0,
+	sizeof (U3CFadeOutU3Ec__Iterator8_t2138668271), -1, 0, 0,
+	sizeof (imgMarkerAB_t3475898046), -1, 0, 0,
+	sizeof (U3CFadeInU3Ec__Iterator9_t3583366025), -1, 0, 0,
+	sizeof (U3CFadeOutU3Ec__IteratorA_t2138668280), -1, 0, 0,
 	sizeof (loadLocation_t3184820923), -1, 0, 0,
 	sizeof (loadLocationDoor_t3861857545), -1, 0, 0,
 	sizeof (loadLocationHome_t3861976634), -1, 0, 0,
-	sizeof (U3CExampleU3Ec__Iterator7_t4174890422), -1, 0, 0,
+	sizeof (U3CExampleU3Ec__IteratorB_t4174890433), -1, 0, 0,
 	sizeof (loadLocationInit_t3862005355), -1, sizeof(loadLocationInit_t3862005355_StaticFields), 0,
 	sizeof (loadScene_t1377993542), -1, 0, 0,
-	sizeof (U3CFadeToBlackU3Ec__Iterator8_t2922908089), -1, 0, 0,
+	sizeof (U3CFadeToBlackU3Ec__IteratorC_t2922908100), -1, 0, 0,
 	sizeof (navTrigger_t726877973), -1, 0, 0,
 	sizeof (overlayFade_t3887785708), -1, 0, 0,
-	sizeof (U3CFadeToClearU3Ec__Iterator9_t1919619628), -1, 0, 0,
+	sizeof (U3CFadeToClearU3Ec__IteratorD_t1919619639), -1, 0, 0,
 	sizeof (overlayFadeIn_t3835487537), -1, 0, 0,
-	sizeof (U3CFadeToClearU3Ec__IteratorA_t1919619636), -1, 0, 0,
+	sizeof (U3CFadeToClearU3Ec__IteratorE_t1919619640), -1, 0, 0,
 	sizeof (splashScreen_t2428448179), -1, 0, 0,
-	sizeof (U3CFadeOutU3Ec__IteratorB_t2138668281), -1, 0, 0,
+	sizeof (U3CFadeOutU3Ec__IteratorF_t2138668285), -1, 0, 0,
+	sizeof (vidMarker_t633812907), -1, 0, 0,
+	sizeof (U3CvideoOnU3Ec__Iterator10_t2279812848), -1, 0, 0,
+	sizeof (U3CvideoOffU3Ec__Iterator11_t390254243), -1, 0, 0,
 	sizeof (videoMarker_t853609621), -1, 0, 0,
 	sizeof (videoTrigger_t3087919293), -1, 0, 0,
 	sizeof (videoTriggerStart_t1940838821), -1, 0, 0,
 	sizeof (videoTriggerToScene_t1861271380), -1, 0, 0,
-	sizeof (U3CFadeToBlackU3Ec__IteratorC_t2922908100), -1, 0, 0,
+	sizeof (U3CFadeToBlackU3Ec__Iterator12_t415837376), -1, 0, 0,
 	sizeof (vrChangeCamera_t981690321), -1, 0, 0,
 	sizeof (vrTrueFalse_t812900569), -1, sizeof(vrTrueFalse_t812900569_StaticFields), 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238937), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields), 0,

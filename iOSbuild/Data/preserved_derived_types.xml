@@ -39,6 +39,8 @@
 <type fullname="audioUI" preserve="all"/>
 <type fullname="chapelMusic" preserve="all"/>
 <type fullname="homeIcon" preserve="all"/>
+<type fullname="imgMarker" preserve="all"/>
+<type fullname="imgMarkerAB" preserve="all"/>
 <type fullname="loadLocation" preserve="all"/>
 <type fullname="loadLocationDoor" preserve="all"/>
 <type fullname="loadLocationHome" preserve="all"/>
@@ -48,6 +50,7 @@
 <type fullname="overlayFade" preserve="all"/>
 <type fullname="overlayFadeIn" preserve="all"/>
 <type fullname="splashScreen" preserve="all"/>
+<type fullname="vidMarker" preserve="all"/>
 <type fullname="videoMarker" preserve="all"/>
 <type fullname="videoTrigger" preserve="all"/>
 <type fullname="videoTriggerStart" preserve="all"/>
