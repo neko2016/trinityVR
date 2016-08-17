@@ -39,6 +39,8 @@ struct audioTrigger_t1648719106;
 struct Collider_t955670625;
 // audioTriggerAlt
 struct audioTriggerAlt_t4039923015;
+// audioTriggerPlus
+struct audioTriggerPlus_t684008892;
 // audioUI
 struct audioUI_t3633711338;
 // System.Linq.IOrderedEnumerable`1<UnityEngine.GameObject>
@@ -281,8 +283,6 @@ struct U3CDownloadStreamingVideoAndLoadU3Ec__Iterator0_t4280710941;
 struct U3CDownloadStreamingVideoAndLoad2U3Ec__Iterator1_t2388932332;
 // MediaPlayerCtrl/VideoEnd
 struct VideoEnd_t1216006784;
-// MediaPlayerCtrl/VideoError
-struct VideoError_t351551085;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -339,6 +339,8 @@ struct VideoError_t351551085;
 #include "UnityEngine_UnityEngine_Collider955670625.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015MethodDeclarations.h"
+#include "AssemblyU2DCSharp_audioTriggerPlus684008892.h"
+#include "AssemblyU2DCSharp_audioTriggerPlus684008892MethodDeclarations.h"
 #include "AssemblyU2DCSharp_audioUI3633711338.h"
 #include "AssemblyU2DCSharp_audioUI3633711338MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen1459861720MethodDeclarations.h"
@@ -740,6 +742,8 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #define GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(__this, method) ((  AudioSource_t3628549054 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<GvrAudioSource>()
 #define Component_GetComponent_TisGvrAudioSource_t2139450958_m2769811703(__this, method) ((  GvrAudioSource_t2139450958 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<GvrAudioSource>()
+#define GameObject_GetComponent_TisGvrAudioSource_t2139450958_m2760069455(__this, method) ((  GvrAudioSource_t2139450958 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // System.Linq.IOrderedEnumerable`1<!!0> System.Linq.Enumerable::OrderBy<System.Object,System.Object>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
 extern "C"  Il2CppObject* Enumerable_OrderBy_TisIl2CppObject_TisIl2CppObject_m4283291253_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject* p0, Func_2_t2135783352 * p1, const MethodInfo* method);
 #define Enumerable_OrderBy_TisIl2CppObject_TisIl2CppObject_m4283291253(__this /* static, unused */, p0, p1, method) ((  Il2CppObject* (*) (Il2CppObject * /* static, unused */, Il2CppObject*, Func_2_t2135783352 *, const MethodInfo*))Enumerable_OrderBy_TisIl2CppObject_TisIl2CppObject_m4283291253_gshared)(__this /* static, unused */, p0, p1, method)
@@ -1784,6 +1788,189 @@ IL_00a9:
 		if ((((int32_t)L_28) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_29)->max_length)))))))
 		{
 			goto IL_0084;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void audioTriggerPlus::.ctor()
+extern "C"  void audioTriggerPlus__ctor_m3497571423 (audioTriggerPlus_t684008892 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void audioTriggerPlus::Start()
+extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisGvrAudioSource_t2139450958_m2760069455_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral64918;
+extern Il2CppCodeGenString* _stringLiteral82021;
+extern Il2CppCodeGenString* _stringLiteral77055;
+extern const uint32_t audioTriggerPlus_Start_m2444709215_MetadataUsageId;
+extern "C"  void audioTriggerPlus_Start_m2444709215 (audioTriggerPlus_t684008892 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (audioTriggerPlus_Start_m2444709215_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		AudioSource_t3628549054 * L_1 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_0, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		__this->set_myAudio_2(L_1);
+		GameObject_t4012695102 * L_2 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		GvrAudioSource_t2139450958 * L_3 = GameObject_GetComponent_TisGvrAudioSource_t2139450958_m2760069455(L_2, /*hidden argument*/GameObject_GetComponent_TisGvrAudioSource_t2139450958_m2760069455_MethodInfo_var);
+		__this->set_myGvrAudio_3(L_3);
+		GameObjectU5BU5D_t3499186955* L_4 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral64918, /*hidden argument*/NULL);
+		__this->set_allAudioAMB_4(L_4);
+		GameObjectU5BU5D_t3499186955* L_5 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral82021, /*hidden argument*/NULL);
+		__this->set_allAudioSFX_5(L_5);
+		GameObjectU5BU5D_t3499186955* L_6 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral77055, /*hidden argument*/NULL);
+		__this->set_allAudioNAR_6(L_6);
+		return;
+	}
+}
+// System.Void audioTriggerPlus::OnTriggerEnter(UnityEngine.Collider)
+extern "C"  void audioTriggerPlus_OnTriggerEnter_m1893951353 (audioTriggerPlus_t684008892 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
+{
+	{
+		AudioSource_t3628549054 * L_0 = __this->get_myAudio_2();
+		NullCheck(L_0);
+		AudioSource_Play_m1360558992(L_0, /*hidden argument*/NULL);
+		GvrAudioSource_t2139450958 * L_1 = __this->get_myGvrAudio_3();
+		NullCheck(L_1);
+		GvrAudioSource_Play_m1748119499(L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void audioTriggerPlus::OnTriggerExit(UnityEngine.Collider)
+extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var;
+extern const uint32_t audioTriggerPlus_OnTriggerExit_m3590343433_MetadataUsageId;
+extern "C"  void audioTriggerPlus_OnTriggerExit_m3590343433 (audioTriggerPlus_t684008892 * __this, Collider_t955670625 * ___col, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (audioTriggerPlus_OnTriggerExit_m3590343433_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObjectU5BU5D_t3499186955* V_1 = NULL;
+	int32_t V_2 = 0;
+	GameObject_t4012695102 * V_3 = NULL;
+	GameObjectU5BU5D_t3499186955* V_4 = NULL;
+	int32_t V_5 = 0;
+	GameObject_t4012695102 * V_6 = NULL;
+	GameObjectU5BU5D_t3499186955* V_7 = NULL;
+	int32_t V_8 = 0;
+	{
+		AudioSource_t3628549054 * L_0 = __this->get_myAudio_2();
+		Il2CppObject * L_1 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_0, (3.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_1, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3499186955* L_2 = __this->get_allAudioAMB_4();
+		V_1 = L_2;
+		V_2 = 0;
+		goto IL_0044;
+	}
+
+IL_0025:
+	{
+		GameObjectU5BU5D_t3499186955* L_3 = V_1;
+		int32_t L_4 = V_2;
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
+		int32_t L_5 = L_4;
+		V_0 = ((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5)));
+		GameObject_t4012695102 * L_6 = V_0;
+		NullCheck(L_6);
+		AudioSource_t3628549054 * L_7 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_6, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_8 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_7, (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_8, /*hidden argument*/NULL);
+		int32_t L_9 = V_2;
+		V_2 = ((int32_t)((int32_t)L_9+(int32_t)1));
+	}
+
+IL_0044:
+	{
+		int32_t L_10 = V_2;
+		GameObjectU5BU5D_t3499186955* L_11 = V_1;
+		NullCheck(L_11);
+		if ((((int32_t)L_10) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_11)->max_length)))))))
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3499186955* L_12 = __this->get_allAudioSFX_5();
+		V_4 = L_12;
+		V_5 = 0;
+		goto IL_0080;
+	}
+
+IL_005d:
+	{
+		GameObjectU5BU5D_t3499186955* L_13 = V_4;
+		int32_t L_14 = V_5;
+		NullCheck(L_13);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_14);
+		int32_t L_15 = L_14;
+		V_3 = ((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15)));
+		GameObject_t4012695102 * L_16 = V_3;
+		NullCheck(L_16);
+		AudioSource_t3628549054 * L_17 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_16, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_18 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_17, (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_18, /*hidden argument*/NULL);
+		int32_t L_19 = V_5;
+		V_5 = ((int32_t)((int32_t)L_19+(int32_t)1));
+	}
+
+IL_0080:
+	{
+		int32_t L_20 = V_5;
+		GameObjectU5BU5D_t3499186955* L_21 = V_4;
+		NullCheck(L_21);
+		if ((((int32_t)L_20) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_21)->max_length)))))))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3499186955* L_22 = __this->get_allAudioNAR_6();
+		V_7 = L_22;
+		V_8 = 0;
+		goto IL_00c0;
+	}
+
+IL_009b:
+	{
+		GameObjectU5BU5D_t3499186955* L_23 = V_7;
+		int32_t L_24 = V_8;
+		NullCheck(L_23);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, L_24);
+		int32_t L_25 = L_24;
+		V_6 = ((L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25)));
+		GameObject_t4012695102 * L_26 = V_6;
+		NullCheck(L_26);
+		AudioSource_t3628549054 * L_27 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_26, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_28 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_27, (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_28, /*hidden argument*/NULL);
+		int32_t L_29 = V_8;
+		V_8 = ((int32_t)((int32_t)L_29+(int32_t)1));
+	}
+
+IL_00c0:
+	{
+		int32_t L_30 = V_8;
+		GameObjectU5BU5D_t3499186955* L_31 = V_7;
+		NullCheck(L_31);
+		if ((((int32_t)L_30) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_31)->max_length)))))))
+		{
+			goto IL_009b;
 		}
 	}
 	{
@@ -30092,70 +30279,6 @@ extern "C"  Il2CppObject * VideoEnd_BeginInvoke_m2625508899 (VideoEnd_t121600678
 }
 // System.Void MediaPlayerCtrl/VideoEnd::EndInvoke(System.IAsyncResult)
 extern "C"  void VideoEnd_EndInvoke_m2452614166 (VideoEnd_t1216006784 * __this, Il2CppObject * ___result, const MethodInfo* method)
-{
-	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
-}
-// System.Void MediaPlayerCtrl/VideoError::.ctor(System.Object,System.IntPtr)
-extern "C"  void VideoError__ctor_m490812083 (VideoError_t351551085 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
-{
-	__this->set_method_ptr_0((methodPointerType)((MethodInfo*)___method.get_m_value_0())->method);
-	__this->set_method_3(___method);
-	__this->set_m_target_2(___object);
-}
-// System.Void MediaPlayerCtrl/VideoError::Invoke(MediaPlayerCtrl/MEDIAPLAYER_ERROR,MediaPlayerCtrl/MEDIAPLAYER_ERROR)
-extern "C"  void VideoError_Invoke_m1533335827 (VideoError_t351551085 * __this, int32_t ___errorCode, int32_t ___errorCodeExtra, const MethodInfo* method)
-{
-	if(__this->get_prev_9() != NULL)
-	{
-		VideoError_Invoke_m1533335827((VideoError_t351551085 *)__this->get_prev_9(),___errorCode, ___errorCodeExtra, method);
-	}
-	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
-	{
-		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___errorCode, int32_t ___errorCodeExtra, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),___errorCode, ___errorCodeExtra,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-	else
-	{
-		typedef void (*FunctionPointerType) (void* __this, int32_t ___errorCode, int32_t ___errorCodeExtra, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),___errorCode, ___errorCodeExtra,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-}
-extern "C" void pinvoke_delegate_wrapper_VideoError_t351551085(Il2CppObject* delegate, int32_t ___errorCode, int32_t ___errorCodeExtra)
-{
-	typedef void (STDCALL *native_function_ptr_type)(int32_t, int32_t);
-	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
-	// Marshaling of parameter '___errorCode' to native representation
-
-	// Marshaling of parameter '___errorCodeExtra' to native representation
-
-	// Native function invocation
-	_il2cpp_pinvoke_func(___errorCode, ___errorCodeExtra);
-
-	// Marshaling cleanup of parameter '___errorCode' native representation
-
-	// Marshaling cleanup of parameter '___errorCodeExtra' native representation
-
-}
-// System.IAsyncResult MediaPlayerCtrl/VideoError::BeginInvoke(MediaPlayerCtrl/MEDIAPLAYER_ERROR,MediaPlayerCtrl/MEDIAPLAYER_ERROR,System.AsyncCallback,System.Object)
-extern TypeInfo* MEDIAPLAYER_ERROR_t2861322446_il2cpp_TypeInfo_var;
-extern const uint32_t VideoError_BeginInvoke_m3506343324_MetadataUsageId;
-extern "C"  Il2CppObject * VideoError_BeginInvoke_m3506343324 (VideoError_t351551085 * __this, int32_t ___errorCode, int32_t ___errorCodeExtra, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (VideoError_BeginInvoke_m3506343324_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	void *__d_args[3] = {0};
-	__d_args[0] = Box(MEDIAPLAYER_ERROR_t2861322446_il2cpp_TypeInfo_var, &___errorCode);
-	__d_args[1] = Box(MEDIAPLAYER_ERROR_t2861322446_il2cpp_TypeInfo_var, &___errorCodeExtra);
-	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
-}
-// System.Void MediaPlayerCtrl/VideoError::EndInvoke(System.IAsyncResult)
-extern "C"  void VideoError_EndInvoke_m145225283 (VideoError_t351551085 * __this, Il2CppObject * ___result, const MethodInfo* method)
 {
 	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 }

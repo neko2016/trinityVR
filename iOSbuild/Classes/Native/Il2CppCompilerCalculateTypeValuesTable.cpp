@@ -1195,6 +1195,7 @@
 #include "AssemblyU2DCSharp_audioRandomPlayGvr3248665366.h"
 #include "AssemblyU2DCSharp_audioTrigger1648719106.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015.h"
+#include "AssemblyU2DCSharp_audioTriggerPlus684008892.h"
 #include "AssemblyU2DCSharp_audioUI3633711338.h"
 #include "AssemblyU2DCSharp_chapelMusic239962090.h"
 #include "AssemblyU2DCSharp_homeIcon3808435704.h"
@@ -1696,7 +1697,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9553] = 
+extern const int32_t g_FieldOffsetTable[9558] = 
 {
 	0,
 	0,
@@ -11170,6 +11171,11 @@ extern const int32_t g_FieldOffsetTable[9553] =
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioAMB_2(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioSFX_3(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioNAR_4(),
+	audioTriggerPlus_t684008892::get_offset_of_myAudio_2(),
+	audioTriggerPlus_t684008892::get_offset_of_myGvrAudio_3(),
+	audioTriggerPlus_t684008892::get_offset_of_allAudioAMB_4(),
+	audioTriggerPlus_t684008892::get_offset_of_allAudioSFX_5(),
+	audioTriggerPlus_t684008892::get_offset_of_allAudioNAR_6(),
 	audioUI_t3633711338::get_offset_of_allUI_2(),
 	audioUI_t3633711338::get_offset_of_click_3(),
 	audioUI_t3633711338::get_offset_of_highlight_4(),
@@ -11255,7 +11261,7 @@ extern const int32_t g_FieldOffsetTable[9553] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1923] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1924] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13152,6 +13158,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1923] =
 	sizeof (audioRandomPlayGvr_t3248665366), -1, 0, 0,
 	sizeof (audioTrigger_t1648719106), -1, 0, 0,
 	sizeof (audioTriggerAlt_t4039923015), -1, 0, 0,
+	sizeof (audioTriggerPlus_t684008892), -1, 0, 0,
 	sizeof (audioUI_t3633711338), -1, sizeof(audioUI_t3633711338_StaticFields), 0,
 	sizeof (chapelMusic_t239962090), -1, sizeof(chapelMusic_t239962090_StaticFields), 0,
 	sizeof (homeIcon_t3808435704), -1, 0, 0,

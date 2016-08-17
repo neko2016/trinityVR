@@ -87,6 +87,7 @@
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
 			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
 		</type>
 		<type fullname="videoMarker">
 			<method name="markerPressed"/>
@@ -96,6 +97,18 @@
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
+		</type>
+		<type fullname="GvrAudioSource">
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
 		</type>
 		<type fullname="loadLocationDoor">
 			<method name="exitDoor"/>

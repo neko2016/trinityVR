@@ -11282,6 +11282,10 @@ extern "C" void audioTrigger_OnTriggerExit_m838138755 ();
 extern "C" void audioTriggerAlt__ctor_m701067780 ();
 extern "C" void audioTriggerAlt_Start_m3943172868 ();
 extern "C" void audioTriggerAlt_OnTriggerExit_m3011628846 ();
+extern "C" void audioTriggerPlus__ctor_m3497571423 ();
+extern "C" void audioTriggerPlus_Start_m2444709215 ();
+extern "C" void audioTriggerPlus_OnTriggerEnter_m1893951353 ();
+extern "C" void audioTriggerPlus_OnTriggerExit_m3590343433 ();
 extern "C" void audioUI__ctor_m3103624641 ();
 extern "C" void audioUI_Start_m2050762433 ();
 extern "C" void audioUI_Enter_m2355995575 ();
@@ -12677,7 +12681,7 @@ extern "C" void vrTrueFalse__ctor_m1230274226 ();
 extern "C" void vrTrueFalse_Start_m177412018 ();
 extern "C" void vrTrueFalse_makeVRtrue_m3469953834 ();
 extern "C" void vrTrueFalse_makeVRfalse_m159705257 ();
-extern const methodPointerType g_MethodPointers[12666] = 
+extern const methodPointerType g_MethodPointers[12670] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -23950,6 +23954,10 @@ extern const methodPointerType g_MethodPointers[12666] =
 	audioTriggerAlt__ctor_m701067780,
 	audioTriggerAlt_Start_m3943172868,
 	audioTriggerAlt_OnTriggerExit_m3011628846,
+	audioTriggerPlus__ctor_m3497571423,
+	audioTriggerPlus_Start_m2444709215,
+	audioTriggerPlus_OnTriggerEnter_m1893951353,
+	audioTriggerPlus_OnTriggerExit_m3590343433,
 	audioUI__ctor_m3103624641,
 	audioUI_Start_m2050762433,
 	audioUI_Enter_m2355995575,

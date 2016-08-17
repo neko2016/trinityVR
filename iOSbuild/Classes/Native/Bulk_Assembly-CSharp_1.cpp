@@ -13,14 +13,16 @@
 #include <limits>
 #include <assert.h>
 
-// MediaPlayerCtrl/VideoFirstFrameReady
-struct VideoFirstFrameReady_t1412571435;
+// MediaPlayerCtrl/VideoError
+struct VideoError_t351551085;
 // System.Object
 struct Il2CppObject;
 // System.IAsyncResult
 struct IAsyncResult_t537683269;
 // System.AsyncCallback
 struct AsyncCallback_t1363551830;
+// MediaPlayerCtrl/VideoFirstFrameReady
+struct VideoFirstFrameReady_t1412571435;
 // MediaPlayerCtrl/VideoReady
 struct VideoReady_t363152904;
 // MediaPlayerCtrl/VideoResize
@@ -197,12 +199,15 @@ struct vrTrueFalse_t812900569;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
-#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoFirstFrameR1412571435.h"
-#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoFirstFrameR1412571435MethodDeclarations.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoError351551085.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoError351551085MethodDeclarations.h"
 #include "mscorlib_System_Object837106420.h"
 #include "mscorlib_System_IntPtr676692020.h"
 #include "mscorlib_System_Void2779279689.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_MEDIAPLAYER_ERRO2861322446.h"
 #include "mscorlib_System_AsyncCallback1363551830.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoFirstFrameR1412571435.h"
+#include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoFirstFrameR1412571435MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoReady363152904.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoReady363152904MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_VideoResize2668346607.h"
@@ -573,6 +578,70 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void MediaPlayerCtrl/VideoError::.ctor(System.Object,System.IntPtr)
+extern "C"  void VideoError__ctor_m490812083 (VideoError_t351551085 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((methodPointerType)((MethodInfo*)___method.get_m_value_0())->method);
+	__this->set_method_3(___method);
+	__this->set_m_target_2(___object);
+}
+// System.Void MediaPlayerCtrl/VideoError::Invoke(MediaPlayerCtrl/MEDIAPLAYER_ERROR,MediaPlayerCtrl/MEDIAPLAYER_ERROR)
+extern "C"  void VideoError_Invoke_m1533335827 (VideoError_t351551085 * __this, int32_t ___errorCode, int32_t ___errorCodeExtra, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		VideoError_Invoke_m1533335827((VideoError_t351551085 *)__this->get_prev_9(),___errorCode, ___errorCodeExtra, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, int32_t ___errorCode, int32_t ___errorCodeExtra, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),___errorCode, ___errorCodeExtra,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, int32_t ___errorCode, int32_t ___errorCodeExtra, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),___errorCode, ___errorCodeExtra,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+extern "C" void pinvoke_delegate_wrapper_VideoError_t351551085(Il2CppObject* delegate, int32_t ___errorCode, int32_t ___errorCodeExtra)
+{
+	typedef void (STDCALL *native_function_ptr_type)(int32_t, int32_t);
+	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
+	// Marshaling of parameter '___errorCode' to native representation
+
+	// Marshaling of parameter '___errorCodeExtra' to native representation
+
+	// Native function invocation
+	_il2cpp_pinvoke_func(___errorCode, ___errorCodeExtra);
+
+	// Marshaling cleanup of parameter '___errorCode' native representation
+
+	// Marshaling cleanup of parameter '___errorCodeExtra' native representation
+
+}
+// System.IAsyncResult MediaPlayerCtrl/VideoError::BeginInvoke(MediaPlayerCtrl/MEDIAPLAYER_ERROR,MediaPlayerCtrl/MEDIAPLAYER_ERROR,System.AsyncCallback,System.Object)
+extern TypeInfo* MEDIAPLAYER_ERROR_t2861322446_il2cpp_TypeInfo_var;
+extern const uint32_t VideoError_BeginInvoke_m3506343324_MetadataUsageId;
+extern "C"  Il2CppObject * VideoError_BeginInvoke_m3506343324 (VideoError_t351551085 * __this, int32_t ___errorCode, int32_t ___errorCodeExtra, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (VideoError_BeginInvoke_m3506343324_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(MEDIAPLAYER_ERROR_t2861322446_il2cpp_TypeInfo_var, &___errorCode);
+	__d_args[1] = Box(MEDIAPLAYER_ERROR_t2861322446_il2cpp_TypeInfo_var, &___errorCodeExtra);
+	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
+}
+// System.Void MediaPlayerCtrl/VideoError::EndInvoke(System.IAsyncResult)
+extern "C"  void VideoError_EndInvoke_m145225283 (VideoError_t351551085 * __this, Il2CppObject * ___result, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
+}
 // System.Void MediaPlayerCtrl/VideoFirstFrameReady::.ctor(System.Object,System.IntPtr)
 extern "C"  void VideoFirstFrameReady__ctor_m4202279345 (VideoFirstFrameReady_t1412571435 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
 {
