@@ -31,7 +31,7 @@ public class musicControl : MonoBehaviour {
 		if (currMus.isPlaying) {
 
 			while (currMus.volume < 1) {
-				currMus.volume += /* startVolume */ Time.deltaTime / 2f;
+				currMus.volume += /* startVolume */ Time.deltaTime / 1f;
 
 				yield return null;
 			}
@@ -44,7 +44,7 @@ public class musicControl : MonoBehaviour {
 		if (currMus.isPlaying) {
 
 			while (currMus.volume > 0) {
-				currMus.volume -= startVolume * Time.deltaTime / 2f;
+				currMus.volume -= startVolume * Time.deltaTime / 1f;
 
 				yield return null;
 			}
@@ -53,6 +53,6 @@ public class musicControl : MonoBehaviour {
 
 		currMus.Pause ();
 		currMus.volume = 0;
-		currMus.volume = startVolume;
+		//currMus.volume = startVolume;
 	}
 }

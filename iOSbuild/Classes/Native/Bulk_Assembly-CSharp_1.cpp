@@ -1616,7 +1616,7 @@ IL_0076:
 		float L_15 = AudioSource_get_volume_m2334326995(L_14, /*hidden argument*/NULL);
 		float L_16 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_14);
-		AudioSource_set_volume_m1410546616(L_14, ((float)((float)L_15+(float)((float)((float)L_16/(float)(2.0f))))), /*hidden argument*/NULL);
+		AudioSource_set_volume_m1410546616(L_14, ((float)((float)L_15+(float)((float)((float)L_16/(float)(1.0f))))), /*hidden argument*/NULL);
 		__this->set_U24current_2(NULL);
 		__this->set_U24PC_1(1);
 		goto IL_00ce;
@@ -1720,7 +1720,7 @@ extern "C"  bool U3CfadeOutMusicU3Ec__IteratorE_MoveNext_m1357974851 (U3CfadeOut
 		}
 	}
 	{
-		goto IL_00e9;
+		goto IL_00d3;
 	}
 
 IL_0021:
@@ -1756,10 +1756,10 @@ IL_0051:
 		float L_12 = __this->get_U3CstartVolumeU3E__0_0();
 		float L_13 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_10);
-		AudioSource_set_volume_m1410546616(L_10, ((float)((float)L_11-(float)((float)((float)((float)((float)L_12*(float)L_13))/(float)(2.0f))))), /*hidden argument*/NULL);
+		AudioSource_set_volume_m1410546616(L_10, ((float)((float)L_11-(float)((float)((float)((float)((float)L_12*(float)L_13))/(float)(1.0f))))), /*hidden argument*/NULL);
 		__this->set_U24current_2(NULL);
 		__this->set_U24PC_1(1);
-		goto IL_00eb;
+		goto IL_00d5;
 	}
 
 IL_008d:
@@ -1787,25 +1787,19 @@ IL_00a7:
 		AudioSource_t3628549054 * L_20 = L_19->get_currMus_3();
 		NullCheck(L_20);
 		AudioSource_set_volume_m1410546616(L_20, (0.0f), /*hidden argument*/NULL);
-		musicControl_t2822556536 * L_21 = __this->get_U3CU3Ef__this_3();
-		NullCheck(L_21);
-		AudioSource_t3628549054 * L_22 = L_21->get_currMus_3();
-		float L_23 = __this->get_U3CstartVolumeU3E__0_0();
-		NullCheck(L_22);
-		AudioSource_set_volume_m1410546616(L_22, L_23, /*hidden argument*/NULL);
 		__this->set_U24PC_1((-1));
 	}
 
-IL_00e9:
+IL_00d3:
 	{
 		return (bool)0;
 	}
 
-IL_00eb:
+IL_00d5:
 	{
 		return (bool)1;
 	}
-	// Dead block : IL_00ed: ldloc.1
+	// Dead block : IL_00d7: ldloc.1
 }
 // System.Void musicControl/<fadeOutMusic>c__IteratorE::Dispose()
 extern "C"  void U3CfadeOutMusicU3Ec__IteratorE_Dispose_m1608207118 (U3CfadeOutMusicU3Ec__IteratorE_t3256451235 * __this, const MethodInfo* method)
