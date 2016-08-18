@@ -46,6 +46,8 @@
 <type fullname="loadLocationHome" preserve="all"/>
 <type fullname="loadLocationInit" preserve="all"/>
 <type fullname="loadScene" preserve="all"/>
+<type fullname="musicControl" preserve="all"/>
+<type fullname="musicTrigger" preserve="all"/>
 <type fullname="navTrigger" preserve="all"/>
 <type fullname="overlayFade" preserve="all"/>
 <type fullname="overlayFadeIn" preserve="all"/>

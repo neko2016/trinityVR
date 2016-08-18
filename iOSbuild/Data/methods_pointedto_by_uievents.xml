@@ -121,6 +121,10 @@
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 		</type>
+		<type fullname="vidMarker">
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+		</type>
 		<type fullname="loadLocationDoor">
 			<method name="exitDoor"/>
 			<method name="exitDoor"/>
@@ -128,10 +132,6 @@
 			<method name="exitDoor"/>
 			<method name="exitDoor"/>
 			<method name="exitDoor"/>
-		</type>
-		<type fullname="vidMarker">
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
 		</type>
 		<type fullname="imgMarkerAB">
 			<method name="markerPressed"/>

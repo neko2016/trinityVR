@@ -12,6 +12,7 @@ public class audioTrigger : MonoBehaviour {
 	private GameObject[] allAudioSFX;
 	private GameObject[] allAudioNAR;
 
+
 	void Start () {
 		myAudio = gameObject.GetComponent<AudioSource> (); // retrieves an AudioSource from a GameObject
 		allAudioAMB = GameObject.FindGameObjectsWithTag("AMB");
@@ -24,7 +25,7 @@ public class audioTrigger : MonoBehaviour {
 	}
 
 	void OnTriggerExit (Collider col) { // when the collider is exited...
-		
+
 		StartCoroutine(audioFadeOut.FadeOut(myAudio, 3f));
 
 		foreach (GameObject item in allAudioAMB) {

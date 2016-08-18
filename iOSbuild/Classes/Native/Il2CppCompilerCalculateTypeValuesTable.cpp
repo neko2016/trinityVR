@@ -1210,21 +1210,25 @@
 #include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
 #include "AssemblyU2DCSharp_loadScene1377993542.h"
 #include "AssemblyU2DCSharp_loadScene_U3CFadeToBlackU3Ec__It2922908100.h"
+#include "AssemblyU2DCSharp_musicControl2822556536.h"
+#include "AssemblyU2DCSharp_musicControl_U3CfadeInMusicU3Ec_2642451817.h"
+#include "AssemblyU2DCSharp_musicControl_U3CfadeOutMusicU3Ec3256451235.h"
+#include "AssemblyU2DCSharp_musicTrigger811121619.h"
 #include "AssemblyU2DCSharp_navTrigger726877973.h"
 #include "AssemblyU2DCSharp_overlayFade3887785708.h"
-#include "AssemblyU2DCSharp_overlayFade_U3CFadeToClearU3Ec__1919619639.h"
+#include "AssemblyU2DCSharp_overlayFade_U3CFadeToClearU3Ec__1919619641.h"
 #include "AssemblyU2DCSharp_overlayFadeIn3835487537.h"
-#include "AssemblyU2DCSharp_overlayFadeIn_U3CFadeToClearU3Ec1919619640.h"
+#include "AssemblyU2DCSharp_overlayFadeIn_U3CFadeToClearU3Ec3673633420.h"
 #include "AssemblyU2DCSharp_splashScreen2428448179.h"
-#include "AssemblyU2DCSharp_splashScreen_U3CFadeOutU3Ec__Ite2138668285.h"
+#include "AssemblyU2DCSharp_splashScreen_U3CFadeOutU3Ec__Ite1874206793.h"
 #include "AssemblyU2DCSharp_vidMarker633812907.h"
-#include "AssemblyU2DCSharp_vidMarker_U3CvideoOnU3Ec__Iterat2279812848.h"
-#include "AssemblyU2DCSharp_vidMarker_U3CvideoOffU3Ec__Iterat390254243.h"
+#include "AssemblyU2DCSharp_vidMarker_U3CvideoOnU3Ec__Iterat2279812850.h"
+#include "AssemblyU2DCSharp_vidMarker_U3CvideoOffU3Ec__Iterat390254245.h"
 #include "AssemblyU2DCSharp_videoMarker853609621.h"
 #include "AssemblyU2DCSharp_videoTrigger3087919293.h"
 #include "AssemblyU2DCSharp_videoTriggerStart1940838821.h"
 #include "AssemblyU2DCSharp_videoTriggerToScene1861271380.h"
-#include "AssemblyU2DCSharp_videoTriggerToScene_U3CFadeToBlac415837376.h"
+#include "AssemblyU2DCSharp_videoTriggerToScene_U3CFadeToBlac415837378.h"
 #include "AssemblyU2DCSharp_vrTrueFalse812900569.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
@@ -1706,7 +1710,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9612] = 
+extern const int32_t g_FieldOffsetTable[9625] = 
 {
 	0,
 	0,
@@ -11255,31 +11259,44 @@ extern const int32_t g_FieldOffsetTable[9612] =
 	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U24PC_2(),
 	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U24current_3(),
 	U3CFadeToBlackU3Ec__IteratorC_t2922908100::get_offset_of_U3CU3Ef__this_4(),
+	musicControl_t2822556536::get_offset_of_allMus_2(),
+	musicControl_t2822556536::get_offset_of_currMus_3(),
+	musicControl_t2822556536::get_offset_of_songNumber_4(),
+	musicControl_t2822556536_StaticFields::get_offset_of_U3CU3Ef__amU24cache3_5(),
+	U3CfadeInMusicU3Ec__IteratorD_t2642451817::get_offset_of_U3CstartVolumeU3E__0_0(),
+	U3CfadeInMusicU3Ec__IteratorD_t2642451817::get_offset_of_U24PC_1(),
+	U3CfadeInMusicU3Ec__IteratorD_t2642451817::get_offset_of_U24current_2(),
+	U3CfadeInMusicU3Ec__IteratorD_t2642451817::get_offset_of_U3CU3Ef__this_3(),
+	U3CfadeOutMusicU3Ec__IteratorE_t3256451235::get_offset_of_U3CstartVolumeU3E__0_0(),
+	U3CfadeOutMusicU3Ec__IteratorE_t3256451235::get_offset_of_U24PC_1(),
+	U3CfadeOutMusicU3Ec__IteratorE_t3256451235::get_offset_of_U24current_2(),
+	U3CfadeOutMusicU3Ec__IteratorE_t3256451235::get_offset_of_U3CU3Ef__this_3(),
+	musicTrigger_t811121619::get_offset_of_musicControl_2(),
 	navTrigger_t726877973::get_offset_of_moveXto_2(),
 	navTrigger_t726877973::get_offset_of_moveYto_3(),
 	navTrigger_t726877973::get_offset_of_moveZto_4(),
 	navTrigger_t726877973::get_offset_of_newPos_5(),
 	overlayFade_t3887785708::get_offset_of_overlay_2(),
 	overlayFade_t3887785708::get_offset_of_fadeTime_3(),
-	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U24PC_2(),
-	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U24current_3(),
-	U3CFadeToClearU3Ec__IteratorD_t1919619639::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeToClearU3Ec__IteratorF_t1919619641::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToClearU3Ec__IteratorF_t1919619641::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToClearU3Ec__IteratorF_t1919619641::get_offset_of_U24PC_2(),
+	U3CFadeToClearU3Ec__IteratorF_t1919619641::get_offset_of_U24current_3(),
+	U3CFadeToClearU3Ec__IteratorF_t1919619641::get_offset_of_U3CU3Ef__this_4(),
 	overlayFadeIn_t3835487537::get_offset_of_overlay_2(),
 	overlayFadeIn_t3835487537::get_offset_of_fadeTime_3(),
-	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U24PC_2(),
-	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U24current_3(),
-	U3CFadeToClearU3Ec__IteratorE_t1919619640::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeToClearU3Ec__Iterator10_t3673633420::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToClearU3Ec__Iterator10_t3673633420::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToClearU3Ec__Iterator10_t3673633420::get_offset_of_U24PC_2(),
+	U3CFadeToClearU3Ec__Iterator10_t3673633420::get_offset_of_U24current_3(),
+	U3CFadeToClearU3Ec__Iterator10_t3673633420::get_offset_of_U3CU3Ef__this_4(),
 	splashScreen_t2428448179::get_offset_of_splash_2(),
 	splashScreen_t2428448179::get_offset_of_fadeTime_3(),
-	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U24PC_2(),
-	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U24current_3(),
-	U3CFadeOutU3Ec__IteratorF_t2138668285::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeOutU3Ec__Iterator11_t1874206793::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeOutU3Ec__Iterator11_t1874206793::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeOutU3Ec__Iterator11_t1874206793::get_offset_of_U24PC_2(),
+	U3CFadeOutU3Ec__Iterator11_t1874206793::get_offset_of_U24current_3(),
+	U3CFadeOutU3Ec__Iterator11_t1874206793::get_offset_of_U3CU3Ef__this_4(),
 	vidMarker_t633812907::get_offset_of_myAudio_2(),
 	vidMarker_t633812907::get_offset_of_allAudioNAR_3(),
 	vidMarker_t633812907::get_offset_of_vidPanel_4(),
@@ -11287,12 +11304,12 @@ extern const int32_t g_FieldOffsetTable[9612] =
 	vidMarker_t633812907::get_offset_of_vidMesh_6(),
 	vidMarker_t633812907::get_offset_of_delayVid_7(),
 	vidMarker_t633812907::get_offset_of_vidState_8(),
-	U3CvideoOnU3Ec__Iterator10_t2279812848::get_offset_of_U24PC_0(),
-	U3CvideoOnU3Ec__Iterator10_t2279812848::get_offset_of_U24current_1(),
-	U3CvideoOnU3Ec__Iterator10_t2279812848::get_offset_of_U3CU3Ef__this_2(),
-	U3CvideoOffU3Ec__Iterator11_t390254243::get_offset_of_U24PC_0(),
-	U3CvideoOffU3Ec__Iterator11_t390254243::get_offset_of_U24current_1(),
-	U3CvideoOffU3Ec__Iterator11_t390254243::get_offset_of_U3CU3Ef__this_2(),
+	U3CvideoOnU3Ec__Iterator12_t2279812850::get_offset_of_U24PC_0(),
+	U3CvideoOnU3Ec__Iterator12_t2279812850::get_offset_of_U24current_1(),
+	U3CvideoOnU3Ec__Iterator12_t2279812850::get_offset_of_U3CU3Ef__this_2(),
+	U3CvideoOffU3Ec__Iterator13_t390254245::get_offset_of_U24PC_0(),
+	U3CvideoOffU3Ec__Iterator13_t390254245::get_offset_of_U24current_1(),
+	U3CvideoOffU3Ec__Iterator13_t390254245::get_offset_of_U3CU3Ef__this_2(),
 	videoMarker_t853609621::get_offset_of_videoPanel_2(),
 	videoMarker_t853609621::get_offset_of_isPlaying_3(),
 	videoMarker_t853609621::get_offset_of_allAudioNAR_4(),
@@ -11308,11 +11325,11 @@ extern const int32_t g_FieldOffsetTable[9612] =
 	videoTriggerToScene_t1861271380::get_offset_of_newScene_3(),
 	videoTriggerToScene_t1861271380::get_offset_of_overlay_4(),
 	videoTriggerToScene_t1861271380::get_offset_of_fadeTime_5(),
-	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U3CrateU3E__0_0(),
-	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U3CprogressU3E__1_1(),
-	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U24PC_2(),
-	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U24current_3(),
-	U3CFadeToBlackU3Ec__Iterator12_t415837376::get_offset_of_U3CU3Ef__this_4(),
+	U3CFadeToBlackU3Ec__Iterator14_t415837378::get_offset_of_U3CrateU3E__0_0(),
+	U3CFadeToBlackU3Ec__Iterator14_t415837378::get_offset_of_U3CprogressU3E__1_1(),
+	U3CFadeToBlackU3Ec__Iterator14_t415837378::get_offset_of_U24PC_2(),
+	U3CFadeToBlackU3Ec__Iterator14_t415837378::get_offset_of_U24current_3(),
+	U3CFadeToBlackU3Ec__Iterator14_t415837378::get_offset_of_U3CU3Ef__this_4(),
 	vrTrueFalse_t812900569_StaticFields::get_offset_of_VRstate_2(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_U24U24fieldU2D1_1(),
@@ -11324,7 +11341,7 @@ extern const int32_t g_FieldOffsetTable[9612] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1933] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1937] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13238,21 +13255,25 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1933] =
 	sizeof (loadLocationInit_t3862005355), -1, sizeof(loadLocationInit_t3862005355_StaticFields), 0,
 	sizeof (loadScene_t1377993542), -1, 0, 0,
 	sizeof (U3CFadeToBlackU3Ec__IteratorC_t2922908100), -1, 0, 0,
+	sizeof (musicControl_t2822556536), -1, sizeof(musicControl_t2822556536_StaticFields), 0,
+	sizeof (U3CfadeInMusicU3Ec__IteratorD_t2642451817), -1, 0, 0,
+	sizeof (U3CfadeOutMusicU3Ec__IteratorE_t3256451235), -1, 0, 0,
+	sizeof (musicTrigger_t811121619), -1, 0, 0,
 	sizeof (navTrigger_t726877973), -1, 0, 0,
 	sizeof (overlayFade_t3887785708), -1, 0, 0,
-	sizeof (U3CFadeToClearU3Ec__IteratorD_t1919619639), -1, 0, 0,
+	sizeof (U3CFadeToClearU3Ec__IteratorF_t1919619641), -1, 0, 0,
 	sizeof (overlayFadeIn_t3835487537), -1, 0, 0,
-	sizeof (U3CFadeToClearU3Ec__IteratorE_t1919619640), -1, 0, 0,
+	sizeof (U3CFadeToClearU3Ec__Iterator10_t3673633420), -1, 0, 0,
 	sizeof (splashScreen_t2428448179), -1, 0, 0,
-	sizeof (U3CFadeOutU3Ec__IteratorF_t2138668285), -1, 0, 0,
+	sizeof (U3CFadeOutU3Ec__Iterator11_t1874206793), -1, 0, 0,
 	sizeof (vidMarker_t633812907), -1, 0, 0,
-	sizeof (U3CvideoOnU3Ec__Iterator10_t2279812848), -1, 0, 0,
-	sizeof (U3CvideoOffU3Ec__Iterator11_t390254243), -1, 0, 0,
+	sizeof (U3CvideoOnU3Ec__Iterator12_t2279812850), -1, 0, 0,
+	sizeof (U3CvideoOffU3Ec__Iterator13_t390254245), -1, 0, 0,
 	sizeof (videoMarker_t853609621), -1, 0, 0,
 	sizeof (videoTrigger_t3087919293), -1, 0, 0,
 	sizeof (videoTriggerStart_t1940838821), -1, 0, 0,
 	sizeof (videoTriggerToScene_t1861271380), -1, 0, 0,
-	sizeof (U3CFadeToBlackU3Ec__Iterator12_t415837376), -1, 0, 0,
+	sizeof (U3CFadeToBlackU3Ec__Iterator14_t415837378), -1, 0, 0,
 	sizeof (vrChangeCamera_t981690321), -1, 0, 0,
 	sizeof (vrTrueFalse_t812900569), -1, sizeof(vrTrueFalse_t812900569_StaticFields), 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238937), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields), 0,
