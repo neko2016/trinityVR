@@ -22,27 +22,45 @@ public class loadLocation : MonoBehaviour {
 
 		// to return to outside the chapel, when it has been exited from its interior
 		if (currScene.name == "02trinityExterior01") {
-			if (loadLocationInit.fromTC == true) {
+			if (loadLocationInit.ChapelOut == true) {
 				newPos = new Vector3 (200f, 0, 0);
-				loadLocationInit.fromTC = false;
+				loadLocationInit.ChapelOut = false;
+				moveCamera ();
+			}
+		}
+
+		// to return to FS02 from Fellow Sq, when it has been exited from its interior
+		if (currScene.name == "02trinityExterior01") {
+			if (loadLocationInit.FellowFWD == true) {
+				newPos = new Vector3 (200f, 0, 0);
+				loadLocationInit.FellowFWD = false;
 				moveCamera ();
 			}
 		}
 
 		// to return to outside the museum building, when it has been exited from its interior
 		if (currScene.name == "03trinityExterior02") {
-			if (loadLocationInit.fromMB == true) {
+			if (loadLocationInit.MBuildingOut == true) {
 				newPos = new Vector3 (400f, 0, 0);
-				loadLocationInit.fromMB = false;
+				loadLocationInit.MBuildingOut = false;
+				moveCamera ();
+			}
+		}
+
+		// to return to outside the museum building, when it has been exited from its interior
+		if (currScene.name == "03trinityExterior02") {
+			if (loadLocationInit.BerkeleyBCK == true) {
+				newPos = new Vector3 (400f, 0, 0);
+				loadLocationInit.BerkeleyBCK = false;
 				moveCamera ();
 			}
 		}
 
 		// to return to outside the old library, when it has been exited from its interior
 		if (currScene.name == "04trinityExterior03") {
-			if (loadLocationInit.fromLR == true) {
+			if (loadLocationInit.LRoomOut == true) {
 				newPos = new Vector3 (200f, 0, 0);
-				loadLocationInit.fromLR = false;
+				loadLocationInit.LRoomOut = false;
 				moveCamera ();
 			}
 		}

@@ -9,15 +9,27 @@ public class loadLocationDoor : MonoBehaviour {
 		Scene currScene = SceneManager.GetActiveScene ();
 
 		if (currScene.name == "05museumBuilding") {
-			loadLocationInit.fromMB = true;
+			loadLocationInit.MBuildingOut = true;
 		}
 
 		if (currScene.name == "06longRoom") {
-			loadLocationInit.fromLR = true;
+			loadLocationInit.LRoomOut = true;
 		}
 
 		if (currScene.name == "07theChapel") {
-			loadLocationInit.fromLR = true;
+			loadLocationInit.ChapelOut = true;
+		}
+
+		if (currScene.name == "04trinityExterior03") {
+			loadLocationInit.BerkeleyBCK = true;
+		}
+
+		if (currScene.name == "04trinityExterior03") {
+			loadLocationInit.FellowFWD = true;
+		}
+
+		if (currScene.name == "03trinityExterior02") {
+			loadLocationInit.LibrarySqBCK = true;
 		}
 	}
 }

@@ -1706,7 +1706,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9609] = 
+extern const int32_t g_FieldOffsetTable[9612] = 
 {
 	0,
 	0,
@@ -11241,9 +11241,12 @@ extern const int32_t g_FieldOffsetTable[9609] =
 	U3CExampleU3Ec__IteratorB_t4174890433::get_offset_of_U24PC_0(),
 	U3CExampleU3Ec__IteratorB_t4174890433::get_offset_of_U24current_1(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_toHome_2(),
-	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromTC_3(),
-	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromMB_4(),
-	loadLocationInit_t3862005355_StaticFields::get_offset_of_fromLR_5(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_ChapelOut_3(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_MBuildingOut_4(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_LRoomOut_5(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_FellowFWD_6(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_BerkeleyBCK_7(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_LibrarySqBCK_8(),
 	loadScene_t1377993542::get_offset_of_overlay_2(),
 	loadScene_t1377993542::get_offset_of_fadeTime_3(),
 	loadScene_t1377993542::get_offset_of_newScene_4(),

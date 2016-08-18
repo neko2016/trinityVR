@@ -343,6 +343,7 @@ struct U3CCopyStreamingAssetVideoAndLoadU3Ec__Iterator2_t1338200638;
 #include "AssemblyU2DCSharp_audioTrigger1648719106.h"
 #include "AssemblyU2DCSharp_audioTrigger1648719106MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Collider955670625.h"
+#include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015.h"
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015MethodDeclarations.h"
 #include "AssemblyU2DCSharp_audioTriggerPlus684008892.h"
@@ -595,7 +596,6 @@ struct U3CCopyStreamingAssetVideoAndLoadU3Ec__Iterator2_t1338200638;
 #include "AssemblyU2DCSharp_GvrAudioRoom_SurfaceMaterial459108564MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GvrAudioSoundfield1975836158.h"
 #include "AssemblyU2DCSharp_GvrAudioSoundfield1975836158MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 #include "UnityEngine_UnityEngine_Resources1543782994MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Audio_AudioMixer2872434200MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Audio_AudioMixer2872434200.h"
@@ -1646,6 +1646,9 @@ IL_00c0:
 		}
 	}
 	{
+		AudioSource_t3628549054 * L_32 = __this->get_myAudio_2();
+		NullCheck(L_32);
+		AudioSource_set_clip_m19502010(L_32, (AudioClip_t3714538611 *)NULL, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -25698,7 +25701,7 @@ IL_0046:
 		}
 	}
 	{
-		bool L_7 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_fromTC_3();
+		bool L_7 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_ChapelOut_3();
 		if (!L_7)
 		{
 			goto IL_008c;
@@ -25709,7 +25712,7 @@ IL_0046:
 		memset(&L_8, 0, sizeof(L_8));
 		Vector3__ctor_m2926210380(&L_8, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
 		__this->set_newPos_2(L_8);
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromTC_3((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_ChapelOut_3((bool)0);
 		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
 	}
 
@@ -25717,14 +25720,14 @@ IL_008c:
 	{
 		String_t* L_9 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_10 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_9, _stringLiteral1657901480, /*hidden argument*/NULL);
+		bool L_10 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_9, _stringLiteral2654973832, /*hidden argument*/NULL);
 		if (!L_10)
 		{
 			goto IL_00d2;
 		}
 	}
 	{
-		bool L_11 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_fromMB_4();
+		bool L_11 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_FellowFWD_6();
 		if (!L_11)
 		{
 			goto IL_00d2;
@@ -25733,9 +25736,9 @@ IL_008c:
 	{
 		Vector3_t3525329789  L_12;
 		memset(&L_12, 0, sizeof(L_12));
-		Vector3__ctor_m2926210380(&L_12, (400.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		Vector3__ctor_m2926210380(&L_12, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
 		__this->set_newPos_2(L_12);
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromMB_4((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_FellowFWD_6((bool)0);
 		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
 	}
 
@@ -25743,14 +25746,14 @@ IL_00d2:
 	{
 		String_t* L_13 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_14 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_13, _stringLiteral660829128, /*hidden argument*/NULL);
+		bool L_14 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_13, _stringLiteral1657901480, /*hidden argument*/NULL);
 		if (!L_14)
 		{
 			goto IL_0118;
 		}
 	}
 	{
-		bool L_15 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_fromLR_5();
+		bool L_15 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_MBuildingOut_4();
 		if (!L_15)
 		{
 			goto IL_0118;
@@ -25759,13 +25762,65 @@ IL_00d2:
 	{
 		Vector3_t3525329789  L_16;
 		memset(&L_16, 0, sizeof(L_16));
-		Vector3__ctor_m2926210380(&L_16, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		Vector3__ctor_m2926210380(&L_16, (400.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
 		__this->set_newPos_2(L_16);
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_MBuildingOut_4((bool)0);
 		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
 	}
 
 IL_0118:
+	{
+		String_t* L_17 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_18 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_17, _stringLiteral1657901480, /*hidden argument*/NULL);
+		if (!L_18)
+		{
+			goto IL_015e;
+		}
+	}
+	{
+		bool L_19 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_BerkeleyBCK_7();
+		if (!L_19)
+		{
+			goto IL_015e;
+		}
+	}
+	{
+		Vector3_t3525329789  L_20;
+		memset(&L_20, 0, sizeof(L_20));
+		Vector3__ctor_m2926210380(&L_20, (400.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		__this->set_newPos_2(L_20);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_BerkeleyBCK_7((bool)0);
+		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
+	}
+
+IL_015e:
+	{
+		String_t* L_21 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_22 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_21, _stringLiteral660829128, /*hidden argument*/NULL);
+		if (!L_22)
+		{
+			goto IL_01a4;
+		}
+	}
+	{
+		bool L_23 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_LRoomOut_5();
+		if (!L_23)
+		{
+			goto IL_01a4;
+		}
+	}
+	{
+		Vector3_t3525329789  L_24;
+		memset(&L_24, 0, sizeof(L_24));
+		Vector3__ctor_m2926210380(&L_24, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		__this->set_newPos_2(L_24);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_LRoomOut_5((bool)0);
+		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
+	}
+
+IL_01a4:
 	{
 		return;
 	}
@@ -25812,6 +25867,8 @@ extern TypeInfo* loadLocationInit_t3862005355_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3144132651;
 extern Il2CppCodeGenString* _stringLiteral2559491453;
 extern Il2CppCodeGenString* _stringLiteral540459173;
+extern Il2CppCodeGenString* _stringLiteral660829128;
+extern Il2CppCodeGenString* _stringLiteral1657901480;
 extern const uint32_t loadLocationDoor_exitDoor_m2229554590_MetadataUsageId;
 extern "C"  void loadLocationDoor_exitDoor_m2229554590 (loadLocationDoor_t3861857545 * __this, const MethodInfo* method)
 {
@@ -25835,7 +25892,7 @@ extern "C"  void loadLocationDoor_exitDoor_m2229554590 (loadLocationDoor_t386185
 		}
 	}
 	{
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromMB_4((bool)1);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_MBuildingOut_4((bool)1);
 	}
 
 IL_0022:
@@ -25849,7 +25906,7 @@ IL_0022:
 		}
 	}
 	{
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)1);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_LRoomOut_5((bool)1);
 	}
 
 IL_003e:
@@ -25863,10 +25920,52 @@ IL_003e:
 		}
 	}
 	{
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)1);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_ChapelOut_3((bool)1);
 	}
 
 IL_005a:
+	{
+		String_t* L_7 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_8 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_7, _stringLiteral660829128, /*hidden argument*/NULL);
+		if (!L_8)
+		{
+			goto IL_0076;
+		}
+	}
+	{
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_BerkeleyBCK_7((bool)1);
+	}
+
+IL_0076:
+	{
+		String_t* L_9 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_10 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_9, _stringLiteral660829128, /*hidden argument*/NULL);
+		if (!L_10)
+		{
+			goto IL_0092;
+		}
+	}
+	{
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_FellowFWD_6((bool)1);
+	}
+
+IL_0092:
+	{
+		String_t* L_11 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_12 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_11, _stringLiteral1657901480, /*hidden argument*/NULL);
+		if (!L_12)
+		{
+			goto IL_00ae;
+		}
+	}
+	{
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_LibrarySqBCK_8((bool)1);
+	}
+
+IL_00ae:
 	{
 		return;
 	}
@@ -26036,9 +26135,12 @@ extern "C"  void loadLocationInit_Start_m3060482448 (loadLocationInit_t386200535
 	}
 	{
 		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_toHome_2((bool)0);
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromTC_3((bool)0);
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromMB_4((bool)0);
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_fromLR_5((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_ChapelOut_3((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_MBuildingOut_4((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_LRoomOut_5((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_FellowFWD_6((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_BerkeleyBCK_7((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_LibrarySqBCK_8((bool)0);
 		return;
 	}
 }
