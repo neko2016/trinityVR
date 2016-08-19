@@ -25,14 +25,6 @@
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
 		</type>
-		<type fullname="audioUI">
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Click"/>
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Click"/>
-		</type>
 		<type fullname="navTrigger">
 			<method name="MoveCamera"/>
 			<method name="MoveCamera"/>
@@ -52,6 +44,14 @@
 			<method name="MoveCamera"/>
 			<method name="MoveCamera"/>
 			<method name="MoveCamera"/>
+		</type>
+		<type fullname="audioUI">
+			<method name="Enter"/>
+			<method name="Exit"/>
+			<method name="Click"/>
+			<method name="Enter"/>
+			<method name="Exit"/>
+			<method name="Click"/>
 		</type>
 		<type fullname="imgMarker">
 			<method name="markerPressed"/>
