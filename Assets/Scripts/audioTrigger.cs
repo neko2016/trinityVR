@@ -7,7 +7,9 @@ public class audioTrigger : MonoBehaviour {
 	// attach to sphere with box collider (which is a trigger).
 	// ensure main camera of GvrMain has a box collider also attached.
 
+
 	private AudioSource myAudio;
+
 	private GameObject[] allAudioAMB;
 	private GameObject[] allAudioSFX;
 	private GameObject[] allAudioNAR;
