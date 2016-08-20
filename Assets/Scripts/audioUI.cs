@@ -24,13 +24,14 @@ public class audioUI : MonoBehaviour {
 	}
 
 	public void Exit() {
-		StartCoroutine (audioFadeOut.FadeOut (highlight, 0.5f));
-		StartCoroutine (audioFadeOut.FadeOut (tone, 1f));
+		
+		//StartCoroutine (audioFadeOut.FadeOut (highlight, 0.1f));
+		StartCoroutine (audioFadeOut.FadeOut (tone, 0.25f));
 	}
 
 	public void Click() {
-		StartCoroutine (audioFadeOut.FadeOut (highlight, 0.5f));
-		StartCoroutine (audioFadeOut.FadeOut (tone, 1f));
+		StartCoroutine (audioFadeOut.FadeOut (highlight, 0.1f));
+		StartCoroutine (audioFadeOut.FadeOut (tone, 0.1f));
 		click.Play ();
 	}
 
