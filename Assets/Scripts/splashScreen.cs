@@ -16,13 +16,13 @@ public class splashScreen : MonoBehaviour {
 
 		fadeTime = 1f;
 
-		StartCoroutine (FadeOut ());
+		StartCoroutine (FadeOut (5));
 
 	}
 
-	private IEnumerator FadeOut() {
+	private IEnumerator FadeOut(int time) {
 
-		yield return new WaitForSeconds(5);
+		yield return new WaitForSeconds(time);
 
 		float rate = 1.0f / fadeTime;
 

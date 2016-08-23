@@ -26,7 +26,7 @@ public class audioTriggerPlus : MonoBehaviour {
 		myGvrAudio.Play();
 	}
 
-	void OnTriggerExit (Collider col) { // when the collider is exited...
+	/* void OnTriggerExit (Collider col) { // when the collider is exited...
 		
 		StartCoroutine(audioFadeOut.FadeOut(myAudio, 3f));
 
@@ -42,6 +42,6 @@ public class audioTriggerPlus : MonoBehaviour {
 			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
 		}
 
-	}
+	} */
 
 }

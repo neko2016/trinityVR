@@ -1777,9 +1777,6 @@ extern const Il2CppGenericInst GenInst_MediaPlayerCtrl_t3572035536_0_0_0 = { 1, 
 extern const Il2CppType musicControl_t2822556536_0_0_0;
 static const Il2CppType* GenInst_musicControl_t2822556536_0_0_0_Types[] = { &musicControl_t2822556536_0_0_0 };
 extern const Il2CppGenericInst GenInst_musicControl_t2822556536_0_0_0 = { 1, GenInst_musicControl_t2822556536_0_0_0_Types };
-extern const Il2CppType GUITexture_t63494093_0_0_0;
-static const Il2CppType* GenInst_GUITexture_t63494093_0_0_0_Types[] = { &GUITexture_t63494093_0_0_0 };
-extern const Il2CppGenericInst GenInst_GUITexture_t63494093_0_0_0 = { 1, GenInst_GUITexture_t63494093_0_0_0_Types };
 extern const Il2CppType videoTrigger_t3087919293_0_0_0;
 static const Il2CppType* GenInst_videoTrigger_t3087919293_0_0_0_Types[] = { &videoTrigger_t3087919293_0_0_0 };
 extern const Il2CppGenericInst GenInst_videoTrigger_t3087919293_0_0_0 = { 1, GenInst_videoTrigger_t3087919293_0_0_0_Types };
@@ -1846,7 +1843,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2_t3312956448_0_0_0 = { 2, GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2_t3312956448_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t3312956448_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[643] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[642] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2847414787_0_0_0,
@@ -2458,7 +2455,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[643] =
 	&GenInst_MeshRenderer_t1217738301_0_0_0,
 	&GenInst_MediaPlayerCtrl_t3572035536_0_0_0,
 	&GenInst_musicControl_t2822556536_0_0_0,
-	&GenInst_GUITexture_t63494093_0_0_0,
 	&GenInst_videoTrigger_t3087919293_0_0_0,
 	&GenInst_videoTriggerToScene_t1861271380_0_0_0,
 	&GenInst_Pointer_t1264047645_0_0_0_Pointer_t1264047645_0_0_0,

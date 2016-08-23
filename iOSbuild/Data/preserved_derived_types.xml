@@ -50,9 +50,10 @@
 <type fullname="musicTrigger" preserve="all"/>
 <type fullname="navTrigger" preserve="all"/>
 <type fullname="overlayFade" preserve="all"/>
-<type fullname="overlayFadeIn" preserve="all"/>
+<type fullname="returnFS" preserve="all"/>
 <type fullname="splashScreen" preserve="all"/>
 <type fullname="vidMarker" preserve="all"/>
+<type fullname="videoAudioGroup" preserve="all"/>
 <type fullname="videoMarker" preserve="all"/>
 <type fullname="videoTrigger" preserve="all"/>
 <type fullname="videoTriggerStart" preserve="all"/>

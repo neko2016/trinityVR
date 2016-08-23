@@ -1,4 +1,4 @@
-//Generated on : 19/08/2016 14:06:10
+//Generated on : 23/08/2016 12:50:39
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AnimationCurve
@@ -634,6 +634,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.Collider::INTERNAL_CALL_Internal_Raycast(UnityEngine.Collider,UnityEngine.Ray&,UnityEngine.RaycastHit&,System.Single)
 		void Register_UnityEngine_Collider_INTERNAL_CALL_Internal_Raycast();
 		Register_UnityEngine_Collider_INTERNAL_CALL_Internal_Raycast();
+
+		//System.Void UnityEngine.Collider::set_enabled(System.Boolean)
+		void Register_UnityEngine_Collider_set_enabled();
+		Register_UnityEngine_Collider_set_enabled();
 
 		//UnityEngine.Rigidbody UnityEngine.Collider::get_attachedRigidbody()
 		void Register_UnityEngine_Collider_get_attachedRigidbody();
@@ -1324,18 +1328,6 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_GUIStyleState_GetBackgroundInternalFromDeserialization();
 
 	//End Registrations for type : UnityEngine.GUIStyleState
-
-	//Start Registrations for type : UnityEngine.GUITexture
-
-		//System.Void UnityEngine.GUITexture::INTERNAL_set_color(UnityEngine.Color&)
-		void Register_UnityEngine_GUITexture_INTERNAL_set_color();
-		Register_UnityEngine_GUITexture_INTERNAL_set_color();
-
-		//System.Void UnityEngine.GUITexture::INTERNAL_set_pixelInset(UnityEngine.Rect&)
-		void Register_UnityEngine_GUITexture_INTERNAL_set_pixelInset();
-		Register_UnityEngine_GUITexture_INTERNAL_set_pixelInset();
-
-	//End Registrations for type : UnityEngine.GUITexture
 
 	//Start Registrations for type : UnityEngine.GUIUtility
 

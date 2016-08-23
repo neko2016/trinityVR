@@ -39,7 +39,7 @@
     <key>NSLocationWhenInUseUsageDescription</key>
     <string></string>
     <key>UIApplicationExitsOnSuspend</key>
-    <false />
+    <true />
     <key>UILaunchStoryboardName~ipad</key>
     <string>LaunchScreen-iPad</string>
     <key>UILaunchStoryboardName~iphone</key>

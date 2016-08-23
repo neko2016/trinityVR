@@ -14,6 +14,8 @@ public class audioTrigger : MonoBehaviour {
 	private GameObject[] allAudioSFX;
 	private GameObject[] allAudioNAR;
 
+	public float delayTime;
+
 
 	void Start () {
 		myAudio = gameObject.GetComponent<AudioSource> (); // retrieves an AudioSource from a GameObject
@@ -23,23 +25,23 @@ public class audioTrigger : MonoBehaviour {
 	}
 		
 	void OnTriggerEnter (Collider col) { // when the collider is triggered...
-		myAudio.Play(); 			     // the audio plays
+		myAudio.PlayDelayed(delayTime); 			     // the audio plays
 	}
 
 	void OnTriggerExit (Collider col) { // when the collider is exited...
 
-		StartCoroutine(audioFadeOut.FadeOut(myAudio, 3f));
+		StartCoroutine(audioFadeOut.FadeOut(myAudio, 2f));
 
 		foreach (GameObject item in allAudioAMB) {
-			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
+			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
 		}
 
 		foreach (GameObject item in allAudioSFX) {
-			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
+			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
 		}
 
 		foreach (GameObject item in allAudioNAR) {
-			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
+			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
 		}
 
 		myAudio.clip = null;
