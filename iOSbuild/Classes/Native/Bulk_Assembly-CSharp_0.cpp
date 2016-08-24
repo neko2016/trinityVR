@@ -1515,8 +1515,9 @@ extern "C"  void audioTrigger_OnTriggerEnter_m2474952255 (audioTrigger_t16487191
 {
 	{
 		AudioSource_t3628549054 * L_0 = __this->get_myAudio_2();
+		float L_1 = __this->get_delayTime_6();
 		NullCheck(L_0);
-		AudioSource_Play_m1360558992(L_0, /*hidden argument*/NULL);
+		AudioSource_PlayDelayed_m2357889495(L_0, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }

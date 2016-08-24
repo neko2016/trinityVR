@@ -1709,7 +1709,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9622] = 
+extern const int32_t g_FieldOffsetTable[9623] = 
 {
 	0,
 	0,
@@ -11180,6 +11180,7 @@ extern const int32_t g_FieldOffsetTable[9622] =
 	audioTrigger_t1648719106::get_offset_of_allAudioAMB_3(),
 	audioTrigger_t1648719106::get_offset_of_allAudioSFX_4(),
 	audioTrigger_t1648719106::get_offset_of_allAudioNAR_5(),
+	audioTrigger_t1648719106::get_offset_of_delayTime_6(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioAMB_2(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioSFX_3(),
 	audioTriggerAlt_t4039923015::get_offset_of_allAudioNAR_4(),
