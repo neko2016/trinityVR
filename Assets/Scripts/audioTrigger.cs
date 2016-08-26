@@ -44,8 +44,11 @@ public class audioTrigger : MonoBehaviour {
 			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
 		}
 
-		myAudio.clip = null;
+		if (!myAudio.isPlaying) {
 
+			myAudio.clip = null;
+
+		}
 	}
 
 }

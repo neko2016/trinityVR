@@ -9,7 +9,7 @@ public static class audioFadeOut {
 		if (audioSource.isPlaying) {
 
 			while (audioSource.volume > 0) {
-				audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+				audioSource.volume -= Time.deltaTime / FadeTime;
 
 				yield return null;
 			}
