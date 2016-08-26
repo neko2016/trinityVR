@@ -1,8 +1,11 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="vrTrueFalse">
-			<method name="makeVRtrue"/>
-			<method name="makeVRfalse"/>
+		<type fullname="languageSelection">
+			<method name="chooseFre"/>
+			<method name="chooseIre"/>
+			<method name="chooseChi"/>
+			<method name="chooseSpa"/>
+			<method name="chooseEng"/>
 		</type>
 		<type fullname="loadScene">
 			<method name="loadNewScene"/>
@@ -25,6 +28,31 @@
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
+		</type>
+		<type fullname="vrTrueFalse">
+			<method name="makeVRtrue"/>
+			<method name="makeVRfalse"/>
+			<method name="makeVRtrue"/>
+			<method name="makeVRfalse"/>
+			<method name="makeVRtrue"/>
+			<method name="makeVRfalse"/>
+			<method name="makeVRtrue"/>
+			<method name="makeVRfalse"/>
+			<method name="makeVRtrue"/>
+			<method name="makeVRfalse"/>
 		</type>
 		<type fullname="navTrigger">
 			<method name="MoveCamera"/>
@@ -258,11 +286,13 @@
 			<method name="Enter"/>
 			<method name="Exit"/>
 			<method name="Click"/>
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Click"/>
 		</type>
-		<type fullname="videoMarker">
+		<type fullname="imgMarker">
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
@@ -301,6 +331,8 @@
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
+			<method name="PlayOneShot"/>
 			<method name="Play"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
@@ -318,15 +350,8 @@
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
-			<method name="PlayOneShot"/>
-			<method name="PlayOneShot"/>
 		</type>
-		<type fullname="imgMarker">
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
+		<type fullname="videoMarker">
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
@@ -354,6 +379,16 @@
 		</type>
 	</assembly>
 	<assembly fullname="UnityEngine">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
 		<type fullname="UnityEngine.Behaviour">
 			<method name="set_enabled"/>
 			<method name="set_enabled"/>
@@ -397,18 +432,6 @@
 			<method name="set_enabled"/>
 			<method name="set_enabled"/>
 			<method name="set_enabled"/>
-			<method name="set_enabled"/>
-			<method name="set_enabled"/>
-		</type>
-		<type fullname="UnityEngine.GameObject">
-			<method name="SetActive"/>
-			<method name="SetActive"/>
-			<method name="SetActive"/>
-			<method name="SetActive"/>
-			<method name="SetActive"/>
-			<method name="SetActive"/>
-			<method name="SetActive"/>
-			<method name="SetActive"/>
 		</type>
 		<type fullname="UnityEngine.Collider">
 			<method name="set_enabled"/>

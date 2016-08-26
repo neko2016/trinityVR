@@ -1205,6 +1205,7 @@
 #include "AssemblyU2DCSharp_imgMarkerAB3475898046.h"
 #include "AssemblyU2DCSharp_imgMarkerAB_U3CFadeInU3Ec__Itera3583366025.h"
 #include "AssemblyU2DCSharp_imgMarkerAB_U3CFadeOutU3Ec__Iter2138668280.h"
+#include "AssemblyU2DCSharp_languageSelection1120682260.h"
 #include "AssemblyU2DCSharp_loadLocation3184820923.h"
 #include "AssemblyU2DCSharp_loadLocationHome_U3CExampleU3Ec_4174890433.h"
 #include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
@@ -1693,6 +1694,11 @@
 #include "AssemblyU2DCSharp_proto_PhoneEvent_Types_MotionEvent81291353.h"
 #include "AssemblyU2DCSharp_GvrViewer_StereoScreenChangeDele4234461465.h"
 #include "AssemblyU2DCSharp_MutablePose3D1273683304.h"
+#include "AssemblyU2DCSharp_chiTrue745568338.h"
+#include "AssemblyU2DCSharp_engTrue2690503564.h"
+#include "AssemblyU2DCSharp_freTrue3690676807.h"
+#include "AssemblyU2DCSharp_ireTrue2058220554.h"
+#include "AssemblyU2DCSharp_spaTrue2282370386.h"
 #include "AssemblyU2DCSharp_audioFadeOut1617174140.h"
 #include "AssemblyU2DCSharp_loadLocationDoor3861857545.h"
 #include "AssemblyU2DCSharp_loadLocationHome3861976634.h"
@@ -1709,7 +1715,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9623] = 
+extern const int32_t g_FieldOffsetTable[9628] = 
 {
 	0,
 	0,
@@ -11240,6 +11246,11 @@ extern const int32_t g_FieldOffsetTable[9623] =
 	U3CFadeOutU3Ec__IteratorA_t2138668280::get_offset_of_U24PC_2(),
 	U3CFadeOutU3Ec__IteratorA_t2138668280::get_offset_of_U24current_3(),
 	U3CFadeOutU3Ec__IteratorA_t2138668280::get_offset_of_U3CU3Ef__this_4(),
+	languageSelection_t1120682260_StaticFields::get_offset_of_langEng_2(),
+	languageSelection_t1120682260_StaticFields::get_offset_of_langIre_3(),
+	languageSelection_t1120682260_StaticFields::get_offset_of_langChi_4(),
+	languageSelection_t1120682260_StaticFields::get_offset_of_langFre_5(),
+	languageSelection_t1120682260_StaticFields::get_offset_of_langSpa_6(),
 	loadLocation_t3184820923::get_offset_of_newPos_2(),
 	loadLocation_t3184820923::get_offset_of_currScene_3(),
 	U3CExampleU3Ec__IteratorB_t4174890433::get_offset_of_U24PC_0(),
@@ -11338,7 +11349,7 @@ extern const int32_t g_FieldOffsetTable[9623] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1936] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1942] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13226,6 +13237,11 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1936] =
 	sizeof (GvrReticle_t4275820913), -1, 0, 0,
 	0, -1, 0, 0,
 	0, -1, 0, 0,
+	sizeof (chiTrue_t745568338), -1, 0, 0,
+	sizeof (engTrue_t2690503564), -1, 0, 0,
+	sizeof (freTrue_t3690676807), -1, 0, 0,
+	sizeof (ireTrue_t2058220554), -1, 0, 0,
+	sizeof (spaTrue_t2282370386), -1, 0, 0,
 	sizeof (audioFadeOut_t1617174140), -1, 0, 0,
 	sizeof (U3CFadeOutU3Ec__Iterator6_t2138668269), -1, 0, 0,
 	sizeof (audioImgMarker_t3924586151), -1, 0, 0,
@@ -13244,6 +13260,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1936] =
 	sizeof (imgMarkerAB_t3475898046), -1, 0, 0,
 	sizeof (U3CFadeInU3Ec__Iterator9_t3583366025), -1, 0, 0,
 	sizeof (U3CFadeOutU3Ec__IteratorA_t2138668280), -1, 0, 0,
+	sizeof (languageSelection_t1120682260), -1, sizeof(languageSelection_t1120682260_StaticFields), 0,
 	sizeof (loadLocation_t3184820923), -1, 0, 0,
 	sizeof (loadLocationDoor_t3861857545), -1, 0, 0,
 	sizeof (loadLocationHome_t3861976634), -1, 0, 0,

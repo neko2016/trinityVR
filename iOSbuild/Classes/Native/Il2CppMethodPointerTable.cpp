@@ -11292,6 +11292,8 @@ extern "C" void chapelMusic__ctor_m289880769 ();
 extern "C" void chapelMusic_Start_m3531985857 ();
 extern "C" void chapelMusic_ChangeSong_m738264200 ();
 extern "C" void chapelMusic_U3CStartU3Em__6_m2810082587 ();
+extern "C" void chiTrue__ctor_m809890649 ();
+extern "C" void chiTrue_Start_m4051995737 ();
 extern "C" void ControllerDebugInfo__ctor_m2279919558 ();
 extern "C" void ControllerDebugInfo_Awake_m2517524777 ();
 extern "C" void ControllerDebugInfo_Update_m3684891655 ();
@@ -11303,9 +11305,13 @@ extern "C" void ControllerDemoManager_SetSelectedObject_m973459535 ();
 extern "C" void ControllerDemoManager_StartDragging_m964285676 ();
 extern "C" void ControllerDemoManager_EndDragging_m730555557 ();
 extern "C" void ControllerDemoManager_UpdateStatusMessage_m114672711 ();
+extern "C" void engTrue__ctor_m1255315807 ();
+extern "C" void engTrue_Start_m202453599 ();
 extern "C" void FPS__ctor_m3522929858 ();
 extern "C" void FPS_Awake_m3760535077 ();
 extern "C" void FPS_LateUpdate_m3515633361 ();
+extern "C" void freTrue__ctor_m3491138820 ();
+extern "C" void freTrue_Start_m2438276612 ();
 extern "C" void GazeInputModule__ctor_m1046273690 ();
 extern "C" void GazeInputModule_ShouldActivateModule_m90977672 ();
 extern "C" void GazeInputModule_DeactivateModule_m3462298090 ();
@@ -11851,6 +11857,15 @@ extern "C" void U3CFadeOutU3Ec__IteratorA_System_Collections_IEnumerator_get_Cur
 extern "C" void U3CFadeOutU3Ec__IteratorA_MoveNext_m3803405200 ();
 extern "C" void U3CFadeOutU3Ec__IteratorA_Dispose_m595404833 ();
 extern "C" void U3CFadeOutU3Ec__IteratorA_Reset_m2120896401 ();
+extern "C" void ireTrue__ctor_m1959536289 ();
+extern "C" void ireTrue_Start_m906674081 ();
+extern "C" void languageSelection__ctor_m1979540183 ();
+extern "C" void languageSelection_Start_m926677975 ();
+extern "C" void languageSelection_chooseEng_m4068482972 ();
+extern "C" void languageSelection_chooseIre_m4072294298 ();
+extern "C" void languageSelection_chooseChi_m4066459106 ();
+extern "C" void languageSelection_chooseFre_m4069523735 ();
+extern "C" void languageSelection_chooseSpa_m4081466082 ();
 extern "C" void loadLocation__ctor_m3582677568 ();
 extern "C" void loadLocation_Start_m2529815360 ();
 extern "C" void loadLocation_moveCamera_m1878965626 ();
@@ -12642,6 +12657,8 @@ extern "C" void SeekBarCtrl_OnPointerExit_m3395613663 ();
 extern "C" void SeekBarCtrl_OnPointerDown_m3002531291 ();
 extern "C" void SeekBarCtrl_OnPointerUp_m1304296002 ();
 extern "C" void SeekBarCtrl_OnDrag_m91731052 ();
+extern "C" void spaTrue__ctor_m156292697 ();
+extern "C" void spaTrue_Start_m3398397785 ();
 extern "C" void SphereMirror__ctor_m2674768399 ();
 extern "C" void SphereMirror_Start_m1621906191 ();
 extern "C" void SphereMirror_Update_m3040303838 ();
@@ -12748,7 +12765,7 @@ extern "C" void vrTrueFalse__ctor_m1230274226 ();
 extern "C" void vrTrueFalse_Start_m177412018 ();
 extern "C" void vrTrueFalse_makeVRtrue_m3469953834 ();
 extern "C" void vrTrueFalse_makeVRfalse_m159705257 ();
-extern const methodPointerType g_MethodPointers[12737] = 
+extern const methodPointerType g_MethodPointers[12754] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -24031,6 +24048,8 @@ extern const methodPointerType g_MethodPointers[12737] =
 	chapelMusic_Start_m3531985857,
 	chapelMusic_ChangeSong_m738264200,
 	chapelMusic_U3CStartU3Em__6_m2810082587,
+	chiTrue__ctor_m809890649,
+	chiTrue_Start_m4051995737,
 	ControllerDebugInfo__ctor_m2279919558,
 	ControllerDebugInfo_Awake_m2517524777,
 	ControllerDebugInfo_Update_m3684891655,
@@ -24042,9 +24061,13 @@ extern const methodPointerType g_MethodPointers[12737] =
 	ControllerDemoManager_StartDragging_m964285676,
 	ControllerDemoManager_EndDragging_m730555557,
 	ControllerDemoManager_UpdateStatusMessage_m114672711,
+	engTrue__ctor_m1255315807,
+	engTrue_Start_m202453599,
 	FPS__ctor_m3522929858,
 	FPS_Awake_m3760535077,
 	FPS_LateUpdate_m3515633361,
+	freTrue__ctor_m3491138820,
+	freTrue_Start_m2438276612,
 	GazeInputModule__ctor_m1046273690,
 	GazeInputModule_ShouldActivateModule_m90977672,
 	GazeInputModule_DeactivateModule_m3462298090,
@@ -24590,6 +24613,15 @@ extern const methodPointerType g_MethodPointers[12737] =
 	U3CFadeOutU3Ec__IteratorA_MoveNext_m3803405200,
 	U3CFadeOutU3Ec__IteratorA_Dispose_m595404833,
 	U3CFadeOutU3Ec__IteratorA_Reset_m2120896401,
+	ireTrue__ctor_m1959536289,
+	ireTrue_Start_m906674081,
+	languageSelection__ctor_m1979540183,
+	languageSelection_Start_m926677975,
+	languageSelection_chooseEng_m4068482972,
+	languageSelection_chooseIre_m4072294298,
+	languageSelection_chooseChi_m4066459106,
+	languageSelection_chooseFre_m4069523735,
+	languageSelection_chooseSpa_m4081466082,
 	loadLocation__ctor_m3582677568,
 	loadLocation_Start_m2529815360,
 	loadLocation_moveCamera_m1878965626,
@@ -25381,6 +25413,8 @@ extern const methodPointerType g_MethodPointers[12737] =
 	SeekBarCtrl_OnPointerDown_m3002531291,
 	SeekBarCtrl_OnPointerUp_m1304296002,
 	SeekBarCtrl_OnDrag_m91731052,
+	spaTrue__ctor_m156292697,
+	spaTrue_Start_m3398397785,
 	SphereMirror__ctor_m2674768399,
 	SphereMirror_Start_m1621906191,
 	SphereMirror_Update_m3040303838,

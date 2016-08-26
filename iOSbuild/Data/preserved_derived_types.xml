@@ -29,6 +29,11 @@
 <type fullname="GvrViewer" preserve="all"/>
 <type fullname="GvrGaze" preserve="all"/>
 <type fullname="GvrReticle" preserve="all"/>
+<type fullname="chiTrue" preserve="all"/>
+<type fullname="engTrue" preserve="all"/>
+<type fullname="freTrue" preserve="all"/>
+<type fullname="ireTrue" preserve="all"/>
+<type fullname="spaTrue" preserve="all"/>
 <type fullname="audioImgMarker" preserve="all"/>
 <type fullname="audioMarker" preserve="all"/>
 <type fullname="audioRandomPlay" preserve="all"/>
@@ -41,6 +46,7 @@
 <type fullname="homeIcon" preserve="all"/>
 <type fullname="imgMarker" preserve="all"/>
 <type fullname="imgMarkerAB" preserve="all"/>
+<type fullname="languageSelection" preserve="all"/>
 <type fullname="loadLocation" preserve="all"/>
 <type fullname="loadLocationDoor" preserve="all"/>
 <type fullname="loadLocationHome" preserve="all"/>
