@@ -19,14 +19,19 @@ public class audioUI : MonoBehaviour {
 	}
 	
 	public void Enter() {
-		highlight.Play ();
-		tone.Play ();
+
+		if (!highlight.isPlaying) {
+
+			highlight.Play ();
+			tone.Play ();
+
+		}
 	}
 
 	public void Exit() {
 		
-		//StartCoroutine (audioFadeOut.FadeOut (highlight, 0.1f));
-		StartCoroutine (audioFadeOut.FadeOut (tone, 0.25f));
+		StartCoroutine (audioFadeOut.FadeOut (highlight, 0.1f));
+		StartCoroutine (audioFadeOut.FadeOut (tone, 0.5f));
 	}
 
 	public void Click() {
