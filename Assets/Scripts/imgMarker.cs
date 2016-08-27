@@ -6,6 +6,7 @@ public class imgMarker : MonoBehaviour {
 
 	private AudioSource myAudio;
 	private GameObject[] allAudioNAR;
+	private GameObject[] allVideo;
 
 	public GameObject imagePanel;
 	private Image image;
@@ -20,6 +21,7 @@ public class imgMarker : MonoBehaviour {
 
 		myAudio = GetComponent<AudioSource> ();
 		allAudioNAR = GameObject.FindGameObjectsWithTag("NAR");
+		allVideo = GameObject.FindGameObjectsWithTag("VID");
 
 		image = imagePanel.GetComponent<Image> ();
 
@@ -47,6 +49,11 @@ public class imgMarker : MonoBehaviour {
 			foreach (GameObject item in allAudioNAR) {
 				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
 			}
+
+			foreach (GameObject item in allVideo) {
+				StartCoroutine (videoKill.videoStop(item));
+			}
+
 			myAudio.Play ();
 			StartCoroutine (FadeIn ());
 

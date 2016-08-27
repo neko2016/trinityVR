@@ -23,21 +23,21 @@ struct musicControl_t2822556536;
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// musicControl/<fadeInMusic>c__IteratorD
-struct  U3CfadeInMusicU3Ec__IteratorD_t2642451817  : public Il2CppObject
+// musicControl/<fadeOutMusic>c__Iterator10
+struct  U3CfadeOutMusicU3Ec__Iterator10_t2165739905  : public Il2CppObject
 {
 public:
-	// System.Single musicControl/<fadeInMusic>c__IteratorD::<startVolume>__0
+	// System.Single musicControl/<fadeOutMusic>c__Iterator10::<startVolume>__0
 	float ___U3CstartVolumeU3E__0_0;
-	// System.Int32 musicControl/<fadeInMusic>c__IteratorD::$PC
+	// System.Int32 musicControl/<fadeOutMusic>c__Iterator10::$PC
 	int32_t ___U24PC_1;
-	// System.Object musicControl/<fadeInMusic>c__IteratorD::$current
+	// System.Object musicControl/<fadeOutMusic>c__Iterator10::$current
 	Il2CppObject * ___U24current_2;
-	// musicControl musicControl/<fadeInMusic>c__IteratorD::<>f__this
+	// musicControl musicControl/<fadeOutMusic>c__Iterator10::<>f__this
 	musicControl_t2822556536 * ___U3CU3Ef__this_3;
 
 public:
-	inline static int32_t get_offset_of_U3CstartVolumeU3E__0_0() { return static_cast<int32_t>(offsetof(U3CfadeInMusicU3Ec__IteratorD_t2642451817, ___U3CstartVolumeU3E__0_0)); }
+	inline static int32_t get_offset_of_U3CstartVolumeU3E__0_0() { return static_cast<int32_t>(offsetof(U3CfadeOutMusicU3Ec__Iterator10_t2165739905, ___U3CstartVolumeU3E__0_0)); }
 	inline float get_U3CstartVolumeU3E__0_0() const { return ___U3CstartVolumeU3E__0_0; }
 	inline float* get_address_of_U3CstartVolumeU3E__0_0() { return &___U3CstartVolumeU3E__0_0; }
 	inline void set_U3CstartVolumeU3E__0_0(float value)
@@ -45,7 +45,7 @@ public:
 		___U3CstartVolumeU3E__0_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24PC_1() { return static_cast<int32_t>(offsetof(U3CfadeInMusicU3Ec__IteratorD_t2642451817, ___U24PC_1)); }
+	inline static int32_t get_offset_of_U24PC_1() { return static_cast<int32_t>(offsetof(U3CfadeOutMusicU3Ec__Iterator10_t2165739905, ___U24PC_1)); }
 	inline int32_t get_U24PC_1() const { return ___U24PC_1; }
 	inline int32_t* get_address_of_U24PC_1() { return &___U24PC_1; }
 	inline void set_U24PC_1(int32_t value)
@@ -53,7 +53,7 @@ public:
 		___U24PC_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U24current_2() { return static_cast<int32_t>(offsetof(U3CfadeInMusicU3Ec__IteratorD_t2642451817, ___U24current_2)); }
+	inline static int32_t get_offset_of_U24current_2() { return static_cast<int32_t>(offsetof(U3CfadeOutMusicU3Ec__Iterator10_t2165739905, ___U24current_2)); }
 	inline Il2CppObject * get_U24current_2() const { return ___U24current_2; }
 	inline Il2CppObject ** get_address_of_U24current_2() { return &___U24current_2; }
 	inline void set_U24current_2(Il2CppObject * value)
@@ -62,7 +62,7 @@ public:
 		Il2CppCodeGenWriteBarrier(&___U24current_2, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Ef__this_3() { return static_cast<int32_t>(offsetof(U3CfadeInMusicU3Ec__IteratorD_t2642451817, ___U3CU3Ef__this_3)); }
+	inline static int32_t get_offset_of_U3CU3Ef__this_3() { return static_cast<int32_t>(offsetof(U3CfadeOutMusicU3Ec__Iterator10_t2165739905, ___U3CU3Ef__this_3)); }
 	inline musicControl_t2822556536 * get_U3CU3Ef__this_3() const { return ___U3CU3Ef__this_3; }
 	inline musicControl_t2822556536 ** get_address_of_U3CU3Ef__this_3() { return &___U3CU3Ef__this_3; }
 	inline void set_U3CU3Ef__this_3(musicControl_t2822556536 * value)

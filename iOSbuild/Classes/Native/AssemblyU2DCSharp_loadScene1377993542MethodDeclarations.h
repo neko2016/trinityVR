@@ -25,5 +25,5 @@ extern "C"  void loadScene__ctor_m3526418661 (loadScene_t1377993542 * __this, co
 extern "C"  void loadScene_Start_m2473556453 (loadScene_t1377993542 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void loadScene::loadNewScene()
 extern "C"  void loadScene_loadNewScene_m2873518833 (loadScene_t1377993542 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Collections.IEnumerator loadScene::FadeToBlack()
-extern "C"  Il2CppObject * loadScene_FadeToBlack_m3707428083 (loadScene_t1377993542 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator loadScene::LoadingScreen()
+extern "C"  Il2CppObject * loadScene_LoadingScreen_m978286355 (loadScene_t1377993542 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

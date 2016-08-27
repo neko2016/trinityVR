@@ -23,19 +23,19 @@ struct vidMarker_t633812907;
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// vidMarker/<videoOff>c__Iterator12
-struct  U3CvideoOffU3Ec__Iterator12_t390254244  : public Il2CppObject
+// vidMarker/<videoOff>c__Iterator14
+struct  U3CvideoOffU3Ec__Iterator14_t390254246  : public Il2CppObject
 {
 public:
-	// System.Int32 vidMarker/<videoOff>c__Iterator12::$PC
+	// System.Int32 vidMarker/<videoOff>c__Iterator14::$PC
 	int32_t ___U24PC_0;
-	// System.Object vidMarker/<videoOff>c__Iterator12::$current
+	// System.Object vidMarker/<videoOff>c__Iterator14::$current
 	Il2CppObject * ___U24current_1;
-	// vidMarker vidMarker/<videoOff>c__Iterator12::<>f__this
+	// vidMarker vidMarker/<videoOff>c__Iterator14::<>f__this
 	vidMarker_t633812907 * ___U3CU3Ef__this_2;
 
 public:
-	inline static int32_t get_offset_of_U24PC_0() { return static_cast<int32_t>(offsetof(U3CvideoOffU3Ec__Iterator12_t390254244, ___U24PC_0)); }
+	inline static int32_t get_offset_of_U24PC_0() { return static_cast<int32_t>(offsetof(U3CvideoOffU3Ec__Iterator14_t390254246, ___U24PC_0)); }
 	inline int32_t get_U24PC_0() const { return ___U24PC_0; }
 	inline int32_t* get_address_of_U24PC_0() { return &___U24PC_0; }
 	inline void set_U24PC_0(int32_t value)
@@ -43,7 +43,7 @@ public:
 		___U24PC_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24current_1() { return static_cast<int32_t>(offsetof(U3CvideoOffU3Ec__Iterator12_t390254244, ___U24current_1)); }
+	inline static int32_t get_offset_of_U24current_1() { return static_cast<int32_t>(offsetof(U3CvideoOffU3Ec__Iterator14_t390254246, ___U24current_1)); }
 	inline Il2CppObject * get_U24current_1() const { return ___U24current_1; }
 	inline Il2CppObject ** get_address_of_U24current_1() { return &___U24current_1; }
 	inline void set_U24current_1(Il2CppObject * value)
@@ -52,7 +52,7 @@ public:
 		Il2CppCodeGenWriteBarrier(&___U24current_1, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Ef__this_2() { return static_cast<int32_t>(offsetof(U3CvideoOffU3Ec__Iterator12_t390254244, ___U3CU3Ef__this_2)); }
+	inline static int32_t get_offset_of_U3CU3Ef__this_2() { return static_cast<int32_t>(offsetof(U3CvideoOffU3Ec__Iterator14_t390254246, ___U3CU3Ef__this_2)); }
 	inline vidMarker_t633812907 * get_U3CU3Ef__this_2() const { return ___U3CU3Ef__this_2; }
 	inline vidMarker_t633812907 ** get_address_of_U3CU3Ef__this_2() { return &___U3CU3Ef__this_2; }
 	inline void set_U3CU3Ef__this_2(vidMarker_t633812907 * value)

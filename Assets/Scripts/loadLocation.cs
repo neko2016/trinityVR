@@ -38,6 +38,14 @@ public class loadLocation : MonoBehaviour {
 			}
 		}
 
+		if (currScene.name == "02trinityExterior01") {
+			if (loadLocationInit.LibrarySqBCK == true) {
+				newPos = new Vector3 (200f, 0, 0);
+				loadLocationInit.LibrarySqBCK = false;
+				moveCamera ();
+			}
+		}
+
 		// to return to outside the museum building, when it has been exited from its interior
 		if (currScene.name == "03trinityExterior02") {
 			if (loadLocationInit.MBuildingOut == true) {

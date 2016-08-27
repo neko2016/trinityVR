@@ -19,8 +19,28 @@ public class videoTriggerToScene : MonoBehaviour {
 
 	private float fadeTime;
 
+	private musicControl musicControl;
+
+	public GameObject loading;
+
+	public GameObject circle;
+
+	public GameObject logo;
+
+	private GameObject[] allAudioAMB;
+	private GameObject[] allAudioSFX;
+	private GameObject[] allAudioNAR;
+	private GameObject[] allAudioMUS;
+
+
+
 	void Awake() {
 
+		if(GameObject.Find("audioMusic")) {
+
+		musicControl = GameObject.Find ("audioMusic").GetComponent<musicControl>();
+
+		}
 		overlay = GameObject.Find ("screenOverlay").GetComponent<Image> ();
 		fadeTime = 1.5f;
 
@@ -29,6 +49,11 @@ public class videoTriggerToScene : MonoBehaviour {
 
 	void Start () {
 
+		allAudioAMB = GameObject.FindGameObjectsWithTag("AMB");
+		allAudioSFX = GameObject.FindGameObjectsWithTag("SFX");
+		allAudioNAR = GameObject.FindGameObjectsWithTag("NAR");
+		allAudioMUS = GameObject.FindGameObjectsWithTag("MUS");
+
 		mediaScript = gameObject.GetComponent<MediaPlayerCtrl> ();
 		mediaScript.Play();
 
@@ -36,21 +61,35 @@ public class videoTriggerToScene : MonoBehaviour {
 
 	void Update () {
 		if (mediaScript.GetCurrentState () == MediaPlayerCtrl.MEDIAPLAYER_STATE.END || Input.GetMouseButtonDown(0)) {
-			StartCoroutine (FadeToBlack ());
+
+			foreach (GameObject item in allAudioAMB) {
+				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
+			}
+
+			foreach (GameObject item in allAudioSFX) {
+				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
+			}
+
+			foreach (GameObject item in allAudioNAR) {
+				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
+			}
+
+			foreach (GameObject item in allAudioMUS) {
+				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
+			}
+
+			StartCoroutine (LoadingScreen ());
+			StartCoroutine (musicControl.fadeOutMusic ());
 		}
 	}
 
-	public void loadNewScene()
-	{
-		StartCoroutine (FadeToBlack ());
-	}
+		private IEnumerator LoadingScreen() {
 
-	private IEnumerator FadeToBlack() {
+		loading.SetActive (true);
 
-		overlay.gameObject.SetActive (true);
-		overlay.enabled = true;
-		overlay.color = Color.clear;
-
+		Image Screen = loading.GetComponent<Image> ();
+		Image Circle = circle.GetComponent<Image> ();
+		Image Logo = logo.GetComponent<Image> ();
 
 		float rate = 1.0f / fadeTime;
 
@@ -58,14 +97,29 @@ public class videoTriggerToScene : MonoBehaviour {
 
 		while (progress < 1.0f) {
 
-			overlay.color = Color.Lerp (Color.clear, Color.black, progress);
+			Screen.color = Color.Lerp (Color.clear, Color.black, progress);
+			Logo.color = Color.Lerp (Color.clear, Color.white, progress);
 
 			progress += rate * Time.deltaTime;
 
 			yield return null;
+
 		}
 
-		overlay.color = Color.black;
+		progress = 0;
+
+		while (progress < 1.0f) {
+
+			Circle.fillAmount = Mathf.Lerp (0, 1, progress);
+
+			progress += rate/2 * Time.deltaTime;
+
+			yield return null;
+
+		}
+
 		SceneManager.LoadScene (newScene);
+
 	}
+
 }

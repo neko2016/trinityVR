@@ -16,6 +16,12 @@ struct MediaPlayerCtrl_t3572035536;
 struct String_t;
 // UnityEngine.UI.Image
 struct Image_t3354615620;
+// musicControl
+struct musicControl_t2822556536;
+// UnityEngine.GameObject
+struct GameObject_t4012695102;
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3499186955;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 
@@ -37,6 +43,22 @@ public:
 	Image_t3354615620 * ___overlay_4;
 	// System.Single videoTriggerToScene::fadeTime
 	float ___fadeTime_5;
+	// musicControl videoTriggerToScene::musicControl
+	musicControl_t2822556536 * ___musicControl_6;
+	// UnityEngine.GameObject videoTriggerToScene::loading
+	GameObject_t4012695102 * ___loading_7;
+	// UnityEngine.GameObject videoTriggerToScene::circle
+	GameObject_t4012695102 * ___circle_8;
+	// UnityEngine.GameObject videoTriggerToScene::logo
+	GameObject_t4012695102 * ___logo_9;
+	// UnityEngine.GameObject[] videoTriggerToScene::allAudioAMB
+	GameObjectU5BU5D_t3499186955* ___allAudioAMB_10;
+	// UnityEngine.GameObject[] videoTriggerToScene::allAudioSFX
+	GameObjectU5BU5D_t3499186955* ___allAudioSFX_11;
+	// UnityEngine.GameObject[] videoTriggerToScene::allAudioNAR
+	GameObjectU5BU5D_t3499186955* ___allAudioNAR_12;
+	// UnityEngine.GameObject[] videoTriggerToScene::allAudioMUS
+	GameObjectU5BU5D_t3499186955* ___allAudioMUS_13;
 
 public:
 	inline static int32_t get_offset_of_mediaScript_2() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___mediaScript_2)); }
@@ -72,6 +94,78 @@ public:
 	inline void set_fadeTime_5(float value)
 	{
 		___fadeTime_5 = value;
+	}
+
+	inline static int32_t get_offset_of_musicControl_6() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___musicControl_6)); }
+	inline musicControl_t2822556536 * get_musicControl_6() const { return ___musicControl_6; }
+	inline musicControl_t2822556536 ** get_address_of_musicControl_6() { return &___musicControl_6; }
+	inline void set_musicControl_6(musicControl_t2822556536 * value)
+	{
+		___musicControl_6 = value;
+		Il2CppCodeGenWriteBarrier(&___musicControl_6, value);
+	}
+
+	inline static int32_t get_offset_of_loading_7() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___loading_7)); }
+	inline GameObject_t4012695102 * get_loading_7() const { return ___loading_7; }
+	inline GameObject_t4012695102 ** get_address_of_loading_7() { return &___loading_7; }
+	inline void set_loading_7(GameObject_t4012695102 * value)
+	{
+		___loading_7 = value;
+		Il2CppCodeGenWriteBarrier(&___loading_7, value);
+	}
+
+	inline static int32_t get_offset_of_circle_8() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___circle_8)); }
+	inline GameObject_t4012695102 * get_circle_8() const { return ___circle_8; }
+	inline GameObject_t4012695102 ** get_address_of_circle_8() { return &___circle_8; }
+	inline void set_circle_8(GameObject_t4012695102 * value)
+	{
+		___circle_8 = value;
+		Il2CppCodeGenWriteBarrier(&___circle_8, value);
+	}
+
+	inline static int32_t get_offset_of_logo_9() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___logo_9)); }
+	inline GameObject_t4012695102 * get_logo_9() const { return ___logo_9; }
+	inline GameObject_t4012695102 ** get_address_of_logo_9() { return &___logo_9; }
+	inline void set_logo_9(GameObject_t4012695102 * value)
+	{
+		___logo_9 = value;
+		Il2CppCodeGenWriteBarrier(&___logo_9, value);
+	}
+
+	inline static int32_t get_offset_of_allAudioAMB_10() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___allAudioAMB_10)); }
+	inline GameObjectU5BU5D_t3499186955* get_allAudioAMB_10() const { return ___allAudioAMB_10; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioAMB_10() { return &___allAudioAMB_10; }
+	inline void set_allAudioAMB_10(GameObjectU5BU5D_t3499186955* value)
+	{
+		___allAudioAMB_10 = value;
+		Il2CppCodeGenWriteBarrier(&___allAudioAMB_10, value);
+	}
+
+	inline static int32_t get_offset_of_allAudioSFX_11() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___allAudioSFX_11)); }
+	inline GameObjectU5BU5D_t3499186955* get_allAudioSFX_11() const { return ___allAudioSFX_11; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioSFX_11() { return &___allAudioSFX_11; }
+	inline void set_allAudioSFX_11(GameObjectU5BU5D_t3499186955* value)
+	{
+		___allAudioSFX_11 = value;
+		Il2CppCodeGenWriteBarrier(&___allAudioSFX_11, value);
+	}
+
+	inline static int32_t get_offset_of_allAudioNAR_12() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___allAudioNAR_12)); }
+	inline GameObjectU5BU5D_t3499186955* get_allAudioNAR_12() const { return ___allAudioNAR_12; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioNAR_12() { return &___allAudioNAR_12; }
+	inline void set_allAudioNAR_12(GameObjectU5BU5D_t3499186955* value)
+	{
+		___allAudioNAR_12 = value;
+		Il2CppCodeGenWriteBarrier(&___allAudioNAR_12, value);
+	}
+
+	inline static int32_t get_offset_of_allAudioMUS_13() { return static_cast<int32_t>(offsetof(videoTriggerToScene_t1861271380, ___allAudioMUS_13)); }
+	inline GameObjectU5BU5D_t3499186955* get_allAudioMUS_13() const { return ___allAudioMUS_13; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioMUS_13() { return &___allAudioMUS_13; }
+	inline void set_allAudioMUS_13(GameObjectU5BU5D_t3499186955* value)
+	{
+		___allAudioMUS_13 = value;
+		Il2CppCodeGenWriteBarrier(&___allAudioMUS_13, value);
 	}
 };
 

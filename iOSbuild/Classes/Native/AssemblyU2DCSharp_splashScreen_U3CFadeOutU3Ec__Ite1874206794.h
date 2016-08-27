@@ -23,27 +23,27 @@ struct splashScreen_t2428448179;
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// splashScreen/<FadeOut>c__Iterator10
-struct  U3CFadeOutU3Ec__Iterator10_t1874206792  : public Il2CppObject
+// splashScreen/<FadeOut>c__Iterator12
+struct  U3CFadeOutU3Ec__Iterator12_t1874206794  : public Il2CppObject
 {
 public:
-	// System.Int32 splashScreen/<FadeOut>c__Iterator10::time
+	// System.Int32 splashScreen/<FadeOut>c__Iterator12::time
 	int32_t ___time_0;
-	// System.Single splashScreen/<FadeOut>c__Iterator10::<rate>__0
+	// System.Single splashScreen/<FadeOut>c__Iterator12::<rate>__0
 	float ___U3CrateU3E__0_1;
-	// System.Single splashScreen/<FadeOut>c__Iterator10::<progress>__1
+	// System.Single splashScreen/<FadeOut>c__Iterator12::<progress>__1
 	float ___U3CprogressU3E__1_2;
-	// System.Int32 splashScreen/<FadeOut>c__Iterator10::$PC
+	// System.Int32 splashScreen/<FadeOut>c__Iterator12::$PC
 	int32_t ___U24PC_3;
-	// System.Object splashScreen/<FadeOut>c__Iterator10::$current
+	// System.Object splashScreen/<FadeOut>c__Iterator12::$current
 	Il2CppObject * ___U24current_4;
-	// System.Int32 splashScreen/<FadeOut>c__Iterator10::<$>time
+	// System.Int32 splashScreen/<FadeOut>c__Iterator12::<$>time
 	int32_t ___U3CU24U3Etime_5;
-	// splashScreen splashScreen/<FadeOut>c__Iterator10::<>f__this
+	// splashScreen splashScreen/<FadeOut>c__Iterator12::<>f__this
 	splashScreen_t2428448179 * ___U3CU3Ef__this_6;
 
 public:
-	inline static int32_t get_offset_of_time_0() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator10_t1874206792, ___time_0)); }
+	inline static int32_t get_offset_of_time_0() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator12_t1874206794, ___time_0)); }
 	inline int32_t get_time_0() const { return ___time_0; }
 	inline int32_t* get_address_of_time_0() { return &___time_0; }
 	inline void set_time_0(int32_t value)
@@ -51,7 +51,7 @@ public:
 		___time_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CrateU3E__0_1() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator10_t1874206792, ___U3CrateU3E__0_1)); }
+	inline static int32_t get_offset_of_U3CrateU3E__0_1() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator12_t1874206794, ___U3CrateU3E__0_1)); }
 	inline float get_U3CrateU3E__0_1() const { return ___U3CrateU3E__0_1; }
 	inline float* get_address_of_U3CrateU3E__0_1() { return &___U3CrateU3E__0_1; }
 	inline void set_U3CrateU3E__0_1(float value)
@@ -59,7 +59,7 @@ public:
 		___U3CrateU3E__0_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CprogressU3E__1_2() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator10_t1874206792, ___U3CprogressU3E__1_2)); }
+	inline static int32_t get_offset_of_U3CprogressU3E__1_2() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator12_t1874206794, ___U3CprogressU3E__1_2)); }
 	inline float get_U3CprogressU3E__1_2() const { return ___U3CprogressU3E__1_2; }
 	inline float* get_address_of_U3CprogressU3E__1_2() { return &___U3CprogressU3E__1_2; }
 	inline void set_U3CprogressU3E__1_2(float value)
@@ -67,7 +67,7 @@ public:
 		___U3CprogressU3E__1_2 = value;
 	}
 
-	inline static int32_t get_offset_of_U24PC_3() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator10_t1874206792, ___U24PC_3)); }
+	inline static int32_t get_offset_of_U24PC_3() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator12_t1874206794, ___U24PC_3)); }
 	inline int32_t get_U24PC_3() const { return ___U24PC_3; }
 	inline int32_t* get_address_of_U24PC_3() { return &___U24PC_3; }
 	inline void set_U24PC_3(int32_t value)
@@ -75,7 +75,7 @@ public:
 		___U24PC_3 = value;
 	}
 
-	inline static int32_t get_offset_of_U24current_4() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator10_t1874206792, ___U24current_4)); }
+	inline static int32_t get_offset_of_U24current_4() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator12_t1874206794, ___U24current_4)); }
 	inline Il2CppObject * get_U24current_4() const { return ___U24current_4; }
 	inline Il2CppObject ** get_address_of_U24current_4() { return &___U24current_4; }
 	inline void set_U24current_4(Il2CppObject * value)
@@ -84,7 +84,7 @@ public:
 		Il2CppCodeGenWriteBarrier(&___U24current_4, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU24U3Etime_5() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator10_t1874206792, ___U3CU24U3Etime_5)); }
+	inline static int32_t get_offset_of_U3CU24U3Etime_5() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator12_t1874206794, ___U3CU24U3Etime_5)); }
 	inline int32_t get_U3CU24U3Etime_5() const { return ___U3CU24U3Etime_5; }
 	inline int32_t* get_address_of_U3CU24U3Etime_5() { return &___U3CU24U3Etime_5; }
 	inline void set_U3CU24U3Etime_5(int32_t value)
@@ -92,7 +92,7 @@ public:
 		___U3CU24U3Etime_5 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Ef__this_6() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator10_t1874206792, ___U3CU3Ef__this_6)); }
+	inline static int32_t get_offset_of_U3CU3Ef__this_6() { return static_cast<int32_t>(offsetof(U3CFadeOutU3Ec__Iterator12_t1874206794, ___U3CU3Ef__this_6)); }
 	inline splashScreen_t2428448179 * get_U3CU3Ef__this_6() const { return ___U3CU3Ef__this_6; }
 	inline splashScreen_t2428448179 ** get_address_of_U3CU3Ef__this_6() { return &___U3CU3Ef__this_6; }
 	inline void set_U3CU3Ef__this_6(splashScreen_t2428448179 * value)

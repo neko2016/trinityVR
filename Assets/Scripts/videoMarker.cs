@@ -6,18 +6,21 @@ public class videoMarker : MonoBehaviour {
 	private Transform videoPanel;
 	private bool isPlaying; 
 	private GameObject[] allAudioNAR;
+	private GameObject[] allVideo;
+
 
 	// Use this for initialization
 	void Start () {
 		videoPanel = transform.Find ("videoPanel");
 		videoPanel.GetComponent<MeshRenderer> ().enabled = false;
 		allAudioNAR = GameObject.FindGameObjectsWithTag("NAR");
+		allVideo = GameObject.FindGameObjectsWithTag("VID");
 		isPlaying = false;
 	}
 
 	void Update() {
 
-		if (videoPanel.GetComponent<MediaPlayerCtrl> ().GetCurrentState() == MediaPlayerCtrl.MEDIAPLAYER_STATE.END) {
+		if (videoPanel.GetComponent<MediaPlayerCtrl> ().GetCurrentState() == MediaPlayerCtrl.MEDIAPLAYER_STATE.END || videoPanel.GetComponent<MediaPlayerCtrl> ().GetCurrentState() == MediaPlayerCtrl.MEDIAPLAYER_STATE.STOPPED) {
 
 			isPlaying = false;
 			videoPanel.GetComponent<MeshRenderer> ().enabled = false;
@@ -29,6 +32,10 @@ public class videoMarker : MonoBehaviour {
 	public void markerPressed() {
 
 		if (isPlaying == false) {
+
+			foreach (GameObject item in allVideo) {
+				StartCoroutine (videoKill.videoStop(item));
+			}
 			
 			videoPanel.GetComponent<MeshRenderer> ().enabled = true;
 			videoPanel.GetComponent<MediaPlayerCtrl> ().Play ();
@@ -45,5 +52,17 @@ public class videoMarker : MonoBehaviour {
 			isPlaying = false;
 
 		}
+	}
+
+	public void stopVideo() {
+
+		if (isPlaying == true) {
+
+			videoPanel.GetComponent<MeshRenderer> ().enabled = false;
+			videoPanel.GetComponent<MediaPlayerCtrl> ().Stop ();
+			isPlaying = false;
+
+		}
+
 	}
 }

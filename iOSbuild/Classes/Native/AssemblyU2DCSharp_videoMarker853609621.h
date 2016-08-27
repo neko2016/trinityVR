@@ -33,6 +33,8 @@ public:
 	bool ___isPlaying_3;
 	// UnityEngine.GameObject[] videoMarker::allAudioNAR
 	GameObjectU5BU5D_t3499186955* ___allAudioNAR_4;
+	// UnityEngine.GameObject[] videoMarker::allVideo
+	GameObjectU5BU5D_t3499186955* ___allVideo_5;
 
 public:
 	inline static int32_t get_offset_of_videoPanel_2() { return static_cast<int32_t>(offsetof(videoMarker_t853609621, ___videoPanel_2)); }
@@ -59,6 +61,15 @@ public:
 	{
 		___allAudioNAR_4 = value;
 		Il2CppCodeGenWriteBarrier(&___allAudioNAR_4, value);
+	}
+
+	inline static int32_t get_offset_of_allVideo_5() { return static_cast<int32_t>(offsetof(videoMarker_t853609621, ___allVideo_5)); }
+	inline GameObjectU5BU5D_t3499186955* get_allVideo_5() const { return ___allVideo_5; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allVideo_5() { return &___allVideo_5; }
+	inline void set_allVideo_5(GameObjectU5BU5D_t3499186955* value)
+	{
+		___allVideo_5 = value;
+		Il2CppCodeGenWriteBarrier(&___allVideo_5, value);
 	}
 };
 

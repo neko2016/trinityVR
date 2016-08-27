@@ -46,12 +46,15 @@
 <type fullname="homeIcon" preserve="all"/>
 <type fullname="imgMarker" preserve="all"/>
 <type fullname="imgMarkerAB" preserve="all"/>
+<type fullname="languageAudioClip" preserve="all"/>
 <type fullname="languageSelection" preserve="all"/>
 <type fullname="loadLocation" preserve="all"/>
 <type fullname="loadLocationDoor" preserve="all"/>
 <type fullname="loadLocationHome" preserve="all"/>
 <type fullname="loadLocationInit" preserve="all"/>
 <type fullname="loadScene" preserve="all"/>
+<type fullname="loadSceneSimple" preserve="all"/>
+<type fullname="loadingScreenMusic" preserve="all"/>
 <type fullname="musicControl" preserve="all"/>
 <type fullname="musicTrigger" preserve="all"/>
 <type fullname="navTrigger" preserve="all"/>

@@ -16,12 +16,13 @@ public class audioTrigger : MonoBehaviour {
 
 	public float delayTime;
 
-
 	void Start () {
+		
 		myAudio = gameObject.GetComponent<AudioSource> (); // retrieves an AudioSource from a GameObject
 		allAudioAMB = GameObject.FindGameObjectsWithTag("AMB");
 		allAudioSFX = GameObject.FindGameObjectsWithTag("SFX");
 		allAudioNAR = GameObject.FindGameObjectsWithTag("NAR");
+
 	}
 		
 	void OnTriggerEnter (Collider col) { // when the collider is triggered...

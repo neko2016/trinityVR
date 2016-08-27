@@ -11859,6 +11859,8 @@ extern "C" void U3CFadeOutU3Ec__IteratorA_Dispose_m595404833 ();
 extern "C" void U3CFadeOutU3Ec__IteratorA_Reset_m2120896401 ();
 extern "C" void ireTrue__ctor_m1959536289 ();
 extern "C" void ireTrue_Start_m906674081 ();
+extern "C" void languageAudioClip__ctor_m2060774749 ();
+extern "C" void languageAudioClip_Start_m1007912541 ();
 extern "C" void languageSelection__ctor_m1979540183 ();
 extern "C" void languageSelection_Start_m926677975 ();
 extern "C" void languageSelection_chooseEng_m4068482972 ();
@@ -11866,6 +11868,16 @@ extern "C" void languageSelection_chooseIre_m4072294298 ();
 extern "C" void languageSelection_chooseChi_m4066459106 ();
 extern "C" void languageSelection_chooseFre_m4069523735 ();
 extern "C" void languageSelection_chooseSpa_m4081466082 ();
+extern "C" void loadingScreenMusic__ctor_m832219902 ();
+extern "C" void loadingScreenMusic_Awake_m1069825121 ();
+extern "C" void loadingScreenMusic_Update_m1755875279 ();
+extern "C" void loadingScreenMusic_FadeOutLSM_m2922617499 ();
+extern "C" void U3CFadeOutLSMU3Ec__IteratorE__ctor_m1358305367 ();
+extern "C" void U3CFadeOutLSMU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2616990427 ();
+extern "C" void U3CFadeOutLSMU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m2487039087 ();
+extern "C" void U3CFadeOutLSMU3Ec__IteratorE_MoveNext_m1471660093 ();
+extern "C" void U3CFadeOutLSMU3Ec__IteratorE_Dispose_m3854650068 ();
+extern "C" void U3CFadeOutLSMU3Ec__IteratorE_Reset_m3299705604 ();
 extern "C" void loadLocation__ctor_m3582677568 ();
 extern "C" void loadLocation_Start_m2529815360 ();
 extern "C" void loadLocation_moveCamera_m1878965626 ();
@@ -11885,13 +11897,23 @@ extern "C" void loadLocationInit_Start_m3060482448 ();
 extern "C" void loadScene__ctor_m3526418661 ();
 extern "C" void loadScene_Start_m2473556453 ();
 extern "C" void loadScene_loadNewScene_m2873518833 ();
-extern "C" void loadScene_FadeToBlack_m3707428083 ();
-extern "C" void U3CFadeToBlackU3Ec__IteratorC__ctor_m3846386064 ();
-extern "C" void U3CFadeToBlackU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3569282626 ();
-extern "C" void U3CFadeToBlackU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m1472837078 ();
-extern "C" void U3CFadeToBlackU3Ec__IteratorC_MoveNext_m2558229604 ();
-extern "C" void U3CFadeToBlackU3Ec__IteratorC_Dispose_m2603416013 ();
-extern "C" void U3CFadeToBlackU3Ec__IteratorC_Reset_m1492819005 ();
+extern "C" void loadScene_LoadingScreen_m978286355 ();
+extern "C" void U3CLoadingScreenU3Ec__IteratorC__ctor_m797048048 ();
+extern "C" void U3CLoadingScreenU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4034048034 ();
+extern "C" void U3CLoadingScreenU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m201144246 ();
+extern "C" void U3CLoadingScreenU3Ec__IteratorC_MoveNext_m3908235780 ();
+extern "C" void U3CLoadingScreenU3Ec__IteratorC_Dispose_m1357278509 ();
+extern "C" void U3CLoadingScreenU3Ec__IteratorC_Reset_m2738448285 ();
+extern "C" void loadSceneSimple__ctor_m3980647891 ();
+extern "C" void loadSceneSimple_Awake_m4218253110 ();
+extern "C" void loadSceneSimple_loadNewScene_m2474092099 ();
+extern "C" void loadSceneSimple_FadeToBlack_m2054691169 ();
+extern "C" void U3CFadeToBlackU3Ec__IteratorD__ctor_m2012885533 ();
+extern "C" void U3CFadeToBlackU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2235125653 ();
+extern "C" void U3CFadeToBlackU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m1390353705 ();
+extern "C" void U3CFadeToBlackU3Ec__IteratorD_MoveNext_m3178908599 ();
+extern "C" void U3CFadeToBlackU3Ec__IteratorD_Dispose_m1545997082 ();
+extern "C" void U3CFadeToBlackU3Ec__IteratorD_Reset_m3954285770 ();
 extern "C" void MedaiPlayerSampleGUI__ctor_m230703679 ();
 extern "C" void MedaiPlayerSampleGUI_Start_m3472808767 ();
 extern "C" void MedaiPlayerSampleGUI_Update_m288741550 ();
@@ -12035,18 +12057,18 @@ extern "C" void musicControl_Start_m3815450403 ();
 extern "C" void musicControl_fadeInMusic_m3551075581 ();
 extern "C" void musicControl_fadeOutMusic_m4234213948 ();
 extern "C" void musicControl_U3CStartU3Em__7_m2430894744 ();
-extern "C" void U3CfadeInMusicU3Ec__IteratorD__ctor_m3967116105 ();
-extern "C" void U3CfadeInMusicU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1288676979 ();
-extern "C" void U3CfadeInMusicU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m2232086535 ();
-extern "C" void U3CfadeInMusicU3Ec__IteratorD_MoveNext_m778631923 ();
-extern "C" void U3CfadeInMusicU3Ec__IteratorD_Dispose_m2660868422 ();
-extern "C" void U3CfadeInMusicU3Ec__IteratorD_Reset_m1613549046 ();
-extern "C" void U3CfadeOutMusicU3Ec__IteratorE__ctor_m3559317265 ();
-extern "C" void U3CfadeOutMusicU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2069184993 ();
-extern "C" void U3CfadeOutMusicU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m4158728053 ();
-extern "C" void U3CfadeOutMusicU3Ec__IteratorE_MoveNext_m1357974851 ();
-extern "C" void U3CfadeOutMusicU3Ec__IteratorE_Dispose_m1608207118 ();
-extern "C" void U3CfadeOutMusicU3Ec__IteratorE_Reset_m1205750206 ();
+extern "C" void U3CfadeInMusicU3Ec__IteratorF__ctor_m3574089095 ();
+extern "C" void U3CfadeInMusicU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m871280373 ();
+extern "C" void U3CfadeInMusicU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m1878998153 ();
+extern "C" void U3CfadeInMusicU3Ec__IteratorF_MoveNext_m191825909 ();
+extern "C" void U3CfadeInMusicU3Ec__IteratorF_Dispose_m2919033860 ();
+extern "C" void U3CfadeInMusicU3Ec__IteratorF_Reset_m1220522036 ();
+extern "C" void U3CfadeOutMusicU3Ec__Iterator10__ctor_m1377845873 ();
+extern "C" void U3CfadeOutMusicU3Ec__Iterator10_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3987158795 ();
+extern "C" void U3CfadeOutMusicU3Ec__Iterator10_System_Collections_IEnumerator_get_Current_m814133407 ();
+extern "C" void U3CfadeOutMusicU3Ec__Iterator10_MoveNext_m3363851723 ();
+extern "C" void U3CfadeOutMusicU3Ec__Iterator10_Dispose_m1158239854 ();
+extern "C" void U3CfadeOutMusicU3Ec__Iterator10_Reset_m3319246110 ();
 extern "C" void musicTrigger__ctor_m949605416 ();
 extern "C" void musicTrigger_Start_m4191710504 ();
 extern "C" void musicTrigger_OnTriggerEnter_m2562549840 ();
@@ -12061,12 +12083,12 @@ extern "C" void navTrigger_MoveCamera_m1100565108 ();
 extern "C" void overlayFade__ctor_m2886180351 ();
 extern "C" void overlayFade_Awake_m3123785570 ();
 extern "C" void overlayFade_FadeToClear_m3407820635 ();
-extern "C" void U3CFadeToClearU3Ec__IteratorF__ctor_m1635388757 ();
-extern "C" void U3CFadeToClearU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m238916829 ();
-extern "C" void U3CFadeToClearU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m3295081073 ();
-extern "C" void U3CFadeToClearU3Ec__IteratorF_MoveNext_m3681471359 ();
-extern "C" void U3CFadeToClearU3Ec__IteratorF_Dispose_m3843815506 ();
-extern "C" void U3CFadeToClearU3Ec__IteratorF_Reset_m3576788994 ();
+extern "C" void U3CFadeToClearU3Ec__Iterator11__ctor_m3466042123 ();
+extern "C" void U3CFadeToClearU3Ec__Iterator11_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m754435057 ();
+extern "C" void U3CFadeToClearU3Ec__Iterator11_System_Collections_IEnumerator_get_Current_m812239237 ();
+extern "C" void U3CFadeToClearU3Ec__Iterator11_MoveNext_m2589955057 ();
+extern "C" void U3CFadeToClearU3Ec__Iterator11_Dispose_m2165108872 ();
+extern "C" void U3CFadeToClearU3Ec__Iterator11_Reset_m1112475064 ();
 extern "C" void Pose3D__ctor_m184997881 ();
 extern "C" void Pose3D__ctor_m2222637201 ();
 extern "C" void Pose3D__ctor_m3211564577 ();
@@ -12665,12 +12687,12 @@ extern "C" void SphereMirror_Update_m3040303838 ();
 extern "C" void splashScreen__ctor_m371555912 ();
 extern "C" void splashScreen_Start_m3613661000 ();
 extern "C" void splashScreen_FadeOut_m725329633 ();
-extern "C" void U3CFadeOutU3Ec__Iterator10__ctor_m118509511 ();
-extern "C" void U3CFadeOutU3Ec__Iterator10_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2379269227 ();
-extern "C" void U3CFadeOutU3Ec__Iterator10_System_Collections_IEnumerator_get_Current_m3644259839 ();
-extern "C" void U3CFadeOutU3Ec__Iterator10_MoveNext_m357211853 ();
-extern "C" void U3CFadeOutU3Ec__Iterator10_Dispose_m2116773444 ();
-extern "C" void U3CFadeOutU3Ec__Iterator10_Reset_m2059909748 ();
+extern "C" void U3CFadeOutU3Ec__Iterator12__ctor_m4020449797 ();
+extern "C" void U3CFadeOutU3Ec__Iterator12_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1961872621 ();
+extern "C" void U3CFadeOutU3Ec__Iterator12_System_Collections_IEnumerator_get_Current_m3291171457 ();
+extern "C" void U3CFadeOutU3Ec__Iterator12_MoveNext_m4065373135 ();
+extern "C" void U3CFadeOutU3Ec__Iterator12_Dispose_m2374938882 ();
+extern "C" void U3CFadeOutU3Ec__Iterator12_Reset_m1666882738 ();
 extern "C" void StereoController__ctor_m3477860167 ();
 extern "C" void StereoController_get_Eyes_m3398665077 ();
 extern "C" void StereoController_get_Head_m1091666358 ();
@@ -12717,10 +12739,18 @@ extern "C" void videoAudioGroup_Update_m3097857830 ();
 extern "C" void VideoCopyTexture__ctor_m3150243440 ();
 extern "C" void VideoCopyTexture_Start_m2097381232 ();
 extern "C" void VideoCopyTexture_Update_m600160925 ();
+extern "C" void videoKill_videoStop_m1539671725 ();
+extern "C" void U3CvideoStopU3Ec__Iterator15__ctor_m1385720173 ();
+extern "C" void U3CvideoStopU3Ec__Iterator15_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2746978639 ();
+extern "C" void U3CvideoStopU3Ec__Iterator15_System_Collections_IEnumerator_get_Current_m2222985955 ();
+extern "C" void U3CvideoStopU3Ec__Iterator15_MoveNext_m2863238223 ();
+extern "C" void U3CvideoStopU3Ec__Iterator15_Dispose_m135507562 ();
+extern "C" void U3CvideoStopU3Ec__Iterator15_Reset_m3327120410 ();
 extern "C" void videoMarker__ctor_m1836500598 ();
 extern "C" void videoMarker_Start_m783638390 ();
 extern "C" void videoMarker_Update_m2823805783 ();
 extern "C" void videoMarker_markerPressed_m3392801084 ();
+extern "C" void videoMarker_stopVideo_m895339917 ();
 extern "C" void videoTrigger__ctor_m1998032510 ();
 extern "C" void videoTrigger_OnEnable_m1506328648 ();
 extern "C" void videoTrigger_Update_m3536327759 ();
@@ -12733,39 +12763,38 @@ extern "C" void videoTriggerToScene__ctor_m4104999575 ();
 extern "C" void videoTriggerToScene_Awake_m47637498 ();
 extern "C" void videoTriggerToScene_Start_m3052137367 ();
 extern "C" void videoTriggerToScene_Update_m132830038 ();
-extern "C" void videoTriggerToScene_loadNewScene_m2762607871 ();
-extern "C" void videoTriggerToScene_FadeToBlack_m596543269 ();
-extern "C" void U3CFadeToBlackU3Ec__Iterator13__ctor_m1355810751 ();
-extern "C" void U3CFadeToBlackU3Ec__Iterator13_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1452071613 ();
-extern "C" void U3CFadeToBlackU3Ec__Iterator13_System_Collections_IEnumerator_get_Current_m3032348753 ();
-extern "C" void U3CFadeToBlackU3Ec__Iterator13_MoveNext_m1850115773 ();
-extern "C" void U3CFadeToBlackU3Ec__Iterator13_Dispose_m1457324092 ();
-extern "C" void U3CFadeToBlackU3Ec__Iterator13_Reset_m3297210988 ();
+extern "C" void videoTriggerToScene_LoadingScreen_m715218117 ();
+extern "C" void U3CLoadingScreenU3Ec__Iterator16__ctor_m880767036 ();
+extern "C" void U3CLoadingScreenU3Ec__Iterator16_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3329346848 ();
+extern "C" void U3CLoadingScreenU3Ec__Iterator16_System_Collections_IEnumerator_get_Current_m1310855348 ();
+extern "C" void U3CLoadingScreenU3Ec__Iterator16_MoveNext_m3241432096 ();
+extern "C" void U3CLoadingScreenU3Ec__Iterator16_Dispose_m206847353 ();
+extern "C" void U3CLoadingScreenU3Ec__Iterator16_Reset_m2822167273 ();
 extern "C" void vidMarker__ctor_m3683667488 ();
 extern "C" void vidMarker_Awake_m3921272707 ();
 extern "C" void vidMarker_Update_m4251404525 ();
 extern "C" void vidMarker_markerPressed_m2605598438 ();
 extern "C" void vidMarker_videoOn_m2677434272 ();
 extern "C" void vidMarker_videoOff_m1395905072 ();
-extern "C" void U3CvideoOffU3Ec__Iterator12__ctor_m3743249707 ();
-extern "C" void U3CvideoOffU3Ec__Iterator12_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m219722823 ();
-extern "C" void U3CvideoOffU3Ec__Iterator12_System_Collections_IEnumerator_get_Current_m2075272667 ();
-extern "C" void U3CvideoOffU3Ec__Iterator12_MoveNext_m4288614889 ();
-extern "C" void U3CvideoOffU3Ec__Iterator12_Dispose_m2273624744 ();
-extern "C" void U3CvideoOffU3Ec__Iterator12_Reset_m1389682648 ();
-extern "C" void U3CvideoOnU3Ec__Iterator11__ctor_m3244002406 ();
-extern "C" void U3CvideoOnU3Ec__Iterator11_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3163717942 ();
-extern "C" void U3CvideoOnU3Ec__Iterator11_System_Collections_IEnumerator_get_Current_m2565451978 ();
-extern "C" void U3CvideoOnU3Ec__Iterator11_MoveNext_m4254447542 ();
-extern "C" void U3CvideoOnU3Ec__Iterator11_Dispose_m3533305635 ();
-extern "C" void U3CvideoOnU3Ec__Iterator11_Reset_m890435347 ();
+extern "C" void U3CvideoOffU3Ec__Iterator14__ctor_m3350222697 ();
+extern "C" void U3CvideoOffU3Ec__Iterator14_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4097293513 ();
+extern "C" void U3CvideoOffU3Ec__Iterator14_System_Collections_IEnumerator_get_Current_m1722184285 ();
+extern "C" void U3CvideoOffU3Ec__Iterator14_MoveNext_m3701808875 ();
+extern "C" void U3CvideoOffU3Ec__Iterator14_Dispose_m2531790182 ();
+extern "C" void U3CvideoOffU3Ec__Iterator14_Reset_m996655638 ();
+extern "C" void U3CvideoOnU3Ec__Iterator13__ctor_m2850975396 ();
+extern "C" void U3CvideoOnU3Ec__Iterator13_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2746321336 ();
+extern "C" void U3CvideoOnU3Ec__Iterator13_System_Collections_IEnumerator_get_Current_m2212363596 ();
+extern "C" void U3CvideoOnU3Ec__Iterator13_MoveNext_m3667641528 ();
+extern "C" void U3CvideoOnU3Ec__Iterator13_Dispose_m3791471073 ();
+extern "C" void U3CvideoOnU3Ec__Iterator13_Reset_m497408337 ();
 extern "C" void vrChangeCamera__ctor_m1265344490 ();
 extern "C" void vrChangeCamera_Start_m212482282 ();
 extern "C" void vrTrueFalse__ctor_m1230274226 ();
 extern "C" void vrTrueFalse_Start_m177412018 ();
 extern "C" void vrTrueFalse_makeVRtrue_m3469953834 ();
 extern "C" void vrTrueFalse_makeVRfalse_m159705257 ();
-extern const methodPointerType g_MethodPointers[12754] = 
+extern const methodPointerType g_MethodPointers[12783] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -24615,6 +24644,8 @@ extern const methodPointerType g_MethodPointers[12754] =
 	U3CFadeOutU3Ec__IteratorA_Reset_m2120896401,
 	ireTrue__ctor_m1959536289,
 	ireTrue_Start_m906674081,
+	languageAudioClip__ctor_m2060774749,
+	languageAudioClip_Start_m1007912541,
 	languageSelection__ctor_m1979540183,
 	languageSelection_Start_m926677975,
 	languageSelection_chooseEng_m4068482972,
@@ -24622,6 +24653,16 @@ extern const methodPointerType g_MethodPointers[12754] =
 	languageSelection_chooseChi_m4066459106,
 	languageSelection_chooseFre_m4069523735,
 	languageSelection_chooseSpa_m4081466082,
+	loadingScreenMusic__ctor_m832219902,
+	loadingScreenMusic_Awake_m1069825121,
+	loadingScreenMusic_Update_m1755875279,
+	loadingScreenMusic_FadeOutLSM_m2922617499,
+	U3CFadeOutLSMU3Ec__IteratorE__ctor_m1358305367,
+	U3CFadeOutLSMU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2616990427,
+	U3CFadeOutLSMU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m2487039087,
+	U3CFadeOutLSMU3Ec__IteratorE_MoveNext_m1471660093,
+	U3CFadeOutLSMU3Ec__IteratorE_Dispose_m3854650068,
+	U3CFadeOutLSMU3Ec__IteratorE_Reset_m3299705604,
 	loadLocation__ctor_m3582677568,
 	loadLocation_Start_m2529815360,
 	loadLocation_moveCamera_m1878965626,
@@ -24641,13 +24682,23 @@ extern const methodPointerType g_MethodPointers[12754] =
 	loadScene__ctor_m3526418661,
 	loadScene_Start_m2473556453,
 	loadScene_loadNewScene_m2873518833,
-	loadScene_FadeToBlack_m3707428083,
-	U3CFadeToBlackU3Ec__IteratorC__ctor_m3846386064,
-	U3CFadeToBlackU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3569282626,
-	U3CFadeToBlackU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m1472837078,
-	U3CFadeToBlackU3Ec__IteratorC_MoveNext_m2558229604,
-	U3CFadeToBlackU3Ec__IteratorC_Dispose_m2603416013,
-	U3CFadeToBlackU3Ec__IteratorC_Reset_m1492819005,
+	loadScene_LoadingScreen_m978286355,
+	U3CLoadingScreenU3Ec__IteratorC__ctor_m797048048,
+	U3CLoadingScreenU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4034048034,
+	U3CLoadingScreenU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m201144246,
+	U3CLoadingScreenU3Ec__IteratorC_MoveNext_m3908235780,
+	U3CLoadingScreenU3Ec__IteratorC_Dispose_m1357278509,
+	U3CLoadingScreenU3Ec__IteratorC_Reset_m2738448285,
+	loadSceneSimple__ctor_m3980647891,
+	loadSceneSimple_Awake_m4218253110,
+	loadSceneSimple_loadNewScene_m2474092099,
+	loadSceneSimple_FadeToBlack_m2054691169,
+	U3CFadeToBlackU3Ec__IteratorD__ctor_m2012885533,
+	U3CFadeToBlackU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2235125653,
+	U3CFadeToBlackU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m1390353705,
+	U3CFadeToBlackU3Ec__IteratorD_MoveNext_m3178908599,
+	U3CFadeToBlackU3Ec__IteratorD_Dispose_m1545997082,
+	U3CFadeToBlackU3Ec__IteratorD_Reset_m3954285770,
 	MedaiPlayerSampleGUI__ctor_m230703679,
 	MedaiPlayerSampleGUI_Start_m3472808767,
 	MedaiPlayerSampleGUI_Update_m288741550,
@@ -24791,18 +24842,18 @@ extern const methodPointerType g_MethodPointers[12754] =
 	musicControl_fadeInMusic_m3551075581,
 	musicControl_fadeOutMusic_m4234213948,
 	musicControl_U3CStartU3Em__7_m2430894744,
-	U3CfadeInMusicU3Ec__IteratorD__ctor_m3967116105,
-	U3CfadeInMusicU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1288676979,
-	U3CfadeInMusicU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m2232086535,
-	U3CfadeInMusicU3Ec__IteratorD_MoveNext_m778631923,
-	U3CfadeInMusicU3Ec__IteratorD_Dispose_m2660868422,
-	U3CfadeInMusicU3Ec__IteratorD_Reset_m1613549046,
-	U3CfadeOutMusicU3Ec__IteratorE__ctor_m3559317265,
-	U3CfadeOutMusicU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2069184993,
-	U3CfadeOutMusicU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m4158728053,
-	U3CfadeOutMusicU3Ec__IteratorE_MoveNext_m1357974851,
-	U3CfadeOutMusicU3Ec__IteratorE_Dispose_m1608207118,
-	U3CfadeOutMusicU3Ec__IteratorE_Reset_m1205750206,
+	U3CfadeInMusicU3Ec__IteratorF__ctor_m3574089095,
+	U3CfadeInMusicU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m871280373,
+	U3CfadeInMusicU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m1878998153,
+	U3CfadeInMusicU3Ec__IteratorF_MoveNext_m191825909,
+	U3CfadeInMusicU3Ec__IteratorF_Dispose_m2919033860,
+	U3CfadeInMusicU3Ec__IteratorF_Reset_m1220522036,
+	U3CfadeOutMusicU3Ec__Iterator10__ctor_m1377845873,
+	U3CfadeOutMusicU3Ec__Iterator10_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3987158795,
+	U3CfadeOutMusicU3Ec__Iterator10_System_Collections_IEnumerator_get_Current_m814133407,
+	U3CfadeOutMusicU3Ec__Iterator10_MoveNext_m3363851723,
+	U3CfadeOutMusicU3Ec__Iterator10_Dispose_m1158239854,
+	U3CfadeOutMusicU3Ec__Iterator10_Reset_m3319246110,
 	musicTrigger__ctor_m949605416,
 	musicTrigger_Start_m4191710504,
 	musicTrigger_OnTriggerEnter_m2562549840,
@@ -24817,12 +24868,12 @@ extern const methodPointerType g_MethodPointers[12754] =
 	overlayFade__ctor_m2886180351,
 	overlayFade_Awake_m3123785570,
 	overlayFade_FadeToClear_m3407820635,
-	U3CFadeToClearU3Ec__IteratorF__ctor_m1635388757,
-	U3CFadeToClearU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m238916829,
-	U3CFadeToClearU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m3295081073,
-	U3CFadeToClearU3Ec__IteratorF_MoveNext_m3681471359,
-	U3CFadeToClearU3Ec__IteratorF_Dispose_m3843815506,
-	U3CFadeToClearU3Ec__IteratorF_Reset_m3576788994,
+	U3CFadeToClearU3Ec__Iterator11__ctor_m3466042123,
+	U3CFadeToClearU3Ec__Iterator11_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m754435057,
+	U3CFadeToClearU3Ec__Iterator11_System_Collections_IEnumerator_get_Current_m812239237,
+	U3CFadeToClearU3Ec__Iterator11_MoveNext_m2589955057,
+	U3CFadeToClearU3Ec__Iterator11_Dispose_m2165108872,
+	U3CFadeToClearU3Ec__Iterator11_Reset_m1112475064,
 	Pose3D__ctor_m184997881,
 	Pose3D__ctor_m2222637201,
 	Pose3D__ctor_m3211564577,
@@ -25421,12 +25472,12 @@ extern const methodPointerType g_MethodPointers[12754] =
 	splashScreen__ctor_m371555912,
 	splashScreen_Start_m3613661000,
 	splashScreen_FadeOut_m725329633,
-	U3CFadeOutU3Ec__Iterator10__ctor_m118509511,
-	U3CFadeOutU3Ec__Iterator10_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2379269227,
-	U3CFadeOutU3Ec__Iterator10_System_Collections_IEnumerator_get_Current_m3644259839,
-	U3CFadeOutU3Ec__Iterator10_MoveNext_m357211853,
-	U3CFadeOutU3Ec__Iterator10_Dispose_m2116773444,
-	U3CFadeOutU3Ec__Iterator10_Reset_m2059909748,
+	U3CFadeOutU3Ec__Iterator12__ctor_m4020449797,
+	U3CFadeOutU3Ec__Iterator12_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1961872621,
+	U3CFadeOutU3Ec__Iterator12_System_Collections_IEnumerator_get_Current_m3291171457,
+	U3CFadeOutU3Ec__Iterator12_MoveNext_m4065373135,
+	U3CFadeOutU3Ec__Iterator12_Dispose_m2374938882,
+	U3CFadeOutU3Ec__Iterator12_Reset_m1666882738,
 	StereoController__ctor_m3477860167,
 	StereoController_get_Eyes_m3398665077,
 	StereoController_get_Head_m1091666358,
@@ -25473,10 +25524,18 @@ extern const methodPointerType g_MethodPointers[12754] =
 	VideoCopyTexture__ctor_m3150243440,
 	VideoCopyTexture_Start_m2097381232,
 	VideoCopyTexture_Update_m600160925,
+	videoKill_videoStop_m1539671725,
+	U3CvideoStopU3Ec__Iterator15__ctor_m1385720173,
+	U3CvideoStopU3Ec__Iterator15_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2746978639,
+	U3CvideoStopU3Ec__Iterator15_System_Collections_IEnumerator_get_Current_m2222985955,
+	U3CvideoStopU3Ec__Iterator15_MoveNext_m2863238223,
+	U3CvideoStopU3Ec__Iterator15_Dispose_m135507562,
+	U3CvideoStopU3Ec__Iterator15_Reset_m3327120410,
 	videoMarker__ctor_m1836500598,
 	videoMarker_Start_m783638390,
 	videoMarker_Update_m2823805783,
 	videoMarker_markerPressed_m3392801084,
+	videoMarker_stopVideo_m895339917,
 	videoTrigger__ctor_m1998032510,
 	videoTrigger_OnEnable_m1506328648,
 	videoTrigger_Update_m3536327759,
@@ -25489,32 +25548,31 @@ extern const methodPointerType g_MethodPointers[12754] =
 	videoTriggerToScene_Awake_m47637498,
 	videoTriggerToScene_Start_m3052137367,
 	videoTriggerToScene_Update_m132830038,
-	videoTriggerToScene_loadNewScene_m2762607871,
-	videoTriggerToScene_FadeToBlack_m596543269,
-	U3CFadeToBlackU3Ec__Iterator13__ctor_m1355810751,
-	U3CFadeToBlackU3Ec__Iterator13_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1452071613,
-	U3CFadeToBlackU3Ec__Iterator13_System_Collections_IEnumerator_get_Current_m3032348753,
-	U3CFadeToBlackU3Ec__Iterator13_MoveNext_m1850115773,
-	U3CFadeToBlackU3Ec__Iterator13_Dispose_m1457324092,
-	U3CFadeToBlackU3Ec__Iterator13_Reset_m3297210988,
+	videoTriggerToScene_LoadingScreen_m715218117,
+	U3CLoadingScreenU3Ec__Iterator16__ctor_m880767036,
+	U3CLoadingScreenU3Ec__Iterator16_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3329346848,
+	U3CLoadingScreenU3Ec__Iterator16_System_Collections_IEnumerator_get_Current_m1310855348,
+	U3CLoadingScreenU3Ec__Iterator16_MoveNext_m3241432096,
+	U3CLoadingScreenU3Ec__Iterator16_Dispose_m206847353,
+	U3CLoadingScreenU3Ec__Iterator16_Reset_m2822167273,
 	vidMarker__ctor_m3683667488,
 	vidMarker_Awake_m3921272707,
 	vidMarker_Update_m4251404525,
 	vidMarker_markerPressed_m2605598438,
 	vidMarker_videoOn_m2677434272,
 	vidMarker_videoOff_m1395905072,
-	U3CvideoOffU3Ec__Iterator12__ctor_m3743249707,
-	U3CvideoOffU3Ec__Iterator12_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m219722823,
-	U3CvideoOffU3Ec__Iterator12_System_Collections_IEnumerator_get_Current_m2075272667,
-	U3CvideoOffU3Ec__Iterator12_MoveNext_m4288614889,
-	U3CvideoOffU3Ec__Iterator12_Dispose_m2273624744,
-	U3CvideoOffU3Ec__Iterator12_Reset_m1389682648,
-	U3CvideoOnU3Ec__Iterator11__ctor_m3244002406,
-	U3CvideoOnU3Ec__Iterator11_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3163717942,
-	U3CvideoOnU3Ec__Iterator11_System_Collections_IEnumerator_get_Current_m2565451978,
-	U3CvideoOnU3Ec__Iterator11_MoveNext_m4254447542,
-	U3CvideoOnU3Ec__Iterator11_Dispose_m3533305635,
-	U3CvideoOnU3Ec__Iterator11_Reset_m890435347,
+	U3CvideoOffU3Ec__Iterator14__ctor_m3350222697,
+	U3CvideoOffU3Ec__Iterator14_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4097293513,
+	U3CvideoOffU3Ec__Iterator14_System_Collections_IEnumerator_get_Current_m1722184285,
+	U3CvideoOffU3Ec__Iterator14_MoveNext_m3701808875,
+	U3CvideoOffU3Ec__Iterator14_Dispose_m2531790182,
+	U3CvideoOffU3Ec__Iterator14_Reset_m996655638,
+	U3CvideoOnU3Ec__Iterator13__ctor_m2850975396,
+	U3CvideoOnU3Ec__Iterator13_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2746321336,
+	U3CvideoOnU3Ec__Iterator13_System_Collections_IEnumerator_get_Current_m2212363596,
+	U3CvideoOnU3Ec__Iterator13_MoveNext_m3667641528,
+	U3CvideoOnU3Ec__Iterator13_Dispose_m3791471073,
+	U3CvideoOnU3Ec__Iterator13_Reset_m497408337,
 	vrChangeCamera__ctor_m1265344490,
 	vrChangeCamera_Start_m212482282,
 	vrTrueFalse__ctor_m1230274226,
