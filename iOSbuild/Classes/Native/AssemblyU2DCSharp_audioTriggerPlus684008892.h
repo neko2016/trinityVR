@@ -14,8 +14,6 @@
 struct AudioSource_t3628549054;
 // GvrAudioSource
 struct GvrAudioSource_t2139450958;
-// UnityEngine.GameObject[]
-struct GameObjectU5BU5D_t3499186955;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 
@@ -33,12 +31,6 @@ public:
 	AudioSource_t3628549054 * ___myAudio_2;
 	// GvrAudioSource audioTriggerPlus::myGvrAudio
 	GvrAudioSource_t2139450958 * ___myGvrAudio_3;
-	// UnityEngine.GameObject[] audioTriggerPlus::allAudioAMB
-	GameObjectU5BU5D_t3499186955* ___allAudioAMB_4;
-	// UnityEngine.GameObject[] audioTriggerPlus::allAudioSFX
-	GameObjectU5BU5D_t3499186955* ___allAudioSFX_5;
-	// UnityEngine.GameObject[] audioTriggerPlus::allAudioNAR
-	GameObjectU5BU5D_t3499186955* ___allAudioNAR_6;
 
 public:
 	inline static int32_t get_offset_of_myAudio_2() { return static_cast<int32_t>(offsetof(audioTriggerPlus_t684008892, ___myAudio_2)); }
@@ -57,33 +49,6 @@ public:
 	{
 		___myGvrAudio_3 = value;
 		Il2CppCodeGenWriteBarrier(&___myGvrAudio_3, value);
-	}
-
-	inline static int32_t get_offset_of_allAudioAMB_4() { return static_cast<int32_t>(offsetof(audioTriggerPlus_t684008892, ___allAudioAMB_4)); }
-	inline GameObjectU5BU5D_t3499186955* get_allAudioAMB_4() const { return ___allAudioAMB_4; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioAMB_4() { return &___allAudioAMB_4; }
-	inline void set_allAudioAMB_4(GameObjectU5BU5D_t3499186955* value)
-	{
-		___allAudioAMB_4 = value;
-		Il2CppCodeGenWriteBarrier(&___allAudioAMB_4, value);
-	}
-
-	inline static int32_t get_offset_of_allAudioSFX_5() { return static_cast<int32_t>(offsetof(audioTriggerPlus_t684008892, ___allAudioSFX_5)); }
-	inline GameObjectU5BU5D_t3499186955* get_allAudioSFX_5() const { return ___allAudioSFX_5; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioSFX_5() { return &___allAudioSFX_5; }
-	inline void set_allAudioSFX_5(GameObjectU5BU5D_t3499186955* value)
-	{
-		___allAudioSFX_5 = value;
-		Il2CppCodeGenWriteBarrier(&___allAudioSFX_5, value);
-	}
-
-	inline static int32_t get_offset_of_allAudioNAR_6() { return static_cast<int32_t>(offsetof(audioTriggerPlus_t684008892, ___allAudioNAR_6)); }
-	inline GameObjectU5BU5D_t3499186955* get_allAudioNAR_6() const { return ___allAudioNAR_6; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_allAudioNAR_6() { return &___allAudioNAR_6; }
-	inline void set_allAudioNAR_6(GameObjectU5BU5D_t3499186955* value)
-	{
-		___allAudioNAR_6 = value;
-		Il2CppCodeGenWriteBarrier(&___allAudioNAR_6, value);
 	}
 };
 

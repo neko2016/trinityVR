@@ -24,6 +24,7 @@
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
 			<method name="loadNewScene"/>
+			<method name="loadNewScene"/>
 		</type>
 		<type fullname="vrTrueFalse">
 			<method name="makeVRtrue"/>
@@ -289,6 +290,9 @@
 			<method name="Enter"/>
 			<method name="Exit"/>
 			<method name="Click"/>
+			<method name="Enter"/>
+			<method name="Exit"/>
+			<method name="Click"/>
 		</type>
 		<type fullname="videoMarker">
 			<method name="markerPressed"/>
@@ -328,10 +332,8 @@
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
-			<method name="PlayOneShot"/>
-			<method name="PlayOneShot"/>
-			<method name="PlayOneShot"/>
 			<method name="Play"/>
+			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
@@ -390,7 +392,6 @@
 			<method name="SetActive"/>
 			<method name="SetActive"/>
 			<method name="SetActive"/>
-			<method name="SetActive"/>
 		</type>
 		<type fullname="UnityEngine.Behaviour">
 			<method name="set_enabled"/>
@@ -433,10 +434,13 @@
 			<method name="set_enabled"/>
 			<method name="set_enabled"/>
 			<method name="set_enabled"/>
-			<method name="set_enabled"/>
-			<method name="set_enabled"/>
 		</type>
 		<type fullname="UnityEngine.Collider">
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
 			<method name="set_enabled"/>
 			<method name="set_enabled"/>
 			<method name="set_enabled"/>

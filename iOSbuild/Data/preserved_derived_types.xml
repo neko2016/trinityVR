@@ -54,6 +54,7 @@
 <type fullname="loadLocationInit" preserve="all"/>
 <type fullname="loadScene" preserve="all"/>
 <type fullname="loadSceneSimple" preserve="all"/>
+<type fullname="loadSceneTimed" preserve="all"/>
 <type fullname="loadingScreenMusic" preserve="all"/>
 <type fullname="musicControl" preserve="all"/>
 <type fullname="musicTrigger" preserve="all"/>
@@ -61,6 +62,7 @@
 <type fullname="overlayFade" preserve="all"/>
 <type fullname="returnFS" preserve="all"/>
 <type fullname="splashScreen" preserve="all"/>
+<type fullname="textFadeTime" preserve="all"/>
 <type fullname="vidMarker" preserve="all"/>
 <type fullname="videoAudioGroup" preserve="all"/>
 <type fullname="videoMarker" preserve="all"/>

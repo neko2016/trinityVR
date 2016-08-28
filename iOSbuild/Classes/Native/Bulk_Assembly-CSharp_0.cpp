@@ -273,8 +273,8 @@ struct languageAudioClip_t3024332750;
 struct languageSelection_t1120682260;
 // loadingScreenMusic
 struct loadingScreenMusic_t298224189;
-// loadingScreenMusic/<FadeOutLSM>c__IteratorE
-struct U3CFadeOutLSMU3Ec__IteratorE_t731357698;
+// loadingScreenMusic/<FadeOutLSM>c__IteratorF
+struct U3CFadeOutLSMU3Ec__IteratorF_t731357699;
 // loadLocation
 struct loadLocation_t3184820923;
 // loadLocationDoor
@@ -341,6 +341,8 @@ struct loadLocationHome_t3861976634;
 #include "AssemblyU2DCSharp_audioTriggerAlt4039923015MethodDeclarations.h"
 #include "AssemblyU2DCSharp_audioTriggerPlus684008892.h"
 #include "AssemblyU2DCSharp_audioTriggerPlus684008892MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Object3878351788.h"
 #include "AssemblyU2DCSharp_audioUI3633711338.h"
 #include "AssemblyU2DCSharp_audioUI3633711338MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen1459861720MethodDeclarations.h"
@@ -348,7 +350,6 @@ struct loadLocationHome_t3861976634;
 #include "System_Core_System_Func_2_gen1459861720.h"
 #include "mscorlib_System_IntPtr676692020.h"
 #include "System_Core_System_Linq_Enumerable4285654829.h"
-#include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
 #include "AssemblyU2DCSharp_chapelMusic239962090.h"
 #include "AssemblyU2DCSharp_chapelMusic239962090MethodDeclarations.h"
 #include "AssemblyU2DCSharp_chiTrue745568338.h"
@@ -360,7 +361,6 @@ struct loadLocationHome_t3861976634;
 #include "AssemblyU2DCSharp_ControllerDebugInfo2979127621.h"
 #include "AssemblyU2DCSharp_ControllerDebugInfo2979127621MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Object3878351788.h"
 #include "mscorlib_ArrayTypes.h"
 #include "AssemblyU2DCSharp_GvrController2631983423MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Quaternion1891715979MethodDeclarations.h"
@@ -687,8 +687,8 @@ struct loadLocationHome_t3861976634;
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag1523288937MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_Scene2772977204MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_Scene2772977204.h"
-#include "AssemblyU2DCSharp_loadingScreenMusic_U3CFadeOutLSMU731357698MethodDeclarations.h"
-#include "AssemblyU2DCSharp_loadingScreenMusic_U3CFadeOutLSMU731357698.h"
+#include "AssemblyU2DCSharp_loadingScreenMusic_U3CFadeOutLSMU731357699MethodDeclarations.h"
+#include "AssemblyU2DCSharp_loadingScreenMusic_U3CFadeOutLSMU731357699.h"
 #include "AssemblyU2DCSharp_loadLocation3184820923.h"
 #include "AssemblyU2DCSharp_loadLocation3184820923MethodDeclarations.h"
 #include "AssemblyU2DCSharp_loadLocationInit3862005355.h"
@@ -1476,6 +1476,7 @@ extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m115
 extern Il2CppCodeGenString* _stringLiteral64918;
 extern Il2CppCodeGenString* _stringLiteral82021;
 extern Il2CppCodeGenString* _stringLiteral77055;
+extern Il2CppCodeGenString* _stringLiteral84977;
 extern const uint32_t audioTrigger_Start_m497522905_MetadataUsageId;
 extern "C"  void audioTrigger_Start_m497522905 (audioTrigger_t1648719106 * __this, const MethodInfo* method)
 {
@@ -1496,6 +1497,8 @@ extern "C"  void audioTrigger_Start_m497522905 (audioTrigger_t1648719106 * __thi
 		__this->set_allAudioSFX_4(L_3);
 		GameObjectU5BU5D_t3499186955* L_4 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral77055, /*hidden argument*/NULL);
 		__this->set_allAudioNAR_5(L_4);
+		GameObjectU5BU5D_t3499186955* L_5 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral84977, /*hidden argument*/NULL);
+		__this->set_allVideo_6(L_5);
 		return;
 	}
 }
@@ -1504,7 +1507,7 @@ extern "C"  void audioTrigger_OnTriggerEnter_m2474952255 (audioTrigger_t16487191
 {
 	{
 		AudioSource_t3628549054 * L_0 = __this->get_myAudio_2();
-		float L_1 = __this->get_delayTime_6();
+		float L_1 = __this->get_delayTime_7();
 		NullCheck(L_0);
 		AudioSource_PlayDelayed_m2357889495(L_0, L_1, /*hidden argument*/NULL);
 		return;
@@ -1530,14 +1533,17 @@ extern "C"  void audioTrigger_OnTriggerExit_m838138755 (audioTrigger_t1648719106
 	GameObject_t4012695102 * V_6 = NULL;
 	GameObjectU5BU5D_t3499186955* V_7 = NULL;
 	int32_t V_8 = 0;
+	GameObject_t4012695102 * V_9 = NULL;
+	GameObjectU5BU5D_t3499186955* V_10 = NULL;
+	int32_t V_11 = 0;
 	{
 		AudioSource_t3628549054 * L_0 = __this->get_myAudio_2();
 		Il2CppObject * L_1 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_0, (2.0f), /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_m2135303124(__this, L_1, /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_2 = __this->get_allAudioAMB_3();
+		GameObjectU5BU5D_t3499186955* L_2 = __this->get_allVideo_6();
 		V_1 = L_2;
 		V_2 = 0;
-		goto IL_0044;
+		goto IL_003a;
 	}
 
 IL_0025:
@@ -1549,108 +1555,140 @@ IL_0025:
 		int32_t L_5 = L_4;
 		V_0 = ((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5)));
 		GameObject_t4012695102 * L_6 = V_0;
-		NullCheck(L_6);
-		AudioSource_t3628549054 * L_7 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_6, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
-		Il2CppObject * L_8 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_7, (2.0f), /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2135303124(__this, L_8, /*hidden argument*/NULL);
-		int32_t L_9 = V_2;
-		V_2 = ((int32_t)((int32_t)L_9+(int32_t)1));
+		Il2CppObject * L_7 = videoKill_videoStop_m1539671725(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_7, /*hidden argument*/NULL);
+		int32_t L_8 = V_2;
+		V_2 = ((int32_t)((int32_t)L_8+(int32_t)1));
 	}
 
-IL_0044:
+IL_003a:
 	{
-		int32_t L_10 = V_2;
-		GameObjectU5BU5D_t3499186955* L_11 = V_1;
-		NullCheck(L_11);
-		if ((((int32_t)L_10) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_11)->max_length)))))))
+		int32_t L_9 = V_2;
+		GameObjectU5BU5D_t3499186955* L_10 = V_1;
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_10)->max_length)))))))
 		{
 			goto IL_0025;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_12 = __this->get_allAudioSFX_4();
-		V_4 = L_12;
+		GameObjectU5BU5D_t3499186955* L_11 = __this->get_allAudioAMB_3();
+		V_4 = L_11;
 		V_5 = 0;
-		goto IL_0080;
+		goto IL_0076;
 	}
 
-IL_005d:
+IL_0053:
 	{
-		GameObjectU5BU5D_t3499186955* L_13 = V_4;
-		int32_t L_14 = V_5;
-		NullCheck(L_13);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_14);
-		int32_t L_15 = L_14;
-		V_3 = ((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15)));
-		GameObject_t4012695102 * L_16 = V_3;
-		NullCheck(L_16);
-		AudioSource_t3628549054 * L_17 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_16, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
-		Il2CppObject * L_18 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_17, (2.0f), /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2135303124(__this, L_18, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3499186955* L_12 = V_4;
+		int32_t L_13 = V_5;
+		NullCheck(L_12);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, L_13);
+		int32_t L_14 = L_13;
+		V_3 = ((L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_14)));
+		GameObject_t4012695102 * L_15 = V_3;
+		NullCheck(L_15);
+		AudioSource_t3628549054 * L_16 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_15, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_17 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_16, (2.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_17, /*hidden argument*/NULL);
+		int32_t L_18 = V_5;
+		V_5 = ((int32_t)((int32_t)L_18+(int32_t)1));
+	}
+
+IL_0076:
+	{
 		int32_t L_19 = V_5;
-		V_5 = ((int32_t)((int32_t)L_19+(int32_t)1));
-	}
-
-IL_0080:
-	{
-		int32_t L_20 = V_5;
-		GameObjectU5BU5D_t3499186955* L_21 = V_4;
-		NullCheck(L_21);
-		if ((((int32_t)L_20) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_21)->max_length)))))))
+		GameObjectU5BU5D_t3499186955* L_20 = V_4;
+		NullCheck(L_20);
+		if ((((int32_t)L_19) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_20)->max_length)))))))
 		{
-			goto IL_005d;
+			goto IL_0053;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_22 = __this->get_allAudioNAR_5();
-		V_7 = L_22;
+		GameObjectU5BU5D_t3499186955* L_21 = __this->get_allAudioSFX_4();
+		V_7 = L_21;
 		V_8 = 0;
-		goto IL_00c0;
+		goto IL_00b6;
 	}
 
-IL_009b:
+IL_0091:
 	{
-		GameObjectU5BU5D_t3499186955* L_23 = V_7;
-		int32_t L_24 = V_8;
-		NullCheck(L_23);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, L_24);
-		int32_t L_25 = L_24;
-		V_6 = ((L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25)));
-		GameObject_t4012695102 * L_26 = V_6;
-		NullCheck(L_26);
-		AudioSource_t3628549054 * L_27 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_26, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
-		Il2CppObject * L_28 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_27, (2.0f), /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2135303124(__this, L_28, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3499186955* L_22 = V_7;
+		int32_t L_23 = V_8;
+		NullCheck(L_22);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_22, L_23);
+		int32_t L_24 = L_23;
+		V_6 = ((L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24)));
+		GameObject_t4012695102 * L_25 = V_6;
+		NullCheck(L_25);
+		AudioSource_t3628549054 * L_26 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_25, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_27 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_26, (2.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_27, /*hidden argument*/NULL);
+		int32_t L_28 = V_8;
+		V_8 = ((int32_t)((int32_t)L_28+(int32_t)1));
+	}
+
+IL_00b6:
+	{
 		int32_t L_29 = V_8;
-		V_8 = ((int32_t)((int32_t)L_29+(int32_t)1));
-	}
-
-IL_00c0:
-	{
-		int32_t L_30 = V_8;
-		GameObjectU5BU5D_t3499186955* L_31 = V_7;
-		NullCheck(L_31);
-		if ((((int32_t)L_30) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_31)->max_length)))))))
+		GameObjectU5BU5D_t3499186955* L_30 = V_7;
+		NullCheck(L_30);
+		if ((((int32_t)L_29) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_30)->max_length)))))))
 		{
-			goto IL_009b;
+			goto IL_0091;
 		}
 	}
 	{
-		AudioSource_t3628549054 * L_32 = __this->get_myAudio_2();
+		GameObjectU5BU5D_t3499186955* L_31 = __this->get_allAudioNAR_5();
+		V_10 = L_31;
+		V_11 = 0;
+		goto IL_00f6;
+	}
+
+IL_00d1:
+	{
+		GameObjectU5BU5D_t3499186955* L_32 = V_10;
+		int32_t L_33 = V_11;
 		NullCheck(L_32);
-		bool L_33 = AudioSource_get_isPlaying_m4213444423(L_32, /*hidden argument*/NULL);
-		if (L_33)
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_32, L_33);
+		int32_t L_34 = L_33;
+		V_9 = ((L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34)));
+		GameObject_t4012695102 * L_35 = V_9;
+		NullCheck(L_35);
+		AudioSource_t3628549054 * L_36 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_35, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_37 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_36, (2.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_37, /*hidden argument*/NULL);
+		int32_t L_38 = V_11;
+		V_11 = ((int32_t)((int32_t)L_38+(int32_t)1));
+	}
+
+IL_00f6:
+	{
+		int32_t L_39 = V_11;
+		GameObjectU5BU5D_t3499186955* L_40 = V_10;
+		NullCheck(L_40);
+		if ((((int32_t)L_39) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_40)->max_length)))))))
 		{
-			goto IL_00e7;
+			goto IL_00d1;
 		}
 	}
 	{
-		AudioSource_t3628549054 * L_34 = __this->get_myAudio_2();
-		NullCheck(L_34);
-		AudioSource_set_clip_m19502010(L_34, (AudioClip_t3714538611 *)NULL, /*hidden argument*/NULL);
+		AudioSource_t3628549054 * L_41 = __this->get_myAudio_2();
+		NullCheck(L_41);
+		bool L_42 = AudioSource_get_isPlaying_m4213444423(L_41, /*hidden argument*/NULL);
+		if (L_42)
+		{
+			goto IL_011d;
+		}
+	}
+	{
+		AudioSource_t3628549054 * L_43 = __this->get_myAudio_2();
+		NullCheck(L_43);
+		AudioSource_set_clip_m19502010(L_43, (AudioClip_t3714538611 *)NULL, /*hidden argument*/NULL);
 	}
 
-IL_00e7:
+IL_011d:
 	{
 		return;
 	}
@@ -1667,6 +1705,7 @@ extern "C"  void audioTriggerAlt__ctor_m701067780 (audioTriggerAlt_t4039923015 *
 extern Il2CppCodeGenString* _stringLiteral64918;
 extern Il2CppCodeGenString* _stringLiteral82021;
 extern Il2CppCodeGenString* _stringLiteral77055;
+extern Il2CppCodeGenString* _stringLiteral84977;
 extern const uint32_t audioTriggerAlt_Start_m3943172868_MetadataUsageId;
 extern "C"  void audioTriggerAlt_Start_m3943172868 (audioTriggerAlt_t4039923015 * __this, const MethodInfo* method)
 {
@@ -1683,6 +1722,8 @@ extern "C"  void audioTriggerAlt_Start_m3943172868 (audioTriggerAlt_t4039923015 
 		__this->set_allAudioSFX_3(L_1);
 		GameObjectU5BU5D_t3499186955* L_2 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral77055, /*hidden argument*/NULL);
 		__this->set_allAudioNAR_4(L_2);
+		GameObjectU5BU5D_t3499186955* L_3 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral84977, /*hidden argument*/NULL);
+		__this->set_allVideo_5(L_3);
 		return;
 	}
 }
@@ -1706,11 +1747,14 @@ extern "C"  void audioTriggerAlt_OnTriggerExit_m3011628846 (audioTriggerAlt_t403
 	GameObject_t4012695102 * V_6 = NULL;
 	GameObjectU5BU5D_t3499186955* V_7 = NULL;
 	int32_t V_8 = 0;
+	GameObject_t4012695102 * V_9 = NULL;
+	GameObjectU5BU5D_t3499186955* V_10 = NULL;
+	int32_t V_11 = 0;
 	{
-		GameObjectU5BU5D_t3499186955* L_0 = __this->get_allAudioAMB_2();
+		GameObjectU5BU5D_t3499186955* L_0 = __this->get_allVideo_5();
 		V_1 = L_0;
 		V_2 = 0;
-		goto IL_002d;
+		goto IL_0023;
 	}
 
 IL_000e:
@@ -1722,90 +1766,122 @@ IL_000e:
 		int32_t L_3 = L_2;
 		V_0 = ((L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3)));
 		GameObject_t4012695102 * L_4 = V_0;
-		NullCheck(L_4);
-		AudioSource_t3628549054 * L_5 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_4, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
-		Il2CppObject * L_6 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_5, (1.0f), /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2135303124(__this, L_6, /*hidden argument*/NULL);
-		int32_t L_7 = V_2;
-		V_2 = ((int32_t)((int32_t)L_7+(int32_t)1));
+		Il2CppObject * L_5 = videoKill_videoStop_m1539671725(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_5, /*hidden argument*/NULL);
+		int32_t L_6 = V_2;
+		V_2 = ((int32_t)((int32_t)L_6+(int32_t)1));
 	}
 
-IL_002d:
+IL_0023:
 	{
-		int32_t L_8 = V_2;
-		GameObjectU5BU5D_t3499186955* L_9 = V_1;
-		NullCheck(L_9);
-		if ((((int32_t)L_8) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_9)->max_length)))))))
+		int32_t L_7 = V_2;
+		GameObjectU5BU5D_t3499186955* L_8 = V_1;
+		NullCheck(L_8);
+		if ((((int32_t)L_7) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_8)->max_length)))))))
 		{
 			goto IL_000e;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_10 = __this->get_allAudioSFX_3();
-		V_4 = L_10;
+		GameObjectU5BU5D_t3499186955* L_9 = __this->get_allAudioAMB_2();
+		V_4 = L_9;
 		V_5 = 0;
-		goto IL_0069;
+		goto IL_005f;
 	}
 
-IL_0046:
+IL_003c:
 	{
-		GameObjectU5BU5D_t3499186955* L_11 = V_4;
-		int32_t L_12 = V_5;
-		NullCheck(L_11);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
-		int32_t L_13 = L_12;
-		V_3 = ((L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13)));
-		GameObject_t4012695102 * L_14 = V_3;
-		NullCheck(L_14);
-		AudioSource_t3628549054 * L_15 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_14, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
-		Il2CppObject * L_16 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_15, (1.0f), /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2135303124(__this, L_16, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3499186955* L_10 = V_4;
+		int32_t L_11 = V_5;
+		NullCheck(L_10);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, L_11);
+		int32_t L_12 = L_11;
+		V_3 = ((L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12)));
+		GameObject_t4012695102 * L_13 = V_3;
+		NullCheck(L_13);
+		AudioSource_t3628549054 * L_14 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_13, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_15 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_14, (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_15, /*hidden argument*/NULL);
+		int32_t L_16 = V_5;
+		V_5 = ((int32_t)((int32_t)L_16+(int32_t)1));
+	}
+
+IL_005f:
+	{
 		int32_t L_17 = V_5;
-		V_5 = ((int32_t)((int32_t)L_17+(int32_t)1));
-	}
-
-IL_0069:
-	{
-		int32_t L_18 = V_5;
-		GameObjectU5BU5D_t3499186955* L_19 = V_4;
-		NullCheck(L_19);
-		if ((((int32_t)L_18) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_19)->max_length)))))))
+		GameObjectU5BU5D_t3499186955* L_18 = V_4;
+		NullCheck(L_18);
+		if ((((int32_t)L_17) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_18)->max_length)))))))
 		{
-			goto IL_0046;
+			goto IL_003c;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_20 = __this->get_allAudioNAR_4();
-		V_7 = L_20;
+		GameObjectU5BU5D_t3499186955* L_19 = __this->get_allAudioSFX_3();
+		V_7 = L_19;
 		V_8 = 0;
-		goto IL_00a9;
+		goto IL_009f;
 	}
 
-IL_0084:
+IL_007a:
 	{
-		GameObjectU5BU5D_t3499186955* L_21 = V_7;
-		int32_t L_22 = V_8;
-		NullCheck(L_21);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_21, L_22);
-		int32_t L_23 = L_22;
-		V_6 = ((L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_23)));
-		GameObject_t4012695102 * L_24 = V_6;
-		NullCheck(L_24);
-		AudioSource_t3628549054 * L_25 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_24, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
-		Il2CppObject * L_26 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_25, (1.0f), /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2135303124(__this, L_26, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3499186955* L_20 = V_7;
+		int32_t L_21 = V_8;
+		NullCheck(L_20);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, L_21);
+		int32_t L_22 = L_21;
+		V_6 = ((L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22)));
+		GameObject_t4012695102 * L_23 = V_6;
+		NullCheck(L_23);
+		AudioSource_t3628549054 * L_24 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_23, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_25 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_24, (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_25, /*hidden argument*/NULL);
+		int32_t L_26 = V_8;
+		V_8 = ((int32_t)((int32_t)L_26+(int32_t)1));
+	}
+
+IL_009f:
+	{
 		int32_t L_27 = V_8;
-		V_8 = ((int32_t)((int32_t)L_27+(int32_t)1));
+		GameObjectU5BU5D_t3499186955* L_28 = V_7;
+		NullCheck(L_28);
+		if ((((int32_t)L_27) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_28)->max_length)))))))
+		{
+			goto IL_007a;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3499186955* L_29 = __this->get_allAudioNAR_4();
+		V_10 = L_29;
+		V_11 = 0;
+		goto IL_00df;
 	}
 
-IL_00a9:
+IL_00ba:
 	{
-		int32_t L_28 = V_8;
-		GameObjectU5BU5D_t3499186955* L_29 = V_7;
-		NullCheck(L_29);
-		if ((((int32_t)L_28) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_29)->max_length)))))))
+		GameObjectU5BU5D_t3499186955* L_30 = V_10;
+		int32_t L_31 = V_11;
+		NullCheck(L_30);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, L_31);
+		int32_t L_32 = L_31;
+		V_9 = ((L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_32)));
+		GameObject_t4012695102 * L_33 = V_9;
+		NullCheck(L_33);
+		AudioSource_t3628549054 * L_34 = GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151(L_33, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var);
+		Il2CppObject * L_35 = audioFadeOut_FadeOut_m2421701590(NULL /*static, unused*/, L_34, (1.0f), /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_35, /*hidden argument*/NULL);
+		int32_t L_36 = V_11;
+		V_11 = ((int32_t)((int32_t)L_36+(int32_t)1));
+	}
+
+IL_00df:
+	{
+		int32_t L_37 = V_11;
+		GameObjectU5BU5D_t3499186955* L_38 = V_10;
+		NullCheck(L_38);
+		if ((((int32_t)L_37) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_38)->max_length)))))))
 		{
-			goto IL_0084;
+			goto IL_00ba;
 		}
 	}
 	{
@@ -1823,9 +1899,6 @@ extern "C"  void audioTriggerPlus__ctor_m3497571423 (audioTriggerPlus_t684008892
 // System.Void audioTriggerPlus::Start()
 extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisGvrAudioSource_t2139450958_m2760069455_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral64918;
-extern Il2CppCodeGenString* _stringLiteral82021;
-extern Il2CppCodeGenString* _stringLiteral77055;
 extern const uint32_t audioTriggerPlus_Start_m2444709215_MetadataUsageId;
 extern "C"  void audioTriggerPlus_Start_m2444709215 (audioTriggerPlus_t684008892 * __this, const MethodInfo* method)
 {
@@ -1844,12 +1917,6 @@ extern "C"  void audioTriggerPlus_Start_m2444709215 (audioTriggerPlus_t684008892
 		NullCheck(L_2);
 		GvrAudioSource_t2139450958 * L_3 = GameObject_GetComponent_TisGvrAudioSource_t2139450958_m2760069455(L_2, /*hidden argument*/GameObject_GetComponent_TisGvrAudioSource_t2139450958_m2760069455_MethodInfo_var);
 		__this->set_myGvrAudio_3(L_3);
-		GameObjectU5BU5D_t3499186955* L_4 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral64918, /*hidden argument*/NULL);
-		__this->set_allAudioAMB_4(L_4);
-		GameObjectU5BU5D_t3499186955* L_5 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral82021, /*hidden argument*/NULL);
-		__this->set_allAudioSFX_5(L_5);
-		GameObjectU5BU5D_t3499186955* L_6 = GameObject_FindGameObjectsWithTag_m3058873418(NULL /*static, unused*/, _stringLiteral77055, /*hidden argument*/NULL);
-		__this->set_allAudioNAR_6(L_6);
 		return;
 	}
 }
@@ -1858,11 +1925,35 @@ extern "C"  void audioTriggerPlus_OnTriggerEnter_m1893951353 (audioTriggerPlus_t
 {
 	{
 		AudioSource_t3628549054 * L_0 = __this->get_myAudio_2();
-		NullCheck(L_0);
-		AudioSource_Play_m1360558992(L_0, /*hidden argument*/NULL);
-		GvrAudioSource_t2139450958 * L_1 = __this->get_myGvrAudio_3();
-		NullCheck(L_1);
-		GvrAudioSource_Play_m1748119499(L_1, /*hidden argument*/NULL);
+		bool L_1 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_0, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		AudioSource_t3628549054 * L_2 = __this->get_myAudio_2();
+		NullCheck(L_2);
+		AudioSource_Play_m1360558992(L_2, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		GvrAudioSource_t2139450958 * L_3 = __this->get_myGvrAudio_3();
+		bool L_4 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_3, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		GvrAudioSource_t2139450958 * L_5 = __this->get_myGvrAudio_3();
+		NullCheck(L_5);
+		GvrAudioSource_Play_m1748119499(L_5, /*hidden argument*/NULL);
+	}
+
+IL_0038:
+	{
 		return;
 	}
 }
@@ -26073,7 +26164,7 @@ IL_0052:
 	}
 }
 // System.Collections.IEnumerator loadingScreenMusic::FadeOutLSM(UnityEngine.AudioSource,System.Single)
-extern TypeInfo* U3CFadeOutLSMU3Ec__IteratorE_t731357698_il2cpp_TypeInfo_var;
+extern TypeInfo* U3CFadeOutLSMU3Ec__IteratorF_t731357699_il2cpp_TypeInfo_var;
 extern const uint32_t loadingScreenMusic_FadeOutLSM_m2922617499_MetadataUsageId;
 extern "C"  Il2CppObject * loadingScreenMusic_FadeOutLSM_m2922617499 (loadingScreenMusic_t298224189 * __this, AudioSource_t3628549054 * ___audioSource, float ___FadeTime, const MethodInfo* method)
 {
@@ -26083,60 +26174,60 @@ extern "C"  Il2CppObject * loadingScreenMusic_FadeOutLSM_m2922617499 (loadingScr
 		il2cpp_codegen_initialize_method (loadingScreenMusic_FadeOutLSM_m2922617499_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	U3CFadeOutLSMU3Ec__IteratorE_t731357698 * V_0 = NULL;
+	U3CFadeOutLSMU3Ec__IteratorF_t731357699 * V_0 = NULL;
 	{
-		U3CFadeOutLSMU3Ec__IteratorE_t731357698 * L_0 = (U3CFadeOutLSMU3Ec__IteratorE_t731357698 *)il2cpp_codegen_object_new(U3CFadeOutLSMU3Ec__IteratorE_t731357698_il2cpp_TypeInfo_var);
-		U3CFadeOutLSMU3Ec__IteratorE__ctor_m1358305367(L_0, /*hidden argument*/NULL);
+		U3CFadeOutLSMU3Ec__IteratorF_t731357699 * L_0 = (U3CFadeOutLSMU3Ec__IteratorF_t731357699 *)il2cpp_codegen_object_new(U3CFadeOutLSMU3Ec__IteratorF_t731357699_il2cpp_TypeInfo_var);
+		U3CFadeOutLSMU3Ec__IteratorF__ctor_m1161791862(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		U3CFadeOutLSMU3Ec__IteratorE_t731357698 * L_1 = V_0;
+		U3CFadeOutLSMU3Ec__IteratorF_t731357699 * L_1 = V_0;
 		AudioSource_t3628549054 * L_2 = ___audioSource;
 		NullCheck(L_1);
 		L_1->set_audioSource_0(L_2);
-		U3CFadeOutLSMU3Ec__IteratorE_t731357698 * L_3 = V_0;
+		U3CFadeOutLSMU3Ec__IteratorF_t731357699 * L_3 = V_0;
 		float L_4 = ___FadeTime;
 		NullCheck(L_3);
 		L_3->set_FadeTime_2(L_4);
-		U3CFadeOutLSMU3Ec__IteratorE_t731357698 * L_5 = V_0;
+		U3CFadeOutLSMU3Ec__IteratorF_t731357699 * L_5 = V_0;
 		AudioSource_t3628549054 * L_6 = ___audioSource;
 		NullCheck(L_5);
 		L_5->set_U3CU24U3EaudioSource_5(L_6);
-		U3CFadeOutLSMU3Ec__IteratorE_t731357698 * L_7 = V_0;
+		U3CFadeOutLSMU3Ec__IteratorF_t731357699 * L_7 = V_0;
 		float L_8 = ___FadeTime;
 		NullCheck(L_7);
 		L_7->set_U3CU24U3EFadeTime_6(L_8);
-		U3CFadeOutLSMU3Ec__IteratorE_t731357698 * L_9 = V_0;
+		U3CFadeOutLSMU3Ec__IteratorF_t731357699 * L_9 = V_0;
 		NullCheck(L_9);
 		L_9->set_U3CU3Ef__this_7(__this);
-		U3CFadeOutLSMU3Ec__IteratorE_t731357698 * L_10 = V_0;
+		U3CFadeOutLSMU3Ec__IteratorF_t731357699 * L_10 = V_0;
 		return L_10;
 	}
 }
-// System.Void loadingScreenMusic/<FadeOutLSM>c__IteratorE::.ctor()
-extern "C"  void U3CFadeOutLSMU3Ec__IteratorE__ctor_m1358305367 (U3CFadeOutLSMU3Ec__IteratorE_t731357698 * __this, const MethodInfo* method)
+// System.Void loadingScreenMusic/<FadeOutLSM>c__IteratorF::.ctor()
+extern "C"  void U3CFadeOutLSMU3Ec__IteratorF__ctor_m1161791862 (U3CFadeOutLSMU3Ec__IteratorF_t731357699 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Object loadingScreenMusic/<FadeOutLSM>c__IteratorE::System.Collections.Generic.IEnumerator<object>.get_Current()
-extern "C"  Il2CppObject * U3CFadeOutLSMU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2616990427 (U3CFadeOutLSMU3Ec__IteratorE_t731357698 * __this, const MethodInfo* method)
+// System.Object loadingScreenMusic/<FadeOutLSM>c__IteratorF::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CFadeOutLSMU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2408292124 (U3CFadeOutLSMU3Ec__IteratorF_t731357699 * __this, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = __this->get_U24current_4();
 		return L_0;
 	}
 }
-// System.Object loadingScreenMusic/<FadeOutLSM>c__IteratorE::System.Collections.IEnumerator.get_Current()
-extern "C"  Il2CppObject * U3CFadeOutLSMU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m2487039087 (U3CFadeOutLSMU3Ec__IteratorE_t731357698 * __this, const MethodInfo* method)
+// System.Object loadingScreenMusic/<FadeOutLSM>c__IteratorF::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CFadeOutLSMU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m163011248 (U3CFadeOutLSMU3Ec__IteratorF_t731357699 * __this, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = __this->get_U24current_4();
 		return L_0;
 	}
 }
-// System.Boolean loadingScreenMusic/<FadeOutLSM>c__IteratorE::MoveNext()
-extern "C"  bool U3CFadeOutLSMU3Ec__IteratorE_MoveNext_m1471660093 (U3CFadeOutLSMU3Ec__IteratorE_t731357698 * __this, const MethodInfo* method)
+// System.Boolean loadingScreenMusic/<FadeOutLSM>c__IteratorF::MoveNext()
+extern "C"  bool U3CFadeOutLSMU3Ec__IteratorF_MoveNext_m1178257086 (U3CFadeOutLSMU3Ec__IteratorF_t731357699 * __this, const MethodInfo* method)
 {
 	uint32_t V_0 = 0;
 	bool V_1 = false;
@@ -26224,23 +26315,23 @@ IL_00a6:
 	}
 	// Dead block : IL_00a8: ldloc.1
 }
-// System.Void loadingScreenMusic/<FadeOutLSM>c__IteratorE::Dispose()
-extern "C"  void U3CFadeOutLSMU3Ec__IteratorE_Dispose_m3854650068 (U3CFadeOutLSMU3Ec__IteratorE_t731357698 * __this, const MethodInfo* method)
+// System.Void loadingScreenMusic/<FadeOutLSM>c__IteratorF::Dispose()
+extern "C"  void U3CFadeOutLSMU3Ec__IteratorF_Dispose_m3983732787 (U3CFadeOutLSMU3Ec__IteratorF_t731357699 * __this, const MethodInfo* method)
 {
 	{
 		__this->set_U24PC_3((-1));
 		return;
 	}
 }
-// System.Void loadingScreenMusic/<FadeOutLSM>c__IteratorE::Reset()
+// System.Void loadingScreenMusic/<FadeOutLSM>c__IteratorF::Reset()
 extern TypeInfo* NotSupportedException_t1374155497_il2cpp_TypeInfo_var;
-extern const uint32_t U3CFadeOutLSMU3Ec__IteratorE_Reset_m3299705604_MetadataUsageId;
-extern "C"  void U3CFadeOutLSMU3Ec__IteratorE_Reset_m3299705604 (U3CFadeOutLSMU3Ec__IteratorE_t731357698 * __this, const MethodInfo* method)
+extern const uint32_t U3CFadeOutLSMU3Ec__IteratorF_Reset_m3103192099_MetadataUsageId;
+extern "C"  void U3CFadeOutLSMU3Ec__IteratorF_Reset_m3103192099 (U3CFadeOutLSMU3Ec__IteratorF_t731357699 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CFadeOutLSMU3Ec__IteratorE_Reset_m3299705604_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CFadeOutLSMU3Ec__IteratorF_Reset_m3103192099_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{

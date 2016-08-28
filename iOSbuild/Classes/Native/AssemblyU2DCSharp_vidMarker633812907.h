@@ -47,6 +47,8 @@ public:
 	float ___delayVid_7;
 	// System.Boolean vidMarker::vidState
 	bool ___vidState_8;
+	// UnityEngine.GameObject[] vidMarker::allVideo
+	GameObjectU5BU5D_t3499186955* ___allVideo_9;
 
 public:
 	inline static int32_t get_offset_of_myAudio_2() { return static_cast<int32_t>(offsetof(vidMarker_t633812907, ___myAudio_2)); }
@@ -108,6 +110,15 @@ public:
 	inline void set_vidState_8(bool value)
 	{
 		___vidState_8 = value;
+	}
+
+	inline static int32_t get_offset_of_allVideo_9() { return static_cast<int32_t>(offsetof(vidMarker_t633812907, ___allVideo_9)); }
+	inline GameObjectU5BU5D_t3499186955* get_allVideo_9() const { return ___allVideo_9; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allVideo_9() { return &___allVideo_9; }
+	inline void set_allVideo_9(GameObjectU5BU5D_t3499186955* value)
+	{
+		___allVideo_9 = value;
+		Il2CppCodeGenWriteBarrier(&___allVideo_9, value);
 	}
 };
 

@@ -31,7 +31,7 @@ void RegisterStaticallyLinkedModulesGranular()
 
 void RegisterAllClasses()
 {
-	//Total: 79 classes
+	//Total: 81 classes
 	//0. AssetBundle
 	void RegisterClass_AssetBundle();
 	RegisterClass_AssetBundle();
@@ -336,15 +336,23 @@ void RegisterAllClasses()
 	void RegisterClass_LightmapSettings();
 	RegisterClass_LightmapSettings();
 
-	//76. LightProbes
+	//76. AudioReverbFilter
+	void RegisterClass_AudioReverbFilter();
+	RegisterClass_AudioReverbFilter();
+
+	//77. AudioFilter
+	void RegisterClass_AudioFilter();
+	RegisterClass_AudioFilter();
+
+	//78. LightProbes
 	void RegisterClass_LightProbes();
 	RegisterClass_LightProbes();
 
-	//77. AudioMixerSnapshot
+	//79. AudioMixerSnapshot
 	void RegisterClass_AudioMixerSnapshot();
 	RegisterClass_AudioMixerSnapshot();
 
-	//78. RuntimeInitializeOnLoadManager
+	//80. RuntimeInitializeOnLoadManager
 	void RegisterClass_RuntimeInitializeOnLoadManager();
 	RegisterClass_RuntimeInitializeOnLoadManager();
 

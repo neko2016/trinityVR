@@ -35,8 +35,10 @@ public:
 	GameObjectU5BU5D_t3499186955* ___allAudioSFX_4;
 	// UnityEngine.GameObject[] audioTrigger::allAudioNAR
 	GameObjectU5BU5D_t3499186955* ___allAudioNAR_5;
+	// UnityEngine.GameObject[] audioTrigger::allVideo
+	GameObjectU5BU5D_t3499186955* ___allVideo_6;
 	// System.Single audioTrigger::delayTime
-	float ___delayTime_6;
+	float ___delayTime_7;
 
 public:
 	inline static int32_t get_offset_of_myAudio_2() { return static_cast<int32_t>(offsetof(audioTrigger_t1648719106, ___myAudio_2)); }
@@ -75,12 +77,21 @@ public:
 		Il2CppCodeGenWriteBarrier(&___allAudioNAR_5, value);
 	}
 
-	inline static int32_t get_offset_of_delayTime_6() { return static_cast<int32_t>(offsetof(audioTrigger_t1648719106, ___delayTime_6)); }
-	inline float get_delayTime_6() const { return ___delayTime_6; }
-	inline float* get_address_of_delayTime_6() { return &___delayTime_6; }
-	inline void set_delayTime_6(float value)
+	inline static int32_t get_offset_of_allVideo_6() { return static_cast<int32_t>(offsetof(audioTrigger_t1648719106, ___allVideo_6)); }
+	inline GameObjectU5BU5D_t3499186955* get_allVideo_6() const { return ___allVideo_6; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_allVideo_6() { return &___allVideo_6; }
+	inline void set_allVideo_6(GameObjectU5BU5D_t3499186955* value)
 	{
-		___delayTime_6 = value;
+		___allVideo_6 = value;
+		Il2CppCodeGenWriteBarrier(&___allVideo_6, value);
+	}
+
+	inline static int32_t get_offset_of_delayTime_7() { return static_cast<int32_t>(offsetof(audioTrigger_t1648719106, ___delayTime_7)); }
+	inline float get_delayTime_7() const { return ___delayTime_7; }
+	inline float* get_address_of_delayTime_7() { return &___delayTime_7; }
+	inline void set_delayTime_7(float value)
+	{
+		___delayTime_7 = value;
 	}
 };
 
