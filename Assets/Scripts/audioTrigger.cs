@@ -13,6 +13,8 @@ public class audioTrigger : MonoBehaviour {
 	private GameObject[] allAudioAMB;
 	private GameObject[] allAudioSFX;
 	private GameObject[] allAudioNAR;
+	private GameObject[] allVideo;
+
 
 	public float delayTime;
 
@@ -22,6 +24,7 @@ public class audioTrigger : MonoBehaviour {
 		allAudioAMB = GameObject.FindGameObjectsWithTag("AMB");
 		allAudioSFX = GameObject.FindGameObjectsWithTag("SFX");
 		allAudioNAR = GameObject.FindGameObjectsWithTag("NAR");
+		allVideo = GameObject.FindGameObjectsWithTag("VID");
 
 	}
 		
@@ -32,6 +35,10 @@ public class audioTrigger : MonoBehaviour {
 	void OnTriggerExit (Collider col) { // when the collider is exited...
 
 		StartCoroutine(audioFadeOut.FadeOut(myAudio, 2f));
+
+		foreach (GameObject item in allVideo) {
+			StartCoroutine (videoKill.videoStop(item));
+		}
 
 		foreach (GameObject item in allAudioAMB) {
 			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));

@@ -38,9 +38,10 @@ public class videoTriggerToScene : MonoBehaviour {
 
 		if(GameObject.Find("audioMusic")) {
 
-		musicControl = GameObject.Find ("audioMusic").GetComponent<musicControl>();
+			musicControl = GameObject.Find ("audioMusic").GetComponent<musicControl>();
 
 		}
+
 		overlay = GameObject.Find ("screenOverlay").GetComponent<Image> ();
 		fadeTime = 1.5f;
 
@@ -78,8 +79,13 @@ public class videoTriggerToScene : MonoBehaviour {
 				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 2f));
 			}
 
+			if (musicControl) {
+				StartCoroutine (musicControl.fadeOutMusic ());
+			}
+
 			StartCoroutine (LoadingScreen ());
-			StartCoroutine (musicControl.fadeOutMusic ());
+
+
 		}
 	}
 

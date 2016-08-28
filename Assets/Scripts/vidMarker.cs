@@ -15,6 +15,9 @@ public class vidMarker : MonoBehaviour {
 
 	private bool vidState;
 
+	private GameObject[] allVideo;
+
+
 	// Use this for initialization
 	void Awake () {
 
@@ -25,6 +28,8 @@ public class vidMarker : MonoBehaviour {
 		vidMesh = vidPanel.GetComponent<MeshRenderer> ();
 
 		vidState = false;
+
+		allVideo = GameObject.FindGameObjectsWithTag("VID");
 
 	}
 
@@ -44,9 +49,14 @@ public class vidMarker : MonoBehaviour {
 
 		if (!myAudio.isPlaying) {
 
+			foreach (GameObject item in allVideo) {
+				StartCoroutine (videoKill.videoStop(item));
+			}
+
 			foreach (GameObject item in allAudioNAR) {
 				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
 			}
+
 			myAudio.Play ();
 			StartCoroutine (videoOn ());
 			vidState = true;

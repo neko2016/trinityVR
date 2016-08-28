@@ -10,15 +10,22 @@ public class audioTriggerAlt : MonoBehaviour {
 	private GameObject[] allAudioAMB;
 	private GameObject[] allAudioSFX;
 	private GameObject[] allAudioNAR;
+	private GameObject[] allVideo;
 
 
 	void Start () {
 		allAudioAMB = GameObject.FindGameObjectsWithTag("AMB");
 		allAudioSFX = GameObject.FindGameObjectsWithTag("SFX");
 		allAudioNAR = GameObject.FindGameObjectsWithTag("NAR");
+		allVideo = GameObject.FindGameObjectsWithTag("VID");
+
 	}
 
 	void OnTriggerExit (Collider col) { // when the collider is exited...
+
+		foreach (GameObject item in allVideo) {
+			StartCoroutine (videoKill.videoStop(item));
+		}
 
 		foreach (GameObject item in allAudioAMB) {
 			StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
