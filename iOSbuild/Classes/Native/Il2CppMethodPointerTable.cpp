@@ -9490,6 +9490,7 @@ extern "C" void StateMachineBehaviour_OnStateMove_m2938949899 ();
 extern "C" void StateMachineBehaviour_OnStateIK_m3126912700 ();
 extern "C" void StateMachineBehaviour_OnStateMachineEnter_m2392556512 ();
 extern "C" void StateMachineBehaviour_OnStateMachineExit_m2976228338 ();
+extern "C" void SystemInfo_get_graphicsDeviceType_m1643046803 ();
 extern "C" void SystemInfo_get_deviceModel_m3014844565 ();
 extern "C" void TextAreaAttribute__ctor_m2577573455 ();
 extern "C" void TextEditor__ctor_m1029296947 ();
@@ -9537,6 +9538,7 @@ extern "C" void Texture_set_anisoLevel_m1894923584 ();
 extern "C" void Texture_set_wrapMode_m3720633937 ();
 extern "C" void Texture_GetNativeTexturePtr_m2052913073 ();
 extern "C" void Texture2D__ctor_m1883511258 ();
+extern "C" void Texture2D__ctor_m3705883154 ();
 extern "C" void Texture2D__ctor_m467773817 ();
 extern "C" void Texture2D_Internal_Create_m457592211 ();
 extern "C" void Texture2D_CreateExternalTexture_m1858440074 ();
@@ -12820,7 +12822,7 @@ extern "C" void vrTrueFalse__ctor_m1230274226 ();
 extern "C" void vrTrueFalse_Start_m177412018 ();
 extern "C" void vrTrueFalse_makeVRtrue_m3469953834 ();
 extern "C" void vrTrueFalse_makeVRfalse_m159705257 ();
-extern const methodPointerType g_MethodPointers[12809] = 
+extern const methodPointerType g_MethodPointers[12811] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -22301,6 +22303,7 @@ extern const methodPointerType g_MethodPointers[12809] =
 	StateMachineBehaviour_OnStateIK_m3126912700,
 	StateMachineBehaviour_OnStateMachineEnter_m2392556512,
 	StateMachineBehaviour_OnStateMachineExit_m2976228338,
+	SystemInfo_get_graphicsDeviceType_m1643046803,
 	SystemInfo_get_deviceModel_m3014844565,
 	TextAreaAttribute__ctor_m2577573455,
 	TextEditor__ctor_m1029296947,
@@ -22348,6 +22351,7 @@ extern const methodPointerType g_MethodPointers[12809] =
 	Texture_set_wrapMode_m3720633937,
 	Texture_GetNativeTexturePtr_m2052913073,
 	Texture2D__ctor_m1883511258,
+	Texture2D__ctor_m3705883154,
 	Texture2D__ctor_m467773817,
 	Texture2D_Internal_Create_m457592211,
 	Texture2D_CreateExternalTexture_m1858440074,

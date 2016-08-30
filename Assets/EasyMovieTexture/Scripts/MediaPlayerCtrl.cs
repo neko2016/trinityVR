@@ -51,6 +51,8 @@ public class MediaPlayerCtrl : MonoBehaviour
     public VideoError OnVideoError;
     public VideoFirstFrameReady OnVideoFirstFrameReady;
 
+	private IntPtr m_texPtr;
+
 #if UNITY_IPHONE || UNITY_TVOS
 	
 	private int m_iPauseFrame;
@@ -423,6 +425,8 @@ public class MediaPlayerCtrl : MonoBehaviour
 				m_VideoTexture.filterMode = FilterMode.Bilinear;
 				m_VideoTexture.wrapMode = TextureWrapMode.Clamp;
 
+				m_texPtr = m_VideoTexture.GetNativeTexturePtr ();
+
 #if UNITY_5_2
 				Call_SetUnityTexture((int)m_VideoTexture.GetNativeTexturePtr());
 #else
@@ -531,6 +535,8 @@ public class MediaPlayerCtrl : MonoBehaviour
 
 		m_VideoTexture.filterMode = FilterMode.Bilinear;
 		m_VideoTexture.wrapMode = TextureWrapMode.Clamp;
+
+		m_texPtr = m_VideoTexture.GetNativeTexturePtr ();
 
 	#if UNITY_5_2
 	Call_SetUnityTexture((int)m_VideoTexture.GetNativeTexturePtr());
@@ -891,6 +897,7 @@ public class MediaPlayerCtrl : MonoBehaviour
 	/// <param name="fSpeed">video playback speed.</param>
 	public void SetSpeed(float fSpeed)
 	{
+
 		if (m_CurrentState == MEDIAPLAYER_STATE.PLAYING || m_CurrentState == MEDIAPLAYER_STATE.READY || m_CurrentState == MEDIAPLAYER_STATE.PAUSED || m_CurrentState == MEDIAPLAYER_STATE.END || m_CurrentState == MEDIAPLAYER_STATE.STOPPED) {
 			m_fSpeed = fSpeed;
 			Call_SetSpeed (fSpeed);
@@ -975,7 +982,7 @@ public class MediaPlayerCtrl : MonoBehaviour
 
 
 
-#if !UNITY_EDITOR && !UNITY_STANDALONE
+#if !UNITY_EDITOR && !UNITY_STANDALONE && !UNITY_WEBGL
 #if UNITY_ANDROID
 	
 	private AndroidJavaObject javaObj = null;
@@ -1459,8 +1466,18 @@ public class MediaPlayerCtrl : MonoBehaviour
 			{
 				if (_videoTexture == null)
 				{
+	#if UNITY_5
+				if(SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Metal)
+					_videoTexture = new Texture2D (Call_GetVideoWidth (), Call_GetVideoHeight (), TextureFormat.RGBA32, false);
+				else
 					_videoTexture = Texture2D.CreateExternalTexture((int)videoSize.x, (int)videoSize.y, TextureFormat.RGBA32,
 					                                                false, false, (IntPtr)nativeTex);
+	#else
+				_videoTexture = Texture2D.CreateExternalTexture((int)videoSize.x, (int)videoSize.y, TextureFormat.RGBA32,
+				false, false, (IntPtr)nativeTex);
+	#endif
+
+					
 					_videoTexture.filterMode = FilterMode.Bilinear;
 					_videoTexture.wrapMode = TextureWrapMode.Clamp;
 				}
@@ -1507,10 +1524,12 @@ public class MediaPlayerCtrl : MonoBehaviour
 			Call_SetUnityActivity();
 		}
 
-		if(_videoTexture != null)
+		bFirstIOS = true;
+
+		/*if(_videoTexture != null)
 		{
 			Destroy(_videoTexture);
-		}
+		}*/
 		
 		_videoTexture = null;
 		
@@ -1525,14 +1544,13 @@ public class MediaPlayerCtrl : MonoBehaviour
 		return true;
 	}
 	
+
+	bool bFirstIOS = false;
 	private void Call_UpdateVideoTexture()
 	{
 		
-		if(m_VideoTextureDummy != null)
-		{
-			Destroy(m_VideoTextureDummy);
-			m_VideoTextureDummy = null;
-		}
+
+		
 		
 		if( m_CurrentState == MEDIAPLAYER_STATE.PLAYING || m_CurrentState == MEDIAPLAYER_STATE.PAUSED)
 		{
@@ -1540,18 +1558,37 @@ public class MediaPlayerCtrl : MonoBehaviour
 			if( videoTexture == null)
 				return;
 
-			for( int i = 0; i < m_TargetMaterial.Length; i++)
+
+			if(bFirstIOS == true)
 			{
-				if(m_TargetMaterial[i])
+				bFirstIOS = false;
+				return;
+			}
+			
+
+			
+
+			if(bFirstIOS == false)
+			{
+				for( int i = 0; i < m_TargetMaterial.Length; i++)
 				{
-					if(m_TargetMaterial[i].GetComponent<MeshRenderer>() != null)
-						m_TargetMaterial[i].GetComponent<MeshRenderer>().material.mainTexture = _videoTexture;
+					if(m_TargetMaterial[i])
+					{
+						if(m_TargetMaterial[i].GetComponent<MeshRenderer>() != null)
+							m_TargetMaterial[i].GetComponent<MeshRenderer>().material.mainTexture = _videoTexture;
+					}
+					
+					if(m_TargetMaterial[i])
+					{
+						if(m_TargetMaterial[i].GetComponent<RawImage>() != null)
+							m_TargetMaterial[i].GetComponent<RawImage>().texture= _videoTexture;
+					}
 				}
-				
-				if(m_TargetMaterial[i])
+
+				if(m_VideoTextureDummy != null)
 				{
-					if(m_TargetMaterial[i].GetComponent<RawImage>() != null)
-						m_TargetMaterial[i].GetComponent<RawImage>().texture= _videoTexture;
+					Destroy(m_VideoTextureDummy);
+					m_VideoTextureDummy = null;
 				}
 			}
 
@@ -2016,10 +2053,12 @@ void LoadVideoPart2 ()
 		var codecId = codecContext.codec_id;
 		var convertToPixFmt = AVPixelFormat.AV_PIX_FMT_RGBA;
 
+#if UNITY_5
 		if( SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Direct3D9)
 		{
 			convertToPixFmt = AVPixelFormat.AV_PIX_FMT_BGRA;
 		}
+#endif
 
 	
 		pConvertContext = ffmpeg.sws_getContext(m_iWidth, m_iHeight, sourcePixFmt,
@@ -2350,10 +2389,12 @@ void LoadVideoPart2 ()
                         if( ret == -541478725)
                         {
 
+							if(listVideo.Count < 3)
+							{
+		                          bEnd= true;
 
-                           	bEnd= true;
-
-                            return;
+		                          return;
+							}
                         }
 						else
                         {   
@@ -2645,6 +2686,7 @@ void LoadVideoPart2 ()
 		if (bEnd == true && listVideo.Count == 0 )
 		{
 			
+			
 			m_CurrentState = MEDIAPLAYER_STATE.END;
 
 			if (OnEnd != null)
@@ -2719,9 +2761,16 @@ void LoadVideoPart2 ()
 						else{
 							audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * ((float)listAudioPtsTime[i] + 600.0f)),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false);
 						}*/
+#if UNITY_5
+							audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * 600.0f),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false);
 
-						audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * 600.0f),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false);
-						//
+
+#else
+							audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * 600.0f),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false,false);
+							
+
+#endif
+						
 					}
 
 
@@ -2810,15 +2859,16 @@ void LoadVideoPart2 ()
                     else*/
                     {
 						 
-						/*if (Call_GetDuration () > 1500000) {
-							audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * ((float)listAudioPtsTime[i] + 10.0f)),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false);
-						}
-						else{
-							audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * ((float)listAudioPtsTime[i] + ((float)Call_GetDuration() / 1000.0f)+10.0f)),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false);
-						}*/
-
-						audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * + 600.0f),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false);
-                    }
+							#if UNITY_5
+							audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * 600.0f),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false);
+							
+							
+							#else
+							audioClip = AudioClip.Create("videoAudio",(int)((float)pAudioCodecContext->sample_rate * 600.0f),pAudioCodecContext->channels,pAudioCodecContext->sample_rate,false,false);
+							
+							
+							#endif
+					}
 
 				 
 
@@ -2873,12 +2923,12 @@ void LoadVideoPart2 ()
 
 				//do
 				{
-            #if (UNITY_5_2 || UNITY_5_3)
+            #if (UNITY_5_2 || UNITY_5_3 || UNITY_5_4)
           
             if( listVideo.Count > 0)
             {
 				
-                SetTextureFromUnity (m_VideoTexture.GetNativeTexturePtr (), m_iWidth, m_iHeight, listVideo.Dequeue());
+				SetTextureFromUnity (m_texPtr, m_iWidth, m_iHeight, listVideo.Dequeue());
                 GL.IssuePluginEvent (GetRenderEventFunc (), 7000);
 
 
@@ -2917,8 +2967,8 @@ void LoadVideoPart2 ()
                 }
                 else
                 {
-					if(fpts<0)
-						fLastFrameTime = 0;
+					if(fpts<=0)
+						fLastFrameTime = fCurrentSeekTime - 0.05f;
 					else
                     	fLastFrameTime = fpts;
                 }

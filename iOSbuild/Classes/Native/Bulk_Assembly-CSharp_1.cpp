@@ -367,6 +367,7 @@ struct vrTrueFalse_t812900569;
 #include "mscorlib_System_IntPtr676692020MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Texture2D2509538522MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Texture1769722184MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rendering_GraphicsDeviceTy1050523666.h"
 #include "UnityEngine_UnityEngine_TextureFormat2239483167.h"
 #include "UnityEngine_UnityEngine_FilterMode1963081128.h"
 #include "UnityEngine_UnityEngine_TextureWrapMode424301429.h"
@@ -891,6 +892,7 @@ extern "C"  void loadLocationInit_Start_m3060482448 (loadLocationInit_t386200535
 		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_FellowFWD_6((bool)0);
 		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_BerkeleyBCK_7((bool)0);
 		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_LibrarySqBCK_8((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_MbexBCK_9((bool)0);
 		return;
 	}
 }
@@ -2308,14 +2310,14 @@ extern "C"  void MediaPlayerCtrl__ctor_m243769755 (MediaPlayerCtrl_t3572035536 *
 		__this->set_m_fVolume_8((1.0f));
 		__this->set_m_fSpeed_11((1.0f));
 		__this->set_m_bSupportRockchip_13((bool)1);
-		__this->set_m_bAutoPlay_26((bool)1);
-		__this->set_m_iID_31((-1));
+		__this->set_m_bAutoPlay_27((bool)1);
+		__this->set_m_iID_32((-1));
 		List_1_t1234482916 * L_0 = (List_1_t1234482916 *)il2cpp_codegen_object_new(List_1_t1234482916_il2cpp_TypeInfo_var);
 		List_1__ctor_m2445803700(L_0, /*hidden argument*/List_1__ctor_m2445803700_MethodInfo_var);
-		__this->set_unityMainThreadActionList_33(L_0);
+		__this->set_unityMainThreadActionList_35(L_0);
 		Il2CppObject * L_1 = (Il2CppObject *)il2cpp_codegen_object_new(Il2CppObject_il2cpp_TypeInfo_var);
 		Object__ctor_m1772956182(L_1, /*hidden argument*/NULL);
-		__this->set_thisLock_35(L_1);
+		__this->set_thisLock_37(L_1);
 		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -2525,7 +2527,7 @@ extern "C"  void MediaPlayerCtrl_Start_m3485874843 (MediaPlayerCtrl_t3572035536 
 {
 	{
 		MediaPlayerCtrl_Call_SetUnityActivity_m478515772(__this, /*hidden argument*/NULL);
-		__this->set_m_bInit_28((bool)1);
+		__this->set_m_bInit_29((bool)1);
 		return;
 	}
 }
@@ -2601,20 +2603,20 @@ extern "C"  void MediaPlayerCtrl_Update_m693789906 (MediaPlayerCtrl_t3572035536 
 
 IL_0011:
 	{
-		bool L_2 = __this->get_checkNewActions_34();
+		bool L_2 = __this->get_checkNewActions_36();
 		if (!L_2)
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		__this->set_checkNewActions_34((bool)0);
+		__this->set_checkNewActions_36((bool)0);
 		MediaPlayerCtrl_CheckThreading_m2277806009(__this, /*hidden argument*/NULL);
 	}
 
 IL_0029:
 	{
-		bool L_3 = __this->get_m_bFirst_22();
+		bool L_3 = __this->get_m_bFirst_23();
 		if (L_3)
 		{
 			goto IL_005c;
@@ -2627,9 +2629,9 @@ IL_0029:
 		V_0 = L_5;
 		String_t* L_6 = V_0;
 		MediaPlayerCtrl_Call_Load_m768899081(__this, L_6, 0, /*hidden argument*/NULL);
-		bool L_7 = __this->get_m_bLoop_25();
+		bool L_7 = __this->get_m_bLoop_26();
 		MediaPlayerCtrl_Call_SetLooping_m4187503885(__this, L_7, /*hidden argument*/NULL);
-		__this->set_m_bFirst_22((bool)1);
+		__this->set_m_bFirst_23((bool)1);
 	}
 
 IL_005c:
@@ -2650,7 +2652,7 @@ IL_005c:
 
 IL_0074:
 	{
-		bool L_10 = __this->get_m_bCheckFBO_29();
+		bool L_10 = __this->get_m_bCheckFBO_30();
 		if (L_10)
 		{
 			goto IL_0125;
@@ -2714,7 +2716,7 @@ IL_00ea:
 IL_00fd:
 	{
 		MediaPlayerCtrl_Call_SetWindowSize_m3027705755(__this, /*hidden argument*/NULL);
-		__this->set_m_bCheckFBO_29((bool)1);
+		__this->set_m_bCheckFBO_30((bool)1);
 		VideoResize_t2668346607 * L_21 = __this->get_OnResize_14();
 		if (!L_21)
 		{
@@ -2799,7 +2801,7 @@ IL_0177:
 
 IL_01b6:
 	{
-		bool L_36 = __this->get_m_bAutoPlay_26();
+		bool L_36 = __this->get_m_bAutoPlay_27();
 		if (!L_36)
 		{
 			goto IL_01c8;
@@ -2839,7 +2841,7 @@ IL_01d9:
 
 IL_01fb:
 	{
-		bool L_41 = __this->get_m_bLoop_25();
+		bool L_41 = __this->get_m_bLoop_26();
 		if (!L_41)
 		{
 			goto IL_020d;
@@ -3069,7 +3071,7 @@ IL_0025:
 
 IL_0026:
 	{
-		GameObjectU5BU5D_t3499186955* L_3 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_3 = __this->get_m_objResize_25();
 		if (!L_3)
 		{
 			goto IL_0542;
@@ -3099,7 +3101,7 @@ IL_0026:
 
 IL_0068:
 	{
-		GameObjectU5BU5D_t3499186955* L_14 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_14 = __this->get_m_objResize_25();
 		int32_t L_15 = V_7;
 		NullCheck(L_14);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, L_15);
@@ -3123,7 +3125,7 @@ IL_0081:
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_19 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_19 = __this->get_m_objResize_25();
 		int32_t L_20 = V_7;
 		NullCheck(L_19);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, L_20);
@@ -3159,7 +3161,7 @@ IL_0081:
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_30 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_30 = __this->get_m_objResize_25();
 		int32_t L_31 = V_7;
 		NullCheck(L_30);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, L_31);
@@ -3177,7 +3179,7 @@ IL_0081:
 
 IL_00f6:
 	{
-		__this->set_m_ScaleValue_23(0);
+		__this->set_m_ScaleValue_24(0);
 		goto IL_013c;
 	}
 
@@ -3198,7 +3200,7 @@ IL_0102:
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_41 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_41 = __this->get_m_objResize_25();
 		int32_t L_42 = V_7;
 		NullCheck(L_41);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_41, L_42);
@@ -3216,26 +3218,26 @@ IL_0102:
 
 IL_0135:
 	{
-		__this->set_m_ScaleValue_23(0);
+		__this->set_m_ScaleValue_24(0);
 	}
 
 IL_013c:
 	{
-		int32_t L_49 = __this->get_m_ScaleValue_23();
+		int32_t L_49 = __this->get_m_ScaleValue_24();
 		if (L_49)
 		{
 			goto IL_01bb;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_50 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_50 = __this->get_m_objResize_25();
 		int32_t L_51 = V_7;
 		NullCheck(L_50);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_50, L_51);
 		int32_t L_52 = L_51;
 		NullCheck(((L_50)->GetAt(static_cast<il2cpp_array_size_t>(L_52))));
 		Transform_t284553113 * L_53 = GameObject_get_transform_m1278640159(((L_50)->GetAt(static_cast<il2cpp_array_size_t>(L_52))), /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_54 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_54 = __this->get_m_objResize_25();
 		int32_t L_55 = V_7;
 		NullCheck(L_54);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_54, L_55);
@@ -3246,7 +3248,7 @@ IL_013c:
 		Vector3_t3525329789  L_58 = Transform_get_localScale_m3886572677(L_57, /*hidden argument*/NULL);
 		V_8 = L_58;
 		float L_59 = (&V_8)->get_x_1();
-		GameObjectU5BU5D_t3499186955* L_60 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_60 = __this->get_m_objResize_25();
 		int32_t L_61 = V_7;
 		NullCheck(L_60);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_60, L_61);
@@ -3258,7 +3260,7 @@ IL_013c:
 		V_9 = L_64;
 		float L_65 = (&V_9)->get_x_1();
 		float L_66 = V_5;
-		GameObjectU5BU5D_t3499186955* L_67 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_67 = __this->get_m_objResize_25();
 		int32_t L_68 = V_7;
 		NullCheck(L_67);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_67, L_68);
@@ -3279,21 +3281,21 @@ IL_013c:
 
 IL_01bb:
 	{
-		int32_t L_74 = __this->get_m_ScaleValue_23();
+		int32_t L_74 = __this->get_m_ScaleValue_24();
 		if ((!(((uint32_t)L_74) == ((uint32_t)6))))
 		{
 			goto IL_0241;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_75 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_75 = __this->get_m_objResize_25();
 		int32_t L_76 = V_7;
 		NullCheck(L_75);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_75, L_76);
 		int32_t L_77 = L_76;
 		NullCheck(((L_75)->GetAt(static_cast<il2cpp_array_size_t>(L_77))));
 		Transform_t284553113 * L_78 = GameObject_get_transform_m1278640159(((L_75)->GetAt(static_cast<il2cpp_array_size_t>(L_77))), /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_79 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_79 = __this->get_m_objResize_25();
 		int32_t L_80 = V_7;
 		NullCheck(L_79);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_79, L_80);
@@ -3304,7 +3306,7 @@ IL_01bb:
 		Vector3_t3525329789  L_83 = Transform_get_localScale_m3886572677(L_82, /*hidden argument*/NULL);
 		V_11 = L_83;
 		float L_84 = (&V_11)->get_x_1();
-		GameObjectU5BU5D_t3499186955* L_85 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_85 = __this->get_m_objResize_25();
 		int32_t L_86 = V_7;
 		NullCheck(L_85);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_85, L_86);
@@ -3316,7 +3318,7 @@ IL_01bb:
 		V_12 = L_89;
 		float L_90 = (&V_12)->get_x_1();
 		float L_91 = V_5;
-		GameObjectU5BU5D_t3499186955* L_92 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_92 = __this->get_m_objResize_25();
 		int32_t L_93 = V_7;
 		NullCheck(L_92);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_92, L_93);
@@ -3337,21 +3339,21 @@ IL_01bb:
 
 IL_0241:
 	{
-		int32_t L_99 = __this->get_m_ScaleValue_23();
+		int32_t L_99 = __this->get_m_ScaleValue_24();
 		if ((!(((uint32_t)L_99) == ((uint32_t)1))))
 		{
 			goto IL_02c1;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_100 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_100 = __this->get_m_objResize_25();
 		int32_t L_101 = V_7;
 		NullCheck(L_100);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_100, L_101);
 		int32_t L_102 = L_101;
 		NullCheck(((L_100)->GetAt(static_cast<il2cpp_array_size_t>(L_102))));
 		Transform_t284553113 * L_103 = GameObject_get_transform_m1278640159(((L_100)->GetAt(static_cast<il2cpp_array_size_t>(L_102))), /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_104 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_104 = __this->get_m_objResize_25();
 		int32_t L_105 = V_7;
 		NullCheck(L_104);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_104, L_105);
@@ -3362,7 +3364,7 @@ IL_0241:
 		Vector3_t3525329789  L_108 = Transform_get_localScale_m3886572677(L_107, /*hidden argument*/NULL);
 		V_14 = L_108;
 		float L_109 = (&V_14)->get_x_1();
-		GameObjectU5BU5D_t3499186955* L_110 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_110 = __this->get_m_objResize_25();
 		int32_t L_111 = V_7;
 		NullCheck(L_110);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_110, L_111);
@@ -3373,7 +3375,7 @@ IL_0241:
 		Vector3_t3525329789  L_114 = Transform_get_localScale_m3886572677(L_113, /*hidden argument*/NULL);
 		V_15 = L_114;
 		float L_115 = (&V_15)->get_y_2();
-		GameObjectU5BU5D_t3499186955* L_116 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_116 = __this->get_m_objResize_25();
 		int32_t L_117 = V_7;
 		NullCheck(L_116);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_116, L_117);
@@ -3395,21 +3397,21 @@ IL_0241:
 
 IL_02c1:
 	{
-		int32_t L_124 = __this->get_m_ScaleValue_23();
+		int32_t L_124 = __this->get_m_ScaleValue_24();
 		if ((!(((uint32_t)L_124) == ((uint32_t)2))))
 		{
 			goto IL_0341;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_125 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_125 = __this->get_m_objResize_25();
 		int32_t L_126 = V_7;
 		NullCheck(L_125);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_125, L_126);
 		int32_t L_127 = L_126;
 		NullCheck(((L_125)->GetAt(static_cast<il2cpp_array_size_t>(L_127))));
 		Transform_t284553113 * L_128 = GameObject_get_transform_m1278640159(((L_125)->GetAt(static_cast<il2cpp_array_size_t>(L_127))), /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_129 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_129 = __this->get_m_objResize_25();
 		int32_t L_130 = V_7;
 		NullCheck(L_129);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_129, L_130);
@@ -3421,7 +3423,7 @@ IL_02c1:
 		V_17 = L_133;
 		float L_134 = (&V_17)->get_y_2();
 		float L_135 = V_5;
-		GameObjectU5BU5D_t3499186955* L_136 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_136 = __this->get_m_objResize_25();
 		int32_t L_137 = V_7;
 		NullCheck(L_136);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_136, L_137);
@@ -3432,7 +3434,7 @@ IL_02c1:
 		Vector3_t3525329789  L_140 = Transform_get_localScale_m3886572677(L_139, /*hidden argument*/NULL);
 		V_18 = L_140;
 		float L_141 = (&V_18)->get_y_2();
-		GameObjectU5BU5D_t3499186955* L_142 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_142 = __this->get_m_objResize_25();
 		int32_t L_143 = V_7;
 		NullCheck(L_142);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_142, L_143);
@@ -3453,21 +3455,21 @@ IL_02c1:
 
 IL_0341:
 	{
-		int32_t L_149 = __this->get_m_ScaleValue_23();
+		int32_t L_149 = __this->get_m_ScaleValue_24();
 		if ((!(((uint32_t)L_149) == ((uint32_t)3))))
 		{
 			goto IL_03c1;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_150 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_150 = __this->get_m_objResize_25();
 		int32_t L_151 = V_7;
 		NullCheck(L_150);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_150, L_151);
 		int32_t L_152 = L_151;
 		NullCheck(((L_150)->GetAt(static_cast<il2cpp_array_size_t>(L_152))));
 		Transform_t284553113 * L_153 = GameObject_get_transform_m1278640159(((L_150)->GetAt(static_cast<il2cpp_array_size_t>(L_152))), /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_154 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_154 = __this->get_m_objResize_25();
 		int32_t L_155 = V_7;
 		NullCheck(L_154);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_154, L_155);
@@ -3478,7 +3480,7 @@ IL_0341:
 		Vector3_t3525329789  L_158 = Transform_get_localScale_m3886572677(L_157, /*hidden argument*/NULL);
 		V_20 = L_158;
 		float L_159 = (&V_20)->get_x_1();
-		GameObjectU5BU5D_t3499186955* L_160 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_160 = __this->get_m_objResize_25();
 		int32_t L_161 = V_7;
 		NullCheck(L_160);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_160, L_161);
@@ -3489,7 +3491,7 @@ IL_0341:
 		Vector3_t3525329789  L_164 = Transform_get_localScale_m3886572677(L_163, /*hidden argument*/NULL);
 		V_21 = L_164;
 		float L_165 = (&V_21)->get_y_2();
-		GameObjectU5BU5D_t3499186955* L_166 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_166 = __this->get_m_objResize_25();
 		int32_t L_167 = V_7;
 		NullCheck(L_166);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_166, L_167);
@@ -3511,21 +3513,21 @@ IL_0341:
 
 IL_03c1:
 	{
-		int32_t L_174 = __this->get_m_ScaleValue_23();
+		int32_t L_174 = __this->get_m_ScaleValue_24();
 		if ((!(((uint32_t)L_174) == ((uint32_t)4))))
 		{
 			goto IL_0441;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_175 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_175 = __this->get_m_objResize_25();
 		int32_t L_176 = V_7;
 		NullCheck(L_175);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_175, L_176);
 		int32_t L_177 = L_176;
 		NullCheck(((L_175)->GetAt(static_cast<il2cpp_array_size_t>(L_177))));
 		Transform_t284553113 * L_178 = GameObject_get_transform_m1278640159(((L_175)->GetAt(static_cast<il2cpp_array_size_t>(L_177))), /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_179 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_179 = __this->get_m_objResize_25();
 		int32_t L_180 = V_7;
 		NullCheck(L_179);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_179, L_180);
@@ -3537,7 +3539,7 @@ IL_03c1:
 		V_23 = L_183;
 		float L_184 = (&V_23)->get_z_3();
 		float L_185 = V_5;
-		GameObjectU5BU5D_t3499186955* L_186 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_186 = __this->get_m_objResize_25();
 		int32_t L_187 = V_7;
 		NullCheck(L_186);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_186, L_187);
@@ -3548,7 +3550,7 @@ IL_03c1:
 		Vector3_t3525329789  L_190 = Transform_get_localScale_m3886572677(L_189, /*hidden argument*/NULL);
 		V_24 = L_190;
 		float L_191 = (&V_24)->get_y_2();
-		GameObjectU5BU5D_t3499186955* L_192 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_192 = __this->get_m_objResize_25();
 		int32_t L_193 = V_7;
 		NullCheck(L_192);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_192, L_193);
@@ -3569,21 +3571,21 @@ IL_03c1:
 
 IL_0441:
 	{
-		int32_t L_199 = __this->get_m_ScaleValue_23();
+		int32_t L_199 = __this->get_m_ScaleValue_24();
 		if ((!(((uint32_t)L_199) == ((uint32_t)5))))
 		{
 			goto IL_04c1;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_200 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_200 = __this->get_m_objResize_25();
 		int32_t L_201 = V_7;
 		NullCheck(L_200);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_200, L_201);
 		int32_t L_202 = L_201;
 		NullCheck(((L_200)->GetAt(static_cast<il2cpp_array_size_t>(L_202))));
 		Transform_t284553113 * L_203 = GameObject_get_transform_m1278640159(((L_200)->GetAt(static_cast<il2cpp_array_size_t>(L_202))), /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_204 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_204 = __this->get_m_objResize_25();
 		int32_t L_205 = V_7;
 		NullCheck(L_204);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_204, L_205);
@@ -3594,7 +3596,7 @@ IL_0441:
 		Vector3_t3525329789  L_208 = Transform_get_localScale_m3886572677(L_207, /*hidden argument*/NULL);
 		V_26 = L_208;
 		float L_209 = (&V_26)->get_x_1();
-		GameObjectU5BU5D_t3499186955* L_210 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_210 = __this->get_m_objResize_25();
 		int32_t L_211 = V_7;
 		NullCheck(L_210);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_210, L_211);
@@ -3606,7 +3608,7 @@ IL_0441:
 		V_27 = L_214;
 		float L_215 = (&V_27)->get_z_3();
 		float L_216 = V_5;
-		GameObjectU5BU5D_t3499186955* L_217 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_217 = __this->get_m_objResize_25();
 		int32_t L_218 = V_7;
 		NullCheck(L_217);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_217, L_218);
@@ -3627,14 +3629,14 @@ IL_0441:
 
 IL_04c1:
 	{
-		GameObjectU5BU5D_t3499186955* L_224 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_224 = __this->get_m_objResize_25();
 		int32_t L_225 = V_7;
 		NullCheck(L_224);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_224, L_225);
 		int32_t L_226 = L_225;
 		NullCheck(((L_224)->GetAt(static_cast<il2cpp_array_size_t>(L_226))));
 		Transform_t284553113 * L_227 = GameObject_get_transform_m1278640159(((L_224)->GetAt(static_cast<il2cpp_array_size_t>(L_226))), /*hidden argument*/NULL);
-		GameObjectU5BU5D_t3499186955* L_228 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_228 = __this->get_m_objResize_25();
 		int32_t L_229 = V_7;
 		NullCheck(L_228);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_228, L_229);
@@ -3645,7 +3647,7 @@ IL_04c1:
 		Vector3_t3525329789  L_232 = Transform_get_localScale_m3886572677(L_231, /*hidden argument*/NULL);
 		V_29 = L_232;
 		float L_233 = (&V_29)->get_x_1();
-		GameObjectU5BU5D_t3499186955* L_234 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_234 = __this->get_m_objResize_25();
 		int32_t L_235 = V_7;
 		NullCheck(L_234);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_234, L_235);
@@ -3656,7 +3658,7 @@ IL_04c1:
 		Vector3_t3525329789  L_238 = Transform_get_localScale_m3886572677(L_237, /*hidden argument*/NULL);
 		V_30 = L_238;
 		float L_239 = (&V_30)->get_y_2();
-		GameObjectU5BU5D_t3499186955* L_240 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_240 = __this->get_m_objResize_25();
 		int32_t L_241 = V_7;
 		NullCheck(L_240);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_240, L_241);
@@ -3683,7 +3685,7 @@ IL_052d:
 IL_0533:
 	{
 		int32_t L_248 = V_7;
-		GameObjectU5BU5D_t3499186955* L_249 = __this->get_m_objResize_24();
+		GameObjectU5BU5D_t3499186955* L_249 = __this->get_m_objResize_25();
 		NullCheck(L_249);
 		if ((((int32_t)L_248) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_249)->max_length)))))))
 		{
@@ -3970,23 +3972,23 @@ extern "C"  void MediaPlayerCtrl_OnApplicationPause_m1411783813 (MediaPlayerCtrl
 		}
 	}
 	{
-		__this->set_m_bPause_30((bool)1);
+		__this->set_m_bPause_31((bool)1);
 	}
 
 IL_002e:
 	{
 		int32_t L_6 = __this->get_m_iCurrentSeekPosition_7();
-		__this->set_m_iPauseFrame_19(L_6);
+		__this->set_m_iPauseFrame_20(L_6);
 		MediaPlayerCtrl_Stop_m4130733003(__this, /*hidden argument*/NULL);
 		goto IL_0070;
 	}
 
 IL_0045:
 	{
-		__this->set_m_bStop_27((bool)0);
-		int32_t L_7 = __this->get_m_iPauseFrame_19();
+		__this->set_m_bStop_28((bool)0);
+		int32_t L_7 = __this->get_m_iPauseFrame_20();
 		MediaPlayerCtrl_Call_Play_m3458118239(__this, L_7, /*hidden argument*/NULL);
-		bool L_8 = __this->get_m_bPause_30();
+		bool L_8 = __this->get_m_bPause_31();
 		if (!L_8)
 		{
 			goto IL_0070;
@@ -3994,7 +3996,7 @@ IL_0045:
 	}
 	{
 		MediaPlayerCtrl_Call_Pause_m3216855486(__this, /*hidden argument*/NULL);
-		__this->set_m_bPause_30((bool)0);
+		__this->set_m_bPause_31((bool)0);
 	}
 
 IL_0070:
@@ -4022,7 +4024,7 @@ extern "C"  Texture2D_t2509538522 * MediaPlayerCtrl_GetVideoTexture_m3882756556 
 extern "C"  void MediaPlayerCtrl_Play_m4037048957 (MediaPlayerCtrl_t3572035536 * __this, const MethodInfo* method)
 {
 	{
-		bool L_0 = __this->get_m_bStop_27();
+		bool L_0 = __this->get_m_bStop_28();
 		if (!L_0)
 		{
 			goto IL_0020;
@@ -4031,7 +4033,7 @@ extern "C"  void MediaPlayerCtrl_Play_m4037048957 (MediaPlayerCtrl_t3572035536 *
 	{
 		MediaPlayerCtrl_SeekTo_m1961002989(__this, 0, /*hidden argument*/NULL);
 		MediaPlayerCtrl_Call_Play_m3458118239(__this, 0, /*hidden argument*/NULL);
-		__this->set_m_bStop_27((bool)0);
+		__this->set_m_bStop_28((bool)0);
 	}
 
 IL_0020:
@@ -4096,7 +4098,7 @@ extern "C"  void MediaPlayerCtrl_Stop_m4130733003 (MediaPlayerCtrl_t3572035536 *
 
 IL_0012:
 	{
-		__this->set_m_bStop_27((bool)1);
+		__this->set_m_bStop_28((bool)1);
 		__this->set_m_CurrentState_6(5);
 		__this->set_m_iCurrentSeekPosition_7(0);
 		return;
@@ -4138,12 +4140,12 @@ extern "C"  void MediaPlayerCtrl_Load_m2067252147 (MediaPlayerCtrl_t3572035536 *
 
 IL_0011:
 	{
-		__this->set_m_bIsFirstFrameReady_21((bool)0);
-		__this->set_m_bFirst_22((bool)0);
-		__this->set_m_bCheckFBO_29((bool)0);
+		__this->set_m_bIsFirstFrameReady_22((bool)0);
+		__this->set_m_bFirst_23((bool)0);
+		__this->set_m_bCheckFBO_30((bool)0);
 		String_t* L_1 = ___strFileName;
 		__this->set_m_strFileName_2(L_1);
-		bool L_2 = __this->get_m_bInit_28();
+		bool L_2 = __this->get_m_bInit_29();
 		if (L_2)
 		{
 			goto IL_0039;
@@ -4594,7 +4596,7 @@ extern "C"  int32_t MediaPlayerCtrl_GetVideoHeight_m1488303943 (MediaPlayerCtrl_
 extern "C"  void MediaPlayerCtrl_UnLoad_m2539012520 (MediaPlayerCtrl_t3572035536 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_m_bCheckFBO_29((bool)0);
+		__this->set_m_bCheckFBO_30((bool)0);
 		MediaPlayerCtrl_Call_UnLoad_m2832451833(__this, /*hidden argument*/NULL);
 		__this->set_m_CurrentState_6(0);
 		return;
@@ -5207,7 +5209,7 @@ extern "C"  bool MediaPlayerCtrl_get_ready_m2951534727 (MediaPlayerCtrl_t3572035
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		bool L_1 = MediaPlayerCtrl_VideoPlayerPluginPlayerReady_m735341017(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return L_1;
@@ -5225,7 +5227,7 @@ extern "C"  float MediaPlayerCtrl_get_duration_m2112737018 (MediaPlayerCtrl_t357
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		float L_1 = MediaPlayerCtrl_VideoPlayerPluginDurationSeconds_m3768524170(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return L_1;
@@ -5243,7 +5245,7 @@ extern "C"  float MediaPlayerCtrl_get_currentTime_m4271864802 (MediaPlayerCtrl_t
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		float L_1 = MediaPlayerCtrl_VideoPlayerPluginCurTimeSeconds_m2190349975(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return L_1;
@@ -5261,7 +5263,7 @@ extern "C"  bool MediaPlayerCtrl_get_isPlaying_m3825438920 (MediaPlayerCtrl_t357
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		bool L_1 = MediaPlayerCtrl_VideoPlayerPluginIsPlaying_m4211132411(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return L_1;
@@ -5283,7 +5285,7 @@ extern "C"  Vector2_t3525329788  MediaPlayerCtrl_get_videoSize_m1647237351 (Medi
 	{
 		V_0 = 0;
 		V_1 = 0;
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginExtents_m605447550(NULL /*static, unused*/, L_0, (&V_0), (&V_1), /*hidden argument*/NULL);
 		int32_t L_1 = V_0;
@@ -5296,6 +5298,7 @@ extern "C"  Vector2_t3525329788  MediaPlayerCtrl_get_videoSize_m1647237351 (Medi
 }
 // UnityEngine.Texture2D MediaPlayerCtrl::get_videoTexture()
 extern TypeInfo* MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var;
+extern TypeInfo* Texture2D_t2509538522_il2cpp_TypeInfo_var;
 extern const uint32_t MediaPlayerCtrl_get_videoTexture_m286142453_MetadataUsageId;
 extern "C"  Texture2D_t2509538522 * MediaPlayerCtrl_get_videoTexture_m286142453 (MediaPlayerCtrl_t3572035536 * __this, const MethodInfo* method)
 {
@@ -5321,7 +5324,7 @@ extern "C"  Texture2D_t2509538522 * MediaPlayerCtrl_get_videoTexture_m286142453 
 		}
 	}
 	{
-		int32_t L_1 = __this->get_m_iID_31();
+		int32_t L_1 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		IntPtr_t L_2 = MediaPlayerCtrl_VideoPlayerPluginCurFrameTexture_m1596364676(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 		G_B3_0 = L_2;
@@ -5342,47 +5345,68 @@ IL_0021:
 		bool L_6 = IntPtr_op_Inequality_m10053967(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
 		if (!L_6)
 		{
-			goto IL_0095;
+			goto IL_00bf;
 		}
 	}
 	{
-		Texture2D_t2509538522 * L_7 = __this->get__videoTexture_32();
+		Texture2D_t2509538522 * L_7 = __this->get__videoTexture_33();
 		bool L_8 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_7, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
 		if (!L_8)
 		{
-			goto IL_0089;
+			goto IL_00b3;
 		}
 	}
 	{
-		Vector2_t3525329788  L_9 = MediaPlayerCtrl_get_videoSize_m1647237351(__this, /*hidden argument*/NULL);
-		V_1 = L_9;
-		float L_10 = (&V_1)->get_x_1();
-		Vector2_t3525329788  L_11 = MediaPlayerCtrl_get_videoSize_m1647237351(__this, /*hidden argument*/NULL);
-		V_2 = L_11;
-		float L_12 = (&V_2)->get_y_2();
-		IntPtr_t L_13 = V_0;
-		Texture2D_t2509538522 * L_14 = Texture2D_CreateExternalTexture_m1858440074(NULL /*static, unused*/, (((int32_t)((int32_t)L_10))), (((int32_t)((int32_t)L_12))), 4, (bool)0, (bool)0, L_13, /*hidden argument*/NULL);
-		__this->set__videoTexture_32(L_14);
-		Texture2D_t2509538522 * L_15 = __this->get__videoTexture_32();
-		NullCheck(L_15);
-		Texture_set_filterMode_m3842701708(L_15, 1, /*hidden argument*/NULL);
-		Texture2D_t2509538522 * L_16 = __this->get__videoTexture_32();
-		NullCheck(L_16);
-		Texture_set_wrapMode_m3720633937(L_16, 1, /*hidden argument*/NULL);
+		int32_t L_9 = SystemInfo_get_graphicsDeviceType_m1643046803(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_9) == ((uint32_t)((int32_t)16)))))
+		{
+			goto IL_006e;
+		}
+	}
+	{
+		int32_t L_10 = MediaPlayerCtrl_Call_GetVideoWidth_m3381347003(__this, /*hidden argument*/NULL);
+		int32_t L_11 = MediaPlayerCtrl_Call_GetVideoHeight_m2246356340(__this, /*hidden argument*/NULL);
+		Texture2D_t2509538522 * L_12 = (Texture2D_t2509538522 *)il2cpp_codegen_object_new(Texture2D_t2509538522_il2cpp_TypeInfo_var);
+		Texture2D__ctor_m3705883154(L_12, L_10, L_11, 4, (bool)0, /*hidden argument*/NULL);
+		__this->set__videoTexture_33(L_12);
+		goto IL_009b;
 	}
 
-IL_0089:
+IL_006e:
 	{
-		Texture2D_t2509538522 * L_17 = __this->get__videoTexture_32();
-		IntPtr_t L_18 = V_0;
-		NullCheck(L_17);
-		Texture2D_UpdateExternalTexture_m3260984579(L_17, L_18, /*hidden argument*/NULL);
+		Vector2_t3525329788  L_13 = MediaPlayerCtrl_get_videoSize_m1647237351(__this, /*hidden argument*/NULL);
+		V_1 = L_13;
+		float L_14 = (&V_1)->get_x_1();
+		Vector2_t3525329788  L_15 = MediaPlayerCtrl_get_videoSize_m1647237351(__this, /*hidden argument*/NULL);
+		V_2 = L_15;
+		float L_16 = (&V_2)->get_y_2();
+		IntPtr_t L_17 = V_0;
+		Texture2D_t2509538522 * L_18 = Texture2D_CreateExternalTexture_m1858440074(NULL /*static, unused*/, (((int32_t)((int32_t)L_14))), (((int32_t)((int32_t)L_16))), 4, (bool)0, (bool)0, L_17, /*hidden argument*/NULL);
+		__this->set__videoTexture_33(L_18);
 	}
 
-IL_0095:
+IL_009b:
 	{
-		Texture2D_t2509538522 * L_19 = __this->get__videoTexture_32();
-		return L_19;
+		Texture2D_t2509538522 * L_19 = __this->get__videoTexture_33();
+		NullCheck(L_19);
+		Texture_set_filterMode_m3842701708(L_19, 1, /*hidden argument*/NULL);
+		Texture2D_t2509538522 * L_20 = __this->get__videoTexture_33();
+		NullCheck(L_20);
+		Texture_set_wrapMode_m3720633937(L_20, 1, /*hidden argument*/NULL);
+	}
+
+IL_00b3:
+	{
+		Texture2D_t2509538522 * L_21 = __this->get__videoTexture_33();
+		IntPtr_t L_22 = V_0;
+		NullCheck(L_21);
+		Texture2D_UpdateExternalTexture_m3260984579(L_21, L_22, /*hidden argument*/NULL);
+	}
+
+IL_00bf:
+	{
+		Texture2D_t2509538522 * L_23 = __this->get__videoTexture_33();
+		return L_23;
 	}
 }
 // System.Void MediaPlayerCtrl::Call_Destroy()
@@ -5397,10 +5421,10 @@ extern "C"  void MediaPlayerCtrl_Call_Destroy_m180380930 (MediaPlayerCtrl_t35720
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginDestroyInstance_m3959504186(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		Texture2D_t2509538522 * L_1 = __this->get__videoTexture_32();
+		Texture2D_t2509538522 * L_1 = __this->get__videoTexture_33();
 		bool L_2 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_1, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
 		if (!L_2)
 		{
@@ -5408,14 +5432,14 @@ extern "C"  void MediaPlayerCtrl_Call_Destroy_m180380930 (MediaPlayerCtrl_t35720
 		}
 	}
 	{
-		Texture2D_t2509538522 * L_3 = __this->get__videoTexture_32();
+		Texture2D_t2509538522 * L_3 = __this->get__videoTexture_33();
 		Object_Destroy_m176400816(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
 	}
 
 IL_0027:
 	{
-		__this->set__videoTexture_32((Texture2D_t2509538522 *)NULL);
-		__this->set_m_iID_31((-1));
+		__this->set__videoTexture_33((Texture2D_t2509538522 *)NULL);
+		__this->set_m_iID_32((-1));
 		return;
 	}
 }
@@ -5431,10 +5455,10 @@ extern "C"  void MediaPlayerCtrl_Call_UnLoad_m2832451833 (MediaPlayerCtrl_t35720
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginStopVideo_m1725585764(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		int32_t L_1 = __this->get_m_iID_31();
+		int32_t L_1 = __this->get_m_iID_32();
 		MediaPlayerCtrl_VideoPlayerPluginDestroyInstance_m3959504186(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 		return;
 	}
@@ -5451,7 +5475,7 @@ extern "C"  bool MediaPlayerCtrl_Call_Load_m768899081 (MediaPlayerCtrl_t35720355
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		if ((!(((uint32_t)L_0) == ((uint32_t)(-1)))))
 		{
 			goto IL_0012;
@@ -5463,37 +5487,24 @@ extern "C"  bool MediaPlayerCtrl_Call_Load_m768899081 (MediaPlayerCtrl_t35720355
 
 IL_0012:
 	{
-		Texture2D_t2509538522 * L_1 = __this->get__videoTexture_32();
-		bool L_2 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_1, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		__this->set_bFirstIOS_34((bool)1);
+		__this->set__videoTexture_33((Texture2D_t2509538522 *)NULL);
+		String_t* L_1 = ___strFileName;
+		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
+		bool L_2 = MediaPlayerCtrl_VideoPlayerPluginCanOutputToTexture_m576346071(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			goto IL_002e;
+			goto IL_0037;
 		}
 	}
 	{
-		Texture2D_t2509538522 * L_3 = __this->get__videoTexture_32();
-		Object_Destroy_m176400816(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-	}
-
-IL_002e:
-	{
-		__this->set__videoTexture_32((Texture2D_t2509538522 *)NULL);
+		int32_t L_3 = __this->get_m_iID_32();
 		String_t* L_4 = ___strFileName;
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
-		bool L_5 = MediaPlayerCtrl_VideoPlayerPluginCanOutputToTexture_m576346071(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		if (!L_5)
-		{
-			goto IL_004c;
-		}
-	}
-	{
-		int32_t L_6 = __this->get_m_iID_31();
-		String_t* L_7 = ___strFileName;
-		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
-		MediaPlayerCtrl_VideoPlayerPluginLoadVideo_m2270081596(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
+		MediaPlayerCtrl_VideoPlayerPluginLoadVideo_m2270081596(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
 	}
 
-IL_004c:
+IL_0037:
 	{
 		return (bool)1;
 	}
@@ -5512,181 +5523,201 @@ extern "C"  void MediaPlayerCtrl_Call_UpdateVideoTexture_m857863523 (MediaPlayer
 	}
 	int32_t V_0 = 0;
 	{
-		Texture2D_t2509538522 * L_0 = __this->get_m_VideoTextureDummy_5();
-		bool L_1 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_0, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
+		int32_t L_0 = __this->get_m_CurrentState_6();
+		if ((((int32_t)L_0) == ((int32_t)3)))
 		{
-			goto IL_0023;
+			goto IL_0018;
 		}
 	}
 	{
-		Texture2D_t2509538522 * L_2 = __this->get_m_VideoTextureDummy_5();
-		Object_Destroy_m176400816(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		__this->set_m_VideoTextureDummy_5((Texture2D_t2509538522 *)NULL);
-	}
-
-IL_0023:
-	{
-		int32_t L_3 = __this->get_m_CurrentState_6();
-		if ((((int32_t)L_3) == ((int32_t)3)))
+		int32_t L_1 = __this->get_m_CurrentState_6();
+		if ((!(((uint32_t)L_1) == ((uint32_t)4))))
 		{
-			goto IL_003b;
-		}
-	}
-	{
-		int32_t L_4 = __this->get_m_CurrentState_6();
-		if ((!(((uint32_t)L_4) == ((uint32_t)4))))
-		{
-			goto IL_00fb;
+			goto IL_0119;
 		}
 	}
 
-IL_003b:
+IL_0018:
 	{
-		Texture2D_t2509538522 * L_5 = MediaPlayerCtrl_get_videoTexture_m286142453(__this, /*hidden argument*/NULL);
-		bool L_6 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_5, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_6)
+		Texture2D_t2509538522 * L_2 = MediaPlayerCtrl_get_videoTexture_m286142453(__this, /*hidden argument*/NULL);
+		bool L_3 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_2, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_3)
 		{
-			goto IL_004d;
+			goto IL_002a;
 		}
 	}
 	{
 		return;
 	}
 
-IL_004d:
+IL_002a:
+	{
+		bool L_4 = __this->get_bFirstIOS_34();
+		if (!L_4)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		__this->set_bFirstIOS_34((bool)0);
+		return;
+	}
+
+IL_003d:
+	{
+		bool L_5 = __this->get_bFirstIOS_34();
+		if (L_5)
+		{
+			goto IL_010d;
+		}
+	}
 	{
 		V_0 = 0;
-		goto IL_00e1;
+		goto IL_00dc;
 	}
 
-IL_0054:
+IL_004f:
 	{
-		GameObjectU5BU5D_t3499186955* L_7 = __this->get_m_TargetMaterial_3();
-		int32_t L_8 = V_0;
-		NullCheck(L_7);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
-		int32_t L_9 = L_8;
-		bool L_10 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, ((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9))), /*hidden argument*/NULL);
-		if (!L_10)
+		GameObjectU5BU5D_t3499186955* L_6 = __this->get_m_TargetMaterial_3();
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		bool L_9 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, ((L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8))), /*hidden argument*/NULL);
+		if (!L_9)
 		{
-			goto IL_009b;
+			goto IL_0096;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_11 = __this->get_m_TargetMaterial_3();
-		int32_t L_12 = V_0;
-		NullCheck(L_11);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
-		int32_t L_13 = L_12;
-		NullCheck(((L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13))));
-		MeshRenderer_t1217738301 * L_14 = GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910(((L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13))), /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910_MethodInfo_var);
-		bool L_15 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_14, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_15)
+		GameObjectU5BU5D_t3499186955* L_10 = __this->get_m_TargetMaterial_3();
+		int32_t L_11 = V_0;
+		NullCheck(L_10);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, L_11);
+		int32_t L_12 = L_11;
+		NullCheck(((L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12))));
+		MeshRenderer_t1217738301 * L_13 = GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910(((L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12))), /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910_MethodInfo_var);
+		bool L_14 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_13, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_14)
 		{
-			goto IL_009b;
+			goto IL_0096;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_16 = __this->get_m_TargetMaterial_3();
-		int32_t L_17 = V_0;
-		NullCheck(L_16);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, L_17);
-		int32_t L_18 = L_17;
-		NullCheck(((L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18))));
-		MeshRenderer_t1217738301 * L_19 = GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910(((L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18))), /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910_MethodInfo_var);
+		GameObjectU5BU5D_t3499186955* L_15 = __this->get_m_TargetMaterial_3();
+		int32_t L_16 = V_0;
+		NullCheck(L_15);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, L_16);
+		int32_t L_17 = L_16;
+		NullCheck(((L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17))));
+		MeshRenderer_t1217738301 * L_18 = GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910(((L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17))), /*hidden argument*/GameObject_GetComponent_TisMeshRenderer_t1217738301_m2686897910_MethodInfo_var);
+		NullCheck(L_18);
+		Material_t1886596500 * L_19 = Renderer_get_material_m2720864603(L_18, /*hidden argument*/NULL);
+		Texture2D_t2509538522 * L_20 = __this->get__videoTexture_33();
 		NullCheck(L_19);
-		Material_t1886596500 * L_20 = Renderer_get_material_m2720864603(L_19, /*hidden argument*/NULL);
-		Texture2D_t2509538522 * L_21 = __this->get__videoTexture_32();
-		NullCheck(L_20);
-		Material_set_mainTexture_m3116438437(L_20, L_21, /*hidden argument*/NULL);
+		Material_set_mainTexture_m3116438437(L_19, L_20, /*hidden argument*/NULL);
 	}
 
-IL_009b:
+IL_0096:
 	{
-		GameObjectU5BU5D_t3499186955* L_22 = __this->get_m_TargetMaterial_3();
-		int32_t L_23 = V_0;
-		NullCheck(L_22);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_22, L_23);
-		int32_t L_24 = L_23;
-		bool L_25 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, ((L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24))), /*hidden argument*/NULL);
-		if (!L_25)
+		GameObjectU5BU5D_t3499186955* L_21 = __this->get_m_TargetMaterial_3();
+		int32_t L_22 = V_0;
+		NullCheck(L_21);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_21, L_22);
+		int32_t L_23 = L_22;
+		bool L_24 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, ((L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_23))), /*hidden argument*/NULL);
+		if (!L_24)
 		{
-			goto IL_00dd;
+			goto IL_00d8;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_26 = __this->get_m_TargetMaterial_3();
-		int32_t L_27 = V_0;
-		NullCheck(L_26);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, L_27);
-		int32_t L_28 = L_27;
-		NullCheck(((L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_28))));
-		RawImage_t3831555132 * L_29 = GameObject_GetComponent_TisRawImage_t3831555132_m970532939(((L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_28))), /*hidden argument*/GameObject_GetComponent_TisRawImage_t3831555132_m970532939_MethodInfo_var);
-		bool L_30 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_29, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_30)
+		GameObjectU5BU5D_t3499186955* L_25 = __this->get_m_TargetMaterial_3();
+		int32_t L_26 = V_0;
+		NullCheck(L_25);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_25, L_26);
+		int32_t L_27 = L_26;
+		NullCheck(((L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27))));
+		RawImage_t3831555132 * L_28 = GameObject_GetComponent_TisRawImage_t3831555132_m970532939(((L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27))), /*hidden argument*/GameObject_GetComponent_TisRawImage_t3831555132_m970532939_MethodInfo_var);
+		bool L_29 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_28, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_29)
 		{
-			goto IL_00dd;
+			goto IL_00d8;
 		}
 	}
 	{
-		GameObjectU5BU5D_t3499186955* L_31 = __this->get_m_TargetMaterial_3();
-		int32_t L_32 = V_0;
-		NullCheck(L_31);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_31, L_32);
-		int32_t L_33 = L_32;
-		NullCheck(((L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33))));
-		RawImage_t3831555132 * L_34 = GameObject_GetComponent_TisRawImage_t3831555132_m970532939(((L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33))), /*hidden argument*/GameObject_GetComponent_TisRawImage_t3831555132_m970532939_MethodInfo_var);
-		Texture2D_t2509538522 * L_35 = __this->get__videoTexture_32();
-		NullCheck(L_34);
-		RawImage_set_texture_m153141914(L_34, L_35, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3499186955* L_30 = __this->get_m_TargetMaterial_3();
+		int32_t L_31 = V_0;
+		NullCheck(L_30);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, L_31);
+		int32_t L_32 = L_31;
+		NullCheck(((L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_32))));
+		RawImage_t3831555132 * L_33 = GameObject_GetComponent_TisRawImage_t3831555132_m970532939(((L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_32))), /*hidden argument*/GameObject_GetComponent_TisRawImage_t3831555132_m970532939_MethodInfo_var);
+		Texture2D_t2509538522 * L_34 = __this->get__videoTexture_33();
+		NullCheck(L_33);
+		RawImage_set_texture_m153141914(L_33, L_34, /*hidden argument*/NULL);
 	}
 
-IL_00dd:
+IL_00d8:
+	{
+		int32_t L_35 = V_0;
+		V_0 = ((int32_t)((int32_t)L_35+(int32_t)1));
+	}
+
+IL_00dc:
 	{
 		int32_t L_36 = V_0;
-		V_0 = ((int32_t)((int32_t)L_36+(int32_t)1));
+		GameObjectU5BU5D_t3499186955* L_37 = __this->get_m_TargetMaterial_3();
+		NullCheck(L_37);
+		if ((((int32_t)L_36) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_37)->max_length)))))))
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		Texture2D_t2509538522 * L_38 = __this->get_m_VideoTextureDummy_5();
+		bool L_39 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_38, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_39)
+		{
+			goto IL_010d;
+		}
+	}
+	{
+		Texture2D_t2509538522 * L_40 = __this->get_m_VideoTextureDummy_5();
+		Object_Destroy_m176400816(NULL /*static, unused*/, L_40, /*hidden argument*/NULL);
+		__this->set_m_VideoTextureDummy_5((Texture2D_t2509538522 *)NULL);
 	}
 
-IL_00e1:
+IL_010d:
 	{
-		int32_t L_37 = V_0;
-		GameObjectU5BU5D_t3499186955* L_38 = __this->get_m_TargetMaterial_3();
-		NullCheck(L_38);
-		if ((((int32_t)L_37) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_38)->max_length)))))))
-		{
-			goto IL_0054;
-		}
-	}
-	{
-		Texture2D_t2509538522 * L_39 = __this->get__videoTexture_32();
-		__this->set_m_VideoTexture_4(L_39);
+		Texture2D_t2509538522 * L_41 = __this->get__videoTexture_33();
+		__this->set_m_VideoTexture_4(L_41);
 	}
 
-IL_00fb:
+IL_0119:
 	{
-		bool L_40 = __this->get_m_bIsFirstFrameReady_21();
-		if (L_40)
+		bool L_42 = __this->get_m_bIsFirstFrameReady_22();
+		if (L_42)
 		{
-			goto IL_012a;
+			goto IL_0148;
 		}
 	}
 	{
-		__this->set_m_bIsFirstFrameReady_21((bool)1);
-		VideoFirstFrameReady_t1412571435 * L_41 = __this->get_OnVideoFirstFrameReady_18();
-		if (!L_41)
+		__this->set_m_bIsFirstFrameReady_22((bool)1);
+		VideoFirstFrameReady_t1412571435 * L_43 = __this->get_OnVideoFirstFrameReady_18();
+		if (!L_43)
 		{
-			goto IL_012a;
+			goto IL_0148;
 		}
 	}
 	{
-		VideoFirstFrameReady_t1412571435 * L_42 = __this->get_OnVideoFirstFrameReady_18();
-		NullCheck(L_42);
-		VideoFirstFrameReady_Invoke_m3520108875(L_42, /*hidden argument*/NULL);
+		VideoFirstFrameReady_t1412571435 * L_44 = __this->get_OnVideoFirstFrameReady_18();
+		NullCheck(L_44);
+		VideoFirstFrameReady_Invoke_m3520108875(L_44, /*hidden argument*/NULL);
 		__this->set_OnVideoFirstFrameReady_18((VideoFirstFrameReady_t1412571435 *)NULL);
 	}
 
-IL_012a:
+IL_0148:
 	{
 		return;
 	}
@@ -5703,7 +5734,7 @@ extern "C"  void MediaPlayerCtrl_Call_SetVolume_m2711263047 (MediaPlayerCtrl_t35
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		float L_1 = ___fVolume;
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginSetVolume_m1814430540(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
@@ -5725,7 +5756,7 @@ extern "C"  void MediaPlayerCtrl_Call_SetSeekPosition_m1834745308 (MediaPlayerCt
 	{
 		int32_t L_0 = ___iSeek;
 		V_0 = ((float)((float)(((float)((float)L_0)))/(float)(1000.0f)));
-		int32_t L_1 = __this->get_m_iID_31();
+		int32_t L_1 = __this->get_m_iID_32();
 		float L_2 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginSeekToVideo_m821435928(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
@@ -5745,7 +5776,7 @@ extern "C"  int32_t MediaPlayerCtrl_Call_GetSeekPosition_m573432625 (MediaPlayer
 	}
 	float V_0 = 0.0f;
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		float L_1 = MediaPlayerCtrl_VideoPlayerPluginCurTimeSeconds_m2190349975(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
@@ -5775,7 +5806,7 @@ extern "C"  void MediaPlayerCtrl_Call_Play_m3458118239 (MediaPlayerCtrl_t3572035
 		}
 	}
 	{
-		int32_t L_2 = __this->get_m_iID_31();
+		int32_t L_2 = __this->get_m_iID_32();
 		float L_3 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginSeekToVideo_m821435928(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
@@ -5791,7 +5822,7 @@ IL_0025:
 		}
 	}
 	{
-		int32_t L_5 = __this->get_m_iID_31();
+		int32_t L_5 = __this->get_m_iID_32();
 		float L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginSeekToVideo_m821435928(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
@@ -5799,7 +5830,7 @@ IL_0025:
 
 IL_003d:
 	{
-		int32_t L_7 = __this->get_m_iID_31();
+		int32_t L_7 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginPlayVideo_m3362444530(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
 	}
@@ -5840,7 +5871,7 @@ extern "C"  void MediaPlayerCtrl_Call_Stop_m761209692 (MediaPlayerCtrl_t35720355
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginStopVideo_m1725585764(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return;
@@ -5858,7 +5889,7 @@ extern "C"  void MediaPlayerCtrl_Call_RePlay_m2613155809 (MediaPlayerCtrl_t35720
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginResumeVideo_m3047280921(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		__this->set_m_CurrentState_6(3);
@@ -5878,7 +5909,7 @@ extern "C"  void MediaPlayerCtrl_Call_Pause_m3216855486 (MediaPlayerCtrl_t357203
 	}
 	{
 		__this->set_m_CurrentState_6(4);
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginPauseVideo_m3915100318(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return;
@@ -5920,7 +5951,7 @@ extern "C"  void MediaPlayerCtrl_Call_SetUnityTexture_m2145795393 (MediaPlayerCt
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		int32_t L_1 = ___iTextureID;
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginSetTexture_m707757637(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
@@ -5946,7 +5977,7 @@ extern "C"  void MediaPlayerCtrl_Call_SetLooping_m4187503885 (MediaPlayerCtrl_t3
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		bool L_1 = ___bLoop;
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginSetLoop_m2803548652(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
@@ -5967,7 +5998,7 @@ extern "C"  void MediaPlayerCtrl_Call_SetUnityActivity_m478515772 (MediaPlayerCt
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		int32_t L_0 = MediaPlayerCtrl_VideoPlayerPluginCreateInstance_m4153778279(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_m_iID_31(L_0);
+		__this->set_m_iID_32(L_0);
 		return;
 	}
 }
@@ -6012,7 +6043,7 @@ extern "C"  void MediaPlayerCtrl_Call_SetSpeed_m3874928876 (MediaPlayerCtrl_t357
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		float L_1 = ___fSpeed;
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		MediaPlayerCtrl_VideoPlayerPluginSetSpeed_m1934431651(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
@@ -6031,7 +6062,7 @@ extern "C"  int32_t MediaPlayerCtrl_Call_GetStatus_m1093213333 (MediaPlayerCtrl_
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_m_iID_31();
+		int32_t L_0 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		bool L_1 = MediaPlayerCtrl_VideoPlayerPluginFinish_m438650816(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		if (!L_1)
@@ -6045,7 +6076,7 @@ extern "C"  int32_t MediaPlayerCtrl_Call_GetStatus_m1093213333 (MediaPlayerCtrl_
 
 IL_0012:
 	{
-		int32_t L_2 = __this->get_m_iID_31();
+		int32_t L_2 = __this->get_m_iID_32();
 		IL2CPP_RUNTIME_CLASS_INIT(MediaPlayerCtrl_t3572035536_il2cpp_TypeInfo_var);
 		bool L_3 = MediaPlayerCtrl_VideoPlayerPluginError_m1021152735(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 		if (!L_3)
@@ -6228,7 +6259,7 @@ extern "C"  void MediaPlayerCtrl_CheckThreading_m2277806009 (MediaPlayerCtrl_t35
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		Il2CppObject * L_0 = __this->get_thisLock_35();
+		Il2CppObject * L_0 = __this->get_thisLock_37();
 		V_0 = L_0;
 		Il2CppObject * L_1 = V_0;
 		Monitor_Enter_m476686225(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
@@ -6238,7 +6269,7 @@ IL_000d:
 	try
 	{ // begin try (depth: 1)
 		{
-			List_1_t1234482916 * L_2 = __this->get_unityMainThreadActionList_33();
+			List_1_t1234482916 * L_2 = __this->get_unityMainThreadActionList_35();
 			NullCheck(L_2);
 			int32_t L_3 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<System.Action>::get_Count() */, L_2);
 			if ((((int32_t)L_3) <= ((int32_t)0)))
@@ -6249,7 +6280,7 @@ IL_000d:
 
 IL_001e:
 		{
-			List_1_t1234482916 * L_4 = __this->get_unityMainThreadActionList_33();
+			List_1_t1234482916 * L_4 = __this->get_unityMainThreadActionList_35();
 			NullCheck(L_4);
 			Enumerator_t3615233204  L_5 = List_1_GetEnumerator_m1907749495(L_4, /*hidden argument*/List_1_GetEnumerator_m1907749495_MethodInfo_var);
 			V_2 = L_5;
@@ -6308,7 +6339,7 @@ FINALLY_004e:
 
 IL_005a:
 		{
-			List_1_t1234482916 * L_12 = __this->get_unityMainThreadActionList_33();
+			List_1_t1234482916 * L_12 = __this->get_unityMainThreadActionList_35();
 			NullCheck(L_12);
 			VirtActionInvoker0::Invoke(23 /* System.Void System.Collections.Generic.List`1<System.Action>::Clear() */, L_12);
 		}
@@ -6352,7 +6383,7 @@ extern "C"  void MediaPlayerCtrl_AddActionForUnityMainThread_m3296503710 (MediaP
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		Il2CppObject * L_0 = __this->get_thisLock_35();
+		Il2CppObject * L_0 = __this->get_thisLock_37();
 		V_0 = L_0;
 		Il2CppObject * L_1 = V_0;
 		Monitor_Enter_m476686225(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
@@ -6361,7 +6392,7 @@ extern "C"  void MediaPlayerCtrl_AddActionForUnityMainThread_m3296503710 (MediaP
 IL_000d:
 	try
 	{ // begin try (depth: 1)
-		List_1_t1234482916 * L_2 = __this->get_unityMainThreadActionList_33();
+		List_1_t1234482916 * L_2 = __this->get_unityMainThreadActionList_35();
 		Action_t437523947 * L_3 = ___a;
 		NullCheck(L_2);
 		VirtActionInvoker1< Action_t437523947 * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<System.Action>::Add(!0) */, L_2, L_3);
@@ -6387,7 +6418,7 @@ FINALLY_001e:
 
 IL_0025:
 	{
-		__this->set_checkNewActions_34((bool)1);
+		__this->set_checkNewActions_36((bool)1);
 		return;
 	}
 }

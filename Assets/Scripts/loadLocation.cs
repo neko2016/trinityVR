@@ -57,6 +57,15 @@ public class loadLocation : MonoBehaviour {
 
 		// to return to outside the museum building, when it has been exited from its interior
 		if (currScene.name == "03trinityExterior02") {
+			if (loadLocationInit.MbexBCK == true) {
+				newPos = new Vector3 (200f, 0, 0);
+				loadLocationInit.MbexBCK = false;
+				moveCamera ();
+			}
+		}
+
+		// to return to outside the museum building, when it has been exited from its interior
+		if (currScene.name == "03trinityExterior02") {
 			if (loadLocationInit.BerkeleyBCK == true) {
 				newPos = new Vector3 (400f, 0, 0);
 				loadLocationInit.BerkeleyBCK = false;

@@ -33,6 +33,7 @@ struct Il2CppObject;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_MEDIAPLAYER_STAT2874295127.h"
+#include "mscorlib_System_IntPtr676692020.h"
 #include "AssemblyU2DCSharp_MediaPlayerCtrl_MEDIA_SCALE3074099439.h"
 
 #ifdef __clang__
@@ -79,40 +80,44 @@ public:
 	VideoError_t351551085 * ___OnVideoError_17;
 	// MediaPlayerCtrl/VideoFirstFrameReady MediaPlayerCtrl::OnVideoFirstFrameReady
 	VideoFirstFrameReady_t1412571435 * ___OnVideoFirstFrameReady_18;
+	// System.IntPtr MediaPlayerCtrl::m_texPtr
+	IntPtr_t ___m_texPtr_19;
 	// System.Int32 MediaPlayerCtrl::m_iPauseFrame
-	int32_t ___m_iPauseFrame_19;
+	int32_t ___m_iPauseFrame_20;
 	// System.Int32 MediaPlayerCtrl::m_iAndroidMgrID
-	int32_t ___m_iAndroidMgrID_20;
+	int32_t ___m_iAndroidMgrID_21;
 	// System.Boolean MediaPlayerCtrl::m_bIsFirstFrameReady
-	bool ___m_bIsFirstFrameReady_21;
+	bool ___m_bIsFirstFrameReady_22;
 	// System.Boolean MediaPlayerCtrl::m_bFirst
-	bool ___m_bFirst_22;
+	bool ___m_bFirst_23;
 	// MediaPlayerCtrl/MEDIA_SCALE MediaPlayerCtrl::m_ScaleValue
-	int32_t ___m_ScaleValue_23;
+	int32_t ___m_ScaleValue_24;
 	// UnityEngine.GameObject[] MediaPlayerCtrl::m_objResize
-	GameObjectU5BU5D_t3499186955* ___m_objResize_24;
+	GameObjectU5BU5D_t3499186955* ___m_objResize_25;
 	// System.Boolean MediaPlayerCtrl::m_bLoop
-	bool ___m_bLoop_25;
+	bool ___m_bLoop_26;
 	// System.Boolean MediaPlayerCtrl::m_bAutoPlay
-	bool ___m_bAutoPlay_26;
+	bool ___m_bAutoPlay_27;
 	// System.Boolean MediaPlayerCtrl::m_bStop
-	bool ___m_bStop_27;
+	bool ___m_bStop_28;
 	// System.Boolean MediaPlayerCtrl::m_bInit
-	bool ___m_bInit_28;
+	bool ___m_bInit_29;
 	// System.Boolean MediaPlayerCtrl::m_bCheckFBO
-	bool ___m_bCheckFBO_29;
+	bool ___m_bCheckFBO_30;
 	// System.Boolean MediaPlayerCtrl::m_bPause
-	bool ___m_bPause_30;
+	bool ___m_bPause_31;
 	// System.Int32 MediaPlayerCtrl::m_iID
-	int32_t ___m_iID_31;
+	int32_t ___m_iID_32;
 	// UnityEngine.Texture2D MediaPlayerCtrl::_videoTexture
-	Texture2D_t2509538522 * ____videoTexture_32;
+	Texture2D_t2509538522 * ____videoTexture_33;
+	// System.Boolean MediaPlayerCtrl::bFirstIOS
+	bool ___bFirstIOS_34;
 	// System.Collections.Generic.List`1<System.Action> MediaPlayerCtrl::unityMainThreadActionList
-	List_1_t1234482916 * ___unityMainThreadActionList_33;
+	List_1_t1234482916 * ___unityMainThreadActionList_35;
 	// System.Boolean MediaPlayerCtrl::checkNewActions
-	bool ___checkNewActions_34;
+	bool ___checkNewActions_36;
 	// System.Object MediaPlayerCtrl::thisLock
-	Il2CppObject * ___thisLock_35;
+	Il2CppObject * ___thisLock_37;
 
 public:
 	inline static int32_t get_offset_of_m_strFileName_2() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_strFileName_2)); }
@@ -260,144 +265,160 @@ public:
 		Il2CppCodeGenWriteBarrier(&___OnVideoFirstFrameReady_18, value);
 	}
 
-	inline static int32_t get_offset_of_m_iPauseFrame_19() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_iPauseFrame_19)); }
-	inline int32_t get_m_iPauseFrame_19() const { return ___m_iPauseFrame_19; }
-	inline int32_t* get_address_of_m_iPauseFrame_19() { return &___m_iPauseFrame_19; }
-	inline void set_m_iPauseFrame_19(int32_t value)
+	inline static int32_t get_offset_of_m_texPtr_19() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_texPtr_19)); }
+	inline IntPtr_t get_m_texPtr_19() const { return ___m_texPtr_19; }
+	inline IntPtr_t* get_address_of_m_texPtr_19() { return &___m_texPtr_19; }
+	inline void set_m_texPtr_19(IntPtr_t value)
 	{
-		___m_iPauseFrame_19 = value;
+		___m_texPtr_19 = value;
 	}
 
-	inline static int32_t get_offset_of_m_iAndroidMgrID_20() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_iAndroidMgrID_20)); }
-	inline int32_t get_m_iAndroidMgrID_20() const { return ___m_iAndroidMgrID_20; }
-	inline int32_t* get_address_of_m_iAndroidMgrID_20() { return &___m_iAndroidMgrID_20; }
-	inline void set_m_iAndroidMgrID_20(int32_t value)
+	inline static int32_t get_offset_of_m_iPauseFrame_20() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_iPauseFrame_20)); }
+	inline int32_t get_m_iPauseFrame_20() const { return ___m_iPauseFrame_20; }
+	inline int32_t* get_address_of_m_iPauseFrame_20() { return &___m_iPauseFrame_20; }
+	inline void set_m_iPauseFrame_20(int32_t value)
 	{
-		___m_iAndroidMgrID_20 = value;
+		___m_iPauseFrame_20 = value;
 	}
 
-	inline static int32_t get_offset_of_m_bIsFirstFrameReady_21() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bIsFirstFrameReady_21)); }
-	inline bool get_m_bIsFirstFrameReady_21() const { return ___m_bIsFirstFrameReady_21; }
-	inline bool* get_address_of_m_bIsFirstFrameReady_21() { return &___m_bIsFirstFrameReady_21; }
-	inline void set_m_bIsFirstFrameReady_21(bool value)
+	inline static int32_t get_offset_of_m_iAndroidMgrID_21() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_iAndroidMgrID_21)); }
+	inline int32_t get_m_iAndroidMgrID_21() const { return ___m_iAndroidMgrID_21; }
+	inline int32_t* get_address_of_m_iAndroidMgrID_21() { return &___m_iAndroidMgrID_21; }
+	inline void set_m_iAndroidMgrID_21(int32_t value)
 	{
-		___m_bIsFirstFrameReady_21 = value;
+		___m_iAndroidMgrID_21 = value;
 	}
 
-	inline static int32_t get_offset_of_m_bFirst_22() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bFirst_22)); }
-	inline bool get_m_bFirst_22() const { return ___m_bFirst_22; }
-	inline bool* get_address_of_m_bFirst_22() { return &___m_bFirst_22; }
-	inline void set_m_bFirst_22(bool value)
+	inline static int32_t get_offset_of_m_bIsFirstFrameReady_22() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bIsFirstFrameReady_22)); }
+	inline bool get_m_bIsFirstFrameReady_22() const { return ___m_bIsFirstFrameReady_22; }
+	inline bool* get_address_of_m_bIsFirstFrameReady_22() { return &___m_bIsFirstFrameReady_22; }
+	inline void set_m_bIsFirstFrameReady_22(bool value)
 	{
-		___m_bFirst_22 = value;
+		___m_bIsFirstFrameReady_22 = value;
 	}
 
-	inline static int32_t get_offset_of_m_ScaleValue_23() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_ScaleValue_23)); }
-	inline int32_t get_m_ScaleValue_23() const { return ___m_ScaleValue_23; }
-	inline int32_t* get_address_of_m_ScaleValue_23() { return &___m_ScaleValue_23; }
-	inline void set_m_ScaleValue_23(int32_t value)
+	inline static int32_t get_offset_of_m_bFirst_23() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bFirst_23)); }
+	inline bool get_m_bFirst_23() const { return ___m_bFirst_23; }
+	inline bool* get_address_of_m_bFirst_23() { return &___m_bFirst_23; }
+	inline void set_m_bFirst_23(bool value)
 	{
-		___m_ScaleValue_23 = value;
+		___m_bFirst_23 = value;
 	}
 
-	inline static int32_t get_offset_of_m_objResize_24() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_objResize_24)); }
-	inline GameObjectU5BU5D_t3499186955* get_m_objResize_24() const { return ___m_objResize_24; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_m_objResize_24() { return &___m_objResize_24; }
-	inline void set_m_objResize_24(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_m_ScaleValue_24() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_ScaleValue_24)); }
+	inline int32_t get_m_ScaleValue_24() const { return ___m_ScaleValue_24; }
+	inline int32_t* get_address_of_m_ScaleValue_24() { return &___m_ScaleValue_24; }
+	inline void set_m_ScaleValue_24(int32_t value)
 	{
-		___m_objResize_24 = value;
-		Il2CppCodeGenWriteBarrier(&___m_objResize_24, value);
+		___m_ScaleValue_24 = value;
 	}
 
-	inline static int32_t get_offset_of_m_bLoop_25() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bLoop_25)); }
-	inline bool get_m_bLoop_25() const { return ___m_bLoop_25; }
-	inline bool* get_address_of_m_bLoop_25() { return &___m_bLoop_25; }
-	inline void set_m_bLoop_25(bool value)
+	inline static int32_t get_offset_of_m_objResize_25() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_objResize_25)); }
+	inline GameObjectU5BU5D_t3499186955* get_m_objResize_25() const { return ___m_objResize_25; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_m_objResize_25() { return &___m_objResize_25; }
+	inline void set_m_objResize_25(GameObjectU5BU5D_t3499186955* value)
 	{
-		___m_bLoop_25 = value;
+		___m_objResize_25 = value;
+		Il2CppCodeGenWriteBarrier(&___m_objResize_25, value);
 	}
 
-	inline static int32_t get_offset_of_m_bAutoPlay_26() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bAutoPlay_26)); }
-	inline bool get_m_bAutoPlay_26() const { return ___m_bAutoPlay_26; }
-	inline bool* get_address_of_m_bAutoPlay_26() { return &___m_bAutoPlay_26; }
-	inline void set_m_bAutoPlay_26(bool value)
+	inline static int32_t get_offset_of_m_bLoop_26() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bLoop_26)); }
+	inline bool get_m_bLoop_26() const { return ___m_bLoop_26; }
+	inline bool* get_address_of_m_bLoop_26() { return &___m_bLoop_26; }
+	inline void set_m_bLoop_26(bool value)
 	{
-		___m_bAutoPlay_26 = value;
+		___m_bLoop_26 = value;
 	}
 
-	inline static int32_t get_offset_of_m_bStop_27() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bStop_27)); }
-	inline bool get_m_bStop_27() const { return ___m_bStop_27; }
-	inline bool* get_address_of_m_bStop_27() { return &___m_bStop_27; }
-	inline void set_m_bStop_27(bool value)
+	inline static int32_t get_offset_of_m_bAutoPlay_27() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bAutoPlay_27)); }
+	inline bool get_m_bAutoPlay_27() const { return ___m_bAutoPlay_27; }
+	inline bool* get_address_of_m_bAutoPlay_27() { return &___m_bAutoPlay_27; }
+	inline void set_m_bAutoPlay_27(bool value)
 	{
-		___m_bStop_27 = value;
+		___m_bAutoPlay_27 = value;
 	}
 
-	inline static int32_t get_offset_of_m_bInit_28() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bInit_28)); }
-	inline bool get_m_bInit_28() const { return ___m_bInit_28; }
-	inline bool* get_address_of_m_bInit_28() { return &___m_bInit_28; }
-	inline void set_m_bInit_28(bool value)
+	inline static int32_t get_offset_of_m_bStop_28() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bStop_28)); }
+	inline bool get_m_bStop_28() const { return ___m_bStop_28; }
+	inline bool* get_address_of_m_bStop_28() { return &___m_bStop_28; }
+	inline void set_m_bStop_28(bool value)
 	{
-		___m_bInit_28 = value;
+		___m_bStop_28 = value;
 	}
 
-	inline static int32_t get_offset_of_m_bCheckFBO_29() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bCheckFBO_29)); }
-	inline bool get_m_bCheckFBO_29() const { return ___m_bCheckFBO_29; }
-	inline bool* get_address_of_m_bCheckFBO_29() { return &___m_bCheckFBO_29; }
-	inline void set_m_bCheckFBO_29(bool value)
+	inline static int32_t get_offset_of_m_bInit_29() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bInit_29)); }
+	inline bool get_m_bInit_29() const { return ___m_bInit_29; }
+	inline bool* get_address_of_m_bInit_29() { return &___m_bInit_29; }
+	inline void set_m_bInit_29(bool value)
 	{
-		___m_bCheckFBO_29 = value;
+		___m_bInit_29 = value;
 	}
 
-	inline static int32_t get_offset_of_m_bPause_30() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bPause_30)); }
-	inline bool get_m_bPause_30() const { return ___m_bPause_30; }
-	inline bool* get_address_of_m_bPause_30() { return &___m_bPause_30; }
-	inline void set_m_bPause_30(bool value)
+	inline static int32_t get_offset_of_m_bCheckFBO_30() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bCheckFBO_30)); }
+	inline bool get_m_bCheckFBO_30() const { return ___m_bCheckFBO_30; }
+	inline bool* get_address_of_m_bCheckFBO_30() { return &___m_bCheckFBO_30; }
+	inline void set_m_bCheckFBO_30(bool value)
 	{
-		___m_bPause_30 = value;
+		___m_bCheckFBO_30 = value;
 	}
 
-	inline static int32_t get_offset_of_m_iID_31() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_iID_31)); }
-	inline int32_t get_m_iID_31() const { return ___m_iID_31; }
-	inline int32_t* get_address_of_m_iID_31() { return &___m_iID_31; }
-	inline void set_m_iID_31(int32_t value)
+	inline static int32_t get_offset_of_m_bPause_31() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_bPause_31)); }
+	inline bool get_m_bPause_31() const { return ___m_bPause_31; }
+	inline bool* get_address_of_m_bPause_31() { return &___m_bPause_31; }
+	inline void set_m_bPause_31(bool value)
 	{
-		___m_iID_31 = value;
+		___m_bPause_31 = value;
 	}
 
-	inline static int32_t get_offset_of__videoTexture_32() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ____videoTexture_32)); }
-	inline Texture2D_t2509538522 * get__videoTexture_32() const { return ____videoTexture_32; }
-	inline Texture2D_t2509538522 ** get_address_of__videoTexture_32() { return &____videoTexture_32; }
-	inline void set__videoTexture_32(Texture2D_t2509538522 * value)
+	inline static int32_t get_offset_of_m_iID_32() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___m_iID_32)); }
+	inline int32_t get_m_iID_32() const { return ___m_iID_32; }
+	inline int32_t* get_address_of_m_iID_32() { return &___m_iID_32; }
+	inline void set_m_iID_32(int32_t value)
 	{
-		____videoTexture_32 = value;
-		Il2CppCodeGenWriteBarrier(&____videoTexture_32, value);
+		___m_iID_32 = value;
 	}
 
-	inline static int32_t get_offset_of_unityMainThreadActionList_33() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___unityMainThreadActionList_33)); }
-	inline List_1_t1234482916 * get_unityMainThreadActionList_33() const { return ___unityMainThreadActionList_33; }
-	inline List_1_t1234482916 ** get_address_of_unityMainThreadActionList_33() { return &___unityMainThreadActionList_33; }
-	inline void set_unityMainThreadActionList_33(List_1_t1234482916 * value)
+	inline static int32_t get_offset_of__videoTexture_33() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ____videoTexture_33)); }
+	inline Texture2D_t2509538522 * get__videoTexture_33() const { return ____videoTexture_33; }
+	inline Texture2D_t2509538522 ** get_address_of__videoTexture_33() { return &____videoTexture_33; }
+	inline void set__videoTexture_33(Texture2D_t2509538522 * value)
 	{
-		___unityMainThreadActionList_33 = value;
-		Il2CppCodeGenWriteBarrier(&___unityMainThreadActionList_33, value);
+		____videoTexture_33 = value;
+		Il2CppCodeGenWriteBarrier(&____videoTexture_33, value);
 	}
 
-	inline static int32_t get_offset_of_checkNewActions_34() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___checkNewActions_34)); }
-	inline bool get_checkNewActions_34() const { return ___checkNewActions_34; }
-	inline bool* get_address_of_checkNewActions_34() { return &___checkNewActions_34; }
-	inline void set_checkNewActions_34(bool value)
+	inline static int32_t get_offset_of_bFirstIOS_34() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___bFirstIOS_34)); }
+	inline bool get_bFirstIOS_34() const { return ___bFirstIOS_34; }
+	inline bool* get_address_of_bFirstIOS_34() { return &___bFirstIOS_34; }
+	inline void set_bFirstIOS_34(bool value)
 	{
-		___checkNewActions_34 = value;
+		___bFirstIOS_34 = value;
 	}
 
-	inline static int32_t get_offset_of_thisLock_35() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___thisLock_35)); }
-	inline Il2CppObject * get_thisLock_35() const { return ___thisLock_35; }
-	inline Il2CppObject ** get_address_of_thisLock_35() { return &___thisLock_35; }
-	inline void set_thisLock_35(Il2CppObject * value)
+	inline static int32_t get_offset_of_unityMainThreadActionList_35() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___unityMainThreadActionList_35)); }
+	inline List_1_t1234482916 * get_unityMainThreadActionList_35() const { return ___unityMainThreadActionList_35; }
+	inline List_1_t1234482916 ** get_address_of_unityMainThreadActionList_35() { return &___unityMainThreadActionList_35; }
+	inline void set_unityMainThreadActionList_35(List_1_t1234482916 * value)
 	{
-		___thisLock_35 = value;
-		Il2CppCodeGenWriteBarrier(&___thisLock_35, value);
+		___unityMainThreadActionList_35 = value;
+		Il2CppCodeGenWriteBarrier(&___unityMainThreadActionList_35, value);
+	}
+
+	inline static int32_t get_offset_of_checkNewActions_36() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___checkNewActions_36)); }
+	inline bool get_checkNewActions_36() const { return ___checkNewActions_36; }
+	inline bool* get_address_of_checkNewActions_36() { return &___checkNewActions_36; }
+	inline void set_checkNewActions_36(bool value)
+	{
+		___checkNewActions_36 = value;
+	}
+
+	inline static int32_t get_offset_of_thisLock_37() { return static_cast<int32_t>(offsetof(MediaPlayerCtrl_t3572035536, ___thisLock_37)); }
+	inline Il2CppObject * get_thisLock_37() const { return ___thisLock_37; }
+	inline Il2CppObject ** get_address_of_thisLock_37() { return &___thisLock_37; }
+	inline void set_thisLock_37(Il2CppObject * value)
+	{
+		___thisLock_37 = value;
+		Il2CppCodeGenWriteBarrier(&___thisLock_37, value);
 	}
 };
 

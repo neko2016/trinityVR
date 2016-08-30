@@ -946,6 +946,7 @@
 #include "UnityEngine_UnityEngine_Rendering_CompareFunction1446377492.h"
 #include "UnityEngine_UnityEngine_Rendering_ColorWriteMask819857343.h"
 #include "UnityEngine_UnityEngine_Rendering_StencilOp3002996980.h"
+#include "UnityEngine_UnityEngine_Rendering_GraphicsDeviceTy1050523666.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Local2259562908.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Achiev581285621.h"
@@ -1727,7 +1728,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9707] = 
+extern const int32_t g_FieldOffsetTable[9727] = 
 {
 	0,
 	0,
@@ -9575,6 +9576,23 @@ extern const int32_t g_FieldOffsetTable[9707] =
 	0,
 	0,
 	0,
+	GraphicsDeviceType_t1050523666::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	LocalUser_t2259562908::get_offset_of_m_Friends_5(),
 	LocalUser_t2259562908::get_offset_of_m_Authenticated_6(),
 	LocalUser_t2259562908::get_offset_of_m_Underage_7(),
@@ -10509,23 +10527,25 @@ extern const int32_t g_FieldOffsetTable[9707] =
 	MediaPlayerCtrl_t3572035536::get_offset_of_OnEnd_16(),
 	MediaPlayerCtrl_t3572035536::get_offset_of_OnVideoError_17(),
 	MediaPlayerCtrl_t3572035536::get_offset_of_OnVideoFirstFrameReady_18(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_iPauseFrame_19(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_iAndroidMgrID_20(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_bIsFirstFrameReady_21(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_bFirst_22(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_ScaleValue_23(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_objResize_24(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_bLoop_25(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_bAutoPlay_26(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_bStop_27(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_bInit_28(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_bCheckFBO_29(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_bPause_30(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_m_iID_31(),
-	MediaPlayerCtrl_t3572035536::get_offset_of__videoTexture_32(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_unityMainThreadActionList_33(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_checkNewActions_34(),
-	MediaPlayerCtrl_t3572035536::get_offset_of_thisLock_35(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_texPtr_19(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_iPauseFrame_20(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_iAndroidMgrID_21(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_bIsFirstFrameReady_22(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_bFirst_23(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_ScaleValue_24(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_objResize_25(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_bLoop_26(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_bAutoPlay_27(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_bStop_28(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_bInit_29(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_bCheckFBO_30(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_bPause_31(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_m_iID_32(),
+	MediaPlayerCtrl_t3572035536::get_offset_of__videoTexture_33(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_bFirstIOS_34(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_unityMainThreadActionList_35(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_checkNewActions_36(),
+	MediaPlayerCtrl_t3572035536::get_offset_of_thisLock_37(),
 	MEDIAPLAYER_ERROR_t2861322446::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -11282,6 +11302,7 @@ extern const int32_t g_FieldOffsetTable[9707] =
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_FellowFWD_6(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_BerkeleyBCK_7(),
 	loadLocationInit_t3862005355_StaticFields::get_offset_of_LibrarySqBCK_8(),
+	loadLocationInit_t3862005355_StaticFields::get_offset_of_MbexBCK_9(),
 	loadScene_t1377993542::get_offset_of_overlay_2(),
 	loadScene_t1377993542::get_offset_of_loading_3(),
 	loadScene_t1377993542::get_offset_of_circle_4(),
@@ -11440,7 +11461,7 @@ extern const int32_t g_FieldOffsetTable[9707] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1954] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1955] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -12935,6 +12956,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1954] =
 	sizeof (CompareFunction_t1446377492)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (ColorWriteMask_t819857343)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (StencilOp_t3002996980)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (GraphicsDeviceType_t1050523666)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (LocalUser_t2259562908), -1, 0, 0,
 	sizeof (UserProfile_t2517340964), -1, 0, 0,
 	sizeof (Achievement_t581285621), -1, 0, 0,

@@ -31,5 +31,9 @@ public class loadLocationDoor : MonoBehaviour {
 		if (currScene.name == "03trinityExterior02") {
 			loadLocationInit.LibrarySqBCK = true;
 		}
+
+		if (currScene.name == "03trinityExterior02MBEX") {
+			loadLocationInit.MbexBCK = true;
+		}
 	}
 }

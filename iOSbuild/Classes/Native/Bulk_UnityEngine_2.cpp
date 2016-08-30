@@ -172,6 +172,8 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "UnityEngine_UnityEngine_SendMessageOptions2623293100.h"
+#include "UnityEngine_UnityEngine_SendMessageOptions2623293100MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SendMouseEvents2490149283.h"
 #include "UnityEngine_UnityEngine_SendMouseEvents2490149283MethodDeclarations.h"
 #include "mscorlib_System_Void2779279689.h"
@@ -203,7 +205,6 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "mscorlib_System_String968488902.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102MethodDeclarations.h"
 #include "mscorlib_System_Object837106420.h"
-#include "UnityEngine_UnityEngine_SendMessageOptions2623293100.h"
 #include "UnityEngine_UnityEngine_Serialization_FormerlySeria581346955.h"
 #include "UnityEngine_UnityEngine_Serialization_FormerlySeria581346955MethodDeclarations.h"
 #include "mscorlib_System_Attribute498693649MethodDeclarations.h"
@@ -332,6 +333,7 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "UnityEngine_UnityEngine_Experimental_Director_Anim1023709642.h"
 #include "UnityEngine_UnityEngine_SystemInfo4158905322.h"
 #include "UnityEngine_UnityEngine_SystemInfo4158905322MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rendering_GraphicsDeviceTy1050523666.h"
 #include "UnityEngine_UnityEngine_TextAnchor551935663.h"
 #include "UnityEngine_UnityEngine_TextAnchor551935663MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_TextAreaAttribute185624719.h"
@@ -6656,6 +6658,15 @@ extern "C"  void StateMachineBehaviour_OnStateMachineExit_m2976228338 (StateMach
 		return;
 	}
 }
+// UnityEngine.Rendering.GraphicsDeviceType UnityEngine.SystemInfo::get_graphicsDeviceType()
+extern "C"  int32_t SystemInfo_get_graphicsDeviceType_m1643046803 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef int32_t (*SystemInfo_get_graphicsDeviceType_m1643046803_ftn) ();
+	static SystemInfo_get_graphicsDeviceType_m1643046803_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SystemInfo_get_graphicsDeviceType_m1643046803_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SystemInfo::get_graphicsDeviceType()");
+	return _il2cpp_icall_func();
+}
 // System.String UnityEngine.SystemInfo::get_deviceModel()
 extern "C"  String_t* SystemInfo_get_deviceModel_m3014844565 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -7719,6 +7730,28 @@ extern "C"  void Texture2D__ctor_m1883511258 (Texture2D_t2509538522 * __this, in
 		int32_t L_1 = ___height;
 		IntPtr_t L_2 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
 		Texture2D_Internal_Create_m457592211(NULL /*static, unused*/, __this, L_0, L_1, 5, (bool)1, (bool)0, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean)
+extern TypeInfo* IntPtr_t_il2cpp_TypeInfo_var;
+extern const uint32_t Texture2D__ctor_m3705883154_MetadataUsageId;
+extern "C"  void Texture2D__ctor_m3705883154 (Texture2D_t2509538522 * __this, int32_t ___width, int32_t ___height, int32_t ___format, bool ___mipmap, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Texture2D__ctor_m3705883154_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Texture__ctor_m516856734(__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___width;
+		int32_t L_1 = ___height;
+		int32_t L_2 = ___format;
+		bool L_3 = ___mipmap;
+		IntPtr_t L_4 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
+		Texture2D_Internal_Create_m457592211(NULL /*static, unused*/, __this, L_0, L_1, L_2, L_3, (bool)0, L_4, /*hidden argument*/NULL);
 		return;
 	}
 }

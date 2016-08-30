@@ -466,6 +466,8 @@ struct SelectionBaseAttribute_t178688268;
 #include "UnityEngine_UnityEngine_Rendering_ColorWriteMask819857343MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rendering_CompareFunction1446377492.h"
 #include "UnityEngine_UnityEngine_Rendering_CompareFunction1446377492MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rendering_GraphicsDeviceTy1050523666.h"
+#include "UnityEngine_UnityEngine_Rendering_GraphicsDeviceTy1050523666MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rendering_StencilOp3002996980.h"
 #include "UnityEngine_UnityEngine_Rendering_StencilOp3002996980MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RenderMode415265990.h"
@@ -505,8 +507,6 @@ struct SelectionBaseAttribute_t178688268;
 #include "UnityEngine_UnityEngine_Scripting_UsedByNativeCode1800197956MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SelectionBaseAttribute178688268.h"
 #include "UnityEngine_UnityEngine_SelectionBaseAttribute178688268MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SendMessageOptions2623293100.h"
-#include "UnityEngine_UnityEngine_SendMessageOptions2623293100MethodDeclarations.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push

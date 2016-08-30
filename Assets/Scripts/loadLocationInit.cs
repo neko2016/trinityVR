@@ -12,6 +12,7 @@ public class loadLocationInit : MonoBehaviour {
 	static public bool FellowFWD;
 	static public bool BerkeleyBCK;
 	static public bool LibrarySqBCK;
+	static public bool MbexBCK;
 
 
 	void Start() { 
@@ -23,6 +24,7 @@ public class loadLocationInit : MonoBehaviour {
 		FellowFWD = false;
 		BerkeleyBCK = false;
 		LibrarySqBCK = false;
+		MbexBCK = false;
 
 	}		
 }

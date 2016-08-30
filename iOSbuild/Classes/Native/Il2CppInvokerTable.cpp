@@ -218,6 +218,7 @@ struct Vector4U5BU5D_t3713759435;
 #include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1150764700.h"
 #include "Mono_Security_Mono_Security_Protocol_Tls_Handshake3657199378.h"
 #include "Mono_Security_Mono_Security_Protocol_Tls_ContentTy2785698635.h"
+#include "UnityEngine_UnityEngine_Rendering_GraphicsDeviceTy1050523666.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1714018390.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter2788044591.h"
 #include "UnityEngine_ArrayTypes.h"
@@ -6070,6 +6071,13 @@ void* RuntimeInvoker_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppO
 	typedef Il2CppObject * (*Func)(void* obj, Il2CppObject * p1, Il2CppObject * p2, Il2CppObject * p3, Il2CppObject * p4, Il2CppObject * p5, Il2CppObject * p6, const MethodInfo* method);
 	Il2CppObject * ret = ((Func)method->method)(obj, (Il2CppObject *)args[0], (Il2CppObject *)args[1], (Il2CppObject *)args[2], (Il2CppObject *)args[3], (Il2CppObject *)args[4], (Il2CppObject *)args[5], method);
 	return ret;
+}
+
+void* RuntimeInvoker_GraphicsDeviceType_t1050523666 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef int32_t (*Func)(void* obj, const MethodInfo* method);
+	int32_t ret = ((Func)method->method)(obj, method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
 void* RuntimeInvoker_Void_t2779279689_Il2CppObject_Double_t534516614 (const MethodInfo* method, void* obj, void** args)
@@ -12687,7 +12695,7 @@ void* RuntimeInvoker_Il2CppObject_FloatTween_t587838465 (const MethodInfo* metho
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[1756] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[1757] = 
 {
 	RuntimeInvoker_Void_t2779279689,
 	RuntimeInvoker_Boolean_t211005341_Il2CppObject,
@@ -13500,6 +13508,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1756] =
 	RuntimeInvoker_Void_t2779279689_Il2CppObject_Byte_t2778693821_Il2CppObject,
 	RuntimeInvoker_ContentType_t2785698635,
 	RuntimeInvoker_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject,
+	RuntimeInvoker_GraphicsDeviceType_t1050523666,
 	RuntimeInvoker_Void_t2779279689_Il2CppObject_Double_t534516614,
 	RuntimeInvoker_Void_t2779279689_Int64_t2847414882_Il2CppObject,
 	RuntimeInvoker_Void_t2779279689_GcAchievementDescriptionData_t1714018390_Int32_t2847414787,

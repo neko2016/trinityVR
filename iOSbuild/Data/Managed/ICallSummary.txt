@@ -548,6 +548,7 @@ UnityEngine.Sprites.DataUtility::INTERNAL_CALL_GetOuterUV
 UnityEngine.Sprites.DataUtility::INTERNAL_CALL_GetPadding
 UnityEngine.Sprites.DataUtility::Internal_GetMinSize
 UnityEngine.SystemInfo::get_deviceModel
+UnityEngine.SystemInfo::get_graphicsDeviceType
 UnityEngine.TextGenerator::INTERNAL_CALL_Populate_Internal_cpp
 UnityEngine.TextGenerator::get_lineCount
 UnityEngine.TextGenerator::get_vertexCount

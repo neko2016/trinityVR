@@ -44,6 +44,8 @@ public:
 	bool ___BerkeleyBCK_7;
 	// System.Boolean loadLocationInit::LibrarySqBCK
 	bool ___LibrarySqBCK_8;
+	// System.Boolean loadLocationInit::MbexBCK
+	bool ___MbexBCK_9;
 
 public:
 	inline static int32_t get_offset_of_toHome_2() { return static_cast<int32_t>(offsetof(loadLocationInit_t3862005355_StaticFields, ___toHome_2)); }
@@ -100,6 +102,14 @@ public:
 	inline void set_LibrarySqBCK_8(bool value)
 	{
 		___LibrarySqBCK_8 = value;
+	}
+
+	inline static int32_t get_offset_of_MbexBCK_9() { return static_cast<int32_t>(offsetof(loadLocationInit_t3862005355_StaticFields, ___MbexBCK_9)); }
+	inline bool get_MbexBCK_9() const { return ___MbexBCK_9; }
+	inline bool* get_address_of_MbexBCK_9() { return &___MbexBCK_9; }
+	inline void set_MbexBCK_9(bool value)
+	{
+		___MbexBCK_9 = value;
 	}
 };
 

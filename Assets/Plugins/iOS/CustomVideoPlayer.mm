@@ -397,7 +397,8 @@ static void* _ObservePlayerItemContext = (void*)0x2;
     {
         _lastFrameTimestamp = _curFrameTimestamp;
         size_t w, h;
-        curTex = CMVideoSampling_SampleBuffer(&_videoSampling, _cmSampleBuffer, &w, &h);
+        if(_cmSampleBuffer)
+            curTex = CMVideoSampling_SampleBuffer(&_videoSampling, _cmSampleBuffer, &w, &h);
         _videoSize = CGSizeMake(w, h);
     }
 

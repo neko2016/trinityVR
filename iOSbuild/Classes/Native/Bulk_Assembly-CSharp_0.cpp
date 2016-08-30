@@ -26507,7 +26507,7 @@ IL_015e:
 		}
 	}
 	{
-		bool L_23 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_BerkeleyBCK_7();
+		bool L_23 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_MbexBCK_9();
 		if (!L_23)
 		{
 			goto IL_01a4;
@@ -26516,9 +26516,9 @@ IL_015e:
 	{
 		Vector3_t3525329789  L_24;
 		memset(&L_24, 0, sizeof(L_24));
-		Vector3__ctor_m2926210380(&L_24, (400.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		Vector3__ctor_m2926210380(&L_24, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
 		__this->set_newPos_2(L_24);
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_BerkeleyBCK_7((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_MbexBCK_9((bool)0);
 		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
 	}
 
@@ -26526,14 +26526,14 @@ IL_01a4:
 	{
 		String_t* L_25 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_26 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_25, _stringLiteral660829128, /*hidden argument*/NULL);
+		bool L_26 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_25, _stringLiteral1657901480, /*hidden argument*/NULL);
 		if (!L_26)
 		{
 			goto IL_01ea;
 		}
 	}
 	{
-		bool L_27 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_LRoomOut_5();
+		bool L_27 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_BerkeleyBCK_7();
 		if (!L_27)
 		{
 			goto IL_01ea;
@@ -26542,13 +26542,39 @@ IL_01a4:
 	{
 		Vector3_t3525329789  L_28;
 		memset(&L_28, 0, sizeof(L_28));
-		Vector3__ctor_m2926210380(&L_28, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		Vector3__ctor_m2926210380(&L_28, (400.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
 		__this->set_newPos_2(L_28);
-		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_LRoomOut_5((bool)0);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_BerkeleyBCK_7((bool)0);
 		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
 	}
 
 IL_01ea:
+	{
+		String_t* L_29 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_30 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_29, _stringLiteral660829128, /*hidden argument*/NULL);
+		if (!L_30)
+		{
+			goto IL_0230;
+		}
+	}
+	{
+		bool L_31 = ((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->get_LRoomOut_5();
+		if (!L_31)
+		{
+			goto IL_0230;
+		}
+	}
+	{
+		Vector3_t3525329789  L_32;
+		memset(&L_32, 0, sizeof(L_32));
+		Vector3__ctor_m2926210380(&L_32, (200.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		__this->set_newPos_2(L_32);
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_LRoomOut_5((bool)0);
+		loadLocation_moveCamera_m1878965626(__this, /*hidden argument*/NULL);
+	}
+
+IL_0230:
 	{
 		return;
 	}
@@ -26597,6 +26623,7 @@ extern Il2CppCodeGenString* _stringLiteral2559491453;
 extern Il2CppCodeGenString* _stringLiteral540459173;
 extern Il2CppCodeGenString* _stringLiteral660829128;
 extern Il2CppCodeGenString* _stringLiteral1657901480;
+extern Il2CppCodeGenString* _stringLiteral2533654192;
 extern const uint32_t loadLocationDoor_exitDoor_m2229554590_MetadataUsageId;
 extern "C"  void loadLocationDoor_exitDoor_m2229554590 (loadLocationDoor_t3861857545 * __this, const MethodInfo* method)
 {
@@ -26694,6 +26721,20 @@ IL_0092:
 	}
 
 IL_00ae:
+	{
+		String_t* L_13 = Scene_get_name_m894591657((&V_0), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_14 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_13, _stringLiteral2533654192, /*hidden argument*/NULL);
+		if (!L_14)
+		{
+			goto IL_00ca;
+		}
+	}
+	{
+		((loadLocationInit_t3862005355_StaticFields*)loadLocationInit_t3862005355_il2cpp_TypeInfo_var->static_fields)->set_MbexBCK_9((bool)1);
+	}
+
+IL_00ca:
 	{
 		return;
 	}
