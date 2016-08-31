@@ -26725,8 +26725,8 @@ IL_0054:
 	}
 }
 // System.Void videoMarker::markerPressed()
-extern const MethodInfo* Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var;
 extern const MethodInfo* Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var;
+extern const MethodInfo* Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t3628549054_m1155306151_MethodInfo_var;
 extern const uint32_t videoMarker_markerPressed_m3392801084_MetadataUsageId;
 extern "C"  void videoMarker_markerPressed_m3392801084 (videoMarker_t853609621 * __this, const MethodInfo* method)
@@ -26785,15 +26785,15 @@ IL_002e:
 	{
 		Transform_t284553113 * L_10 = __this->get_videoPanel_2();
 		NullCheck(L_10);
-		MeshRenderer_t1217738301 * L_11 = Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022(L_10, /*hidden argument*/Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var);
+		MediaPlayerCtrl_t3572035536 * L_11 = Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(L_10, /*hidden argument*/Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var);
 		NullCheck(L_11);
-		Renderer_set_enabled_m2514140131(L_11, (bool)1, /*hidden argument*/NULL);
+		MediaPlayerCtrl_Play_m4037048957(L_11, /*hidden argument*/NULL);
+		__this->set_isPlaying_3((bool)1);
 		Transform_t284553113 * L_12 = __this->get_videoPanel_2();
 		NullCheck(L_12);
-		MediaPlayerCtrl_t3572035536 * L_13 = Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913(L_12, /*hidden argument*/Component_GetComponent_TisMediaPlayerCtrl_t3572035536_m1165815913_MethodInfo_var);
+		MeshRenderer_t1217738301 * L_13 = Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022(L_12, /*hidden argument*/Component_GetComponent_TisMeshRenderer_t1217738301_m3731621022_MethodInfo_var);
 		NullCheck(L_13);
-		MediaPlayerCtrl_Play_m4037048957(L_13, /*hidden argument*/NULL);
-		__this->set_isPlaying_3((bool)1);
+		Renderer_set_enabled_m2514140131(L_13, (bool)1, /*hidden argument*/NULL);
 		GameObjectU5BU5D_t3499186955* L_14 = __this->get_allAudioNAR_4();
 		V_4 = L_14;
 		V_5 = 0;

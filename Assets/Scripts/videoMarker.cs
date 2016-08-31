@@ -37,9 +37,10 @@ public class videoMarker : MonoBehaviour {
 				StartCoroutine (videoKill.videoStop(item));
 			}
 			
-			videoPanel.GetComponent<MeshRenderer> ().enabled = true;
 			videoPanel.GetComponent<MediaPlayerCtrl> ().Play ();
 			isPlaying = true;
+			videoPanel.GetComponent<MeshRenderer> ().enabled = true;
+
 
 			foreach (GameObject item in allAudioNAR) {
 				StartCoroutine (audioFadeOut.FadeOut (item.GetComponent<AudioSource> (), 1f));
