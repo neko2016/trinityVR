@@ -313,7 +313,12 @@
 			<method name="Exit"/>
 			<method name="Click"/>
 		</type>
-		<type fullname="videoMarker">
+		<type fullname="imgMarker">
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
+			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
@@ -322,7 +327,28 @@
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 		</type>
+		<type fullname="audioMarker">
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+			<method name="markerTriggered"/>
+		</type>
 		<type fullname="GvrAudioSource">
+			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
@@ -351,34 +377,8 @@
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
 			<method name="PlayOneShot"/>
-			<method name="PlayOneShot"/>
 		</type>
-		<type fullname="audioMarker">
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-			<method name="markerTriggered"/>
-		</type>
-		<type fullname="imgMarker">
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
-			<method name="markerPressed"/>
+		<type fullname="videoMarker">
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
 			<method name="markerPressed"/>
